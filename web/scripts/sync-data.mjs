@@ -46,8 +46,8 @@ try {
     console.log(`[sync-data] traffic: none yet (no sim/out/trips_${traffic.scenario}.json); the app runs without cars.`);
   }
   if (speeds) console.log(`[sync-data] road speeds: ${speeds.statsFrom} + ${speeds.geometryFrom}`);
-  if (scenarios.length > 1) console.log(`[sync-data] scenarios: ${scenarios.map((s) => s.scenario).join(", ")} (default ${traffic.scenario})`);
   else if (traffic.source === "real") console.log(`[sync-data] road speeds: none yet (no sim/out/edge_stats_${traffic.scenario}.parquet).`);
+  if (scenarios.length > 1) console.log(`[sync-data] scenarios: ${scenarios.map((s) => s.scenario).join(", ")} (default ${traffic.scenario})`);
 } catch (err) {
   console.error(`\n\x1b[31m[sync-data] ${err instanceof Error ? err.message : String(err)}\x1b[0m\n`);
   process.exit(1);

@@ -98,7 +98,7 @@ test("am_peak default: real-counts badge, Melbourne clock, trips' own range, att
   await expect(base).toHaveAttribute("aria-pressed", "true");
   await expect(slider).toHaveAttribute("min", "0");
   await expect(clock).toHaveText(/^\d\d:\d\d \/ 15:00$/);
-  await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic");
+  await expect(page.getByTestId("placeholder-badge")).toHaveText("Synthetic baseline");
   await page.waitForTimeout(800);
   await hideFps(page);
   await page.screenshot({ path: resolve(SHOTS, "baseline-after-switch.png") });

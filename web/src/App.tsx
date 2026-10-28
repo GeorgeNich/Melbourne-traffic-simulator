@@ -148,7 +148,7 @@ export function App() {
       ? "Loading buildings…"
       : buildings.status === "error"
         ? `Buildings failed: ${buildings.message}`
-        : `${buildings.featureCount.toLocaleString()} buildings`;
+        : `${buildings.featureCount.toLocaleString()} building pieces`;
   const roadsStatus =
     roads.status === "loading"
       ? "loading roads…"

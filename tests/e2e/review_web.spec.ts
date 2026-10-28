@@ -44,8 +44,8 @@ const OLD_LOOK_QUERY = "?look=b&trail=long&glow=soft&roads=faint&xray=X1&edges=a
 const GROUND_ROAD_OPACITY = { road_minor: 0.08, road_tertiary: 0.18, road_major: 0.42, road_motorway: 0.5 } as const;
 const MAJOR_WIDTH_SCALE = 1.8;
 
-const STATUS_REAL = /^\d{1,3}(,\d{3})+ buildings · \d{1,3}(,\d{3})* elevated roads$/;
-const STATUS_FIXTURE = /^9 buildings · \d{1,3}(,\d{3})* elevated roads$/;
+const STATUS_REAL = /^\d{1,3}(,\d{3})+ building pieces · \d{1,3}(,\d{3})* elevated roads$/;
+const STATUS_FIXTURE = /^9 building pieces · \d{1,3}(,\d{3})* elevated roads$/;
 
 /** The only host allowed off localhost (OpenFreeMap tiles, TileJSON and fonts). */
 const ALLOWED_HOSTS = ["tiles.openfreemap.org"];

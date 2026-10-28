@@ -284,7 +284,7 @@ test.describe("redraw on demand (dev, real data)", () => {
 
     const before = await counters(page);
     release();
-    await expect(page.getByTestId("status")).toHaveText(/\d buildings/, { timeout: 120_000 });
+    await expect(page.getByTestId("status")).toHaveText(/\d building pieces/, { timeout: 120_000 });
     await page.waitForFunction(() => window.__twinReady === true, null, { timeout: 60_000, polling: 200 });
     const withBuildings = await expectQuietAndCurrent(page, "paused, buildings arrived");
     expect((await counters(page)).renders - before.renders, "the late data rendered").toBeGreaterThan(0);
@@ -414,7 +414,7 @@ test.describe("redraw on demand (production build)", () => {
     await installCounters(page);
     await page.goto(process.env.PROD_URL!);
     await expect(page.getByTestId("play-pause")).toBeVisible({ timeout: 120_000 });
-    await expect(page.getByTestId("status")).toHaveText(/\d buildings · \d/, { timeout: 120_000 });
+    await expect(page.getByTestId("status")).toHaveText(/\d building pieces · \d/, { timeout: 120_000 });
     await pause(page);
     // Settled = a whole second without a frame (tiles and label fades done), within 30 s.
     let settledAfter = -1;

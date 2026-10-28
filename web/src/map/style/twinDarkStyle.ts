@@ -70,7 +70,7 @@ export function twinDarkStyle(attributionHtml: string): StyleSpecification {
   const { opacity: roads, majorWidthScale: k } = GROUND_ROADS;
   return {
     version: 8,
-    name: "Melbourne Traffic Twin dark (from OpenFreeMap dark)",
+    name: "Melbourne Traffic Simulator dark (from OpenFreeMap dark)",
     sources: {
       [TILE_SOURCE_ID]: { type: "vector", url: OPENFREEMAP.tilejson, attribution: attributionHtml },
     },

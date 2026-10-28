@@ -51,7 +51,7 @@ const FLOWING = [56, 140, 255];
 const LOOK = { trailS: 20, through: 0.4, xrayWidth: 1.6 } as const;
 /** Every look URL param the look review used; all removed in cfb379f, so none may change anything. */
 const OLD_LOOK_QUERY = "?look=b&trail=long&glow=soft&roads=faint&xray=X1&edges=all";
-const STATUS_REAL = /^\d{1,3}(,\d{3})+ buildings · \d{1,3}(,\d{3})* elevated roads$/;
+const STATUS_REAL = /^\d{1,3}(,\d{3})+ building pieces · \d{1,3}(,\d{3})* elevated roads$/;
 const MAX_OTHER_SATURATED = 0.002;
 
 const onlyIn = (name: string) => test.beforeEach(({}, info) => test.skip(info.project.name !== name, `runs in ${name} only`));
@@ -164,7 +164,7 @@ test.describe("trips fixture over the real buildings (TWIN_USE_FIXTURE=trips)", 
     const banner = page.getByTestId("fixture-banner");
     await expect(banner).toContainText("hand-made cars, not simulated traffic");
     await expect(banner).not.toContainText("rectangles");
-    await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic");
+    await expect(page.getByTestId("placeholder-badge")).toHaveText("Synthetic baseline");
     await expect(page.getByTestId("placeholder-badge")).toHaveAttribute("title", /not simulated traffic/);
     await expect(page.getByTestId("sim-clock")).toHaveText(/^\d\d:\d\d \/ 05:00$/);
     await expect(page.locator("pre[role=alert]")).toHaveCount(0);
@@ -720,7 +720,7 @@ test.describe("real baseline export (sim/out/trips_baseline.json)", () => {
       meta: "baseline.meta.json",
       speeds: { edgeGeometry: "edge_geometry.json", edgeStats: "edge_stats_baseline.parquet" },
     });
-    await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic");
+    await expect(page.getByTestId("placeholder-badge")).toHaveText("Synthetic baseline");
     await expect(page.getByTestId("traffic-note")).toHaveCount(0);
     await expect(page.getByTestId("fixture-banner")).toHaveCount(0);
     await expect(page.locator("pre[role=alert]")).toHaveCount(0);
@@ -897,7 +897,7 @@ test.describe("production build, traffic", () => {
 
   test("no dev hooks; the real baseline ships labelled; look-option queries ignored", async ({ page }) => {
     await page.goto(process.env.PROD_URL!);
-    await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic", { timeout: 90_000 });
+    await expect(page.getByTestId("placeholder-badge")).toHaveText("Synthetic baseline", { timeout: 90_000 });
     // __twinReady (a readiness flag) has been set in builds since Phase 1; the Stage C dev hook is __twinPlayback.
     expect(await page.evaluate(() => [window.__twinPlayback, window.__twinMap])).toEqual([undefined, undefined]);
     for (const f of ["data/traffic.json"]) {
@@ -943,7 +943,7 @@ test.describe("real sim export, routed (SIM_BASELINE_DIR)", () => {
     await ready(page);
     await hideFps(page);
     await expect(page.locator("pre[role=alert]")).toHaveCount(0);
-    await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic");
+    await expect(page.getByTestId("placeholder-badge")).toHaveText("Synthetic baseline");
     await expect(page.getByTestId("fixture-banner")).toHaveCount(0);
     console.log("console [traffic] messages:", JSON.stringify(msgs));
     const art = resolve(ROOT, "web/test-results/review/sim-baseline");

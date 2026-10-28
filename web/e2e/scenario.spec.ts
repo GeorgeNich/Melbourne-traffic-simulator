@@ -48,7 +48,7 @@ test("switches am_peak <-> baseline: trips' own time range, local clock, badge, 
   await expect(clockText).toHaveText("Fri 23 Oct 2026 · 07:32");
   await page.evaluate(() => window.__twinPlayback!.seek(0)); // clamps to the range start
   await expect(clockText).toHaveText("Fri 23 Oct 2026 · 07:30");
-  await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic"); // a fixture, not real counts
+  await expect(page.getByTestId("placeholder-badge")).toHaveText("Synthetic baseline"); // a fixture, not real counts
   await expect(page.getByTestId("cars")).not.toHaveText(/^0 cars$/);
 
   // Baseline: 0..900, mm:ss clock, placeholder badge, real road speeds.
@@ -58,7 +58,7 @@ test("switches am_peak <-> baseline: trips' own time range, local clock, badge, 
   await expect(slider).toHaveAttribute("min", "0");
   await expect(slider).toHaveAttribute("max", "900");
   expect(await page.evaluate(() => window.__twinPlayback!.time)).toBeLessThan(900);
-  await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic");
+  await expect(page.getByTestId("placeholder-badge")).toHaveText("Synthetic baseline");
   await expect(page.getByRole("checkbox", { name: "Road speeds" })).toBeEnabled();
   await expect(page.getByTestId("fixture-banner")).toHaveCount(0);
 

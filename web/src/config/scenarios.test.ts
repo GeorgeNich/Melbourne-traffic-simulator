@@ -7,9 +7,9 @@ describe("scenario labels and the demand badge", () => {
       "Real counts · Fri 23 Oct 2026 · calibrated 7–8 am",
     );
   });
-  it("baseline (placeholder, no start_local) and fixtures keep 'Placeholder traffic'", () => {
-    expect(demandBadge({ scenario: "baseline", demand: "placeholder_random" })).toBe("Placeholder traffic");
-    expect(demandBadge({ scenario: "fixture", demand: "test_fixture", start_local: "2026-10-23T06:30:00+11:00" })).toBe("Placeholder traffic");
+  it("baseline (placeholder, no start_local) and fixtures keep 'Synthetic baseline'", () => {
+    expect(demandBadge({ scenario: "baseline", demand: "placeholder_random" })).toBe("Synthetic baseline");
+    expect(demandBadge({ scenario: "fixture", demand: "test_fixture", start_local: "2026-10-23T06:30:00+11:00" })).toBe("Synthetic baseline");
   });
   it("leaves out what it doesn't know", () => {
     expect(demandBadge({ scenario: "other", demand: "calibrated_counts" })).toBe("Real counts");

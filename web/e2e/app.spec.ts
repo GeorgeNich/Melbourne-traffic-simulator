@@ -33,7 +33,7 @@ test.beforeEach(async ({ page }) => {
 });
 
 test("app loads and the map canvas renders", async ({ page }) => {
-  await expect(page.getByRole("heading", { name: "Melbourne Traffic Twin" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Melbourne Traffic Simulator" })).toBeVisible();
   const canvas = page.locator("canvas.maplibregl-canvas");
   await expect(canvas).toBeVisible();
   const box = await canvas.boundingBox();
@@ -57,7 +57,7 @@ test("app loads and the map canvas renders", async ({ page }) => {
   });
   expect(order.symbols.length).toBeGreaterThan(0);
   expect(Math.max(...order.symbols)).toBeLessThan(order.deck);
-  await expect(page.getByTestId("status")).toHaveText(/\d+ buildings/);
+  await expect(page.getByTestId("status")).toHaveText(/\d+ building pieces/);
 });
 
 test("attribution is visible on the map, including the City of Melbourne credit", async ({ page }) => {
@@ -121,10 +121,10 @@ test("fixture banner shows only for the fixture", async ({ page }, testInfo) => 
   if (testInfo.project.name === "fixture") {
     await expect(banner).toBeVisible();
     await expect(banner).toContainText("TEST FIXTURE DATA");
-    await expect(page.getByTestId("status")).toHaveText(/^9 buildings · [\d,]+ elevated roads$/);
+    await expect(page.getByTestId("status")).toHaveText(/^9 building pieces · [\d,]+ elevated roads$/);
   } else {
     await expect(banner).toHaveCount(0);
-    await expect(page.getByTestId("status")).toHaveText(/^\d{1,3}(,\d{3})+ buildings · [\d,]+ elevated roads$/); // real data: thousands
+    await expect(page.getByTestId("status")).toHaveText(/^\d{1,3}(,\d{3})+ building pieces · [\d,]+ elevated roads$/); // real data: thousands
   }
 });
 

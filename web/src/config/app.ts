@@ -1,1 +1,1 @@
-export const APP_TITLE = "Melbourne Traffic Twin";
+export const APP_TITLE = "Melbourne Traffic Simulator";

@@ -18,12 +18,12 @@ export const SCENARIO_INFO: Readonly<Record<string, ScenarioInfo>> = {
 export const scenarioLabel = (scenario: string): string => SCENARIO_INFO[scenario]?.label ?? scenario;
 
 /**
- * Badge text for a replay: "Placeholder traffic" unless the demand is calibrated to counts, then
+ * Badge text for a replay: "Synthetic baseline" unless the demand is calibrated to counts, then
  * "Real counts · Fri 23 Oct 2026 · calibrated 7–8 am" (date from start_local, hours from SCENARIO_INFO; either is left
  * out when unknown).
  */
 export function demandBadge(meta: Pick<TripsMeta, "scenario" | "demand" | "start_local">): string {
-  if (isPlaceholderDemand(meta.demand)) return "Placeholder traffic";
+  if (isPlaceholderDemand(meta.demand)) return "Synthetic baseline";
   const hours = SCENARIO_INFO[meta.scenario]?.calibrated;
   return ["Real counts", formatLocalDate(0, meta.start_local), hours && `calibrated ${hours}`].filter(Boolean).join(" · ");
 }

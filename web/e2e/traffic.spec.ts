@@ -35,7 +35,7 @@ test.describe("fixture server: the labelled trips fixture", () => {
     const playback = page.getByTestId("playback");
     await expect(playback).toBeVisible();
     const badge = page.getByTestId("placeholder-badge");
-    await expect(badge).toHaveText("Placeholder traffic");
+    await expect(badge).toHaveText("Synthetic baseline");
     await expect(badge).toHaveAttribute("title", /not simulated traffic/);
     await expect(page.getByTestId("fixture-banner")).toContainText("hand-made cars, not simulated traffic");
     await expect(page.getByTestId("fixture-banner")).toContainText("hand-made rectangles, not real buildings");

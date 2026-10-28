@@ -105,6 +105,16 @@ async function brightFraction(page: Page, png: Buffer) {
 
 const speedsToggle = (page: Page) => page.getByRole("checkbox", { name: "Road speeds" });
 
+/** Baseline-only releases already select it and intentionally have no scenario switch. */
+async function selectBaseline(page: Page) {
+  const initial = (await (await page.request.get("/data/traffic.json")).json()) as { scenario: string };
+  if (initial.scenario !== "baseline") {
+    await page.getByRole("button", { name: "Baseline", exact: true }).click();
+  }
+  await expect(page.getByTestId("placeholder-badge")).toHaveText("Synthetic baseline");
+}
+
+
 test.describe("road speeds, real baseline", () => {
   // eslint-disable-next-line no-empty-pattern -- Playwright needs a destructuring pattern for the fixtures argument
   test.beforeEach(({}, info) => test.skip(info.project.name !== "real", "the real-data server only"));
@@ -116,10 +126,7 @@ test.describe("road speeds, real baseline", () => {
     });
     await page.goto("/");
     await waitForReady(page);
-    // the app boots into am_peak when it is synced (scenario switch, 2026-10-28); these are
-    // the baseline expectations, so pin the scenario first
-    await page.getByRole("button", { name: "Baseline" }).click();
-    await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic");
+    await selectBaseline(page);
     await expect(speedsToggle(page)).toBeChecked();
     await expect(page.getByTestId("speed-legend")).toHaveText(/flowing.*slowing.*jammed/);
     await expect(page.locator("pre[role=alert]")).toHaveCount(0);
@@ -139,9 +146,7 @@ test.describe("road speeds, real baseline", () => {
   test("a known jammed edge renders red and a known flowing edge blue at t = 480 s; the toggle hides them", async ({ page }) => {
     await page.goto("/");
     await waitForReady(page);
-    // pin the baseline scenario (the KNOWN edges' classes are baseline values)
-    await page.getByRole("button", { name: "Baseline" }).click();
-    await expect(page.getByTestId("placeholder-badge")).toHaveText("Placeholder traffic");
+    await selectBaseline(page);
     await expect.poll(() => page.evaluate(() => window.__twinSpeeds!.table.nBins)).toBe(15);
     for (const k of KNOWN) {
       // The data says so (the app's smoothed value), then the pixels do.
