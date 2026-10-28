@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PATCH: turn bans with no OSM relation, verified by George's local knowledge or by the City of
+  Melbourne Sign Panels (Non Parking) open data (CC BY; data/SOURCES.md).
+
+  Provenance and the per-corner evidence trail: docs/review/local-knowledge-checklist-phase3.md
+  ("Answers so far", 2026-10-28). Each <delete> removes one connection (all its lanes), same
+  format as turn_restrictions.con.xml. Edge ids are those of the imported network
+  (sim/work/roads_osm.net.xml); rebuild with `uv run python -m sim.build_net`.
+-->
+<connections>
+    <!-- The two Elizabeth St bans recorded here on 2026-10-28 (George, ~3 am) were REVERTED the
+         same day: the DTP sheets give both rights their own vehicle signal group (4606 group 4
+         "Elizabeth St SB R"; 2914 group 3 "Elizabeth St NB R"), so the movements exist. -->
+    <!-- Little Collins St WB right into King St NB: R2-6 "NO RIGHT TURN", CoM sign asset 1610792, no time plate -->
+    <delete from="968328214#4" to="207516093#0"/>
+    <!-- Little Collins St EB right into King St SB: R2-6 "No Right Turn", CoM sign asset 1344763, no time plate -->
+    <delete from="-323916051#3" to="711989781#2"/>
+</connections>

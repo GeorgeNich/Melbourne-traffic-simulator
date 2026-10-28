@@ -1,0 +1,12 @@
+{
+  "name": "melbourne-traffic-twin",
+  "private": true,
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=22 <23"
+  },
+  "scripts": {
+    "check": "scripts/check.sh",
+    "dev": "pnpm -C web dev"
+  }
+}

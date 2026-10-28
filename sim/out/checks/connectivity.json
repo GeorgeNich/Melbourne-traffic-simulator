@@ -1,0 +1,6202 @@
+{
+ "summary": {
+  "edges": 3955,
+  "largest_scc_share": 0.9077,
+  "largest_scc_length_share": 0.8522,
+  "outside_by_class_and_place": {
+   "entry:buffer_ring": 110,
+   "entry:sim_area": 73,
+   "exit:buffer_ring": 98,
+   "exit:sim_area": 64,
+   "isolated:buffer_ring": 20
+  },
+  "dead_ends_by_place": {
+   "sim_area": 3,
+   "buffer_ring": 44
+  },
+  "trap_loops": 1,
+  "grade_separated_crossings": 231,
+  "grade_separated_joined": 0,
+  "same_level_crossings_without_junction": 0,
+  "connections": 7923,
+  "untraced_connections": 3,
+  "untraced_with_level_mismatch": 0,
+  "ramp_ways": 166,
+  "ramp_expected_movements": 207,
+  "ramp_missing_movements": 0,
+  "ramp_missing_sharp_turns": 0,
+  "outside_scc_in_sim_area_not_boundary_routes": 17,
+  "trap_loops_in_sim_area": 0,
+  "ramp_untraced_connections": 0,
+  "car_free_leaks": 0,
+  "routes_flagged": []
+ },
+ "network": "roads.net.xml",
+ "reachability": {
+  "edges": 3955,
+  "largest_scc_edges": 3590,
+  "largest_scc_share": 0.9077,
+  "largest_scc_length_share": 0.8522,
+  "components": 313,
+  "outside_largest_scc": 365,
+  "outside_by_class_and_place": {
+   "entry:buffer_ring": 110,
+   "entry:sim_area": 73,
+   "exit:buffer_ring": 98,
+   "exit:sim_area": 64,
+   "isolated:buffer_ring": 20
+  },
+  "outside_in_sim_area_not_boundary_routes": [
+   {
+    "edge": "-1017261269",
+    "name": "Boathouse Drive",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1017261269
+    ],
+    "length_m": 239.3,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-24590170",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     24590170
+    ],
+    "length_m": 122.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-61462160#1",
+    "name": "Southgate Avenue",
+    "type": "highway.residential",
+    "osm_ways": [
+     61462160
+    ],
+    "length_m": 32.0,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-714104002",
+    "name": "Boathouse Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     714104002,
+     22738997,
+     1017261271,
+     1182397617
+    ],
+    "length_m": 387.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1008818047#0",
+    "name": "Coventry Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1008818047
+    ],
+    "length_m": 4.0,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1017261269",
+    "name": "Boathouse Drive",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1017261269
+    ],
+    "length_m": 232.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1123803840",
+    "name": "Dryburgh Street",
+    "type": "highway.secondary",
+    "osm_ways": [
+     1123803840,
+     963120935,
+     1123803838
+    ],
+    "length_m": 80.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1123836814",
+    "name": "Swanston Street",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     1123836814
+    ],
+    "length_m": 0.1,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1182397617",
+    "name": "Boathouse Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     1182397617,
+     1017261271,
+     22738997,
+     714104002
+    ],
+    "length_m": 394.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1230755647",
+    "name": "Queen Street",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1230755647,
+     1444814164
+    ],
+    "length_m": 55.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1230755648",
+    "name": "Queen Street",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1230755648,
+     62259841,
+     255866153
+    ],
+    "length_m": 153.7,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "16189041",
+    "name": "Southgate Avenue",
+    "type": "highway.residential",
+    "osm_ways": [
+     16189041
+    ],
+    "length_m": 72.4,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "24590170",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     24590170
+    ],
+    "length_m": 124.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "681416585",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     681416585
+    ],
+    "length_m": 31.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "681416586",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     681416586
+    ],
+    "length_m": 32.0,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "714104001",
+    "name": "Boathouse Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     714104001,
+     985376431
+    ],
+    "length_m": 9.9,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "985376448",
+    "name": "Boathouse Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     985376448
+    ],
+    "length_m": 17.3,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   }
+  ],
+  "outside_in_sim_area": [
+   {
+    "edge": "-1017261269",
+    "name": "Boathouse Drive",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1017261269
+    ],
+    "length_m": 239.3,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-131724956#1",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     131724956
+    ],
+    "length_m": 186.3,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-24590170",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     24590170
+    ],
+    "length_m": 122.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-27911169#1",
+    "name": "Miller Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     27911169
+    ],
+    "length_m": 59.4,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-61462160#1",
+    "name": "Southgate Avenue",
+    "type": "highway.residential",
+    "osm_ways": [
+     61462160
+    ],
+    "length_m": 32.0,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-62682160#0",
+    "name": "Stawell Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     62682160
+    ],
+    "length_m": 83.1,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-714104002",
+    "name": "Boathouse Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     714104002,
+     22738997,
+     1017261271,
+     1182397617
+    ],
+    "length_m": 387.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1008818047#0",
+    "name": "Coventry Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1008818047
+    ],
+    "length_m": 4.0,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1013257459",
+    "name": "CityLink In - Lorimer Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1013257459
+    ],
+    "length_m": 5.3,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1017261269",
+    "name": "Boathouse Drive",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1017261269
+    ],
+    "length_m": 232.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1068181379#0",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1068181379
+    ],
+    "length_m": 14.3,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1068181379#1",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1068181379
+    ],
+    "length_m": 15.7,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1078456283",
+    "name": "Citylink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1078456283
+    ],
+    "length_m": 153.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1086833715",
+    "name": "West Gate In-Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1086833715,
+     568362744
+    ],
+    "length_m": 80.1,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1086833716",
+    "name": "West Gate In-Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1086833716
+    ],
+    "length_m": 37.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1123803840",
+    "name": "Dryburgh Street",
+    "type": "highway.secondary",
+    "osm_ways": [
+     1123803840,
+     963120935,
+     1123803838
+    ],
+    "length_m": 80.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1123836814",
+    "name": "Swanston Street",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     1123836814
+    ],
+    "length_m": 0.1,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1175874270",
+    "name": "Kings - CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1175874270
+    ],
+    "length_m": 85.5,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1182397617",
+    "name": "Boathouse Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     1182397617,
+     1017261271,
+     22738997,
+     714104002
+    ],
+    "length_m": 394.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1219511618",
+    "name": "Montague-CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1219511618
+    ],
+    "length_m": 21.5,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1230755647",
+    "name": "Queen Street",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1230755647,
+     1444814164
+    ],
+    "length_m": 55.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1230755648",
+    "name": "Queen Street",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1230755648,
+     62259841,
+     255866153
+    ],
+    "length_m": 153.7,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1254450682",
+    "name": "Montague - West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1254450682
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1254450683",
+    "name": "West Gate In - Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1254450683
+    ],
+    "length_m": 0.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1254450684",
+    "name": "West Gate In - Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1254450684
+    ],
+    "length_m": 0.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1254450685",
+    "name": "Montague - CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1254450685
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1274073087",
+    "name": "CityLink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1274073087
+    ],
+    "length_m": 17.9,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "131724914",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     131724914
+    ],
+    "length_m": 18.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "13301815",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     13301815
+    ],
+    "length_m": 299.4,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1485585157#1",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1485585157,
+     1461757732
+    ],
+    "length_m": 22.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "16189041",
+    "name": "Southgate Avenue",
+    "type": "highway.residential",
+    "osm_ways": [
+     16189041
+    ],
+    "length_m": 72.4,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "179383357#0",
+    "name": "City-CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     179383357
+    ],
+    "length_m": 100.9,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "179383357#1",
+    "name": "City-CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     179383357
+    ],
+    "length_m": 75.5,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "19012681#0",
+    "name": "Power Street",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     19012681
+    ],
+    "length_m": 27.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "19792505#0",
+    "name": "CityLink In-Power Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     19792505
+    ],
+    "length_m": 277.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "207516092",
+    "name": "West Gate In - Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     207516092
+    ],
+    "length_m": 267.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "235777124",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     235777124
+    ],
+    "length_m": 155.3,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "24590170",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     24590170
+    ],
+    "length_m": 124.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "262288652",
+    "name": "CityLink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     262288652
+    ],
+    "length_m": 137.0,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "26619046",
+    "name": "West Gate In - Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     26619046
+    ],
+    "length_m": 284.9,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "26619050",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     26619050,
+     5234646
+    ],
+    "length_m": 316.8,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "27911168",
+    "name": "Miller Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     27911168
+    ],
+    "length_m": 28.9,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "27911169#1",
+    "name": "Miller Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     27911169
+    ],
+    "length_m": 59.7,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "27911170#1",
+    "name": "Anderson Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     27911170
+    ],
+    "length_m": 60.4,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "27989307",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     27989307
+    ],
+    "length_m": 16.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "296377256",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     296377256
+    ],
+    "length_m": 106.8,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "31094522#0",
+    "name": "Pearl River Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     31094522
+    ],
+    "length_m": 23.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "31094522#1",
+    "name": "Pearl River Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     31094522,
+     1068181381
+    ],
+    "length_m": 5.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "31094523#0",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     31094523
+    ],
+    "length_m": 44.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "31094523#1",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     31094523
+    ],
+    "length_m": 0.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "312190208",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     312190208
+    ],
+    "length_m": 430.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "312190215",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     312190215
+    ],
+    "length_m": 171.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "312190215-AddedOffRampEdge",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     312190215
+    ],
+    "length_m": 94.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "312190545",
+    "name": "CityLink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     312190545
+    ],
+    "length_m": 83.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "327695289#0",
+    "name": "CityLink In - Lorimer Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     327695289
+    ],
+    "length_m": 34.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "327700046",
+    "name": "CityLink In - Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     327700046,
+     980110336,
+     1254132458
+    ],
+    "length_m": 71.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38312822",
+    "name": "CityLink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38312822
+    ],
+    "length_m": 433.1,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38312866-AddedOffRampEdge",
+    "name": "West Gate In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38312866
+    ],
+    "length_m": 33.7,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313043",
+    "name": "Montague-CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313043
+    ],
+    "length_m": 189.9,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313043-AddedOnRampEdge",
+    "name": "Montague-CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313043
+    ],
+    "length_m": 96.0,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313358",
+    "name": "West Gate In - Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313358
+    ],
+    "length_m": 173.0,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313359#0",
+    "name": "Montague - CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313359
+    ],
+    "length_m": 17.1,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313359#1",
+    "name": "Montague - CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313359
+    ],
+    "length_m": 8.1,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313389",
+    "name": "West Gate In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313389
+    ],
+    "length_m": 1463.0,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313481",
+    "name": "Kings - West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313481
+    ],
+    "length_m": 281.0,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313496",
+    "name": "Kings-Citylink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313496
+    ],
+    "length_m": 298.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313636",
+    "name": "West Gate Out - CityLink Out Ramp",
+    "type": "highway.motorway",
+    "osm_ways": [
+     38313636,
+     199004265
+    ],
+    "length_m": 666.3,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313701",
+    "name": "West Gate In - Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313701
+    ],
+    "length_m": 69.0,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313709#0",
+    "name": "Montague-West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313709
+    ],
+    "length_m": 7.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38313709#1",
+    "name": "Montague-West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38313709
+    ],
+    "length_m": 5.4,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38314253#0",
+    "name": "Montague-CityLink Out Ramp On",
+    "type": "highway.primary_link",
+    "osm_ways": [
+     38314253
+    ],
+    "length_m": 12.4,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38314253#1",
+    "name": "Montague-CityLink Out Ramp On",
+    "type": "highway.primary_link",
+    "osm_ways": [
+     38314253
+    ],
+    "length_m": 1.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "39585728#0",
+    "name": "Laurens Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     39585728
+    ],
+    "length_m": 269.5,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "46225230#0",
+    "name": "Flinders Street",
+    "type": "highway.secondary",
+    "osm_ways": [
+     46225230
+    ],
+    "length_m": 60.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "46225230#1",
+    "name": "Flinders Street",
+    "type": "highway.secondary",
+    "osm_ways": [
+     46225230
+    ],
+    "length_m": 11.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "46225230#2",
+    "name": "Flinders Street",
+    "type": "highway.secondary",
+    "osm_ways": [
+     46225230
+    ],
+    "length_m": 6.3,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "46225230#3",
+    "name": "Flinders Street",
+    "type": "highway.secondary",
+    "osm_ways": [
+     46225230
+    ],
+    "length_m": 12.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "484854830",
+    "name": "Citylink In - West Gate In Ramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     484854830
+    ],
+    "length_m": 80.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "484854831#0",
+    "name": "Citylink In-West Gate In Ramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     484854831
+    ],
+    "length_m": 345.9,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "484854831#1",
+    "name": "Citylink In-West Gate In Ramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     484854831,
+     1254315758
+    ],
+    "length_m": 310.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234624",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     5234624,
+     715877393
+    ],
+    "length_m": 364.7,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234660",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     5234660,
+     715905201
+    ],
+    "length_m": 196.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234777",
+    "name": "West Gate In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234777,
+     980106009
+    ],
+    "length_m": 77.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234831",
+    "name": "Power Street",
+    "type": "highway.trunk",
+    "osm_ways": [
+     5234831,
+     5234857
+    ],
+    "length_m": 176.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234953",
+    "name": "Kings - CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234953
+    ],
+    "length_m": 244.7,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234957",
+    "name": "Citylink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234957
+    ],
+    "length_m": 112.7,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234962",
+    "name": "CityLink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234962
+    ],
+    "length_m": 23.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234964#0",
+    "name": "Kings-CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234964
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234964#1",
+    "name": "Kings-CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234964
+    ],
+    "length_m": 17.9,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234968",
+    "name": "Kings Way Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234968
+    ],
+    "length_m": 14.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234971",
+    "name": "Kings-West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234971,
+     1383208582,
+     706692867
+    ],
+    "length_m": 1697.9,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5234971-AddedOffRampEdge",
+    "name": "Kings-West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5234971,
+     1383208582,
+     706692867
+    ],
+    "length_m": 94.5,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5235238",
+    "name": "Kings-Citylink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     5235238
+    ],
+    "length_m": 13.7,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5634370",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     5634370
+    ],
+    "length_m": 590.8,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "5634370-AddedOnRampEdge",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     5634370
+    ],
+    "length_m": 94.7,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "568362744#1",
+    "name": "West Gate In-Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     568362744
+    ],
+    "length_m": 9.1,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "59760135",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     59760135
+    ],
+    "length_m": 14.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "681416585",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     681416585
+    ],
+    "length_m": 31.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "681416586",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     681416586
+    ],
+    "length_m": 32.0,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "705558500#0",
+    "name": "West Gate Out-CityLink Out Ramp",
+    "type": "highway.motorway",
+    "osm_ways": [
+     705558500
+    ],
+    "length_m": 243.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "705558500#0-AddedOnRampEdge",
+    "name": "West Gate Out-CityLink Out Ramp",
+    "type": "highway.motorway",
+    "osm_ways": [
+     705558500
+    ],
+    "length_m": 94.4,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "711983628#0",
+    "name": "Flinders Street",
+    "type": "highway.secondary",
+    "osm_ways": [
+     711983628
+    ],
+    "length_m": 51.9,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "714104001",
+    "name": "Boathouse Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     714104001,
+     985376431
+    ],
+    "length_m": 9.9,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "715573250",
+    "name": "Montague Street Onramp",
+    "type": "highway.primary_link",
+    "osm_ways": [
+     715573250
+    ],
+    "length_m": 25.7,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "775968519",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     775968519
+    ],
+    "length_m": 54.1,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "775968520",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     775968520,
+     5634303
+    ],
+    "length_m": 357.1,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "775968521",
+    "name": "West Gate In - Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     775968521
+    ],
+    "length_m": 62.0,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "775968522",
+    "name": "Kings - CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     775968522
+    ],
+    "length_m": 24.9,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "778984243",
+    "name": "CityLink In - Lorimer Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     778984243
+    ],
+    "length_m": 74.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "780655768",
+    "name": "Montague-West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     780655768,
+     982774812
+    ],
+    "length_m": 310.8,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "780655768-AddedOnRampEdge",
+    "name": "Montague-West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     780655768,
+     982774812
+    ],
+    "length_m": 94.3,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "780655769",
+    "name": "Montague - Citylink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     780655769
+    ],
+    "length_m": 8.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "783844082",
+    "name": "West Gate In-Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     783844082
+    ],
+    "length_m": 12.1,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "789303527",
+    "name": "Montague - West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     789303527
+    ],
+    "length_m": 55.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "789312783",
+    "name": "Montague - West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     789312783
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "790988813#1",
+    "name": "Montague Street",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     790988813
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "8066124-AddedOnRampEdge",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     8066124
+    ],
+    "length_m": 94.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "8066126-AddedOffRampEdge",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     8066126
+    ],
+    "length_m": 94.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "8066127",
+    "name": "Kings-CityLink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     8066127
+    ],
+    "length_m": 153.9,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "8066129",
+    "name": "CityLink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     8066129
+    ],
+    "length_m": 182.1,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708813",
+    "name": "West Gate Tunnel",
+    "type": "highway.trunk",
+    "osm_ways": [
+     959708813
+    ],
+    "length_m": 225.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "980106010",
+    "name": "West Gate In - Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     980106010
+    ],
+    "length_m": 29.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "980110335#0",
+    "name": "CityLink In - Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     980110335
+    ],
+    "length_m": 41.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "980110339",
+    "name": "CityLink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     980110339
+    ],
+    "length_m": 7.5,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "980110341",
+    "name": "Kings - West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     980110341
+    ],
+    "length_m": 55.8,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "980542681",
+    "name": "Kings Way Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     980542681
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "981208567",
+    "name": "West Gate In - Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     981208567
+    ],
+    "length_m": 50.6,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982206079",
+    "name": "Montague Street",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982206079
+    ],
+    "length_m": 4.5,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982206080",
+    "name": "West Gate In - Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982206080
+    ],
+    "length_m": 0.8,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982206081",
+    "name": "West Gate In - Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982206081
+    ],
+    "length_m": 12.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982206084",
+    "name": "Montague-Citylink Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982206084
+    ],
+    "length_m": 20.0,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982206085",
+    "name": "Montague Street Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982206085,
+     982206073
+    ],
+    "length_m": 46.7,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982206090",
+    "name": "Montague Street",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982206090,
+     790988813
+    ],
+    "length_m": 62.6,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982206102#0",
+    "name": "West Gate In-Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982206102
+    ],
+    "length_m": 43.4,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982206102#1",
+    "name": "West Gate In-Montague Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982206102
+    ],
+    "length_m": 7.2,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "982774813",
+    "name": "Kings - West Gate Out Ramp On",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     982774813
+    ],
+    "length_m": 201.5,
+    "class": "exit",
+    "where": "sim_area",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "985376448",
+    "name": "Boathouse Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     985376448
+    ],
+    "length_m": 17.3,
+    "class": "entry",
+    "where": "sim_area",
+    "boundary_through_route": false
+   }
+  ],
+  "outside_in_buffer_ring": [
+   {
+    "edge": "-1289270261#1",
+    "name": null,
+    "type": "highway.living_street",
+    "osm_ways": [
+     1289270261
+    ],
+    "length_m": 143.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-131724956#0",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     131724956
+    ],
+    "length_m": 44.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-172406627#1",
+    "name": "O&apos;Connell Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     172406627
+    ],
+    "length_m": 124.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-22758945",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     22758945
+    ],
+    "length_m": 84.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-22758946",
+    "name": "Wellington Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     22758946
+    ],
+    "length_m": 55.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-22944325",
+    "name": "Adams Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     22944325
+    ],
+    "length_m": 47.0,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-253906314",
+    "name": "Arnold Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     253906314,
+     22944324
+    ],
+    "length_m": 47.9,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-253906606#0",
+    "name": "Bromby Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     253906606
+    ],
+    "length_m": 76.5,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-253906606#3",
+    "name": "Bromby Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     253906606
+    ],
+    "length_m": 130.6,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "-27555930#0",
+    "name": "Bowen Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     27555930
+    ],
+    "length_m": 0.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-27555930#1",
+    "name": "Bowen Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     27555930
+    ],
+    "length_m": 12.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-27555930#2",
+    "name": "Bowen Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     27555930
+    ],
+    "length_m": 104.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-27555969",
+    "name": "Queens Road",
+    "type": "highway.residential",
+    "osm_ways": [
+     27555969,
+     979747254
+    ],
+    "length_m": 8.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-38698602#1",
+    "name": "Cliveden Close",
+    "type": "highway.residential",
+    "osm_ways": [
+     38698602
+    ],
+    "length_m": 135.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-39585728#3",
+    "name": "Laurens Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     39585728
+    ],
+    "length_m": 269.5,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-598535482",
+    "name": "Queens Lane",
+    "type": "highway.residential",
+    "osm_ways": [
+     598535482
+    ],
+    "length_m": 7.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-62262253",
+    "name": null,
+    "type": "highway.primary",
+    "osm_ways": [
+     62262253
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-62682160#2",
+    "name": "Stawell Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     62682160
+    ],
+    "length_m": 215.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-62682160#3",
+    "name": "Stawell Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     62682160
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-661972228",
+    "name": "Bowen Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     661972228
+    ],
+    "length_m": 51.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-770785289#0",
+    "name": "Dallas Brooks Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     770785289,
+     1334394175
+    ],
+    "length_m": 74.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "-963198885",
+    "name": "Albert Road",
+    "type": "highway.residential",
+    "osm_ways": [
+     963198885
+    ],
+    "length_m": 2.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1014558367",
+    "name": "Dynon Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1014558367
+    ],
+    "length_m": 44.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1014590963",
+    "name": "Williamstown Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1014590963,
+     198990356
+    ],
+    "length_m": 87.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1040966873",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     1040966873
+    ],
+    "length_m": 93.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1040966873-AddedOffRampEdge",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     1040966873
+    ],
+    "length_m": 94.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1040966874",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     1040966874
+    ],
+    "length_m": 215.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1067558050",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     1067558050
+    ],
+    "length_m": 396.3,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1067558051",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     1067558051,
+     1463060691
+    ],
+    "length_m": 737.5,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1078998564#0",
+    "name": "Victoria Parade",
+    "type": "highway.primary",
+    "osm_ways": [
+     1078998564
+    ],
+    "length_m": 131.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1097194665#1",
+    "name": "Elizabeth Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     1097194665
+    ],
+    "length_m": 19.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1097194665#2",
+    "name": "Elizabeth Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     1097194665
+    ],
+    "length_m": 25.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1122189475",
+    "name": "Drummond Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1122189475
+    ],
+    "length_m": 7.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1123779620",
+    "name": "Peel Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     1123779620
+    ],
+    "length_m": 17.0,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1123814312#0",
+    "name": "Errol Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1123814312
+    ],
+    "length_m": 12.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1123814313",
+    "name": "Errol Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1123814313
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1123817144",
+    "name": "Courtney Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     1123817144,
+     792868471
+    ],
+    "length_m": 66.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1126545289#0",
+    "name": "Fitzroy Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1126545289
+    ],
+    "length_m": 60.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1126817967",
+    "name": "Pelham Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1126817967
+    ],
+    "length_m": 4.5,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1126817968",
+    "name": "Pelham Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1126817968
+    ],
+    "length_m": 9.5,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1126819243",
+    "name": "Elizabeth Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     1126819243
+    ],
+    "length_m": 21.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1126819924",
+    "name": "Bouverie Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1126819924,
+     647598277
+    ],
+    "length_m": 125.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1175845307",
+    "name": "Albert Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1175845307
+    ],
+    "length_m": 0.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1175845436",
+    "name": "Kings Way",
+    "type": "highway.trunk",
+    "osm_ways": [
+     1175845436
+    ],
+    "length_m": 3.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1252211306",
+    "name": "Albert Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1252211306,
+     979758340
+    ],
+    "length_m": 2.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1252211343#0",
+    "name": "Dorcas Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     1252211343
+    ],
+    "length_m": 11.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1252211343#1",
+    "name": "Dorcas Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     1252211343,
+     1021617921
+    ],
+    "length_m": 42.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1253825865#0",
+    "name": "Abbotsford Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     1253825865
+    ],
+    "length_m": 15.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1274748259",
+    "name": "Victoria Parade",
+    "type": "highway.primary",
+    "osm_ways": [
+     1274748259
+    ],
+    "length_m": 26.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1274774854",
+    "name": "Peel Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     1274774854,
+     1123779621,
+     1007895011
+    ],
+    "length_m": 144.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1286706403",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1286706403
+    ],
+    "length_m": 15.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1289270261#0",
+    "name": null,
+    "type": "highway.living_street",
+    "osm_ways": [
+     1289270261
+    ],
+    "length_m": 136.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "1291652851#0",
+    "name": "Munster Terrace",
+    "type": "highway.residential",
+    "osm_ways": [
+     1291652851
+    ],
+    "length_m": 208.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1291928546",
+    "name": "Leveson Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1291928546,
+     25927670
+    ],
+    "length_m": 87.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1306216563",
+    "name": "Nelson Road",
+    "type": "highway.residential",
+    "osm_ways": [
+     1306216563,
+     1306216564
+    ],
+    "length_m": 53.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1306290847",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1306290847
+    ],
+    "length_m": 260.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1308553591",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1308553591,
+     1308553595
+    ],
+    "length_m": 7.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1308553593",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1308553593,
+     1308553592,
+     1308553597
+    ],
+    "length_m": 43.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1308553594",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1308553594
+    ],
+    "length_m": 15.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "131724933",
+    "name": "Batman Avenue",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     131724933,
+     23326210,
+     326745779
+    ],
+    "length_m": 341.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "131724956#0",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     131724956
+    ],
+    "length_m": 44.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "131724956#1",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     131724956
+    ],
+    "length_m": 186.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1334394175",
+    "name": "Dallas Brooks Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     1334394175,
+     770785289
+    ],
+    "length_m": 75.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "135984685#0",
+    "name": "Swanston Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     135984685
+    ],
+    "length_m": 9.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "135984687#3",
+    "name": "Swanston Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     135984687
+    ],
+    "length_m": 61.5,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1461663438",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1461663438,
+     1337645587,
+     669685654
+    ],
+    "length_m": 114.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1461663439#1",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1461663439,
+     1461757735,
+     756318327
+    ],
+    "length_m": 37.7,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1500954783",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1500954783,
+     172481681
+    ],
+    "length_m": 172.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "1503929381",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     1503929381,
+     27949917
+    ],
+    "length_m": 132.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "154088880",
+    "name": "Albert Road",
+    "type": "highway.residential",
+    "osm_ways": [
+     154088880
+    ],
+    "length_m": 21.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "15857035",
+    "name": "Kings Way",
+    "type": "highway.trunk",
+    "osm_ways": [
+     15857035
+    ],
+    "length_m": 2.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "15857084",
+    "name": "Kings Way",
+    "type": "highway.trunk",
+    "osm_ways": [
+     15857084
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "15857115",
+    "name": null,
+    "type": "highway.trunk_link",
+    "osm_ways": [
+     15857115
+    ],
+    "length_m": 14.5,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "15857147",
+    "name": "Albert Road",
+    "type": "highway.trunk_link",
+    "osm_ways": [
+     15857147
+    ],
+    "length_m": 15.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "160464600#1",
+    "name": "Cardigan Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     160464600
+    ],
+    "length_m": 61.0,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "160464614#1",
+    "name": "Leicester Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     160464614
+    ],
+    "length_m": 128.0,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "172481679",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     172481679
+    ],
+    "length_m": 53.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "172481680#0",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     172481680
+    ],
+    "length_m": 32.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "172481740#0",
+    "name": "Dynon Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     172481740
+    ],
+    "length_m": 16.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "172482038#0",
+    "name": "Dynon Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     172482038
+    ],
+    "length_m": 33.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "184852957#2",
+    "name": "Barry Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     184852957
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "185403364#0",
+    "name": "Bouverie Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     185403364
+    ],
+    "length_m": 72.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "190863997#5",
+    "name": "Lygon Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     190863997
+    ],
+    "length_m": 22.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "191005393#0",
+    "name": "Lygon Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     191005393
+    ],
+    "length_m": 14.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "198715390",
+    "name": "Batman Avenue",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     198715390,
+     791862858,
+     985384184
+    ],
+    "length_m": 517.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "198732231#1",
+    "name": "Batman Avenue",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     198732231
+    ],
+    "length_m": 6.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "207128344#0",
+    "name": "Footscray Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     207128344
+    ],
+    "length_m": 135.0,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "207128345",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     207128345
+    ],
+    "length_m": 725.1,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "207516097",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     207516097,
+     1254315757
+    ],
+    "length_m": 973.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "217836956",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     217836956,
+     1308553596
+    ],
+    "length_m": 48.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "22739070#3",
+    "name": "Albert Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     22739070
+    ],
+    "length_m": 95.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "22757634",
+    "name": "Drummond Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     22757634
+    ],
+    "length_m": 0.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "22758945",
+    "name": "Wellington Parade South",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     22758945
+    ],
+    "length_m": 84.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "22758946",
+    "name": "Wellington Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     22758946
+    ],
+    "length_m": 55.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "22882632",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     22882632
+    ],
+    "length_m": 247.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "22882672",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     22882672
+    ],
+    "length_m": 19.6,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "22944324#0",
+    "name": "Arnold Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     22944324,
+     253906314
+    ],
+    "length_m": 47.9,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "22944325",
+    "name": "Adams Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     22944325
+    ],
+    "length_m": 47.0,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "24788532#0",
+    "name": "Lansdowne Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     24788532
+    ],
+    "length_m": 4.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "253906606#0",
+    "name": "Bromby Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     253906606
+    ],
+    "length_m": 76.5,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "253906606#1",
+    "name": "Bromby Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     253906606
+    ],
+    "length_m": 130.6,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "253917814",
+    "name": "O&apos;Connell Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     253917814
+    ],
+    "length_m": 43.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "255624922#0",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     255624922
+    ],
+    "length_m": 25.6,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "255624922#1",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     255624922
+    ],
+    "length_m": 19.7,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "25927671#0",
+    "name": "Leveson Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     25927671,
+     1291928545
+    ],
+    "length_m": 85.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "27555906",
+    "name": "Bowen Lane",
+    "type": "highway.residential",
+    "osm_ways": [
+     27555906
+    ],
+    "length_m": 201.0,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "27555930#0",
+    "name": "Bowen Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     27555930
+    ],
+    "length_m": 0.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "27555930#1",
+    "name": "Bowen Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     27555930
+    ],
+    "length_m": 12.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "27555930#2",
+    "name": "Bowen Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     27555930
+    ],
+    "length_m": 104.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "28084685#0",
+    "name": "Dow Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     28084685
+    ],
+    "length_m": 83.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "28119399",
+    "name": "CityLink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     28119399
+    ],
+    "length_m": 133.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "285898777",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     285898777
+    ],
+    "length_m": 435.2,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "285898792",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     285898792
+    ],
+    "length_m": 84.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "289975599",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     289975599,
+     1306290846
+    ],
+    "length_m": 194.7,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "289975602",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     289975602,
+     1054956687,
+     5607536
+    ],
+    "length_m": 673.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "289975602-AddedOnRampEdge",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     289975602,
+     1054956687,
+     5607536
+    ],
+    "length_m": 95.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "296377646#0",
+    "name": "Williamstown Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     296377646
+    ],
+    "length_m": 93.0,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "30810233",
+    "name": "Peckville Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     30810233
+    ],
+    "length_m": 84.4,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "326745779#1",
+    "name": "Batman Avenue",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     326745779,
+     1352841573,
+     1352841572
+    ],
+    "length_m": 53.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "32688462",
+    "name": "Pelham Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     32688462
+    ],
+    "length_m": 0.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "330761841#4",
+    "name": "Pickles Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     330761841
+    ],
+    "length_m": 67.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "33108717#0",
+    "name": "Footscray Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     33108717
+    ],
+    "length_m": 25.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "33803209#0",
+    "name": "Chetwynd Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     33803209
+    ],
+    "length_m": 92.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "34314083",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     34314083,
+     5607624
+    ],
+    "length_m": 493.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "34314083-AddedOffRampEdge",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     34314083,
+     5607624
+    ],
+    "length_m": 94.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "34831666#0",
+    "name": "Wellington Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     34831666
+    ],
+    "length_m": 95.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "349836922",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     349836922
+    ],
+    "length_m": 45.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "377820036#0",
+    "name": "Pelham Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     377820036
+    ],
+    "length_m": 113.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "37976631#0",
+    "name": "Leicester Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     37976631
+    ],
+    "length_m": 128.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38312779",
+    "name": "Citylink In-West Gate In Ramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38312779,
+     38312931
+    ],
+    "length_m": 450.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38312866",
+    "name": "West Gate In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     38312866
+    ],
+    "length_m": 677.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "386879409",
+    "name": "Footscray Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     386879409
+    ],
+    "length_m": 6.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "38698602#0",
+    "name": "Cliveden Close",
+    "type": "highway.residential",
+    "osm_ways": [
+     38698602
+    ],
+    "length_m": 130.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "484854828",
+    "name": "Citylink In-Kings Ramp Of",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     484854828,
+     484854827
+    ],
+    "length_m": 394.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "484854832",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     484854832,
+     28119418
+    ],
+    "length_m": 372.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "484854835",
+    "name": "West Gate Out-CityLink Out Ramp",
+    "type": "highway.motorway",
+    "osm_ways": [
+     484854835,
+     484854834,
+     321793594
+    ],
+    "length_m": 643.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "486810542",
+    "name": "Citylink Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     486810542
+    ],
+    "length_m": 243.2,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "486810543",
+    "name": "West Gate Tunnel Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     486810543
+    ],
+    "length_m": 528.5,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "506995840#0",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     506995840
+    ],
+    "length_m": 46.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "506995840#1",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     506995840
+    ],
+    "length_m": 20.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "533092473",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     533092473
+    ],
+    "length_m": 373.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "55959910#1",
+    "name": "Anderson Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     55959910
+    ],
+    "length_m": 60.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "55960421#0",
+    "name": "Victoria Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     55960421
+    ],
+    "length_m": 31.0,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "55960421#1",
+    "name": "Victoria Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     55960421
+    ],
+    "length_m": 25.7,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "55960719#0",
+    "name": "Victoria Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     55960719
+    ],
+    "length_m": 29.3,
+    "class": "isolated",
+    "where": "buffer_ring",
+    "boundary_through_route": false
+   },
+   {
+    "edge": "55960719#1",
+    "name": "Victoria Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     55960719
+    ],
+    "length_m": 30.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "576909849",
+    "name": "Footscray Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     576909849
+    ],
+    "length_m": 18.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "580418102",
+    "name": "West Gate Tunnel Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     580418102,
+     959708827
+    ],
+    "length_m": 126.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "581658408#0",
+    "name": "Footscray Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     581658408
+    ],
+    "length_m": 121.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "581660717",
+    "name": "Batman Avenue",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     581660717
+    ],
+    "length_m": 0.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "598535482",
+    "name": "Queens Lane",
+    "type": "highway.residential",
+    "osm_ways": [
+     598535482
+    ],
+    "length_m": 6.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "62205971#0",
+    "name": "Elizabeth Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     62205971
+    ],
+    "length_m": 25.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "62260499#3",
+    "name": "Chetwynd Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     62260499
+    ],
+    "length_m": 71.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "62262253",
+    "name": null,
+    "type": "highway.primary",
+    "osm_ways": [
+     62262253
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "6258583",
+    "name": "Dynon Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     6258583
+    ],
+    "length_m": 133.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "6262165",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     6262165
+    ],
+    "length_m": 99.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "6262309",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     6262309
+    ],
+    "length_m": 333.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "6262687",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     6262687
+    ],
+    "length_m": 253.6,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "6262691",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     6262691
+    ],
+    "length_m": 139.4,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "62681840#1",
+    "name": "Munster Terrace",
+    "type": "highway.residential",
+    "osm_ways": [
+     62681840
+    ],
+    "length_m": 205.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "62682160#0",
+    "name": "Stawell Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     62682160
+    ],
+    "length_m": 81.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "62682160#2",
+    "name": "Stawell Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     62682160
+    ],
+    "length_m": 215.1,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "62682160#3",
+    "name": "Stawell Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     62682160
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "628208895",
+    "name": "Errol Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     628208895
+    ],
+    "length_m": 48.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "647598277#4",
+    "name": "Bouverie Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     647598277
+    ],
+    "length_m": 69.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "661972228",
+    "name": "Bowen Crescent",
+    "type": "highway.residential",
+    "osm_ways": [
+     661972228
+    ],
+    "length_m": 51.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "669685654#1",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     669685654
+    ],
+    "length_m": 52.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "67502787#0",
+    "name": "Wellington Parade",
+    "type": "highway.secondary",
+    "osm_ways": [
+     67502787
+    ],
+    "length_m": 72.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "68862363#0",
+    "name": "Howard Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     68862363
+    ],
+    "length_m": 123.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "69022733#1",
+    "name": "Lansdowne Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     69022733
+    ],
+    "length_m": 53.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "69022736#2",
+    "name": "Lansdowne Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     69022736,
+     782632126,
+     782632125,
+     985032689,
+     985032688
+    ],
+    "length_m": 354.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "712164960",
+    "name": "Lothian Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     712164960
+    ],
+    "length_m": 2.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "756816352",
+    "name": "Lothian Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     756816352
+    ],
+    "length_m": 2.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "760414195#0",
+    "name": "Ingles Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     760414195
+    ],
+    "length_m": 138.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "770389337",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     770389337
+    ],
+    "length_m": 162.7,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "770389939",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     770389939
+    ],
+    "length_m": 147.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "775918877",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     775918877,
+     33111421
+    ],
+    "length_m": 136.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "775921575",
+    "name": "Dynon Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     775921575,
+     30179497
+    ],
+    "length_m": 116.5,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "777155291",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     777155291
+    ],
+    "length_m": 28.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "780554652#1",
+    "name": "Albert Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     780554652
+    ],
+    "length_m": 4.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "780555124",
+    "name": "Albert Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     780555124,
+     979770620
+    ],
+    "length_m": 8.0,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "783055749#0",
+    "name": "Elizabeth Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     783055749
+    ],
+    "length_m": 27.0,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "783079775",
+    "name": "Elizabeth Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     783079775
+    ],
+    "length_m": 24.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "791852718#0",
+    "name": "Graham Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     791852718
+    ],
+    "length_m": 36.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "791852719#2",
+    "name": "Graham Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     791852719
+    ],
+    "length_m": 42.0,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "8029944#0",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     8029944,
+     1461663439
+    ],
+    "length_m": 151.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "8066124",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     8066124
+    ],
+    "length_m": 1834.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "8066126",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     8066126
+    ],
+    "length_m": 1350.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "866530861#0",
+    "name": "Nicholson Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     866530861
+    ],
+    "length_m": 149.8,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "878771433#1",
+    "name": "Abbotsford Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     878771433,
+     569461854
+    ],
+    "length_m": 7.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708807",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     959708807
+    ],
+    "length_m": 111.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708807-AddedOnRampEdge",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     959708807
+    ],
+    "length_m": 94.5,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708808",
+    "name": "West Gate Tunnel Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     959708808
+    ],
+    "length_m": 94.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708835",
+    "name": "West Gate Tunnel",
+    "type": "highway.trunk",
+    "osm_ways": [
+     959708835,
+     959708831,
+     959708826,
+     584536011,
+     1500972709
+    ],
+    "length_m": 270.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708836",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     959708836,
+     974005396,
+     959708829,
+     974005398
+    ],
+    "length_m": 140.4,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708837",
+    "name": "West Gate Tunnel",
+    "type": "highway.motorway",
+    "osm_ways": [
+     959708837
+    ],
+    "length_m": 60.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708838",
+    "name": "West Gate Tunnel",
+    "type": "highway.motorway",
+    "osm_ways": [
+     959708838
+    ],
+    "length_m": 29.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708839",
+    "name": "West Gate Tunnel",
+    "type": "highway.motorway",
+    "osm_ways": [
+     959708839
+    ],
+    "length_m": 49.7,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708840",
+    "name": "West Gate Tunnel",
+    "type": "highway.motorway",
+    "osm_ways": [
+     959708840
+    ],
+    "length_m": 13.5,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "959708841",
+    "name": "West Gate Tunnel",
+    "type": "highway.motorway",
+    "osm_ways": [
+     959708841,
+     1500954779
+    ],
+    "length_m": 49.8,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "963120941#0",
+    "name": "Queensberry Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     963120941
+    ],
+    "length_m": 22.4,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "963120941#1",
+    "name": "Queensberry Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     963120941
+    ],
+    "length_m": 33.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "963198884",
+    "name": "Albert Road",
+    "type": "highway.residential",
+    "osm_ways": [
+     963198884
+    ],
+    "length_m": 3.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "963198885",
+    "name": "Albert Road",
+    "type": "highway.residential",
+    "osm_ways": [
+     963198885
+    ],
+    "length_m": 2.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "965130917",
+    "name": "Lothian Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     965130917
+    ],
+    "length_m": 33.0,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "966333227",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     966333227,
+     966333228,
+     33111418
+    ],
+    "length_m": 93.0,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "966333227-AddedOnRampEdge",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     966333227,
+     966333228,
+     33111418
+    ],
+    "length_m": 96.7,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "972298759#1",
+    "name": null,
+    "type": "highway.residential",
+    "osm_ways": [
+     972298759
+    ],
+    "length_m": 7.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "972298759#2",
+    "name": null,
+    "type": "highway.residential",
+    "osm_ways": [
+     972298759
+    ],
+    "length_m": 6.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "972298759#3",
+    "name": null,
+    "type": "highway.residential",
+    "osm_ways": [
+     972298759
+    ],
+    "length_m": 9.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "974005397",
+    "name": "West Gate Tunnel",
+    "type": "highway.trunk",
+    "osm_ways": [
+     974005397
+    ],
+    "length_m": 1.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "979747254",
+    "name": "Queens Road",
+    "type": "highway.residential",
+    "osm_ways": [
+     979747254,
+     27555969
+    ],
+    "length_m": 11.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "979758334",
+    "name": "Kings Way",
+    "type": "highway.trunk",
+    "osm_ways": [
+     979758334
+    ],
+    "length_m": 21.1,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "979758338",
+    "name": "Kings Way",
+    "type": "highway.trunk",
+    "osm_ways": [
+     979758338
+    ],
+    "length_m": 18.2,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "979758341#0",
+    "name": "Albert Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     979758341
+    ],
+    "length_m": 7.5,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "979758341#1",
+    "name": "Albert Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     979758341
+    ],
+    "length_m": 1.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "979766828",
+    "name": null,
+    "type": "highway.residential",
+    "osm_ways": [
+     979766828
+    ],
+    "length_m": 9.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "979766829",
+    "name": "Albert Road",
+    "type": "highway.residential",
+    "osm_ways": [
+     979766829
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "979766831",
+    "name": "Albert Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     979766831,
+     780554652
+    ],
+    "length_m": 4.7,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "981835905",
+    "name": "Princes Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     981835905
+    ],
+    "length_m": 7.3,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "984822387",
+    "name": "Dorcas Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     984822387,
+     1252211342,
+     330761846
+    ],
+    "length_m": 47.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "984822391",
+    "name": "Ingles Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     984822391
+    ],
+    "length_m": 0.2,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "985032686",
+    "name": "Wellington Parade",
+    "type": "highway.secondary",
+    "osm_ways": [
+     985032686,
+     131724934
+    ],
+    "length_m": 101.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "985032687",
+    "name": "Wellington Parade",
+    "type": "highway.primary",
+    "osm_ways": [
+     985032687,
+     782632127
+    ],
+    "length_m": 74.9,
+    "class": "entry",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "985032690#1",
+    "name": "Wellington Parade",
+    "type": "highway.primary",
+    "osm_ways": [
+     985032690
+    ],
+    "length_m": 0.3,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "985032691",
+    "name": "Wellington Parade",
+    "type": "highway.primary",
+    "osm_ways": [
+     985032691,
+     985032692
+    ],
+    "length_m": 58.7,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "985384185",
+    "name": "Batman Avenue",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     985384185
+    ],
+    "length_m": 0.6,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   },
+   {
+    "edge": "985384186",
+    "name": "Batman Avenue",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     985384186,
+     985384187,
+     198732231
+    ],
+    "length_m": 52.9,
+    "class": "exit",
+    "where": "buffer_ring",
+    "boundary_through_route": true
+   }
+  ],
+  "dead_ends": 47,
+  "dead_ends_by_place": {
+   "sim_area": 3,
+   "buffer_ring": 44
+  },
+  "dead_end_edges": [
+   {
+    "edge": "-61462160#1",
+    "name": "Southgate Avenue",
+    "type": "highway.residential",
+    "osm_ways": [
+     61462160
+    ],
+    "length_m": 32.0,
+    "lon": 144.967217,
+    "lat": -37.820176,
+    "where": "sim_area",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "-770785289#0",
+    "name": "Dallas Brooks Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     770785289,
+     1334394175
+    ],
+    "length_m": 74.6,
+    "lon": 144.976853,
+    "lat": -37.830332,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1040966874",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     1040966874
+    ],
+    "length_m": 215.3,
+    "lon": 144.935887,
+    "lat": -37.80236,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1097194665#2",
+    "name": "Elizabeth Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     1097194665
+    ],
+    "length_m": 25.9,
+    "lon": 144.957619,
+    "lat": -37.802332,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1123814313",
+    "name": "Errol Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1123814313
+    ],
+    "length_m": 0.2,
+    "lon": 144.949574,
+    "lat": -37.802904,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1126817968",
+    "name": "Pelham Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1126817968
+    ],
+    "length_m": 9.5,
+    "lon": 144.961887,
+    "lat": -37.802348,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1230755648",
+    "name": "Queen Street",
+    "type": "highway.living_street",
+    "osm_ways": [
+     1230755648,
+     62259841,
+     255866153
+    ],
+    "length_m": 153.7,
+    "lon": 144.958141,
+    "lat": -37.806368,
+    "where": "sim_area",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1252211343#1",
+    "name": "Dorcas Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     1252211343,
+     1021617921
+    ],
+    "length_m": 42.6,
+    "lon": 144.951814,
+    "lat": -37.835547,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1274748259",
+    "name": "Victoria Parade",
+    "type": "highway.primary",
+    "osm_ways": [
+     1274748259
+    ],
+    "length_m": 26.6,
+    "lon": 144.978316,
+    "lat": -37.808253,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1274774854",
+    "name": "Peel Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     1274774854,
+     1123779621,
+     1007895011
+    ],
+    "length_m": 144.2,
+    "lon": 144.956492,
+    "lat": -37.802389,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1286706403",
+    "name": "St Kilda Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     1286706403
+    ],
+    "length_m": 15.9,
+    "lon": 144.975465,
+    "lat": -37.835662,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "1291928546",
+    "name": "Leveson Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     1291928546,
+     25927670
+    ],
+    "length_m": 87.1,
+    "lon": 144.9512,
+    "lat": -37.80231,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "135984687#3",
+    "name": "Swanston Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     135984687
+    ],
+    "length_m": 61.5,
+    "lon": 144.963507,
+    "lat": -37.802652,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "15857084",
+    "name": "Kings Way",
+    "type": "highway.trunk",
+    "osm_ways": [
+     15857084
+    ],
+    "length_m": 0.2,
+    "lon": 144.972218,
+    "lat": -37.835624,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "160464614#1",
+    "name": "Leicester Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     160464614
+    ],
+    "length_m": 128.0,
+    "lon": 144.960538,
+    "lat": -37.802509,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "184852957#2",
+    "name": "Barry Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     184852957
+    ],
+    "length_m": 0.2,
+    "lon": 144.959411,
+    "lat": -37.802319,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "190863997#5",
+    "name": "Lygon Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     190863997
+    ],
+    "length_m": 22.2,
+    "lon": 144.966561,
+    "lat": -37.802509,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "198732231#1",
+    "name": "Batman Avenue",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     198732231
+    ],
+    "length_m": 6.6,
+    "lon": 144.978401,
+    "lat": -37.823182,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "22739070#3",
+    "name": "Albert Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     22739070
+    ],
+    "length_m": 95.9,
+    "lon": 144.935916,
+    "lat": -37.835385,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "22757634",
+    "name": "Drummond Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     22757634
+    ],
+    "length_m": 0.8,
+    "lon": 144.968008,
+    "lat": -37.802818,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "24590170",
+    "name": "Government House Drive",
+    "type": "highway.unclassified",
+    "osm_ways": [
+     24590170
+    ],
+    "length_m": 124.2,
+    "lon": 144.974138,
+    "lat": -37.827007,
+    "where": "sim_area",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "255624922#1",
+    "name": "Footscray Road Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     255624922
+    ],
+    "length_m": 19.7,
+    "lon": 144.931666,
+    "lat": -37.809279,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "289975602",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     289975602,
+     1054956687,
+     5607536
+    ],
+    "length_m": 673.2,
+    "lon": 144.931772,
+    "lat": -37.820949,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "296377646#0",
+    "name": "Williamstown Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     296377646
+    ],
+    "length_m": 93.0,
+    "lon": 144.931626,
+    "lat": -37.833745,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "30810233",
+    "name": "Peckville Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     30810233
+    ],
+    "length_m": 84.4,
+    "lon": 144.935866,
+    "lat": -37.83538,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "330761841#4",
+    "name": "Pickles Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     330761841
+    ],
+    "length_m": 67.8,
+    "lon": 144.949104,
+    "lat": -37.835583,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "386879409",
+    "name": "Footscray Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     386879409
+    ],
+    "length_m": 6.6,
+    "lon": 144.931806,
+    "lat": -37.809268,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "484854832",
+    "name": "West Gate Freeway",
+    "type": "highway.motorway",
+    "osm_ways": [
+     484854832,
+     28119418
+    ],
+    "length_m": 372.6,
+    "lon": 144.932033,
+    "lat": -37.826342,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "484854835",
+    "name": "West Gate Out-CityLink Out Ramp",
+    "type": "highway.motorway",
+    "osm_ways": [
+     484854835,
+     484854834,
+     321793594
+    ],
+    "length_m": 643.8,
+    "lon": 144.931766,
+    "lat": -37.826571,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "486810543",
+    "name": "West Gate Tunnel Offramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     486810543
+    ],
+    "length_m": 528.5,
+    "lon": 144.931819,
+    "lat": -37.809173,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "55960421#1",
+    "name": "Victoria Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     55960421
+    ],
+    "length_m": 25.7,
+    "lon": 144.943035,
+    "lat": -37.804425,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "62260499#3",
+    "name": "Chetwynd Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     62260499
+    ],
+    "length_m": 71.3,
+    "lon": 144.952635,
+    "lat": -37.802521,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "62681840#1",
+    "name": "Munster Terrace",
+    "type": "highway.residential",
+    "osm_ways": [
+     62681840
+    ],
+    "length_m": 205.2,
+    "lon": 144.942385,
+    "lat": -37.802329,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "68862363#0",
+    "name": "Howard Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     68862363
+    ],
+    "length_m": 123.3,
+    "lon": 144.954203,
+    "lat": -37.802313,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "69022733#1",
+    "name": "Lansdowne Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     69022733
+    ],
+    "length_m": 53.8,
+    "lon": 144.978365,
+    "lat": -37.809236,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "712164960",
+    "name": "Lothian Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     712164960
+    ],
+    "length_m": 2.6,
+    "lon": 144.94454,
+    "lat": -37.802366,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "775918877",
+    "name": "Citylink Onramp",
+    "type": "highway.motorway_link",
+    "osm_ways": [
+     775918877,
+     33111421
+    ],
+    "length_m": 136.6,
+    "lon": 144.935732,
+    "lat": -37.802355,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "780555124",
+    "name": "Albert Road",
+    "type": "highway.primary",
+    "osm_ways": [
+     780555124,
+     979770620
+    ],
+    "length_m": 8.0,
+    "lon": 144.970833,
+    "lat": -37.835567,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "791852719#2",
+    "name": "Graham Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     791852719
+    ],
+    "length_m": 42.0,
+    "lon": 144.93478,
+    "lat": -37.835542,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "8066124",
+    "name": "CityLink",
+    "type": "highway.motorway",
+    "osm_ways": [
+     8066124
+    ],
+    "length_m": 1834.6,
+    "lon": 144.989757,
+    "lat": -37.824934,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "866530861#0",
+    "name": "Nicholson Street",
+    "type": "highway.primary",
+    "osm_ways": [
+     866530861
+    ],
+    "length_m": 149.8,
+    "lon": 144.973959,
+    "lat": -37.802688,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "878771433#1",
+    "name": "Abbotsford Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     878771433,
+     569461854
+    ],
+    "length_m": 7.3,
+    "lon": 144.945507,
+    "lat": -37.802416,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "959708840",
+    "name": "West Gate Tunnel",
+    "type": "highway.motorway",
+    "osm_ways": [
+     959708840
+    ],
+    "length_m": 13.5,
+    "lon": 144.931709,
+    "lat": -37.807862,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "965130917",
+    "name": "Lothian Street",
+    "type": "highway.residential",
+    "osm_ways": [
+     965130917
+    ],
+    "length_m": 33.0,
+    "lon": 144.944136,
+    "lat": -37.804719,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "979766828",
+    "name": null,
+    "type": "highway.residential",
+    "osm_ways": [
+     979766828
+    ],
+    "length_m": 9.2,
+    "lon": 144.971082,
+    "lat": -37.835465,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "984822391",
+    "name": "Ingles Street",
+    "type": "highway.tertiary",
+    "osm_ways": [
+     984822391
+    ],
+    "length_m": 0.2,
+    "lon": 144.948717,
+    "lat": -37.835682,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   },
+   {
+    "edge": "985032691",
+    "name": "Wellington Parade",
+    "type": "highway.primary",
+    "osm_ways": [
+     985032691,
+     985032692
+    ],
+    "length_m": 58.7,
+    "lon": 144.978287,
+    "lat": -37.815539,
+    "where": "buffer_ring",
+    "turnaround_possible": false
+   }
+  ],
+  "trap_loops": [
+   {
+    "where": "buffer_ring",
+    "edges": [
+     {
+      "edge": "-253906606#0",
+      "name": "Bromby Street",
+      "type": "highway.residential",
+      "osm_ways": [
+       253906606
+      ],
+      "length_m": 76.5
+     },
+     {
+      "edge": "-253906606#3",
+      "name": "Bromby Street",
+      "type": "highway.residential",
+      "osm_ways": [
+       253906606
+      ],
+      "length_m": 130.6
+     },
+     {
+      "edge": "253906606#1",
+      "name": "Bromby Street",
+      "type": "highway.residential",
+      "osm_ways": [
+       253906606
+      ],
+      "length_m": 130.6
+     },
+     {
+      "edge": "-253906314",
+      "name": "Arnold Street",
+      "type": "highway.residential",
+      "osm_ways": [
+       253906314,
+       22944324
+      ],
+      "length_m": 47.9
+     },
+     {
+      "edge": "22944324#0",
+      "name": "Arnold Street",
+      "type": "highway.residential",
+      "osm_ways": [
+       22944324,
+       253906314
+      ],
+      "length_m": 47.9
+     },
+     {
+      "edge": "253906606#0",
+      "name": "Bromby Street",
+      "type": "highway.residential",
+      "osm_ways": [
+       253906606
+      ],
+      "length_m": 76.5
+     },
+     {
+      "edge": "22944325",
+      "name": "Adams Street",
+      "type": "highway.residential",
+      "osm_ways": [
+       22944325
+      ],
+      "length_m": 47.0
+     },
+     {
+      "edge": "-22944325",
+      "name": "Adams Street",
+      "type": "highway.residential",
+      "osm_ways": [
+       22944325
+      ],
+      "length_m": 47.0
+     }
+    ]
+   }
+  ]
+ },
+ "grade_separation": {
+  "car_way_crossings_without_shared_node": 231,
+  "grade_separated_crossings": 231,
+  "same_level_crossings_without_junction": [],
+  "grade_separated_joined_by_a_junction": [],
+  "connections": 7923,
+  "connections_traced_to_osm": 7920,
+  "untraced_connections": [
+   {
+    "from": "724454904#1",
+    "to": "override_724454905",
+    "junction": "3313134384",
+    "from_name": "Flinders Street",
+    "to_name": "Flinders Street",
+    "levels_differ": false
+   },
+   {
+    "from": "981208579",
+    "to": "38315382#0",
+    "junction": "cluster_1883787502_2074161379_36823157_36823654_#10more",
+    "from_name": "Convention Centre Place",
+    "to_name": "Convention Centre Place",
+    "levels_differ": false
+   },
+   {
+    "from": "override_724454905",
+    "to": "790262282#0",
+    "junction": "cluster_2187874243_3313134379_3313134381_3313134382_#4more",
+    "from_name": "Flinders Street",
+    "to_name": "Flinders Street",
+    "levels_differ": false
+   }
+  ],
+  "untraced_with_level_mismatch": [],
+  "grade_separated_examples": [
+   {
+    "lon": 144.96558,
+    "lat": -37.826504,
+    "way_a": 5234624,
+    "name_a": "CityLink",
+    "level_a": [
+     0,
+     ""
+    ],
+    "way_b": 5234831,
+    "name_b": "Power Street",
+    "level_b": [
+     1,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.965663,
+    "lat": -37.826487,
+    "way_a": 5234624,
+    "name_a": "CityLink",
+    "level_a": [
+     0,
+     ""
+    ],
+    "way_b": 172516956,
+    "name_b": "Power Street",
+    "level_b": [
+     1,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.965729,
+    "lat": -37.826617,
+    "way_a": 5234646,
+    "name_a": "CityLink",
+    "level_a": [
+     0,
+     ""
+    ],
+    "way_b": 5234818,
+    "name_b": "Power Street",
+    "level_b": [
+     1,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.965645,
+    "lat": -37.826637,
+    "way_a": 5234646,
+    "name_a": "CityLink",
+    "level_a": [
+     0,
+     ""
+    ],
+    "way_b": 5234831,
+    "name_b": "Power Street",
+    "level_b": [
+     1,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.961779,
+    "lat": -37.82722,
+    "way_a": 5234752,
+    "name_a": "Kings Way",
+    "level_a": [
+     0,
+     ""
+    ],
+    "way_b": 38313389,
+    "name_b": "West Gate In-Kings Ramp Of",
+    "level_b": [
+     2,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.965811,
+    "lat": -37.826797,
+    "way_a": 5234818,
+    "name_a": "Power Street",
+    "level_a": [
+     1,
+     "bridge"
+    ],
+    "way_b": 5234957,
+    "name_b": "Citylink In-Kings Ramp Of",
+    "level_b": [
+     0,
+     ""
+    ]
+   },
+   {
+    "lon": 144.965435,
+    "lat": -37.826255,
+    "way_a": 5234831,
+    "name_a": "Power Street",
+    "level_a": [
+     1,
+     "bridge"
+    ],
+    "way_b": 1175874270,
+    "name_b": "Kings - CityLink Out Ramp On",
+    "level_b": [
+     0,
+     ""
+    ]
+   },
+   {
+    "lon": 144.963771,
+    "lat": -37.82685,
+    "way_a": 5234946,
+    "name_a": "West Gate In-Power Ramp Of",
+    "level_a": [
+     1,
+     "bridge"
+    ],
+    "way_b": 26619046,
+    "name_b": "West Gate In - Kings Ramp Of",
+    "level_b": [
+     2,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.963381,
+    "lat": -37.826769,
+    "way_a": 5234953,
+    "name_a": "Kings - CityLink Out Ramp On",
+    "level_a": [
+     0,
+     ""
+    ],
+    "way_b": 26619046,
+    "name_b": "West Gate In - Kings Ramp Of",
+    "level_b": [
+     2,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.964774,
+    "lat": -37.826319,
+    "way_a": 5234953,
+    "name_a": "Kings - CityLink Out Ramp On",
+    "level_a": [
+     0,
+     ""
+    ],
+    "way_b": 50123940,
+    "name_b": "West Gate In - Power Ramp Of",
+    "level_b": [
+     1,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.965725,
+    "lat": -37.826827,
+    "way_a": 5234957,
+    "name_a": "Citylink In-Kings Ramp Of",
+    "level_a": [
+     0,
+     ""
+    ],
+    "way_b": 19012681,
+    "name_b": "Power Street",
+    "level_b": [
+     1,
+     "bridge"
+    ]
+   },
+   {
+    "lon": 144.959872,
+    "lat": -37.828396,
+    "way_a": 5234971,
+    "name_a": "Kings-West Gate Out Ramp On",
+    "level_a": [
+     2,
+     "bridge"
+    ],
+    "way_b": 26664760,
+    "name_b": "Clarke Street",
+    "level_b": [
+     0,
+     ""
+    ]
+   },
+   {
+    "lon": 144.961133,
+    "lat": -37.828095,
+    "way_a": 5234971,
+    "name_a": "Kings-West Gate Out Ramp On",
+    "level_a": [
+     2,
+     "bridge"
+    ],
+    "way_b": 51253611,
+    "name_b": "Moray Street",
+    "level_b": [
+     0,
+     ""
+    ]
+   },
+   {
+    "lon": 144.958459,
+    "lat": -37.828559,
+    "way_a": 5234971,
+    "name_a": "Kings-West Gate Out Ramp On",
+    "level_a": [
+     2,
+     "bridge"
+    ],
+    "way_b": 718619754,
+    "name_b": "Clarendon Street",
+    "level_b": [
+     0,
+     ""
+    ]
+   },
+   {
+    "lon": 144.958592,
+    "lat": -37.828552,
+    "way_a": 5234971,
+    "name_a": "Kings-West Gate Out Ramp On",
+    "level_a": [
+     2,
+     "bridge"
+    ],
+    "way_b": 217597350,
+    "name_b": "Clarendon Street",
+    "level_b": [
+     0,
+     ""
+    ]
+   }
+  ]
+ },
+ "ramps": {
+  "ramp_ways": 166,
+  "expected_movements": 207,
+  "movements_banned_by_osm_restrictions": 31,
+  "missing_sharp_turns": 0,
+  "missing_movements": [],
+  "untraced_connections_on_ramps": []
+ },
+ "car_free": {
+  "raw_ways_in_extract_bbox": 14586,
+  "overridden_by_decision": [
+   {
+    "edge": "override_724454905",
+    "overrides_osm_way": 724454905,
+    "osm_says": "motor access=no",
+    "name": "Flinders Street",
+    "why": "opened by decision (PLAN.md Decisions log), see sim/patches/osm/"
+   }
+  ],
+  "ways_cars_may_not_use": 10192,
+  "by_reason": {
+   "highway=footway": 5978,
+   "highway=service (not a passenger road in SUMO's typemap)": 1730,
+   "highway=steps": 771,
+   "highway=cycleway": 437,
+   "highway=corridor": 402,
+   "highway=pedestrian": 364,
+   "motor access=private": 250,
+   "highway=path": 98,
+   "motor access=no": 58,
+   "highway=construction": 48,
+   "highway=elevator": 18,
+   "motor access=permit": 11,
+   "highway=busway": 11,
+   "highway=proposed": 9,
+   "highway=services": 3,
+   "highway=track": 2,
+   "highway=platform": 2
+  },
+  "of_which_have_car_edges": [],
+  "named_checks": [
+   {
+    "check": "Swanston Street, Flinders St to La Trobe St",
+    "osm_car_free_ways": 33,
+    "why": [
+     [
+      "highway=cycleway",
+      16
+     ],
+     [
+      "motor access=no",
+      9
+     ],
+     [
+      "motor access=permit",
+      8
+     ]
+    ],
+    "car_ways_with_edges": [],
+    "car_edges_along_corridor": []
+   },
+   {
+    "check": "Bourke Street Mall, Elizabeth St to Swanston St",
+    "osm_car_free_ways": 2,
+    "why": [
+     [
+      "highway=pedestrian",
+      2
+     ]
+    ],
+    "car_ways_with_edges": [],
+    "car_edges_along_corridor": []
+   },
+   {
+    "check": "Laneways in the simulated area (service/pedestrian/footway/living_street ways named ...Lane/Place/Alley/Walk/Arcade/Way/Court)",
+    "osm_ways": 578,
+    "names": 379,
+    "car_free_with_car_edges": [],
+    "shared_zones_kept": [
+     "Adela Lane",
+     "Carson Place",
+     "Electric Place",
+     "Glenti Place",
+     "Heffernan Lane",
+     "Highlander Lane",
+     "Import Lane",
+     "Literature Lane",
+     "Rothsay Lane",
+     "Sailmaker Way",
+     "Sargood Lane",
+     "Somerset Place",
+     "Sugden Place",
+     "Tom Thumb Lane",
+     "Waratah Place"
+    ],
+    "shared_zones_note": "highway=living_street laneways are legal for cars (shared zone, 10 km/h), so they stay in the network; listed for review",
+    "named_examples": {
+     "Degraves Street": {
+      "osm_ways": 4,
+      "highway": [
+       "pedestrian"
+      ],
+      "with_car_edges": []
+     },
+     "Centre Place": {
+      "osm_ways": 3,
+      "highway": [
+       "footway",
+       "pedestrian"
+      ],
+      "with_car_edges": []
+     },
+     "Hosier Lane": {
+      "osm_ways": 2,
+      "highway": [
+       "service"
+      ],
+      "with_car_edges": []
+     },
+     "AC/DC Lane": {
+      "osm_ways": 1,
+      "highway": [
+       "service"
+      ],
+      "with_car_edges": []
+     },
+     "Hardware Lane": {
+      "osm_ways": 5,
+      "highway": [
+       "pedestrian"
+      ],
+      "with_car_edges": []
+     },
+     "Block Place": {
+      "osm_ways": 2,
+      "highway": [
+       "footway",
+       "pedestrian"
+      ],
+      "with_car_edges": []
+     },
+     "Howey Place": {
+      "osm_ways": 3,
+      "highway": [
+       "pedestrian"
+      ],
+      "with_car_edges": []
+     },
+     "Royal Arcade": {
+      "osm_ways": 6,
+      "highway": [
+       "footway"
+      ],
+      "with_car_edges": []
+     },
+     "Duckboard Place": {
+      "osm_ways": 1,
+      "highway": [
+       "service"
+      ],
+      "with_car_edges": []
+     },
+     "Rutledge Lane": {
+      "osm_ways": 1,
+      "highway": [
+       "service"
+      ],
+      "with_car_edges": []
+     }
+    }
+   }
+  ]
+ },
+ "routing": [
+  {
+   "trip": "CBD (Collins St at William St) -> West Gate Fwy westbound",
+   "from_edge": "207831319#0",
+   "to_edge": "296377256",
+   "roads": [
+    "Collins Street",
+    "Spencer Street",
+    "Flinders Street",
+    "Wurundjeri Way",
+    "Montague Street",
+    "Montague - West Gate Out Ramp On",
+    "Montague-West Gate Out Ramp On",
+    "West Gate Freeway"
+   ],
+   "edges": 31,
+   "length_km": 1.98,
+   "straight_line_km": 1.98,
+   "detour_ratio": 1.0,
+   "free_flow_min": 2.2,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Docklands (Docklands Dr) -> St Kilda Rd southbound at Domain",
+   "from_edge": "325560846",
+   "to_edge": "216569127",
+   "roads": [
+    "Docklands Drive",
+    "Dudley Street",
+    "(primary)",
+    "Wurundjeri Way",
+    "Flinders Street",
+    "Kings Way",
+    "Dorcas Street",
+    "(residential)",
+    "Dorcas Street",
+    "(primary_link)",
+    "St Kilda Road"
+   ],
+   "edges": 53,
+   "length_km": 3.74,
+   "straight_line_km": 3.45,
+   "detour_ratio": 1.08,
+   "free_flow_min": 4.1,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Southbank (Southbank Blvd) -> Docklands (Harbour Esplanade)",
+   "from_edge": "581717497#0",
+   "to_edge": "569460355#1",
+   "roads": [
+    "Southbank Boulevard",
+    "City Road",
+    "Power Street",
+    "Whiteman Street",
+    "Clarendon Street",
+    "Spencer Street",
+    "(primary_link)",
+    "Flinders Street",
+    "Wurundjeri Way",
+    "Batmans Hill Drive",
+    "Bourke Street",
+    "Harbour Esplanade"
+   ],
+   "edges": 45,
+   "length_km": 2.46,
+   "straight_line_km": 2.16,
+   "detour_ratio": 1.14,
+   "free_flow_min": 3.1,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Flinders St (at Elizabeth St) -> La Trobe St (at Elizabeth St)",
+   "from_edge": "386416108#1",
+   "to_edge": "664287429",
+   "roads": [
+    "Flinders Street",
+    "Elizabeth Street",
+    "La Trobe Street"
+   ],
+   "edges": 11,
+   "length_km": 1.06,
+   "straight_line_km": 0.98,
+   "detour_ratio": 1.08,
+   "free_flow_min": 1.6,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Kings Way (northbound at Sturt St) -> CityLink eastbound (Domain/Burnley)",
+   "from_edge": "980098306#0",
+   "to_edge": "8066124",
+   "roads": [
+    "Kings Way",
+    "Kings-Citylink Out Ramp On",
+    "Kings Way Onramp",
+    "Kings - CityLink Out Ramp On",
+    "Kings-CityLink Out Ramp On",
+    "CityLink"
+   ],
+   "edges": 13,
+   "length_km": 2.77,
+   "straight_line_km": 2.29,
+   "detour_ratio": 1.21,
+   "free_flow_min": 2.2,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Spencer St (north, at Dudley St) -> Flinders St (at Spring St)",
+   "from_edge": "965367482",
+   "to_edge": "1137441737",
+   "roads": [
+    "Spencer Street",
+    "Dudley Street",
+    "(primary)",
+    "Peel Street",
+    "Victoria Street",
+    "Exhibition Street",
+    "Flinders Street"
+   ],
+   "edges": 42,
+   "length_km": 2.48,
+   "straight_line_km": 2.15,
+   "detour_ratio": 1.16,
+   "free_flow_min": 3.1,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Exhibition St (at La Trobe St) -> Sturt St Southbank",
+   "from_edge": "45368568#2",
+   "to_edge": "581037861",
+   "roads": [
+    "Exhibition Street",
+    "Lonsdale Street",
+    "Russell Street",
+    "Flinders Street",
+    "Swanston Street",
+    "Princes Bridge",
+    "St Kilda Road",
+    "Southbank Boulevard",
+    "Sturt Street"
+   ],
+   "edges": 30,
+   "length_km": 2.15,
+   "straight_line_km": 1.94,
+   "detour_ratio": 1.11,
+   "free_flow_min": 2.9,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "St Kilda Rd northbound (Domain) -> Docklands (Harbour Esplanade)",
+   "from_edge": "1172330761",
+   "to_edge": "569460355#1",
+   "roads": [
+    "St Kilda Road",
+    "Coventry Street",
+    "(residential)",
+    "Coventry Street",
+    "(residential)",
+    "Coventry Street",
+    "Sturt Street",
+    "Dorcas Street",
+    "Kings Way",
+    "(tertiary_link)",
+    "Moray Street",
+    "Catherine Street",
+    "Clarke Street",
+    "City Road",
+    "Clarendon Street",
+    "Spencer Street",
+    "(primary_link)",
+    "Flinders Street",
+    "Wurundjeri Way",
+    "Batmans Hill Drive",
+    "Bourke Street",
+    "Harbour Esplanade"
+   ],
+   "edges": 69,
+   "length_km": 3.17,
+   "straight_line_km": 2.82,
+   "detour_ratio": 1.12,
+   "free_flow_min": 3.8,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "West Gate Fwy eastbound -> CBD (Collins St at Queen St)",
+   "from_edge": "484854831#0",
+   "to_edge": "1123528665#3",
+   "roads": [
+    "Citylink In-West Gate In Ramp",
+    "West Gate Freeway",
+    "West Gate In-Power Ramp Of",
+    "West Gate In - Power Ramp Of",
+    "Power Street",
+    "Queens Bridge Street",
+    "William Street",
+    "Collins Street"
+   ],
+   "edges": 29,
+   "length_km": 3.71,
+   "straight_line_km": 2.31,
+   "detour_ratio": 1.6,
+   "free_flow_min": 3.4,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Footscray Rd eastbound -> Spring St",
+   "from_edge": "207128341",
+   "to_edge": "576912521",
+   "roads": [
+    "Footscray Road",
+    "Dudley Street",
+    "(primary)",
+    "Peel Street",
+    "Victoria Street",
+    "Victoria Parade",
+    "Nicholson Street",
+    "Spring Street"
+   ],
+   "edges": 62,
+   "length_km": 3.75,
+   "straight_line_km": 3.59,
+   "detour_ratio": 1.04,
+   "free_flow_min": 4.2,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Wurundjeri Way southbound -> Montague St (South Melbourne)",
+   "from_edge": "580628689#0",
+   "to_edge": "-1463867020#0",
+   "roads": [
+    "Wurundjeri Way",
+    "Bourke Street",
+    "Batmans Hill Drive",
+    "Wurundjeri Way",
+    "Montague Street"
+   ],
+   "edges": 32,
+   "length_km": 1.58,
+   "straight_line_km": 1.68,
+   "detour_ratio": 0.94,
+   "free_flow_min": 1.8,
+   "uturns": [],
+   "flags": []
+  },
+  {
+   "trip": "Batman Ave westbound -> Southern Cross Station (Spencer St)",
+   "from_edge": "7244092",
+   "to_edge": "206506959#0",
+   "roads": [
+    "Batman Avenue",
+    "Flinders Street",
+    "William Street",
+    "Flinders Lane",
+    "King Street",
+    "Little Collins Street",
+    "Spencer Street"
+   ],
+   "edges": 25,
+   "length_km": 2.64,
+   "straight_line_km": 2.24,
+   "detour_ratio": 1.18,
+   "free_flow_min": 3.5,
+   "uturns": [],
+   "flags": []
+  }
+ ]
+}

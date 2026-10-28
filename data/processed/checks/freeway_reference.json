@@ -1,0 +1,7179 @@
+{
+ "description": "Reference volumes for checks only; never used for fitting.",
+ "licence": "Derived from DTP Historical Annual Average Daily Traffic Volume (2019) and DTP TIRTL Traffic Counts and Classification, CC BY 4.0, modified; see data/SOURCES.md",
+ "attribution": "Contains Department of Transport and Planning (Victoria) data, CC BY 4.0",
+ "aadt_2019": {
+  "note": "Directional AADT segments intersecting SIM_BBOX, matched to SUMO car edges by name, distance <= 25.0 m and travel bearing within 45.0 deg. 2019 is pre-COVID and pre-West Gate Tunnel.",
+  "segments_count": 456,
+  "segments_with_edges": 442,
+  "segments": [
+   {
+    "segment_id": 615,
+    "road_name": "ALEXANDRA AVENUE",
+    "description": "CITY RD E BD BTWN SOUTHBANK BVD & STURT ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 18810.0,
+    "heavy_vehicles_2019": 769.0,
+    "heavy_share_2019": 0.04,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 429,
+    "road_name": "WURUNDJERI WAY",
+    "description": "WURUNDJERI WAY SW BD BTWN FLINDERS ST & LORIMER ST/WESTGATE FWY",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 27187.0,
+    "heavy_vehicles_2019": 1571.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "398983313",
+     "68861815",
+     "787528070#1",
+     "984852766",
+     "984852797#2",
+     "984852798"
+    ]
+   },
+   {
+    "segment_id": 614,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD NE BD BTWN POWER ST & SOUTHBANK BVD",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 16567.0,
+    "heavy_vehicles_2019": 878.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "767313614#0",
+     "787583810"
+    ]
+   },
+   {
+    "segment_id": 1751,
+    "road_name": "KING STREET",
+    "description": "KING STREET S Bd btwn LATROBE STREET & LONSDALE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 16842.0,
+    "heavy_vehicles_2019": 1106.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581959669#0",
+     "963120901"
+    ]
+   },
+   {
+    "segment_id": 255,
+    "road_name": "ALEXANDRA AVENUE",
+    "description": "ALEXANDRA AVE E BD BTWN STURT ST & LINLITHGOW AVE",
+    "direction": "EAST BOUND",
+    "aadt_2019": 23735.0,
+    "heavy_vehicles_2019": 970.0,
+    "heavy_share_2019": 0.04,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-145391401#1",
+     "-145391401#2",
+     "-145391401#3",
+     "-985376434",
+     "-985376436",
+     "-985376441#1"
+    ]
+   },
+   {
+    "segment_id": 1944,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH ST S BD BTWN QUEENSBERRY ST & VICTORIA ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 11412.0,
+    "heavy_vehicles_2019": 749.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1183823613",
+     "1183823614",
+     "295463526#0",
+     "295463526#1",
+     "581989731",
+     "581989732",
+     "582018428",
+     "582018433",
+     "582018435#0",
+     "582018435#1",
+     "62110983",
+     "62205971#2"
+    ]
+   },
+   {
+    "segment_id": 1391,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET S Bd btwn LONSDALE STREET & BOURKE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9328.0,
+    "heavy_vehicles_2019": 612.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "616097570#0",
+     "616097570#2"
+    ]
+   },
+   {
+    "segment_id": 1986,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN SWANSTON ST (EAST) & CARDIGAN ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 18935.0,
+    "heavy_vehicles_2019": 1244.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1183823827#0"
+    ]
+   },
+   {
+    "segment_id": 2312,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN SWANSTON ST (WEST) & SWANSTON ST (EAST)",
+    "direction": "EAST BOUND",
+    "aadt_2019": 19943.0,
+    "heavy_vehicles_2019": 1310.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 1787,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET SEBd btwn HAWKE STREET & DUDLEY STREET",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 12537.0,
+    "heavy_vehicles_2019": 975.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "314394242#0",
+     "581658406",
+     "965116102#0",
+     "965367482"
+    ]
+   },
+   {
+    "segment_id": 1748,
+    "road_name": "DUDLEY STREET",
+    "description": "DUDLEY ST E BD BTWN WURUNDJERI WAY & ADDERLEY ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 17564.0,
+    "heavy_vehicles_2019": 1154.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "27007196#1",
+     "857155150"
+    ]
+   },
+   {
+    "segment_id": 1752,
+    "road_name": "KING STREET",
+    "description": "KING STREET S Bd btwn LONSDALE STREET & BOURKE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 19974.0,
+    "heavy_vehicles_2019": 1312.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "108715490#0",
+     "963120897#0"
+    ]
+   },
+   {
+    "segment_id": 1973,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET S Bd btwn DUDLEY STREET & LATROBE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9608.0,
+    "heavy_vehicles_2019": 747.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198874544#0",
+     "965116117#0",
+     "965116123#0"
+    ]
+   },
+   {
+    "segment_id": 1791,
+    "road_name": "PEEL STREET",
+    "description": "PEEL STREET S Bd btwn QUEENSBERRY STREET & VICTORIA STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9341.0,
+    "heavy_vehicles_2019": 540.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "10448453#2",
+     "1274774852"
+    ]
+   },
+   {
+    "segment_id": 2310,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN ELIZABETH ST & BOUVERIE ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 16911.0,
+    "heavy_vehicles_2019": 1111.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1183823823",
+     "1416090886",
+     "316628748",
+     "581989736",
+     "787180850",
+     "983871061",
+     "983871071"
+    ]
+   },
+   {
+    "segment_id": 1989,
+    "road_name": "VICTORIA PARADE",
+    "description": "VICTORIA PDE E BD BTWN NICHOLSON ST & GISBORNE ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 18505.0,
+    "heavy_vehicles_2019": 1216.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1183823835",
+     "159252295",
+     "206507106",
+     "576910899#0",
+     "783044491#0"
+    ]
+   },
+   {
+    "segment_id": 1371,
+    "road_name": "DUDLEY STREET",
+    "description": "DUDLEY ST E BD BTWN ADDERLEY ST & SPENCER ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 15227.0,
+    "heavy_vehicles_2019": 1000.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "30179552#0"
+    ]
+   },
+   {
+    "segment_id": 1939,
+    "road_name": "KING STREET",
+    "description": "KING STREET S Bd btwn BOURKE STREET & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 19287.0,
+    "heavy_vehicles_2019": 1267.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "711989781#0",
+     "711989781#2",
+     "711989781#3"
+    ]
+   },
+   {
+    "segment_id": 2311,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN BOUVERIE ST & SWANSTON ST (WEST)",
+    "direction": "EAST BOUND",
+    "aadt_2019": 18426.0,
+    "heavy_vehicles_2019": 1210.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1183823823",
+     "581989735",
+     "581989736"
+    ]
+   },
+   {
+    "segment_id": 2542,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST S BD BTWN NORMANBY RD & CITY RD",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 8198.0,
+    "heavy_vehicles_2019": 538.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "207519525#0",
+     "207519525#1",
+     "716923953#0",
+     "716923953#1"
+    ]
+   },
+   {
+    "segment_id": 3062,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD SW BD BTWN MONTAGUE ST & BOUNDARY ST",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 9788.0,
+    "heavy_vehicles_2019": 643.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "26786298#0",
+     "26786298#1",
+     "26786302#1"
+    ]
+   },
+   {
+    "segment_id": 2271,
+    "road_name": "DUDLEY STREET",
+    "description": "DUDLEY ST E BD BTWN SPENCER ST & KING ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 13711.0,
+    "heavy_vehicles_2019": 900.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198874547",
+     "30179549"
+    ]
+   },
+   {
+    "segment_id": 2273,
+    "road_name": "KING STREET",
+    "description": "KING STREET S Bd btwn COLLINS STREET & FLINDERS ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 19415.0,
+    "heavy_vehicles_2019": 1275.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "207516094#0",
+     "215312149#0"
+    ]
+   },
+   {
+    "segment_id": 1788,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET S Bd btwn LATROBE STREET & LONSDALE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 13659.0,
+    "heavy_vehicles_2019": 897.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126674043#0",
+     "1169295050"
+    ]
+   },
+   {
+    "segment_id": 2585,
+    "road_name": "FERRARS STREET",
+    "description": "FERRARS ST S BD BTWN YORK ST & DORCAS ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 10002.0,
+    "heavy_vehicles_2019": 657.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1124004889#2",
+     "1209937152#1"
+    ]
+   },
+   {
+    "segment_id": 613,
+    "road_name": "POWER STREET",
+    "description": "POWER ST NW BD BTWN WEST GATE FWY & KAVANAGH ST",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 14414.0,
+    "heavy_vehicles_2019": 764.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "327700106"
+    ]
+   },
+   {
+    "segment_id": 4903,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY SE BD BTWN SOUTHERN LINK TOLLWAY & OFFRAMP FROM WEST GATE FWY/YORK ST",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 24755.0,
+    "heavy_vehicles_2019": 555.0,
+    "heavy_share_2019": 0.02,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "485229677#0",
+     "485229677#1",
+     "5234752",
+     "980542677#0"
+    ]
+   },
+   {
+    "segment_id": 4543,
+    "road_name": "NORMANBY ROAD",
+    "description": "NORMANBY ROAD NEBd btwn WILLIAMSTOWN ROAD & MONTAGUE STREET",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 8982.0,
+    "heavy_vehicles_2019": 590.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1017793718#0",
+     "1017793718#1",
+     "1017793718#3",
+     "13078236#2"
+    ]
+   },
+   {
+    "segment_id": 4904,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY SE BD BTWN OFFRAMP FROM WEST GATE FWY/YORK ST & STURT ST",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 44091.0,
+    "heavy_vehicles_2019": 2338.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "569125159",
+     "979797345"
+    ]
+   },
+   {
+    "segment_id": 5235,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY SE BD BTWN SOUTHERN LINK TOLLWAY & OFFRAMP FROM WEST GATE FWY/YORK ST",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 19546.0,
+    "heavy_vehicles_2019": 1036.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198714840",
+     "485229677#0",
+     "485229677#1",
+     "980106004",
+     "980106005#0"
+    ]
+   },
+   {
+    "segment_id": 2744,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST S BD BTWN SPENCER ST & NORMANBY RD",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 11013.0,
+    "heavy_vehicles_2019": 723.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "208920310#0",
+     "208920310#1",
+     "208920310#3"
+    ]
+   },
+   {
+    "segment_id": 2156,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD SW BD BTWN FERRARS ST & MONTAGUE ST",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 7617.0,
+    "heavy_vehicles_2019": 500.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-444842203#1",
+     "26786302#0",
+     "26786302#1"
+    ]
+   },
+   {
+    "segment_id": 3661,
+    "road_name": "STURT STREET",
+    "description": "STURT STREET S Bd btwn ALEXANDRA AVENUE & SOUTHBANK BOULEVARD",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 1575.0,
+    "heavy_vehicles_2019": 103.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 3870,
+    "road_name": "NICHOLSON STREET",
+    "description": "NICHOLSON STREET S Bd btwn GERTRUDE STREET & VICTORIA PARADE",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 7408.0,
+    "heavy_vehicles_2019": 486.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "569718745#1",
+     "569719145",
+     "783052507",
+     "792324823"
+    ]
+   },
+   {
+    "segment_id": 3061,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD SW BD BTWN CECIL ST & FERRARS ST",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 11822.0,
+    "heavy_vehicles_2019": 776.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198994161#0",
+     "198994161#1",
+     "568380320"
+    ]
+   },
+   {
+    "segment_id": 6834,
+    "road_name": "PEEL STREET",
+    "description": "PEEL STREET S Bd btwn DUDLEY STREET & WILLIAM STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 6975.0,
+    "heavy_vehicles_2019": 451.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "69976421#0",
+     "893221975#0"
+    ]
+   },
+   {
+    "segment_id": 6840,
+    "road_name": "QUEEN STREET",
+    "description": "QUEEN STREET S Bd btwn LATROBE STREET & LONSDALE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9080.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "191505321#0",
+     "191505321#2"
+    ]
+   },
+   {
+    "segment_id": 7126,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA STREET E Bd btwn CHETWYND STREET & PEEL STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 6903.0,
+    "heavy_vehicles_2019": 447.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1122543868#1",
+     "1122543873#2",
+     "581989771#2"
+    ]
+   },
+   {
+    "segment_id": 7453,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET E Bd btwn FLINDERS STREET & BANANA ALLEY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 6135.0,
+    "heavy_vehicles_2019": 397.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1352485046",
+     "712187004#1"
+    ]
+   },
+   {
+    "segment_id": 7460,
+    "road_name": "YORK STREET",
+    "description": "YORK STREET E Bd btwn FERRARS STREET & CECIL STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4657.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-399135792#0",
+     "-59914396#0",
+     "-59914396#3"
+    ]
+   },
+   {
+    "segment_id": 233,
+    "road_name": "FOOTSCRAY ROAD",
+    "description": "WURUNDJERI WAY E BD BTWN FOOTSCRAY RD & DUDLEY ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 12140.0,
+    "heavy_vehicles_2019": 750.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 6861,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET S Bd btwn LATROBE STREET & LONSDALE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 12291.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "190727195#0",
+     "190727195#1"
+    ]
+   },
+   {
+    "segment_id": 232,
+    "road_name": "FOOTSCRAY ROAD",
+    "description": "FOOTSCRAY RD SE BD BTWN WESTERN LINK TOLLWAY & WURUNDJERI WAY",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 18540.0,
+    "heavy_vehicles_2019": 1039.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1068181379#0",
+     "207128342#0",
+     "27007166",
+     "31094523#1",
+     "569758998#0",
+     "569758998#1",
+     "6262171#1",
+     "6262172",
+     "782090435",
+     "790397544",
+     "985009843",
+     "985009844#1",
+     "985009850#1",
+     "985009852"
+    ]
+   },
+   {
+    "segment_id": 2155,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD SW BD BTWN CLARENDON ST & CECIL ST",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 10936.0,
+    "heavy_vehicles_2019": 718.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "39452127#1",
+     "581717494"
+    ]
+   },
+   {
+    "segment_id": 6880,
+    "road_name": "SPRING STREET",
+    "description": "SPRING STREET S Bd btwn BOURKE STREET & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 7578.0,
+    "heavy_vehicles_2019": 490.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "131724930",
+     "208678438#2",
+     "576912584#1"
+    ]
+   },
+   {
+    "segment_id": 7688,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET S Bd btwn BOURKE STREET & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9941.0,
+    "heavy_vehicles_2019": 644.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1293368917",
+     "505256329#1"
+    ]
+   },
+   {
+    "segment_id": 55,
+    "road_name": "FOOTSCRAY ROAD",
+    "description": "FOOTSCRAY RD E BD BTWN RAMPS AT WESTERN LINK TOLLWAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 14334.0,
+    "heavy_vehicles_2019": 803.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "207128341",
+     "569758998#0",
+     "6262171#1"
+    ]
+   },
+   {
+    "segment_id": 7368,
+    "road_name": "QUEEN STREET",
+    "description": "QUEEN STREET S Bd btwn COLLINS STREET & FLINDERS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 6804.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126800807#0",
+     "207831942#0"
+    ]
+   },
+   {
+    "segment_id": 7043,
+    "road_name": "QUEENS BRIDGE STREET",
+    "description": "QUEENSBRIDGE STREET S Bd btwn SOUTHBANK BOULEVARD & POWER STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9872.0,
+    "heavy_vehicles_2019": 639.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1018419583#0",
+     "46297971",
+     "581717495",
+     "665207988"
+    ]
+   },
+   {
+    "segment_id": 7385,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET S Bd btwn LONSDALE STREET & BOURKE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 10238.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1444413646#0",
+     "190727196#0"
+    ]
+   },
+   {
+    "segment_id": 6394,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn DOCKLANDS HIGHWAY & ADDERLEY STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 5262.0,
+    "heavy_vehicles_2019": 340.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1253825982#1",
+     "1253825985#1",
+     "1253825986",
+     "26431520"
+    ]
+   },
+   {
+    "segment_id": 6737,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn RUSSELL STREET & EXHIBITION STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 7459.0,
+    "heavy_vehicles_2019": 483.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1312349178",
+     "207883954"
+    ]
+   },
+   {
+    "segment_id": 6401,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET E Bd btwn RUSSELL STREET & EXHIBITION STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 11997.0,
+    "heavy_vehicles_2019": 777.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198005100#1"
+    ]
+   },
+   {
+    "segment_id": 8087,
+    "road_name": "OLYMPIC BOULEVARD",
+    "description": "ALEXANDRA AVE NW BD BTWN SWAN ST & LINLITHGOW AVE",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 22905.0,
+    "heavy_vehicles_2019": 1071.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "985376446#1"
+    ]
+   },
+   {
+    "segment_id": 6684,
+    "road_name": "GRANT STREET",
+    "description": "GRANT STREET E Bd btwn WELLS STREET & ST KILDA ROAD",
+    "direction": "EAST BOUND",
+    "aadt_2019": 5742.0,
+    "heavy_vehicles_2019": 372.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-27320509#2"
+    ]
+   },
+   {
+    "segment_id": 6699,
+    "road_name": "HAWKE STREET",
+    "description": "HAWKE STREET SWBd btwn VICTORIA STREET & KING STREET",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 6250.0,
+    "heavy_vehicles_2019": 404.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "62260282#0"
+    ]
+   },
+   {
+    "segment_id": 6841,
+    "road_name": "QUEEN STREET",
+    "description": "QUEEN STREET S Bd btwn LONSDALE STREET & BOURKE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9080.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1126800685#0",
+     "1126800685#2"
+    ]
+   },
+   {
+    "segment_id": 7042,
+    "road_name": "QUEENSBERRY STREET",
+    "description": "QUEENSBERRY STREET E Bd btwn LYGON STREET & RATHDOWNE STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 5796.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123830498#0",
+     "1123830500#0"
+    ]
+   },
+   {
+    "segment_id": 6848,
+    "road_name": "RATHDOWNE STREET",
+    "description": "RATHDOWNE STREET S Bd btwn QUEENSBERRY STREET & VICTORIA STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 10463.0,
+    "heavy_vehicles_2019": 677.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "199649970#7"
+    ]
+   },
+   {
+    "segment_id": 7403,
+    "road_name": "SPRING STREET",
+    "description": "SPRING STREET S Bd btwn COLLINS STREET & FLINDERS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 2735.0,
+    "heavy_vehicles_2019": 177.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "131724930",
+     "131724932#2",
+     "131724938#0",
+     "576912521"
+    ]
+   },
+   {
+    "segment_id": 7414,
+    "road_name": "SWANSTON STREET",
+    "description": "SWANSTON STREET S Bd btwn VICTORIA STREET & SWANSTON STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 4075.0,
+    "heavy_vehicles_2019": 263.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208033313#0"
+    ]
+   },
+   {
+    "segment_id": 7096,
+    "road_name": "SWANSTON STREET",
+    "description": "SWANSTON STREET S Bd btwn QUEENSBERRY STREET & VICTORIA STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 3011.0,
+    "heavy_vehicles_2019": 195.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123836812#2"
+    ]
+   },
+   {
+    "segment_id": 6809,
+    "road_name": "MORAY STREET",
+    "description": "MORAY STREET S Bd btwn CITY ROAD & KINGS IN-MORAY RAMP",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 4442.0,
+    "heavy_vehicles_2019": 287.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "129207856#0",
+     "129207856#2"
+    ]
+   },
+   {
+    "segment_id": 6313,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET S Bd btwn COLLINS STREET & BATMAN AVENUE FREEWAY",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9639.0,
+    "heavy_vehicles_2019": 624.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1291652855#0",
+     "198715273#2",
+     "198715273#3"
+    ]
+   },
+   {
+    "segment_id": 6136,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn KINGS WAY & QUEENS WHARF ROAD",
+    "direction": "EAST BOUND",
+    "aadt_2019": 9330.0,
+    "heavy_vehicles_2019": 604.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "550361772#0",
+     "550361772#1"
+    ]
+   },
+   {
+    "segment_id": 6475,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET S Bd btwn VICTORIA STREET & LATROBE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9289.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "187918256#0",
+     "187918256#1"
+    ]
+   },
+   {
+    "segment_id": 6516,
+    "road_name": "SWANSTON STREET ALT",
+    "description": "SWANSTON STREET S Bd btwn VICTORIA STREET & SWANSTON STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 5742.0,
+    "heavy_vehicles_2019": 372.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208033313#0"
+    ]
+   },
+   {
+    "segment_id": 5727,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn WILLIAM STREET & QUEEN STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 11997.0,
+    "heavy_vehicles_2019": 777.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "296399431#0",
+     "550361772#2",
+     "556168189#0",
+     "622561170"
+    ]
+   },
+   {
+    "segment_id": 7168,
+    "road_name": "WURUNDJERI WAY",
+    "description": "WURUNDJERI WAY NE BD BTWN MONTAGUE ST & FLINDERS ST",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 24446.0,
+    "heavy_vehicles_2019": 1412.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1291942749",
+     "24429960#1",
+     "984852765",
+     "984852774",
+     "984852775",
+     "984852777",
+     "984852781"
+    ]
+   },
+   {
+    "segment_id": 8089,
+    "road_name": "BATMAN AVENUE",
+    "description": "BATMAN AVE TOLLWAY NW BD BTWN TENNIS CENTRE ACCESS ROAD & EXHIBITION ST",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 8042.0,
+    "heavy_vehicles_2019": 593.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1352841570"
+    ]
+   },
+   {
+    "segment_id": 6539,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA STREET E Bd btwn ERROL STREET & CHETWYND STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 6489.0,
+    "heavy_vehicles_2019": 420.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1122543875#2",
+     "1122543876#0",
+     "62260337",
+     "893662866#0",
+     "893662866#1"
+    ]
+   },
+   {
+    "segment_id": 7689,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET S Bd btwn COLLINS STREET & FLINDERS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 8362.0,
+    "heavy_vehicles_2019": 541.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208642575#0",
+     "712187000",
+     "968051653#0",
+     "968051653#2"
+    ]
+   },
+   {
+    "segment_id": 6217,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn ADDERLEY STREET & SPENCER STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4284.0,
+    "heavy_vehicles_2019": 277.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1253825982#1",
+     "1253825982#2"
+    ]
+   },
+   {
+    "segment_id": 5810,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn EXHIBITION STREET & VICTORIA STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 5244.0,
+    "heavy_vehicles_2019": 339.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1312349168",
+     "207882673#1",
+     "61511990"
+    ]
+   },
+   {
+    "segment_id": 5815,
+    "road_name": "LINLITHGOW AVENUE",
+    "description": "LINLITHGOW AVENUE E Bd btwn LINLITHGOW AVENUE & ALEXANDRA AVENUE",
+    "direction": "EAST BOUND",
+    "aadt_2019": 3668.0,
+    "heavy_vehicles_2019": 237.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "985376439"
+    ]
+   },
+   {
+    "segment_id": 7097,
+    "road_name": "SWANSTON STREET",
+    "description": "SWANSTON STREET S Bd btwn FRANKLIN STREET & LATROBE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 5489.0,
+    "heavy_vehicles_2019": 355.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123836814"
+    ]
+   },
+   {
+    "segment_id": 6304,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET S Bd btwn FRANKLIN STREET & LATROBE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 7683.0,
+    "heavy_vehicles_2019": 497.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126651860",
+     "1444412330",
+     "208793253#0"
+    ]
+   },
+   {
+    "segment_id": 5719,
+    "road_name": "ERROL STREET",
+    "description": "ERROL STREET S Bd btwn QUEENSBERRY STREET & VICTORIA STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 2936.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123814312#0",
+     "628208897#0",
+     "628208897#4"
+    ]
+   },
+   {
+    "segment_id": 6658,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET S Bd btwn LONSDALE STREET & BOURKE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 8315.0,
+    "heavy_vehicles_2019": 538.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198737806",
+     "314805372#0"
+    ]
+   },
+   {
+    "segment_id": 6779,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET E Bd btwn EXHIBITION STREET & ALBERT STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 11364.0,
+    "heavy_vehicles_2019": 736.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198737801#0"
+    ]
+   },
+   {
+    "segment_id": 6922,
+    "road_name": "WELLINGTON PARADE",
+    "description": "WELLINGTON PARADE E Bd btwn FLINDERS STREET & JOLIMONT ROAD",
+    "direction": "EAST BOUND",
+    "aadt_2019": 703.0,
+    "heavy_vehicles_2019": 45.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-131724956#0",
+     "-131724956#1",
+     "-22758945"
+    ]
+   },
+   {
+    "segment_id": 7367,
+    "road_name": "QUEEN STREET",
+    "description": "QUEEN STREET S Bd btwn BOURKE STREET & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 6804.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1503287996",
+     "191505563"
+    ]
+   },
+   {
+    "segment_id": 7370,
+    "road_name": "QUEENS BRIDGE STREET",
+    "description": "QUEENSBRIDGE STREET S Bd btwn BANANA ALLEY & SOUTHBANK BOULEVARD",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 11292.0,
+    "heavy_vehicles_2019": 731.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1352491646#1",
+     "985664940"
+    ]
+   },
+   {
+    "segment_id": 451,
+    "road_name": "BATMAN AVENUE",
+    "description": "BATMAN AVE TOLLWAY SE BD BTWN EXHIBITION ST & TENNIS CENTRE ACCESS ROAD",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 8042.0,
+    "heavy_vehicles_2019": 580.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "131724933",
+     "326745779#1"
+    ]
+   },
+   {
+    "segment_id": 7768,
+    "road_name": "ALEXANDRA AVENUE",
+    "description": "ALEXANDRA AVE W BD BTWN LINLITHGOW AVE & STURT ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 16857.0,
+    "heavy_vehicles_2019": 689.0,
+    "heavy_share_2019": 0.04,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "145391401#2",
+     "145391401#3",
+     "985376435",
+     "985376436",
+     "985376437#1",
+     "985376442"
+    ]
+   },
+   {
+    "segment_id": 7703,
+    "road_name": "YORK STREET",
+    "description": "YORK STREET E Bd btwn CITY ROAD & FERRARS STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 7299.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-39474084#2",
+     "-39474084#4",
+     "-39474084#5",
+     "26786102"
+    ]
+   },
+   {
+    "segment_id": 5111,
+    "road_name": "CECIL STREET",
+    "description": "CECIL STREET S Bd btwn YORK STREET & DORCAS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 909.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1121961812#0",
+     "33407458"
+    ]
+   },
+   {
+    "segment_id": 5488,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET E Bd btwn SPENCER STREET & KING STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 2178.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1253825868"
+    ]
+   },
+   {
+    "segment_id": 6034,
+    "road_name": "BOUVERIE STREET",
+    "description": "BOUVERIE STREET S Bd btwn QUEENSBERRY STREET & VICTORIA STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 4012.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "28464792",
+     "775834615#0"
+    ]
+   },
+   {
+    "segment_id": 68,
+    "road_name": "ALEXANDRA AVENUE",
+    "description": "ALEXANDRA AVE SE BD BTWN LINLITHGOW AVE & SWAN ST",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 24963.0,
+    "heavy_vehicles_2019": 1167.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-569726888",
+     "-762797860",
+     "-985376436",
+     "670842916"
+    ]
+   },
+   {
+    "segment_id": 6396,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn KING STREET & WILLIAM STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 7874.0,
+    "heavy_vehicles_2019": 510.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581959641",
+     "664287431#2",
+     "963120906"
+    ]
+   },
+   {
+    "segment_id": 7326,
+    "road_name": "MORAY STREET",
+    "description": "MORAY STREET S Bd btwn KINGS IN-MORAY RAMP & COVENTRY STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 3271.0,
+    "heavy_vehicles_2019": 211.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1255055166#1",
+     "129207856#2",
+     "19870404",
+     "217628218",
+     "51253611",
+     "665212662#1",
+     "665212663#1",
+     "665212664#1",
+     "665212665#1"
+    ]
+   },
+   {
+    "segment_id": 7334,
+    "road_name": "NICHOLSON STREET",
+    "description": "NICHOLSON STREET S Bd btwn ALBERT STREET & SPRING STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 3291.0,
+    "heavy_vehicles_2019": 213.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1253825867",
+     "316160691#0",
+     "316160691#1"
+    ]
+   },
+   {
+    "segment_id": 6561,
+    "road_name": "YORK STREET",
+    "description": "YORK STREET E Bd btwn CECIL STREET & CLARENDON STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 2016.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-32918963#3",
+     "-32918963#4"
+    ]
+   },
+   {
+    "segment_id": 6400,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET E Bd btwn SPENCER STREET & KING STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 14895.0,
+    "heavy_vehicles_2019": 964.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "135953376#0",
+     "135953376#1",
+     "581959663#1"
+    ]
+   },
+   {
+    "segment_id": 6956,
+    "road_name": "MACARTHUR STREET",
+    "description": "MACARTHUR STREET S Bd btwn CATHEDRAL PLACE & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 5751.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "218688447#0",
+     "218688447#1",
+     "790271207#0",
+     "958993593",
+     "958993599"
+    ]
+   },
+   {
+    "segment_id": 6827,
+    "road_name": "PARK STREET",
+    "description": "PARK STREET E Bd btwn KINGS WAY & ST KILDA ROAD",
+    "direction": "EAST BOUND",
+    "aadt_2019": 5560.0,
+    "heavy_vehicles_2019": 360.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126594906#0",
+     "1126594906#1",
+     "1126594906#3",
+     "1457725833#0",
+     "1457725833#1",
+     "217257460#0",
+     "979789776"
+    ]
+   },
+   {
+    "segment_id": 6721,
+    "road_name": "INGLES STREET",
+    "description": "INGLES STREET SEBd btwn NORMANBY ROAD & CROCKFORD STREET",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 8651.0,
+    "heavy_vehicles_2019": 560.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1273572730#0",
+     "1273572730#1",
+     "1273572730#2",
+     "760414197#1",
+     "760414197#2",
+     "760414197#4"
+    ]
+   },
+   {
+    "segment_id": 6988,
+    "road_name": "MORAY STREET",
+    "description": "MORAY STREET S Bd btwn COVENTRY STREET & DORCAS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 3461.0,
+    "heavy_vehicles_2019": 224.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "19870404",
+     "217628218",
+     "658318037",
+     "665212666",
+     "665212668"
+    ]
+   },
+   {
+    "segment_id": 7327,
+    "road_name": "MORAY STREET",
+    "description": "MORAY STREET S Bd btwn DORCAS STREET & PARK STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 3461.0,
+    "heavy_vehicles_2019": 224.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1252211279",
+     "1252211284#1",
+     "1252211285",
+     "658318037",
+     "665212668"
+    ]
+   },
+   {
+    "segment_id": 8088,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD W BD BTWN STURT ST & SOUTHBANK BVD",
+    "direction": "WEST BOUND",
+    "aadt_2019": 16380.0,
+    "heavy_vehicles_2019": 669.0,
+    "heavy_share_2019": 0.04,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1132329207",
+     "19012777#0",
+     "19012777#2"
+    ]
+   },
+   {
+    "segment_id": 5801,
+    "road_name": "KAVANAGH STREET",
+    "description": "KAVANAGH STREET SWBd btwn SOUTHBANK BOULEVARD & POWER STREET",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 2757.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-120374160#0",
+     "1123997077#1"
+    ]
+   },
+   {
+    "segment_id": 2309,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN PEEL ST & ELIZABETH ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 9050.0,
+    "heavy_vehicles_2019": 594.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1183823818",
+     "1183823820#0",
+     "1183823820#1",
+     "39452439",
+     "711611138",
+     "787180850",
+     "958581825",
+     "983871061",
+     "983871071"
+    ]
+   },
+   {
+    "segment_id": 1807,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN EXHIBITION ST (EAST) & LATROBE ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 20201.0,
+    "heavy_vehicles_2019": 1327.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1183823832",
+     "198994310"
+    ]
+   },
+   {
+    "segment_id": 2745,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST S BD BTWN COVENTRY ST & DORCAS ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 3258.0,
+    "heavy_vehicles_2019": 214.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "217597351#4"
+    ]
+   },
+   {
+    "segment_id": 3060,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD SW BD BTWN MORAY ST & CLARENDON ST",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 11750.0,
+    "heavy_vehicles_2019": 772.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-1253825870",
+     "-782990506",
+     "217272248",
+     "782990501"
+    ]
+   },
+   {
+    "segment_id": 2349,
+    "road_name": "FERRARS STREET",
+    "description": "FERRARS ST S BD BTWN CITY RD & YORK ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 10002.0,
+    "heavy_vehicles_2019": 657.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1209937156"
+    ]
+   },
+   {
+    "segment_id": 1749,
+    "road_name": "KING STREET",
+    "description": "KING STREET SEBd btwn HAWKE STREET & DUDLEY STREET",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 14028.0,
+    "heavy_vehicles_2019": 921.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1436793847#0",
+     "1436793847#1",
+     "1500977099#0",
+     "1500977099#2",
+     "227876317",
+     "767384958",
+     "794820354",
+     "794821098#0"
+    ]
+   },
+   {
+    "segment_id": 2267,
+    "road_name": "DYNON ROAD",
+    "description": "DYNON RD E BD BTWN WESTERN LINK TOLLWAY & DRYBURGH ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 17473.0,
+    "heavy_vehicles_2019": 1148.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "13859318",
+     "55949191#0",
+     "55949191#2",
+     "773839857"
+    ]
+   },
+   {
+    "segment_id": 8580,
+    "road_name": "CITYLINK",
+    "description": "SOUTHERN LINK TOLLWAY/DOMAIN TUNNEL W BD BTWN BATMAN AVE & POWER ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 59291.0,
+    "heavy_vehicles_2019": 10911.0,
+    "heavy_share_2019": 0.18,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "8066126-AddedOffRampEdge"
+    ]
+   },
+   {
+    "segment_id": 2272,
+    "road_name": "KING STREET",
+    "description": "KING STREET SEBd btwn CURZON STREET & HAWKE STREET",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 11477.0,
+    "heavy_vehicles_2019": 754.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "773557140#0"
+    ]
+   },
+   {
+    "segment_id": 1789,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET S Bd btwn COLLINS STREET & FLINDERS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 12763.0,
+    "heavy_vehicles_2019": 408.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207799527#0",
+     "207799527#1",
+     "207799527#2"
+    ]
+   },
+   {
+    "segment_id": 1987,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN LYGON ST & EXHIBITION ST (WEST)",
+    "direction": "EAST BOUND",
+    "aadt_2019": 16516.0,
+    "heavy_vehicles_2019": 1085.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "711600860",
+     "711600861#1",
+     "958581820",
+     "958581822"
+    ]
+   },
+   {
+    "segment_id": 1786,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET E Bd btwn DRYBURGH STREET & ABBOTSFORD STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 17348.0,
+    "heavy_vehicles_2019": 1139.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198874330",
+     "786200165#0"
+    ]
+   },
+   {
+    "segment_id": 1392,
+    "road_name": "CLARENDON STREET",
+    "description": "SPENCER STREET S Bd btwn FLINDERS STREET & CLARENDON STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 14476.0,
+    "heavy_vehicles_2019": 463.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208920310#0"
+    ]
+   },
+   {
+    "segment_id": 1974,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET S Bd btwn BOURKE STREET & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 11358.0,
+    "heavy_vehicles_2019": 746.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "616097570#5",
+     "931222616#0",
+     "931222616#1"
+    ]
+   },
+   {
+    "segment_id": 1792,
+    "road_name": "PEEL STREET",
+    "description": "PEEL STREET S Bd btwn VICTORIA STREET & DUDLEY STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 14337.0,
+    "heavy_vehicles_2019": 830.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "217383024"
+    ]
+   },
+   {
+    "segment_id": 1806,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN CARDIGAN ST & LYGON ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 18787.0,
+    "heavy_vehicles_2019": 1234.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "208031344#0",
+     "208031344#1"
+    ]
+   },
+   {
+    "segment_id": 1988,
+    "road_name": "VICTORIA PARADE",
+    "description": "VICTORIA ST E BD BTWN LATROBE ST & NICHOLSON ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 19657.0,
+    "heavy_vehicles_2019": 1291.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1183823832",
+     "1183823835",
+     "206507106",
+     "378406888",
+     "460887416#1",
+     "4742597"
+    ]
+   },
+   {
+    "segment_id": 1390,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET E Bd btwn ABBOTSFORD STREET & HAWKE STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 17158.0,
+    "heavy_vehicles_2019": 1335.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "569448148#0"
+    ]
+   },
+   {
+    "segment_id": 1793,
+    "road_name": "DRYBURGH STREET",
+    "description": "DRYBURGH ST S BD BTWN VICTORIA ST & DYNON RD",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 2437.0,
+    "heavy_vehicles_2019": 192.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1123803836",
+     "1123803839",
+     "13755724#0"
+    ]
+   },
+   {
+    "segment_id": 2313,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST E BD BTWN EXHIBITION ST (WEST) & EXHIBITION ST (EAST)",
+    "direction": "EAST BOUND",
+    "aadt_2019": 16542.0,
+    "heavy_vehicles_2019": 1086.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "711600860"
+    ]
+   },
+   {
+    "segment_id": 6695,
+    "road_name": "HARBOUR ESPLANADE ALT",
+    "description": "DOCKLANDS HIGHWAY SEBd btwn FOOTSCRAY ROAD & LATROBE STREET",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 4302.0,
+    "heavy_vehicles_2019": 278.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "711952030",
+     "711952035"
+    ]
+   },
+   {
+    "segment_id": 5769,
+    "road_name": "HAWKE STREET",
+    "description": "HAWKE STREET SWBd btwn KING STREET & SPENCER STREET",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 6565.0,
+    "heavy_vehicles_2019": 425.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "55962931#0"
+    ]
+   },
+   {
+    "segment_id": 5039,
+    "road_name": "ABBOTSFORD STREET",
+    "description": "ABBOTSFORD STREET S Bd btwn VICTORIA STREET & SPENCER STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 2572.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1122544763",
+     "1122544765#1",
+     "315692509#0"
+    ]
+   },
+   {
+    "segment_id": 6395,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn SPENCER STREET & KING STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 5988.0,
+    "heavy_vehicles_2019": 387.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581959647"
+    ]
+   },
+   {
+    "segment_id": 5638,
+    "road_name": "ALBERT STREET",
+    "description": "ALBERT STREET E Bd btwn LONSDALE STREET & GISBORNE STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 12825.0,
+    "heavy_vehicles_2019": 830.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123486390",
+     "159253192#0",
+     "665181107"
+    ]
+   },
+   {
+    "segment_id": 1617,
+    "road_name": "BURNLEY TUNNEL",
+    "description": "BURNLEY TUNNEL E BD BTWN POWER ST (KINGS WAY) & BURNLEY RD (BARKLY AVE)",
+    "direction": "EAST BOUND",
+    "aadt_2019": 58875.0,
+    "heavy_vehicles_2019": 10834.0,
+    "heavy_share_2019": 0.18,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "8066124-AddedOnRampEdge"
+    ]
+   },
+   {
+    "segment_id": 6625,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET E Bd btwn EXHIBITION STREET & MACARTHUR STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 7563.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "576911615"
+    ]
+   },
+   {
+    "segment_id": 6653,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET S Bd btwn LATROBE STREET & LONSDALE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 5943.0,
+    "heavy_vehicles_2019": 385.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1010839939",
+     "1126650781"
+    ]
+   },
+   {
+    "segment_id": 6130,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET S Bd btwn BOURKE STREET & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9239.0,
+    "heavy_vehicles_2019": 598.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "199429376#0",
+     "199429376#2"
+    ]
+   },
+   {
+    "segment_id": 6318,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn DOWNIE STREET & KINGS WAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 12019.0,
+    "heavy_vehicles_2019": 778.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "968051639#0"
+    ]
+   },
+   {
+    "segment_id": 5731,
+    "road_name": "FRANKLIN STREET",
+    "description": "FRANKLIN STREET E Bd btwn SWANSTON STREET & VICTORIA STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4012.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1089601033#0",
+     "316166358#1"
+    ]
+   },
+   {
+    "segment_id": 6041,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET E Bd btwn EXHIBITION STREET & SPRING STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 3850.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "208506752#0",
+     "208506752#1",
+     "208506752#2"
+    ]
+   },
+   {
+    "segment_id": 5110,
+    "road_name": "CECIL STREET",
+    "description": "CECIL STREET S Bd btwn CITY ROAD & YORK STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 909.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1124004488",
+     "32772750"
+    ]
+   },
+   {
+    "segment_id": 6122,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET S Bd btwn VICTORIA STREET & FRANKLIN STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 6913.0,
+    "heavy_vehicles_2019": 447.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1183823613",
+     "1183823614",
+     "1426007103#0",
+     "208793254",
+     "62110983"
+    ]
+   },
+   {
+    "segment_id": 6663,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn QUEENS WHARF ROAD & WILLIAM STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 8082.0,
+    "heavy_vehicles_2019": 523.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "550361772#1",
+     "550361772#2",
+     "622561170"
+    ]
+   },
+   {
+    "segment_id": 67,
+    "road_name": "CITY ROAD",
+    "description": "POWER ST NW BD BTWN KAVANAGH ST & CITY RD",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 9891.0,
+    "heavy_vehicles_2019": 524.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 1750,
+    "road_name": "KING STREET",
+    "description": "KING STREET S Bd btwn DUDLEY STREET & LATROBE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 14530.0,
+    "heavy_vehicles_2019": 954.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207883957#2",
+     "207883957#6",
+     "27008379"
+    ]
+   },
+   {
+    "segment_id": 1742,
+    "road_name": "DYNON ROAD",
+    "description": "DYNON RD E BD BTWN RAMPS AT WESTERN LINK TOLLWAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 12154.0,
+    "heavy_vehicles_2019": 1309.0,
+    "heavy_share_2019": 0.11,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "13859318",
+     "581658394"
+    ]
+   },
+   {
+    "segment_id": 1372,
+    "road_name": "DUDLEY STREET",
+    "description": "DUDLEY ST E BD BTWN KING ST & PEEL ST",
+    "direction": "EAST BOUND",
+    "aadt_2019": 10865.0,
+    "heavy_vehicles_2019": 713.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "217383025",
+     "569455492",
+     "767384959#1",
+     "787559040"
+    ]
+   },
+   {
+    "segment_id": 5137,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD S Bd btwn LINLITHGOW AVENUE & GRANT STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 11475.0,
+    "heavy_vehicles_2019": 754.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1159052700#1",
+     "1172329068",
+     "25427595#3",
+     "71079850#0"
+    ]
+   },
+   {
+    "segment_id": 4202,
+    "road_name": "WILLIAMSTOWN ROAD",
+    "description": "WILLIAMSTOWN ROAD E Bd btwn GRAHAM STREET & NORMANBY ROAD",
+    "direction": "EAST BOUND",
+    "aadt_2019": 7339.0,
+    "heavy_vehicles_2019": 705.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1014590950",
+     "1014590952",
+     "1014590953",
+     "1014590954",
+     "1014590955",
+     "1014590956",
+     "1015374789",
+     "1015374791",
+     "291715825#1",
+     "291715826",
+     "296377474",
+     "296377647",
+     "580637960",
+     "792055329#0"
+    ]
+   },
+   {
+    "segment_id": 2543,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST S BD BTWN CITY RD & YORK ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 6071.0,
+    "heavy_vehicles_2019": 398.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "217597350#0",
+     "217597350#1",
+     "217597351#0",
+     "718619756#0",
+     "718619756#1",
+     "718619756#2"
+    ]
+   },
+   {
+    "segment_id": 2857,
+    "road_name": "LORIMER STREET",
+    "description": "LORIMER STREET E Bd btwn WEST GATE FREEWAY Offramp & MONTAGUE STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 12608.0,
+    "heavy_vehicles_2019": 828.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "791012550#0",
+     "981208587"
+    ]
+   },
+   {
+    "segment_id": 4807,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD SEBd btwn DOMAIN ROAD & KINGS WAY",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 9171.0,
+    "heavy_vehicles_2019": 278.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1286706403",
+     "1461663438",
+     "1461663439#1",
+     "1485585157#1",
+     "669685654#1",
+     "8029944#0"
+    ]
+   },
+   {
+    "segment_id": 3269,
+    "road_name": "LORIMER STREET",
+    "description": "LORIMER STREET E Bd btwn INGLES STREET & WEST GATE FREEWAY Offramp",
+    "direction": "EAST BOUND",
+    "aadt_2019": 6278.0,
+    "heavy_vehicles_2019": 748.0,
+    "heavy_share_2019": 0.12,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1016845386",
+     "-1016845389",
+     "-1016845390#1",
+     "-984811439",
+     "-984811440",
+     "-984811445",
+     "1292000467",
+     "1292000468",
+     "135807606#0",
+     "135807606#1",
+     "135807606#2",
+     "580637966",
+     "984811438#0",
+     "984811452",
+     "984811454#0"
+    ]
+   },
+   {
+    "segment_id": 4806,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD SEBd btwn PARK STREET & DOMAIN ROAD",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 12519.0,
+    "heavy_vehicles_2019": 380.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1287822105#1",
+     "1334635329",
+     "1485585157#1",
+     "569426734"
+    ]
+   },
+   {
+    "segment_id": 4891,
+    "road_name": "MONTAGUE STREET",
+    "description": "MONTAGUE ST SE BD BTWN NORMANBY RD & CITY RD",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 16682.0,
+    "heavy_vehicles_2019": 1096.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-1463867020#0",
+     "-1463867020#1",
+     "-1467731100",
+     "-399135783#1",
+     "-399135784#0",
+     "-44075002#1",
+     "-44075002#2",
+     "44074999#0",
+     "44074999#1"
+    ]
+   },
+   {
+    "segment_id": 7566,
+    "road_name": "POWER STREET",
+    "description": "POWER ST SE BD BTWN CITY RD & KAVANAGH ST",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 15120.0,
+    "heavy_vehicles_2019": 801.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198538936",
+     "782990504"
+    ]
+   },
+   {
+    "segment_id": 4611,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD S Bd btwn GRANT STREET & PARK STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 15868.0,
+    "heavy_vehicles_2019": 482.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123981126#0",
+     "1123981126#1",
+     "1158909840#1",
+     "1223684260",
+     "1287822105#1",
+     "216569127",
+     "24488874#1",
+     "505256321#1",
+     "505256321#2",
+     "505256321#3",
+     "569426734",
+     "669685646#1",
+     "71079850#1",
+     "71079850#2",
+     "71079850#3",
+     "71079850#4"
+    ]
+   },
+   {
+    "segment_id": 2149,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST S BD BTWN YORK ST & COVENTRY ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 7342.0,
+    "heavy_vehicles_2019": 482.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "217597351#1",
+     "217597351#2"
+    ]
+   },
+   {
+    "segment_id": 2549,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD SW BD BTWN POWER ST & MORAY ST",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 9550.0,
+    "heavy_vehicles_2019": 627.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "19012933",
+     "217272248",
+     "782990500#0",
+     "782990501"
+    ]
+   },
+   {
+    "segment_id": 3869,
+    "road_name": "NICHOLSON STREET",
+    "description": "NICHOLSON STREET S Bd btwn JOHNSTON STREET & GERTRUDE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 7371.0,
+    "heavy_vehicles_2019": 484.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "209747362",
+     "866530862#0"
+    ]
+   },
+   {
+    "segment_id": 6549,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET S Bd btwn PEEL STREET & LATROBE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 7254.0,
+    "heavy_vehicles_2019": 469.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208641735",
+     "505256326",
+     "581959642#0"
+    ]
+   },
+   {
+    "segment_id": 7452,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET S Bd btwn LONSDALE STREET & BOURKE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 8597.0,
+    "heavy_vehicles_2019": 556.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1156474528",
+     "581959661",
+     "968328218#0"
+    ]
+   },
+   {
+    "segment_id": 7687,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET S Bd btwn LATROBE STREET & LONSDALE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 8597.0,
+    "heavy_vehicles_2019": 556.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "235931746#0",
+     "235931746#2",
+     "505256326"
+    ]
+   },
+   {
+    "segment_id": 7769,
+    "road_name": "POWER STREET",
+    "description": "CITY RD SW BD BTWN SOUTHBANK BVD & POWER ST",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 20574.0,
+    "heavy_vehicles_2019": 1091.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 5212,
+    "road_name": "MONTAGUE STREET",
+    "description": "MONTAGUE ST SE BD BTWN WEST GATE FWY & NORMANBY RD",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 23987.0,
+    "heavy_vehicles_2019": 1576.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-197846381#1",
+     "-982206097#1",
+     "-982206100",
+     "784419711"
+    ]
+   },
+   {
+    "segment_id": 7747,
+    "road_name": "WURUNDJERI WAY",
+    "description": "FOOTSCRAY RD NW BD BTWN WURUNDJERI WAY & S B OFFRAMP FROM WESTERN LINK TOLLWAY",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 17468.0,
+    "heavy_vehicles_2019": 979.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 5236,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY SE BD BTWN STURT ST & PARK ST",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 44588.0,
+    "heavy_vehicles_2019": 2364.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "26619037",
+     "581714218#0",
+     "581714218#1"
+    ]
+   },
+   {
+    "segment_id": 6200,
+    "road_name": "INGLES STREET ALT",
+    "description": "INGLES STREET SE BD BTWN INGLES STREET OVERPASS & FENNELL STREET",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 4685.0,
+    "heavy_vehicles_2019": 303.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "25427863",
+     "789321997#0",
+     "789321997#1"
+    ]
+   },
+   {
+    "segment_id": 8065,
+    "road_name": "FOOTSCRAY ROAD",
+    "description": "WURUNDJERI WAY W BD BTWN DUDLEY ST & FOOTSCRAY RD",
+    "direction": "WEST BOUND",
+    "aadt_2019": 13903.0,
+    "heavy_vehicles_2019": 859.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 5809,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn ELIZABETH STREET & SWANSTON STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 9971.0,
+    "heavy_vehicles_2019": 645.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "658620795",
+     "664287429",
+     "672401684"
+    ]
+   },
+   {
+    "segment_id": 6778,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET E Bd btwn KING STREET & WILLIAM STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 14895.0,
+    "heavy_vehicles_2019": 964.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1316060854#0",
+     "197979802#2"
+    ]
+   },
+   {
+    "segment_id": 6084,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET E Bd btwn SPENCER STREET & KING STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4308.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123528672"
+    ]
+   },
+   {
+    "segment_id": 7184,
+    "road_name": "POWER STREET",
+    "description": "POWER ST SE BD BTWN KAVANAGH ST & SOUTHERN LINK TOLLWAY",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 14414.0,
+    "heavy_vehicles_2019": 764.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 7371,
+    "road_name": "RATHDOWNE STREET",
+    "description": "RATHDOWNE STREET S Bd btwn GRATTAN STREET & QUEENSBERRY STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9909.0,
+    "heavy_vehicles_2019": 641.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "199649970#2"
+    ]
+   },
+   {
+    "segment_id": 5489,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET E Bd btwn KING STREET & WILLIAM STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 3762.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "711989783#0",
+     "711989783#1"
+    ]
+   },
+   {
+    "segment_id": 5096,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET E Bd btwn RUSSELL STREET & EXHIBITION STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 3850.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1291652854",
+     "208554967#0"
+    ]
+   },
+   {
+    "segment_id": 6246,
+    "road_name": "CARDIGAN STREET",
+    "description": "CARDIGAN STREET S Bd btwn QUEENSBERRY STREET & VICTORIA STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 4012.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123830509#0",
+     "1123830509#3"
+    ]
+   },
+   {
+    "segment_id": 5490,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET E Bd btwn QUEEN STREET & ELIZABETH STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 2211.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "315229024#0",
+     "315229024#2"
+    ]
+   },
+   {
+    "segment_id": 9435,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST N BD BTWN COVENTRY ST & YORK ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6362.0,
+    "heavy_vehicles_2019": 418.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-217597351#1",
+     "-217597351#3"
+    ]
+   },
+   {
+    "segment_id": 6129,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET S Bd btwn LATROBE STREET & LONSDALE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9728.0,
+    "heavy_vehicles_2019": 630.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "45368568#0",
+     "45368568#2"
+    ]
+   },
+   {
+    "segment_id": 6137,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn ST KILDA ROAD & RUSSELL STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 20520.0,
+    "heavy_vehicles_2019": 1329.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "790262282#0",
+     "790262282#3",
+     "override_724454905"
+    ]
+   },
+   {
+    "segment_id": 5808,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn QUEEN STREET & ELIZABETH STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 9518.0,
+    "heavy_vehicles_2019": 616.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "135952928",
+     "672401684"
+    ]
+   },
+   {
+    "segment_id": 5725,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn WURUNDJERI WAY & SPENCER STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 11299.0,
+    "heavy_vehicles_2019": 731.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "210177006#0",
+     "984863708#0",
+     "984863710",
+     "984863711#0"
+    ]
+   },
+   {
+    "segment_id": 6139,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn BATMAN AVENUE FREEWAY & WELLINGTON PARADE",
+    "direction": "EAST BOUND",
+    "aadt_2019": 7245.0,
+    "heavy_vehicles_2019": 469.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "8038155#0"
+    ]
+   },
+   {
+    "segment_id": 6741,
+    "road_name": "LINLITHGOW AVENUE",
+    "description": "LINLITHGOW AVENUE E Bd btwn ST KILDA ROAD & LINLITHGOW AVENUE",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4891.0,
+    "heavy_vehicles_2019": 316.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1172628092",
+     "1172628093#1",
+     "1172628093#2",
+     "1216173540",
+     "1216173543",
+     "985376439"
+    ]
+   },
+   {
+    "segment_id": 5820,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET E Bd btwn ELIZABETH STREET & RUSSELL STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 14895.0,
+    "heavy_vehicles_2019": 964.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126802279#0",
+     "1126802279#2",
+     "1317029146#1",
+     "1324972235#3",
+     "1324972235#5",
+     "734406095#1"
+    ]
+   },
+   {
+    "segment_id": 7364,
+    "road_name": "POWER STREET",
+    "description": "POWER STREET E Bd btwn QUEENSBRIDGE STREET & CITY ROAD",
+    "direction": "EAST BOUND",
+    "aadt_2019": 9057.0,
+    "heavy_vehicles_2019": 586.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198538934#0"
+    ]
+   },
+   {
+    "segment_id": 6086,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET E Bd btwn RUSSELL STREET & EXHIBITION STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 7224.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207831781"
+    ]
+   },
+   {
+    "segment_id": 5685,
+    "road_name": "COVENTRY STREET",
+    "description": "COVENTRY STREET E Bd btwn CLARENDON STREET & MORAY STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 1944.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1124004483#0",
+     "-1124004483#1",
+     "-1124004483#3",
+     "-217628213#1",
+     "-217628213#2",
+     "217628220"
+    ]
+   },
+   {
+    "segment_id": 6085,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET E Bd btwn KING STREET & WILLIAM STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 6750.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207830036#0"
+    ]
+   },
+   {
+    "segment_id": 5703,
+    "road_name": "DORCAS STREET",
+    "description": "DORCAS STREET E Bd btwn CLARENDON STREET & MORAY STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 3311.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1164297773#0",
+     "-26664816#0",
+     "-26664816#1",
+     "1354868292",
+     "27423757"
+    ]
+   },
+   {
+    "segment_id": 7070,
+    "road_name": "SOUTHBANK BOULEVARD ALT",
+    "description": "SOUTHBANK BOULEVARD E Bd btwn KAVANAGH STREET & STURT STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4441.0,
+    "heavy_vehicles_2019": 287.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123995906#1",
+     "709521822"
+    ]
+   },
+   {
+    "segment_id": 7091,
+    "road_name": "STURT STREET",
+    "description": "STURT STREET S Bd btwn POWER STREET & KINGS WAY",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 6885.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "217272668#0",
+     "581037860#1",
+     "581037860#2",
+     "581046812#0"
+    ]
+   },
+   {
+    "segment_id": 6862,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET S Bd btwn BOURKE STREET & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 10737.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1111312089",
+     "199429372#2"
+    ]
+   },
+   {
+    "segment_id": 6218,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn SWANSTON STREET & RUSSELL STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 9997.0,
+    "heavy_vehicles_2019": 647.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "316166375"
+    ]
+   },
+   {
+    "segment_id": 6497,
+    "road_name": "SOUTHBANK BOULEVARD",
+    "description": "SOUTHBANK BOULEVARD SEBd btwn QUEENSBRIDGE STREET & CITY ROAD",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 5474.0,
+    "heavy_vehicles_2019": 354.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-23909982",
+     "1017790723",
+     "1126593435",
+     "23909941#0",
+     "23909941#1"
+    ]
+   },
+   {
+    "segment_id": 7402,
+    "road_name": "SPRING STREET",
+    "description": "SPRING STREET S Bd btwn NICHOLSON STREET & BOURKE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 5703.0,
+    "heavy_vehicles_2019": 369.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "131724919"
+    ]
+   },
+   {
+    "segment_id": 7132,
+    "road_name": "WELLINGTON PARADE",
+    "description": "WELLINGTON PARADE E Bd btwn FLINDERS STREET & LANSDOWNE STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 11549.0,
+    "heavy_vehicles_2019": 748.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "131724961#0",
+     "985032690#1"
+    ]
+   },
+   {
+    "segment_id": 5818,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET E Bd btwn WILLIAM STREET & QUEEN STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 14895.0,
+    "heavy_vehicles_2019": 964.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "505256328#0"
+    ]
+   },
+   {
+    "segment_id": 6784,
+    "road_name": "LYGON STREET",
+    "description": "LYGON STREET S Bd btwn QUEENSBERRY STREET & VICTORIA STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 7676.0,
+    "heavy_vehicles_2019": 497.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1126693192#0",
+     "1126693331#0",
+     "1126693331#4"
+    ]
+   },
+   {
+    "segment_id": 6368,
+    "road_name": "INGLES STREET",
+    "description": "INGLES STREET SEBd btwn LORIMER STREET & INGLES STREET",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 4685.0,
+    "heavy_vehicles_2019": 303.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-39585956#1",
+     "1016845392",
+     "1126666548",
+     "25427863",
+     "971041660#0"
+    ]
+   },
+   {
+    "segment_id": 6138,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn RUSSELL STREET & BATMAN AVENUE FREEWAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 12753.0,
+    "heavy_vehicles_2019": 826.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "187918252#0",
+     "187918252#2"
+    ]
+   },
+   {
+    "segment_id": 6312,
+    "road_name": "EXHIBITION STREET ALT",
+    "description": "EXHIBITION STREET S Bd btwn VICTORIA STREET & EXHIBITION STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9044.0,
+    "heavy_vehicles_2019": 585.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198994314"
+    ]
+   },
+   {
+    "segment_id": 6040,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET E Bd btwn SWANSTON STREET WALK & RUSSELL STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 3850.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1126692423",
+     "-208554968",
+     "1126692508",
+     "208554967#0"
+    ]
+   },
+   {
+    "segment_id": 8066,
+    "road_name": "FOOTSCRAY ROAD",
+    "description": "FOOTSCRAY RD W BD BTWN S B OFFRAMP FROM WESTERN LINK TOLLWAY & WESTERN LINK TOLLWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 17406.0,
+    "heavy_vehicles_2019": 976.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1056601498",
+     "1500954784",
+     "1500954785",
+     "207128343#2",
+     "27749981",
+     "9621861#1"
+    ]
+   },
+   {
+    "segment_id": 5726,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn SPENCER STREET & DOWNIE STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 8431.0,
+    "heavy_vehicles_2019": 546.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 6664,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn WELLINGTON PARADE & SPRING STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 16003.0,
+    "heavy_vehicles_2019": 1036.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "8038155#0"
+    ]
+   },
+   {
+    "segment_id": 6322,
+    "road_name": "FRANKLIN STREET",
+    "description": "FRANKLIN STREET E Bd btwn ELIZABETH STREET & SWANSTON STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4012.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1274557717#0",
+     "1274557717#2",
+     "208793849#0",
+     "485830402#0"
+    ]
+   },
+   {
+    "segment_id": 6148,
+    "road_name": "GERTRUDE STREET",
+    "description": "GERTRUDE STREET E Bd btwn NICHOLSON STREET & BRUNSWICK STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 5472.0,
+    "heavy_vehicles_2019": 354.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-1268858492",
+     "-207642000#2",
+     "-207642000#5"
+    ]
+   },
+   {
+    "segment_id": 5095,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET E Bd btwn WILLIAM STREET & QUEEN STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 3708.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1126680795#0",
+     "581959654#0",
+     "581959654#1"
+    ]
+   },
+   {
+    "segment_id": 5985,
+    "road_name": "ADDERLEY STREET",
+    "description": "ADDERLEY STREET SEBd btwn DUDLEY STREET & LATROBE STREET",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 843.0,
+    "heavy_vehicles_2019": 54.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-56730487#0",
+     "-56730487#2",
+     "1123803831",
+     "56730595"
+    ]
+   },
+   {
+    "segment_id": 6456,
+    "road_name": "QUEENS BRIDGE STREET",
+    "description": "QUEENSBRIDGE STREET S Bd btwn POWER STREET & KINGS WAY",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 5506.0,
+    "heavy_vehicles_2019": 356.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123999816",
+     "198726074",
+     "217272249"
+    ]
+   },
+   {
+    "segment_id": 6476,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET S Bd btwn COLLINS STREET & FLINDERS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 11238.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207831778#1",
+     "207831778#4",
+     "207831778#5"
+    ]
+   },
+   {
+    "segment_id": 6736,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET E Bd btwn WILLIAM STREET & QUEEN STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 8695.0,
+    "heavy_vehicles_2019": 563.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581959641",
+     "658620787#0",
+     "658620787#2"
+    ]
+   },
+   {
+    "segment_id": 5819,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET E Bd btwn QUEEN STREET & ELIZABETH STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 14895.0,
+    "heavy_vehicles_2019": 964.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198005098#0",
+     "198005098#2"
+    ]
+   },
+   {
+    "segment_id": 6879,
+    "road_name": "SOUTHBANK BOULEVARD ALT",
+    "description": "SOUTHBANK BOULEVARD E Bd btwn CITY ROAD & KAVANAGH STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 2319.0,
+    "heavy_vehicles_2019": 150.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "22664466"
+    ]
+   },
+   {
+    "segment_id": 5680,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET E Bd btwn WILLIAM STREET & QUEEN STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 6948.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123528665#1",
+     "1123528665#3"
+    ]
+   },
+   {
+    "segment_id": 6616,
+    "road_name": "CHETWYND STREET",
+    "description": "CHETWYND STREET S Bd btwn QUEENSBERRY STREET & VICTORIA STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 1068.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123801593#1",
+     "1123801593#4",
+     "39613114#0"
+    ]
+   },
+   {
+    "segment_id": 9230,
+    "road_name": "KING STREET",
+    "description": "KING STREET NWBd btwn HAWKE STREET & CURZON STREET",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 14002.0,
+    "heavy_vehicles_2019": 920.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "773557139",
+     "794819947#0",
+     "794819947#1"
+    ]
+   },
+   {
+    "segment_id": 9055,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET W Bd btwn HAWKE STREET & ABBOTSFORD STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 17107.0,
+    "heavy_vehicles_2019": 1331.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "314394244#0"
+    ]
+   },
+   {
+    "segment_id": 8672,
+    "road_name": "PEEL STREET",
+    "description": "PEEL STREET N Bd btwn VICTORIA STREET & QUEENSBERRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10452.0,
+    "heavy_vehicles_2019": 605.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "5135006#0",
+     "5135006#3"
+    ]
+   },
+   {
+    "segment_id": 9068,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST W BD BTWN EXHIBITION ST (WEST) & LYGON ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 16516.0,
+    "heavy_vehicles_2019": 1085.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198994307#0",
+     "711600863",
+     "711600864#0",
+     "711600864#1"
+    ]
+   },
+   {
+    "segment_id": 9617,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET NWBd btwn DUDLEY STREET & HAWKE STREET",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 11135.0,
+    "heavy_vehicles_2019": 866.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198874546#0",
+     "581658405",
+     "965116104#0",
+     "965116112#0"
+    ]
+   },
+   {
+    "segment_id": 10008,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD NE BD BTWN CLARENDON ST & MORAY ST",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 7248.0,
+    "heavy_vehicles_2019": 476.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198994162#0",
+     "782990506",
+     "782990507#1",
+     "8066058"
+    ]
+   },
+   {
+    "segment_id": 10378,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST N BD BTWN DORCAS ST & COVENTRY ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6416.0,
+    "heavy_vehicles_2019": 421.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-217597351#4"
+    ]
+   },
+   {
+    "segment_id": 9633,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST W BD BTWN LYGON ST & CARDIGAN ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 18501.0,
+    "heavy_vehicles_2019": 1215.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "958581824"
+    ]
+   },
+   {
+    "segment_id": 8623,
+    "road_name": "DUDLEY STREET",
+    "description": "DUDLEY ST W BD BTWN KING ST & SPENCER ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 12617.0,
+    "heavy_vehicles_2019": 829.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-746789182#0",
+     "30179550#0"
+    ]
+   },
+   {
+    "segment_id": 10164,
+    "road_name": "LORIMER STREET",
+    "description": "LORIMER STREET W Bd btwn MONTAGUE STREET & WEST GATE FREEWAY Offramp",
+    "direction": "WEST BOUND",
+    "aadt_2019": 12608.0,
+    "heavy_vehicles_2019": 828.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "783887409",
+     "981208583",
+     "981208584"
+    ]
+   },
+   {
+    "segment_id": 9487,
+    "road_name": "STURT STREET",
+    "description": "STURT STREET N Bd btwn SOUTHBANK BOULEVARD & ALEXANDRA AVENUE",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 731.0,
+    "heavy_vehicles_2019": 48.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "217377200#1",
+     "71189074"
+    ]
+   },
+   {
+    "segment_id": 9069,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST W BD BTWN SWANSTON ST (EAST) & SWANSTON ST (WEST)",
+    "direction": "WEST BOUND",
+    "aadt_2019": 19943.0,
+    "heavy_vehicles_2019": 1310.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208031602"
+    ]
+   },
+   {
+    "segment_id": 9441,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD NE BD BTWN MORAY ST & POWER ST",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 10483.0,
+    "heavy_vehicles_2019": 688.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198994162#0",
+     "581714212",
+     "782990503",
+     "782990505"
+    ]
+   },
+   {
+    "segment_id": 9590,
+    "road_name": "DUDLEY STREET",
+    "description": "DUDLEY ST W BD BTWN ADDERLEY ST & WURUNDJERI WAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 8860.0,
+    "heavy_vehicles_2019": 582.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "135951291",
+     "39451666",
+     "984997971",
+     "995759364"
+    ]
+   },
+   {
+    "segment_id": 9027,
+    "road_name": "DUDLEY STREET",
+    "description": "DUDLEY ST W BD BTWN SPENCER ST & ADDERLEY ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 15016.0,
+    "heavy_vehicles_2019": 986.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198874545#0"
+    ]
+   },
+   {
+    "segment_id": 14715,
+    "road_name": "QUEENS BRIDGE STREET",
+    "description": "QUEENSBRIDGE STREET N Bd btwn SOUTHBANK BOULEVARD & BANANA ALLEY",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10799.0,
+    "heavy_vehicles_2019": 699.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1018419590",
+     "208652070"
+    ]
+   },
+   {
+    "segment_id": 14731,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET N Bd btwn LONSDALE STREET & LATROBE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9400.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "187918254#0",
+     "187918254#3"
+    ]
+   },
+   {
+    "segment_id": 13985,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn WILLIAM STREET & QUEENS WHARF ROAD",
+    "direction": "WEST BOUND",
+    "aadt_2019": 8082.0,
+    "heavy_vehicles_2019": 523.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1292625318#1",
+     "556168188#0",
+     "622561169"
+    ]
+   },
+   {
+    "segment_id": 14418,
+    "road_name": "WELLINGTON PARADE",
+    "description": "WELLINGTON PARADE W Bd btwn JOLIMONT ROAD & FLINDERS STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 1692.0,
+    "heavy_vehicles_2019": 109.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "131724914",
+     "131724956#0",
+     "131724956#1",
+     "22758945",
+     "27989307"
+    ]
+   },
+   {
+    "segment_id": 13940,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET W Bd btwn EXHIBITION STREET & RUSSELL STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 7224.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123528657"
+    ]
+   },
+   {
+    "segment_id": 14328,
+    "road_name": "QUEEN STREET",
+    "description": "QUEEN STREET N Bd btwn LONSDALE STREET & LATROBE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9080.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "5095075#0",
+     "715611140#0"
+    ]
+   },
+   {
+    "segment_id": 13529,
+    "road_name": "NICHOLSON STREET",
+    "description": "NICHOLSON STREET N Bd btwn ALBERT STREET & VICTORIA PARADE",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6210.0,
+    "heavy_vehicles_2019": 402.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "316160690#0",
+     "316160690#1",
+     "569719147",
+     "783045848"
+    ]
+   },
+   {
+    "segment_id": 13344,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET W Bd btwn QUEEN STREET & WILLIAM STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3708.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126680783#0",
+     "581959657#0"
+    ]
+   },
+   {
+    "segment_id": 12753,
+    "road_name": "BOUVERIE STREET",
+    "description": "BOUVERIE STREET N Bd btwn VICTORIA STREET & QUEENSBERRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 4012.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "5003684",
+     "62207850",
+     "970031071#0"
+    ]
+   },
+   {
+    "segment_id": 9109,
+    "road_name": "FERRARS STREET",
+    "description": "FERRARS ST N BD BTWN YORK ST & CITY RD",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10002.0,
+    "heavy_vehicles_2019": 657.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1124015749#0",
+     "1209937157"
+    ]
+   },
+   {
+    "segment_id": 13986,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn WELLINGTON PARADE & BATMAN AVENUE FREEWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 7245.0,
+    "heavy_vehicles_2019": 469.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "711983628#0"
+    ]
+   },
+   {
+    "segment_id": 12365,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET W Bd btwn WILLIAM STREET & KING STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3762.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "963120893#0",
+     "963120893#1"
+    ]
+   },
+   {
+    "segment_id": 14428,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET N Bd btwn LATROBE STREET & PEEL STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 7254.0,
+    "heavy_vehicles_2019": 469.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1314761451#0",
+     "208642571",
+     "581959644",
+     "715611130#1"
+    ]
+   },
+   {
+    "segment_id": 13059,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET W Bd btwn ALBERT STREET & EXHIBITION STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 9950.0,
+    "heavy_vehicles_2019": 644.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "993256437"
+    ]
+   },
+   {
+    "segment_id": 13490,
+    "road_name": "MACARTHUR STREET",
+    "description": "MACARTHUR STREET N Bd btwn COLLINS STREET & CATHEDRAL PLACE",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 5751.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207639965#1",
+     "790271208#0",
+     "790271208#1",
+     "958993595#0",
+     "958993597"
+    ]
+   },
+   {
+    "segment_id": 12426,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET N Bd btwn LATROBE STREET & FRANKLIN STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 7683.0,
+    "heavy_vehicles_2019": 497.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1458571606#0",
+     "672401683#0"
+    ]
+   },
+   {
+    "segment_id": 13138,
+    "road_name": "QUEENS BRIDGE STREET",
+    "description": "QUEENSBRIDGE STREET N Bd btwn KINGS WAY & POWER STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 5506.0,
+    "heavy_vehicles_2019": 356.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1018419572",
+     "1018419575",
+     "23907444#0",
+     "23907444#1",
+     "665207983#0"
+    ]
+   },
+   {
+    "segment_id": 14730,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET N Bd btwn COLLINS STREET & BOURKE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10737.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207831779#0",
+     "207831779#1"
+    ]
+   },
+   {
+    "segment_id": 14067,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn EXHIBITION STREET & RUSSELL STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 9780.0,
+    "heavy_vehicles_2019": 633.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1312349173",
+     "26431523#1",
+     "279989318#0",
+     "581976096"
+    ]
+   },
+   {
+    "segment_id": 13696,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET W Bd btwn EXHIBITION STREET & RUSSELL STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 12569.0,
+    "heavy_vehicles_2019": 814.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1358973688#0",
+     "198737797#0"
+    ]
+   },
+   {
+    "segment_id": 13022,
+    "road_name": "HAWKE STREET",
+    "description": "HAWKE STREET NEBd btwn KING STREET & VICTORIA STREET",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 6250.0,
+    "heavy_vehicles_2019": 404.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "55962925"
+    ]
+   },
+   {
+    "segment_id": 14150,
+    "road_name": "SWANSTON STREET",
+    "description": "SWANSTON STREET N Bd btwn LATROBE STREET & FRANKLIN STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 2848.0,
+    "heavy_vehicles_2019": 184.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1276257410",
+     "658642627"
+    ]
+   },
+   {
+    "segment_id": 12777,
+    "road_name": "CECIL STREET",
+    "description": "CECIL STREET N Bd btwn DORCAS STREET & YORK STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 909.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1121961811",
+     "33407457"
+    ]
+   },
+   {
+    "segment_id": 12385,
+    "road_name": "CHETWYND STREET",
+    "description": "CHETWYND STREET N Bd btwn VICTORIA STREET & QUEENSBERRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 1068.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123801594#1",
+     "1123801594#4",
+     "1123801597#0",
+     "965116130#0"
+    ]
+   },
+   {
+    "segment_id": 12400,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET W Bd btwn MACARTHUR STREET & EXHIBITION STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 7563.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207811935",
+     "576911613"
+    ]
+   },
+   {
+    "segment_id": 14660,
+    "road_name": "MORAY STREET",
+    "description": "MORAY STREET N Bd btwn DORCAS STREET & COVENTRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6102.0,
+    "heavy_vehicles_2019": 395.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "19870078",
+     "217628212",
+     "658318038",
+     "665212669"
+    ]
+   },
+   {
+    "segment_id": 13400,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn BATMAN AVENUE FREEWAY & RUSSELL STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 11263.0,
+    "heavy_vehicles_2019": 729.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1137441737",
+     "198715270#1"
+    ]
+   },
+   {
+    "segment_id": 13623,
+    "road_name": "GRANT STREET",
+    "description": "GRANT STREET W Bd btwn ST KILDA ROAD & WELLS STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5742.0,
+    "heavy_vehicles_2019": 372.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "27320509#0"
+    ]
+   },
+   {
+    "segment_id": 14753,
+    "road_name": "SOUTHBANK BOULEVARD",
+    "description": "SOUTHBANK BOULEVARD W Bd btwn ST KILDA ROAD & STURT STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 6961.0,
+    "heavy_vehicles_2019": 450.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1455428167",
+     "24430463#2",
+     "412569387",
+     "581714221",
+     "707124504#0",
+     "930126922"
+    ]
+   },
+   {
+    "segment_id": 13733,
+    "road_name": "SWANSTON STREET",
+    "description": "SWANSTON STREET N Bd btwn SWANSTON STREET & VICTORIA STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 4075.0,
+    "heavy_vehicles_2019": 263.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126682718"
+    ]
+   },
+   {
+    "segment_id": 14703,
+    "road_name": "POWER STREET",
+    "description": "POWER STREET W Bd btwn CITY ROAD & QUEENSBRIDGE STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 9057.0,
+    "heavy_vehicles_2019": 586.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "13307539",
+     "327699889#0",
+     "327699890"
+    ]
+   },
+   {
+    "segment_id": 9589,
+    "road_name": "DUDLEY STREET",
+    "description": "DUDLEY ST W BD BTWN PEEL ST & KING ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 10865.0,
+    "heavy_vehicles_2019": 713.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-767384959#1",
+     "217383026",
+     "569455493"
+    ]
+   },
+   {
+    "segment_id": 8624,
+    "road_name": "KING STREET",
+    "description": "KING STREET N Bd btwn COLLINS STREET & FLINDERS ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 24155.0,
+    "heavy_vehicles_2019": 1587.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "134618936#1",
+     "207516091#0"
+    ]
+   },
+   {
+    "segment_id": 13054,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn RUSSELL STREET & SWANSTON STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 10899.0,
+    "heavy_vehicles_2019": 706.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1276257411",
+     "26431523#1",
+     "279989317"
+    ]
+   },
+   {
+    "segment_id": 11323,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD NWBd btwn DOMAIN ROAD & PARK STREET",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 16759.0,
+    "heavy_vehicles_2019": 456.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1275162866"
+    ]
+   },
+   {
+    "segment_id": 14815,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET N Bd btwn LONSDALE STREET & LATROBE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8597.0,
+    "heavy_vehicles_2019": 556.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581959644",
+     "581959652",
+     "715611130#0",
+     "715611130#1"
+    ]
+   },
+   {
+    "segment_id": 14334,
+    "road_name": "QUEENS BRIDGE STREET",
+    "description": "QUEENSBRIDGE STREET N Bd btwn POWER STREET & SOUTHBANK BOULEVARD",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9872.0,
+    "heavy_vehicles_2019": 639.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1018419578#0",
+     "1126584755#0",
+     "569443033"
+    ]
+   },
+   {
+    "segment_id": 8667,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET N Bd btwn LONSDALE STREET & LATROBE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 13659.0,
+    "heavy_vehicles_2019": 897.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "616097571#0",
+     "616097571#1"
+    ]
+   },
+   {
+    "segment_id": 12750,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET W Bd btwn ELIZABETH STREET & QUEEN STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 2211.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "208506442#0",
+     "208506442#1",
+     "208506442#4"
+    ]
+   },
+   {
+    "segment_id": 14074,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET W Bd btwn RUSSELL STREET & ELIZABETH STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 15870.0,
+    "heavy_vehicles_2019": 1028.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1358973688#0",
+     "1358973688#1",
+     "1358973688#2",
+     "1358973688#4",
+     "386419596#1",
+     "386419596#5",
+     "734406093#1"
+    ]
+   },
+   {
+    "segment_id": 14322,
+    "road_name": "POWER STREET",
+    "description": "POWER ST SE BD BTWN STURT ST & ONRAMP TO WEST GATE FWY",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 14414.0,
+    "heavy_vehicles_2019": 764.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "19012674#0",
+     "5234818"
+    ]
+   },
+   {
+    "segment_id": 14708,
+    "road_name": "QUEEN STREET",
+    "description": "QUEEN STREET N Bd btwn BOURKE STREET & LONSDALE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9080.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1489991596#1",
+     "296383691#5"
+    ]
+   },
+   {
+    "segment_id": 13155,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET N Bd btwn LATROBE STREET & VICTORIA STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 7577.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126693086#0",
+     "25424990#1",
+     "25424990#3"
+    ]
+   },
+   {
+    "segment_id": 12434,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET N Bd btwn LONSDALE STREET & LATROBE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9728.0,
+    "heavy_vehicles_2019": 630.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1117991121#1",
+     "198737812#1",
+     "22758374"
+    ]
+   },
+   {
+    "segment_id": 13399,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn SPRING STREET & WELLINGTON PARADE",
+    "direction": "WEST BOUND",
+    "aadt_2019": 6575.0,
+    "heavy_vehicles_2019": 425.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "46225230#0",
+     "46225230#1",
+     "46225230#2",
+     "46225230#3"
+    ]
+   },
+   {
+    "segment_id": 14116,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET N Bd btwn BOURKE STREET & LONSDALE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10238.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198005096#0",
+     "198005096#4"
+    ]
+   },
+   {
+    "segment_id": 13173,
+    "road_name": "SPRING STREET",
+    "description": "SPRING STREET N Bd btwn BOURKE STREET & NICHOLSON STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 5703.0,
+    "heavy_vehicles_2019": 369.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208677473#0"
+    ]
+   },
+   {
+    "segment_id": 13474,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn ELIZABETH STREET & QUEEN STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 9518.0,
+    "heavy_vehicles_2019": 616.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "658620802#0",
+     "672401689"
+    ]
+   },
+   {
+    "segment_id": 12325,
+    "road_name": "ADDERLEY STREET",
+    "description": "ADDERLEY STREET NWBd btwn LATROBE STREET & DUDLEY STREET",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 843.0,
+    "heavy_vehicles_2019": 54.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "26431407",
+     "56730487#0",
+     "56730487#1",
+     "965836955#0"
+    ]
+   },
+   {
+    "segment_id": 14056,
+    "road_name": "KAVANAGH STREET",
+    "description": "KAVANAGH STREET NEBd btwn POWER STREET & SOUTHBANK BOULEVARD",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 1827.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1123997077#2",
+     "662536312#1"
+    ]
+   },
+   {
+    "segment_id": 14068,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn SWANSTON STREET & ELIZABETH STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 11687.0,
+    "heavy_vehicles_2019": 757.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1276257411",
+     "279989319"
+    ]
+   },
+   {
+    "segment_id": 14809,
+    "road_name": "WELLINGTON PARADE",
+    "description": "WELLINGTON PARADE W Bd btwn LANSDOWNE STREET & FLINDERS STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 13113.0,
+    "heavy_vehicles_2019": 849.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "67502787#0",
+     "985032686"
+    ]
+   },
+   {
+    "segment_id": 14133,
+    "road_name": "SOUTHBANK BOULEVARD",
+    "description": "SOUTHBANK BOULEVARD W Bd btwn STURT STREET & KAVANAGH STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 7908.0,
+    "heavy_vehicles_2019": 512.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1455428167",
+     "1489355335",
+     "1489355336#0",
+     "1489355340",
+     "581717497#0"
+    ]
+   },
+   {
+    "segment_id": 12770,
+    "road_name": "CARDIGAN STREET",
+    "description": "CARDIGAN STREET N Bd btwn VICTORIA STREET & QUEENSBERRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 4012.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123830508#0",
+     "1123830508#5"
+    ]
+   },
+   {
+    "segment_id": 13917,
+    "road_name": "CECIL STREET",
+    "description": "CECIL STREET N Bd btwn YORK STREET & CITY ROAD",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 909.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-198994163",
+     "-32772750"
+    ]
+   },
+   {
+    "segment_id": 14661,
+    "road_name": "MORAY STREET",
+    "description": "MORAY STREET N Bd btwn KINGS IN-MORAY RAMP & CITY ROAD",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 4442.0,
+    "heavy_vehicles_2019": 287.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-129207856#1",
+     "-485229678#0",
+     "187177450",
+     "198726075",
+     "327700014"
+    ]
+   },
+   {
+    "segment_id": 13782,
+    "road_name": "YORK STREET",
+    "description": "YORK STREET W Bd btwn FERRARS STREET & CITY ROAD",
+    "direction": "WEST BOUND",
+    "aadt_2019": 7299.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "26786104#0",
+     "26786104#1",
+     "39474084#1",
+     "39474084#3",
+     "39474084#5"
+    ]
+   },
+   {
+    "segment_id": 14435,
+    "road_name": "WURUNDJERI WAY",
+    "description": "WURUNDJERI WAY S BD BTWN DUDLEY ST & BOURKE ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 20917.0,
+    "heavy_vehicles_2019": 1412.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "580628689#0",
+     "580628690",
+     "627315316",
+     "787871246",
+     "965924525"
+    ]
+   },
+   {
+    "segment_id": 13734,
+    "road_name": "SWANSTON STREET",
+    "description": "SWANSTON STREET N Bd btwn SWANSTON STREET & VICTORIA STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 5742.0,
+    "heavy_vehicles_2019": 372.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126682718"
+    ]
+   },
+   {
+    "segment_id": 13099,
+    "road_name": "MORAY STREET",
+    "description": "MORAY STREET N Bd btwn COVENTRY STREET & KINGS IN-MORAY RAMP",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8552.0,
+    "heavy_vehicles_2019": 554.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1255055166#0",
+     "-485229678#0",
+     "-665212662#0",
+     "-665212663#0",
+     "-665212664#0",
+     "-665212665#0",
+     "-665212665#1",
+     "217628212",
+     "658318038"
+    ]
+   },
+   {
+    "segment_id": 13572,
+    "road_name": "DORCAS STREET",
+    "description": "DORCAS STREET W Bd btwn MORAY STREET & CLARENDON STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3311.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126584273",
+     "1164297773#0",
+     "1164297773#1",
+     "1354868293",
+     "26664816#1"
+    ]
+   },
+   {
+    "segment_id": 13588,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET N Bd btwn FRANKLIN STREET & VICTORIA STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 5344.0,
+    "heavy_vehicles_2019": 346.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1126652258",
+     "1126652259",
+     "208793251#0",
+     "208793251#2",
+     "22818903",
+     "62207595"
+    ]
+   },
+   {
+    "segment_id": 13977,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET N Bd btwn EXHIBITION STREET & VICTORIA STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9044.0,
+    "heavy_vehicles_2019": 585.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "22758374",
+     "29020844#0",
+     "672401944#1"
+    ]
+   },
+   {
+    "segment_id": 15864,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET W Bd btwn RUSSELL STREET & ELIZABETH STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 6741.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1457381576#1",
+     "207831636#0",
+     "209107654",
+     "316166613#1"
+    ]
+   },
+   {
+    "segment_id": 15866,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET S BD btwn COLLINS STREET & FLINDERS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 2941.0,
+    "heavy_vehicles_2019": 190.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "559997292"
+    ]
+   },
+   {
+    "segment_id": 9593,
+    "road_name": "KING STREET",
+    "description": "KING STREET N Bd btwn LATROBE STREET & DUDLEY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 18007.0,
+    "heavy_vehicles_2019": 1183.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "135953468#0",
+     "569455489",
+     "794834201#0",
+     "963120903",
+     "963120908#0"
+    ]
+   },
+   {
+    "segment_id": 9250,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET N Bd btwn LATROBE STREET & DUDLEY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8522.0,
+    "heavy_vehicles_2019": 663.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "30179566#0",
+     "30179566#2",
+     "965116119#0"
+    ]
+   },
+   {
+    "segment_id": 9257,
+    "road_name": "DRYBURGH STREET",
+    "description": "DRYBURGH ST N BD BTWN DYNON RD & VICTORIA ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 2437.0,
+    "heavy_vehicles_2019": 192.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123803840"
+    ]
+   },
+   {
+    "segment_id": 8684,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST W BD BTWN CARDIGAN ST & SWANSTON ST (EAST)",
+    "direction": "WEST BOUND",
+    "aadt_2019": 20550.0,
+    "heavy_vehicles_2019": 1350.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "327713011",
+     "505210570"
+    ]
+   },
+   {
+    "segment_id": 9054,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET N Bd btwn COLLINS STREET & BOURKE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8507.0,
+    "heavy_vehicles_2019": 559.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "206506959#0",
+     "931222615#0"
+    ]
+   },
+   {
+    "segment_id": 9616,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET N Bd btwn CLARENDON STREET & FLINDERS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10716.0,
+    "heavy_vehicles_2019": 343.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "134621885#0",
+     "208920312",
+     "787612631#0",
+     "787612631#1",
+     "787612631#2",
+     "787612631#3"
+    ]
+   },
+   {
+    "segment_id": 8668,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET W Bd btwn ABBOTSFORD STREET & DRYBURGH STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 17150.0,
+    "heavy_vehicles_2019": 1126.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "569448149#0"
+    ]
+   },
+   {
+    "segment_id": 9067,
+    "road_name": "VICTORIA PARADE",
+    "description": "VICTORIA ST W BD BTWN LATROBE ST & EXHIBITION ST (EAST)",
+    "direction": "WEST BOUND",
+    "aadt_2019": 15738.0,
+    "heavy_vehicles_2019": 1034.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "156927092",
+     "206507202"
+    ]
+   },
+   {
+    "segment_id": 9072,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST W BD BTWN ELIZABETH ST & PEEL ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 11326.0,
+    "heavy_vehicles_2019": 744.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "316628750",
+     "581989734",
+     "711611140#0"
+    ]
+   },
+   {
+    "segment_id": 11847,
+    "road_name": "WILLIAMSTOWN ROAD",
+    "description": "WILLIAMSTOWN ROAD W Bd btwn NORMANBY ROAD & GRAHAM STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3825.0,
+    "heavy_vehicles_2019": 367.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-1014590948#0",
+     "-1014590951",
+     "-1014590952",
+     "-1014590954",
+     "-1014590956",
+     "-1015374791",
+     "-1017793720",
+     "-198994472",
+     "-291715825#0",
+     "-792055329#0",
+     "198941893",
+     "296377475",
+     "580637961",
+     "767675588#0",
+     "767675588#1",
+     "767675588#2",
+     "767675588#3"
+    ]
+   },
+   {
+    "segment_id": 15241,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET E Bd btwn QUEEN STREET & ELIZABETH STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4809.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "207831526"
+    ]
+   },
+   {
+    "segment_id": 16074,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET S BD btwn LONSDALE STREET & BOURKE STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 4442.0,
+    "heavy_vehicles_2019": 287.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126650513#1",
+     "235931748#1"
+    ]
+   },
+   {
+    "segment_id": 9592,
+    "road_name": "KING STREET",
+    "description": "KING STREET N Bd btwn BOURKE STREET & LONSDALE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 22846.0,
+    "heavy_vehicles_2019": 1501.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "711989785#0",
+     "963120895#0"
+    ]
+   },
+   {
+    "segment_id": 15705,
+    "road_name": "SWANSTON STREET",
+    "description": "ST KILDA ROAD N Bd btwn & FLINDERS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 11146.0,
+    "heavy_vehicles_2019": 722.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1172330759#0",
+     "1172330759#1",
+     "46829235#0",
+     "46829235#1",
+     "778460621"
+    ]
+   },
+   {
+    "segment_id": 11972,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY NW BD BTWN RAMPS AT WEST GATE FWY",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 19546.0,
+    "heavy_vehicles_2019": 1036.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "5234968",
+     "980098304"
+    ]
+   },
+   {
+    "segment_id": 9227,
+    "road_name": "DYNON ROAD",
+    "description": "DYNON RD W BD BTWN RAMPS AT WESTERN LINK TOLLWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 12154.0,
+    "heavy_vehicles_2019": 1118.0,
+    "heavy_share_2019": 0.09,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "55949192#0",
+     "581658391#0",
+     "581658402",
+     "766302794"
+    ]
+   },
+   {
+    "segment_id": 12083,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD NWBd btwn KINGS WAY & DOMAIN ROAD",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 20816.0,
+    "heavy_vehicles_2019": 567.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1286706401",
+     "1308553591",
+     "1308553593",
+     "1308553594",
+     "217836956",
+     "506995840#0",
+     "506995840#1"
+    ]
+   },
+   {
+    "segment_id": 9070,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST W BD BTWN SWANSTON ST (WEST) & BOUVERIE ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 18478.0,
+    "heavy_vehicles_2019": 1214.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1183823824",
+     "208031602",
+     "581989738"
+    ]
+   },
+   {
+    "segment_id": 8625,
+    "road_name": "KING STREET",
+    "description": "KING STREET NWBd btwn DUDLEY STREET & HAWKE STREET",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 15123.0,
+    "heavy_vehicles_2019": 993.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "27008378",
+     "569455489",
+     "794824456#0",
+     "835286485#0",
+     "963120919",
+     "963120926"
+    ]
+   },
+   {
+    "segment_id": 11622,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY NW BD BTWN WEST GATE FWY & SOUTHERN LINK TOLLWAY OFFRAMP",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 24755.0,
+    "heavy_vehicles_2019": 477.0,
+    "heavy_share_2019": 0.02,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "5234968",
+     "980110340",
+     "980110341",
+     "980542670",
+     "980542671",
+     "980542675"
+    ]
+   },
+   {
+    "segment_id": 15622,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET N BD btwn FLINDERS STREET & COLLINS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 2941.0,
+    "heavy_vehicles_2019": 190.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "207778723",
+     "968093378#0"
+    ]
+   },
+   {
+    "segment_id": 15767,
+    "road_name": "WEST GATE OUT-WEST GATE OUT RAMP",
+    "description": "WEST GATE FREEWAY W BD btwn MONTAGUE STREET & WESTERN LINK TOLLWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 91382.0,
+    "heavy_vehicles_2019": 9270.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "13301815",
+     "484854832",
+     "775968519"
+    ]
+   },
+   {
+    "segment_id": 10007,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD NE BD BTWN CECIL ST & CLARENDON ST",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 10530.0,
+    "heavy_vehicles_2019": 691.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-39452127#4",
+     "-581717494"
+    ]
+   },
+   {
+    "segment_id": 15918,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FREEWAY E BD BTWN RAMPS AT POWER ST (KINGS WAY)",
+    "direction": "EAST BOUND",
+    "aadt_2019": 66877.0,
+    "heavy_vehicles_2019": 6784.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "5234946"
+    ]
+   },
+   {
+    "segment_id": 15619,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET E Bd btwn ELIZABETH STREET & RUSSELL STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 6741.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207831528#1",
+     "207831528#2",
+     "208498191"
+    ]
+   },
+   {
+    "segment_id": 9440,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD NE BD BTWN FERRARS ST & CECIL ST",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 11822.0,
+    "heavy_vehicles_2019": 776.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-198994161#0",
+     "-198994161#2",
+     "-568380320"
+    ]
+   },
+   {
+    "segment_id": 8666,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET N Bd btwn BOURKE STREET & LONSDALE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9269.0,
+    "heavy_vehicles_2019": 609.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "206506959#3",
+     "206506959#5"
+    ]
+   },
+   {
+    "segment_id": 15332,
+    "road_name": "SWANSTON STREET",
+    "description": "ST KILDA ROAD S Bd btwn FLINDERS STREET &",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 9639.0,
+    "heavy_vehicles_2019": 624.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1203843366",
+     "670824705#0",
+     "670824705#1"
+    ]
+   },
+   {
+    "segment_id": 9256,
+    "road_name": "PEEL STREET",
+    "description": "PEEL STREET N Bd btwn DUDLEY STREET & VICTORIA STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 14238.0,
+    "heavy_vehicles_2019": 824.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "217383023"
+    ]
+   },
+   {
+    "segment_id": 13905,
+    "road_name": "WHITEMAN STREET",
+    "description": "WHITEMAN STREET NW BD btwn CLARENDON STREET & QUEENS STREET",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 4473.0,
+    "heavy_vehicles_2019": 289.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1018419574#0",
+     "581714222#0",
+     "581714222#4",
+     "581714223"
+    ]
+   },
+   {
+    "segment_id": 15621,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET N BD btwn BOURKE STREET & LONSDALE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 4442.0,
+    "heavy_vehicles_2019": 287.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126651020#1",
+     "1126651020#2"
+    ]
+   },
+   {
+    "segment_id": 13781,
+    "road_name": "YORK STREET",
+    "description": "YORK STREET W Bd btwn CECIL STREET & FERRARS STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 4951.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "399135792#0",
+     "59914396#0",
+     "59914396#1"
+    ]
+   },
+   {
+    "segment_id": 15378,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE ST WEST W BD BTWN HARBOUR ESP & WURUNDJERI WAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 2416.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1274774671",
+     "1274774672",
+     "1274774675#0",
+     "1274774675#1",
+     "1274774680#0",
+     "39947804",
+     "716689904"
+    ]
+   },
+   {
+    "segment_id": 9066,
+    "road_name": "VICTORIA PARADE",
+    "description": "VICTORIA ST W BD BTWN NICHOLSON ST & LATROBE ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 26462.0,
+    "heavy_vehicles_2019": 1738.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123482186",
+     "1183823836",
+     "198034077",
+     "378406887",
+     "61512104"
+    ]
+   },
+   {
+    "segment_id": 9071,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST W BD BTWN BOUVERIE ST & ELIZABETH ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 17015.0,
+    "heavy_vehicles_2019": 1118.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1183823819",
+     "1183823824",
+     "581989734",
+     "581989737",
+     "581989738"
+    ]
+   },
+   {
+    "segment_id": 9074,
+    "road_name": "VICTORIA PARADE",
+    "description": "VICTORIA PDE W BD BTWN GISBORNE ST & NICHOLSON ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 18505.0,
+    "heavy_vehicles_2019": 1216.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1127626311#1",
+     "1127626318",
+     "1183823836",
+     "199649971",
+     "61512104",
+     "783061126#0"
+    ]
+   },
+   {
+    "segment_id": 9436,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST N BD BTWN YORK ST & CITY RD",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6359.0,
+    "heavy_vehicles_2019": 417.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-217597351#0",
+     "217597348#0",
+     "217597348#1",
+     "217597348#2",
+     "718619754#0"
+    ]
+   },
+   {
+    "segment_id": 15093,
+    "road_name": "DOMAIN ROAD",
+    "description": "DOMAIN ROAD W Bd btwn PARK STREET & ST KILDA ROAD",
+    "direction": "WEST BOUND",
+    "aadt_2019": 7175.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1070975836",
+     "1461662156#1",
+     "1461662157",
+     "1461662158#1",
+     "1461662160",
+     "216569128#1"
+    ]
+   },
+   {
+    "segment_id": 15964,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FWY SW BD BTWN RAMPS AT WESTERN LINK TOLLWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 118458.0,
+    "heavy_vehicles_2019": 18382.0,
+    "heavy_share_2019": 0.16,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "484854832",
+     "484854835",
+     "775968519"
+    ]
+   },
+   {
+    "segment_id": 14537,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FWY E BD BTWN RAMPS AT KINGS WAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 66877.0,
+    "heavy_vehicles_2019": 6784.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "321793268",
+     "38313389",
+     "484853234",
+     "484853234-AddedOffRampEdge"
+    ]
+   },
+   {
+    "segment_id": 15742,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FWY NW BD BTWN KINGS WAY & MONTAGUE STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 91382.0,
+    "heavy_vehicles_2019": 9270.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "312190208",
+     "312190215-AddedOffRampEdge",
+     "38313416",
+     "775968520"
+    ]
+   },
+   {
+    "segment_id": 15965,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FREEWAY W BD BTWN DOCKLANDS HIGHWAY & WESTERN LINK TOLLWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 91382.0,
+    "heavy_vehicles_2019": 9270.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "13301815",
+     "296377256"
+    ]
+   },
+   {
+    "segment_id": 9053,
+    "road_name": "SPENCER STREET",
+    "description": "SPENCER STREET N Bd btwn FLINDERS STREET & COLLINS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8713.0,
+    "heavy_vehicles_2019": 278.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198715025"
+    ]
+   },
+   {
+    "segment_id": 9632,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA ST W BD BTWN EXHIBITION ST (EAST) & EXHIBITION ST (WEST)",
+    "direction": "WEST BOUND",
+    "aadt_2019": 16542.0,
+    "heavy_vehicles_2019": 1086.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "711600864#0",
+     "711600864#1"
+    ]
+   },
+   {
+    "segment_id": 9226,
+    "road_name": "DYNON ROAD",
+    "description": "DYNON RD W BD BTWN DRYBURGH ST & WESTERN LINK TOLLWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 17690.0,
+    "heavy_vehicles_2019": 1162.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "13859277#1",
+     "1459964018",
+     "55949192#0",
+     "786200164"
+    ]
+   },
+   {
+    "segment_id": 14541,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FWY NW BD BTWN MONTAGUE STREET & WEST GATE FREEWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 91382.0,
+    "heavy_vehicles_2019": 9270.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "312190215",
+     "312190215-AddedOffRampEdge",
+     "50123947-AddedOffRampEdge",
+     "5234995"
+    ]
+   },
+   {
+    "segment_id": 9591,
+    "road_name": "KING STREET",
+    "description": "KING STREET N Bd btwn COLLINS STREET & BOURKE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 23645.0,
+    "heavy_vehicles_2019": 1553.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "207516093#0",
+     "963120890#1",
+     "963120891#0"
+    ]
+   },
+   {
+    "segment_id": 8718,
+    "road_name": "FERRARS STREET",
+    "description": "FERRARS ST N BD BTWN DORCAS ST & YORK ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10002.0,
+    "heavy_vehicles_2019": 657.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1124004891#2",
+     "1209937150"
+    ]
+   },
+   {
+    "segment_id": 10379,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST N BD BTWN CITY RD & NORMANBY RD",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9920.0,
+    "heavy_vehicles_2019": 651.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "19013358#0",
+     "19013358#3",
+     "19013358#4"
+    ]
+   },
+   {
+    "segment_id": 14200,
+    "road_name": "WURUNDJERI WAY",
+    "description": "WURUNDJERI WAY N BD BTWN BOURKE ST & DUDLEY ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 14516.0,
+    "heavy_vehicles_2019": 979.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1498373606",
+     "1499827778",
+     "207277772",
+     "505037806#0",
+     "580628688",
+     "580628691#0",
+     "965924523",
+     "985003640"
+    ]
+   },
+   {
+    "segment_id": 9028,
+    "road_name": "KING STREET",
+    "description": "KING STREET N Bd btwn LONSDALE STREET & LATROBE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 20953.0,
+    "heavy_vehicles_2019": 1376.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "569443032#0",
+     "581959665#0"
+    ]
+   },
+   {
+    "segment_id": 14201,
+    "road_name": "WURUNDJERI WAY",
+    "description": "WURUNDJERI WAY S BD BTWN BOURKE ST & FLINDERS ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 15071.0,
+    "heavy_vehicles_2019": 1120.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1499827777",
+     "1563761238",
+     "984852790"
+    ]
+   },
+   {
+    "segment_id": 12925,
+    "road_name": "ALBERT STREET",
+    "description": "ALBERT STREET W Bd btwn GISBORNE STREET & LONSDALE STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 9028.0,
+    "heavy_vehicles_2019": 584.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1123486391",
+     "1253825970",
+     "1253825971#0",
+     "665181109#0"
+    ]
+   },
+   {
+    "segment_id": 9035,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH ST N BD BTWN VICTORIA ST & QUEENSBERRY ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9742.0,
+    "heavy_vehicles_2019": 640.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1183823612",
+     "207778983#1",
+     "207778983#2",
+     "208793251#2",
+     "22818903",
+     "582018440#0",
+     "582018440#1",
+     "582018440#2",
+     "582018444",
+     "62207595",
+     "787172937",
+     "787172938"
+    ]
+   },
+   {
+    "segment_id": 15333,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD S Bd btwn & LINLITHGOW AVENUE",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 10920.0,
+    "heavy_vehicles_2019": 707.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123976273",
+     "1159052700#1",
+     "209333290#0",
+     "209333290#1",
+     "209333290#2",
+     "25427595#0",
+     "25427595#1",
+     "25427595#2",
+     "25427595#3",
+     "71076793#0"
+    ]
+   },
+   {
+    "segment_id": 11971,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY NW BD BTWN STURT ST & YORK ST/WEST GATE FWY",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 50165.0,
+    "heavy_vehicles_2019": 2660.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581031736",
+     "980098306#0"
+    ]
+   },
+   {
+    "segment_id": 11595,
+    "road_name": "MONTAGUE STREET",
+    "description": "MONTAGUE ST NW BD BTWN CITY RD & NORMANBY RD",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 12320.0,
+    "heavy_vehicles_2019": 966.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1463867020#0",
+     "1463867020#1",
+     "1467731100",
+     "26786105",
+     "399135783#0",
+     "399135784#0",
+     "44075002#0",
+     "44075002#2"
+    ]
+   },
+   {
+    "segment_id": 10223,
+    "road_name": "NICHOLSON STREET",
+    "description": "NICHOLSON STREET N Bd btwn VICTORIA PARADE & GERTRUDE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8661.0,
+    "heavy_vehicles_2019": 569.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "569718744",
+     "569719147",
+     "783043640#0",
+     "783043640#1"
+    ]
+   },
+   {
+    "segment_id": 12084,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD N Bd btwn GRANT STREET & LINLITHGOW AVENUE",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 11475.0,
+    "heavy_vehicles_2019": 754.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1008818044#6",
+     "1008818044#7",
+     "1008818044#8",
+     "1008818044#9",
+     "1008818045#5",
+     "1008818045#6",
+     "1008818045#7",
+     "569726889"
+    ]
+   },
+   {
+    "segment_id": 10750,
+    "road_name": "NICHOLSON STREET",
+    "description": "NICHOLSON STREET N Bd btwn GERTRUDE STREET & JOHNSTON STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8967.0,
+    "heavy_vehicles_2019": 589.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "206507104",
+     "866530861#0"
+    ]
+   },
+   {
+    "segment_id": 12537,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY NW BD BTWN PARK ST & STURT ST",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 46074.0,
+    "heavy_vehicles_2019": 2443.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198712896#0",
+     "198712896#2",
+     "198712896#5",
+     "979797338"
+    ]
+   },
+   {
+    "segment_id": 15743,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FWY NW BD BTWN KINGS WAY & WESTERN LINK TOLLWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 64307.0,
+    "heavy_vehicles_2019": 6524.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "50123947",
+     "50123947-AddedOffRampEdge",
+     "50123947-AddedOnRampEdge"
+    ]
+   },
+   {
+    "segment_id": 16251,
+    "road_name": "BURNLEY TUNNEL",
+    "description": "SOUTHERN LINK TOLLWAY E BD BTWN RAMPS AT POWER ST (KINGS WAY)",
+    "direction": "EAST BOUND",
+    "aadt_2019": 66877.0,
+    "heavy_vehicles_2019": 6784.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "5234624",
+     "8066124-AddedOnRampEdge"
+    ]
+   },
+   {
+    "segment_id": 14538,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FREEWAY E BD BTWN WESTERN LINK & DOCKLANDS HIGHWAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 117108.0,
+    "heavy_vehicles_2019": 11880.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207516097",
+     "38312866"
+    ]
+   },
+   {
+    "segment_id": 14544,
+    "road_name": "STURT STREET",
+    "description": "STURT STREET S Bd btwn GRANT STREET & YARRA BANK HIGHWAY",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 3823.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "217377197#0",
+     "217377323#0",
+     "581037861",
+     "581037862",
+     "71189180#0"
+    ]
+   },
+   {
+    "segment_id": 9439,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD NE BD BTWN MONTAGUE ST & FERRARS ST",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 7617.0,
+    "heavy_vehicles_2019": 500.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "26786299#1",
+     "39474083",
+     "444842203#0"
+    ]
+   },
+   {
+    "segment_id": 15865,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn ST KILDA ROAD & ELIZABETH STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 9550.0,
+    "heavy_vehicles_2019": 618.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "295476230#0",
+     "295476230#1",
+     "295476230#2"
+    ]
+   },
+   {
+    "segment_id": 15125,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY N BD BTWN OFFFRAMP TO CROWN & KING ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 22995.0,
+    "heavy_vehicles_2019": 443.0,
+    "heavy_share_2019": 0.02,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "11589926#1",
+     "11589928#1",
+     "12278361",
+     "134621274#0",
+     "199192289",
+     "230844254",
+     "23212198",
+     "32454966",
+     "980542674",
+     "980542675",
+     "980873627"
+    ]
+   },
+   {
+    "segment_id": 15966,
+    "road_name": "MONTAGUE STREET",
+    "description": "MONTAGUE ST NW BD BTWN WEST GATE FREEWAY & WEST GATE FWY",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 23987.0,
+    "heavy_vehicles_2019": 1882.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "38313709#0",
+     "38313709#1",
+     "715573250",
+     "780655769",
+     "789312782",
+     "982206092"
+    ]
+   },
+   {
+    "segment_id": 14948,
+    "road_name": "STURT STREET",
+    "description": "STURT STREET N Bd btwn YARRA BANK HIGHWAY & GRANT STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 3823.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-217377197#1",
+     "217377200#0",
+     "217377200#1",
+     "217377326",
+     "71189074"
+    ]
+   },
+   {
+    "segment_id": 11261,
+    "road_name": "NORMANBY ROAD",
+    "description": "NORMANBY ROAD SWBd btwn MONTAGUE STREET & WILLIAMSTOWN ROAD",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 6731.0,
+    "heavy_vehicles_2019": 442.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-1017793718#0",
+     "-1017793718#1",
+     "-1017793718#4",
+     "-13078236#2"
+    ]
+   },
+   {
+    "segment_id": 14498,
+    "road_name": "MONTAGUE STREET",
+    "description": "MONTAGUE ST N BD BTWN RAMPS AT WEST GATE FWY & & LORIMER ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 17938.0,
+    "heavy_vehicles_2019": 1036.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "38313357#1",
+     "39452240",
+     "504914082#1",
+     "568362741",
+     "981208581",
+     "982206078",
+     "982206083"
+    ]
+   },
+   {
+    "segment_id": 10709,
+    "road_name": "LORIMER STREET",
+    "description": "LORIMER STREET W Bd btwn WEST GATE FREEWAY Offramp & INGLES STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 6186.0,
+    "heavy_vehicles_2019": 764.0,
+    "heavy_share_2019": 0.12,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-984811452",
+     "-984811454#0",
+     "1016845382",
+     "1016845383",
+     "1016845385",
+     "1016845389",
+     "1016845390#0",
+     "22597518#0",
+     "22597631",
+     "580637963#0",
+     "580637963#1",
+     "778984242",
+     "981208585",
+     "984811437#0",
+     "984811440",
+     "984811441",
+     "984811444",
+     "984811447",
+     "984814771",
+     "984814777",
+     "984814778"
+    ]
+   },
+   {
+    "segment_id": 10967,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD N Bd btwn PARK STREET & GRANT STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 12703.0,
+    "heavy_vehicles_2019": 346.0,
+    "heavy_share_2019": 0.03,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1008818044#0",
+     "1008818044#1",
+     "1008818044#4",
+     "1008818045#0",
+     "1008818045#1",
+     "1008818045#2",
+     "1008818045#4",
+     "1158909622#0",
+     "1158909622#2",
+     "1172330761",
+     "1172337445",
+     "1275162866",
+     "179293015#0",
+     "24488871#0",
+     "24488871#1"
+    ]
+   },
+   {
+    "segment_id": 14364,
+    "road_name": "SOUTHBANK BOULEVARD",
+    "description": "SOUTHBANK BOULEVARD NWBd btwn CITY ROAD & QUEENSBRIDGE STREET",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 4893.0,
+    "heavy_vehicles_2019": 316.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "22664493",
+     "23909982",
+     "665212672",
+     "767313613",
+     "787583812"
+    ]
+   },
+   {
+    "segment_id": 14943,
+    "road_name": "MONTAGUE STREET",
+    "description": "MONTAGUE ST NW BD BTWN NORMANBY RD & WEST GATE FREEWAY",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 21486.0,
+    "heavy_vehicles_2019": 1686.0,
+    "heavy_share_2019": 0.08,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "197846381#1",
+     "789312782",
+     "982206097#1",
+     "982206100"
+    ]
+   },
+   {
+    "segment_id": 14539,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FREEWAY E BD BTWN WESTERN LINK & DOCKLANDS HIGHWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 91992.0,
+    "heavy_vehicles_2019": 9332.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "296377256"
+    ]
+   },
+   {
+    "segment_id": 14543,
+    "road_name": "NORMANBY ROAD",
+    "description": "NORMANBY ROAD SWBd btwn CLARENDON STREET & WEST GATE FREEWAY",
+    "direction": "SOUTH WEST BOUND",
+    "aadt_2019": 5417.0,
+    "heavy_vehicles_2019": 355.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "-25428288#1",
+     "1022123481#2",
+     "25428309"
+    ]
+   },
+   {
+    "segment_id": 15242,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn ELIZABETH STREET & ST KILDA ROAD",
+    "direction": "EAST BOUND",
+    "aadt_2019": 9550.0,
+    "heavy_vehicles_2019": 618.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1093113348",
+     "724454901",
+     "724454904#1",
+     "override_724454905"
+    ]
+   },
+   {
+    "segment_id": 15868,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET S BD btwn BOURKE STREET & COLLINS STREET",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 4442.0,
+    "heavy_vehicles_2019": 287.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1276257103",
+     "286827105#0"
+    ]
+   },
+   {
+    "segment_id": 9819,
+    "road_name": "CLARENDON STREET",
+    "description": "CLARENDON ST N BD BTWN NORMANBY RD & SPENCER ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 13805.0,
+    "heavy_vehicles_2019": 907.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "42639916#0",
+     "42639916#1",
+     "42639916#4"
+    ]
+   },
+   {
+    "segment_id": 10006,
+    "road_name": "CITY ROAD",
+    "description": "CITY RD NE BD BTWN BOUNDARY RD & MONTAGUE ST",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 9788.0,
+    "heavy_vehicles_2019": 643.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "26786299#0",
+     "26786299#1",
+     "26786308#0",
+     "26786308#1"
+    ]
+   },
+   {
+    "segment_id": 15092,
+    "road_name": "DOMAIN ROAD",
+    "description": "DOMAIN ROAD E Bd btwn ST KILDA ROAD & BIRDWOOD AVENUE",
+    "direction": "EAST BOUND",
+    "aadt_2019": 7175.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1461662156#0",
+     "-1461662156#1",
+     "-216569128#0"
+    ]
+   },
+   {
+    "segment_id": 15376,
+    "road_name": "HARBOUR ESPLANADE",
+    "description": "HARBOUR ESP N BD BTW LATROBE ST & BOURKE ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 3755.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "569460355#0",
+     "569460355#1"
+    ]
+   },
+   {
+    "segment_id": 14945,
+    "road_name": "MONTAGUE STREET",
+    "description": "MONTAGUE ST S BD BTWN WEST GATE FREEWAY Y",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 30344.0,
+    "heavy_vehicles_2019": 1609.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1254450685",
+     "38313359#0",
+     "784419711",
+     "784419711-AddedOnRampEdge",
+     "982206079",
+     "982206087",
+     "982206088",
+     "982206089"
+    ]
+   },
+   {
+    "segment_id": 14542,
+    "road_name": "NORMANBY ROAD",
+    "description": "NORMANBY ROAD NE BD btwn MONTAGUE STREET & CLARENDON STREET",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 3765.0,
+    "heavy_vehicles_2019": 247.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1022123480#3",
+     "25428288#1",
+     "963818468#0",
+     "963818468#2"
+    ]
+   },
+   {
+    "segment_id": 13127,
+    "road_name": "PARK STREET",
+    "description": "PARK STREET W Bd btwn ST KILDA ROAD & KINGS WAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5560.0,
+    "heavy_vehicles_2019": 360.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1187768848#2",
+     "1187768848#3",
+     "1187768848#5",
+     "979789777#0",
+     "984871817"
+    ]
+   },
+   {
+    "segment_id": 14093,
+    "road_name": "PEEL STREET",
+    "description": "PEEL STREET N Bd btwn WILLIAM STREET & DUDLEY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6975.0,
+    "heavy_vehicles_2019": 451.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1436793800",
+     "208641733"
+    ]
+   },
+   {
+    "segment_id": 14704,
+    "road_name": "POWER STREET",
+    "description": "POWER ST SE BD BTWN RAMPS AT WEST GATE FWY/SOUTHERN LINK TOLLWAY",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 14414.0,
+    "heavy_vehicles_2019": 764.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "5234818",
+     "963624497"
+    ]
+   },
+   {
+    "segment_id": 14707,
+    "road_name": "QUEEN STREET",
+    "description": "QUEEN STREET N Bd btwn COLLINS STREET & BOURKE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6804.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1492430627",
+     "296383691#1"
+    ]
+   },
+   {
+    "segment_id": 12751,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET W Bd btwn SPRING STREET & EXHIBITION STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3850.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208677469#0"
+    ]
+   },
+   {
+    "segment_id": 14075,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET W Bd btwn WILLIAM STREET & KING STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 15870.0,
+    "heavy_vehicles_2019": 1028.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198005097#0",
+     "198005097#3"
+    ]
+   },
+   {
+    "segment_id": 13021,
+    "road_name": "HAWKE STREET",
+    "description": "HAWKE STREET NEBd btwn SPENCER STREET & KING STREET",
+    "direction": "NORTH EAST BOUND",
+    "aadt_2019": 6289.0,
+    "heavy_vehicles_2019": 407.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "61532904#0",
+     "61532904#3"
+    ]
+   },
+   {
+    "segment_id": 14186,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET N Bd btwn COLLINS STREET & BOURKE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9941.0,
+    "heavy_vehicles_2019": 644.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208641736#0",
+     "968328215#1"
+    ]
+   },
+   {
+    "segment_id": 14198,
+    "road_name": "YORK STREET",
+    "description": "YORK STREET W Bd btwn CLARENDON STREET & CECIL STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 2603.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "32918963#0",
+     "32918963#4"
+    ]
+   },
+   {
+    "segment_id": 15377,
+    "road_name": "HARBOUR ESPLANADE",
+    "description": "HARBOUR ESP S BD BTW LATROBE ST & BOURKE ST",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 2287.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "135951295#0",
+     "135951295#3"
+    ]
+   },
+   {
+    "segment_id": 14337,
+    "road_name": "RATHDOWNE STREET",
+    "description": "RATHDOWNE STREET N Bd btwn VICTORIA STREET & QUEENSBERRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10463.0,
+    "heavy_vehicles_2019": 677.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1132672843"
+    ]
+   },
+   {
+    "segment_id": 15929,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FREEWAY E BD BTWN RAMPS AT DOCKLANDS HIGHWAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 91992.0,
+    "heavy_vehicles_2019": 9332.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1086833715",
+     "1086833716",
+     "207516092",
+     "38313358",
+     "38313701",
+     "5634370",
+     "5634370-AddedOnRampEdge",
+     "775968521",
+     "783844082",
+     "982206102#0",
+     "982206102#1"
+    ]
+   },
+   {
+    "segment_id": 13108,
+    "road_name": "NICHOLSON STREET",
+    "description": "NICHOLSON STREET N Bd btwn SPRING STREET & ALBERT STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 3291.0,
+    "heavy_vehicles_2019": 213.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208677470#0",
+     "958748541"
+    ]
+   },
+   {
+    "segment_id": 14814,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET W Bd btwn BANANA ALLEY & FLINDERS STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 10986.0,
+    "heavy_vehicles_2019": 711.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1352485051",
+     "622561171"
+    ]
+   },
+   {
+    "segment_id": 14202,
+    "road_name": "WURUNDJERI WAY",
+    "description": "WURUNDJERI WAY N BD BTWN FLINDERS ST & BOURKE ST",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 15851.0,
+    "heavy_vehicles_2019": 1178.0,
+    "heavy_share_2019": 0.07,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1499827778",
+     "787528069"
+    ]
+   },
+   {
+    "segment_id": 13513,
+    "road_name": "MORAY STREET",
+    "description": "MORAY STREET N Bd btwn PARK STREET & DORCAS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6102.0,
+    "heavy_vehicles_2019": 395.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1252211280",
+     "1252211286#1",
+     "1274777259",
+     "665212669"
+    ]
+   },
+   {
+    "segment_id": 14409,
+    "road_name": "VICTORIA STREET",
+    "description": "VICTORIA STREET W Bd btwn CHETWYND STREET & ERROL STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 6489.0,
+    "heavy_vehicles_2019": 420.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1122543877",
+     "1122543880#2",
+     "983444255"
+    ]
+   },
+   {
+    "segment_id": 13285,
+    "road_name": "ABBOTSFORD STREET",
+    "description": "ABBOTSFORD STREET N Bd btwn SPENCER STREET & VICTORIA STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 2572.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1122544761#0",
+     "1122544767",
+     "172482246#2",
+     "172482246#3"
+    ]
+   },
+   {
+    "segment_id": 13060,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET W Bd btwn QUEEN STREET & WILLIAM STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 15870.0,
+    "heavy_vehicles_2019": 1028.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581959650#0"
+    ]
+   },
+   {
+    "segment_id": 13942,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET W Bd btwn KING STREET & SPENCER STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5779.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207830034"
+    ]
+   },
+   {
+    "segment_id": 14048,
+    "road_name": "INGLES STREET",
+    "description": "INGLES STREET NWBd btwn NORMANBY ROAD & INGLES STREET",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 3456.0,
+    "heavy_vehicles_2019": 223.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-789322000#0",
+     "-789322000#5",
+     "-789322000#6",
+     "1016845379",
+     "1016845380#0",
+     "789322003#0"
+    ]
+   },
+   {
+    "segment_id": 13469,
+    "road_name": "KINGS WAY",
+    "description": "CONNECTING ROAD W Bd btwn KINGS WAY & MORAY STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5742.0,
+    "heavy_vehicles_2019": 372.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 13685,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn KING STREET & SPENCER STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5329.0,
+    "heavy_vehicles_2019": 345.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1312971512"
+    ]
+   },
+   {
+    "segment_id": 13475,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn QUEEN STREET & WILLIAM STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 8695.0,
+    "heavy_vehicles_2019": 563.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1312971508",
+     "505256324",
+     "658620803"
+    ]
+   },
+   {
+    "segment_id": 13687,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn ADDERLEY STREET & DOCKLANDS HIGHWAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5262.0,
+    "heavy_vehicles_2019": 340.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "135952945",
+     "26431522#1",
+     "68861971#0"
+    ]
+   },
+   {
+    "segment_id": 14944,
+    "road_name": "MONTAGUE STREET",
+    "description": "MONTAGUE ST S BD BTWN WEST GATE FREEWAY Y",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 30344.0,
+    "heavy_vehicles_2019": 1753.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1291942747",
+     "568375948",
+     "981208578",
+     "982206089"
+    ]
+   },
+   {
+    "segment_id": 14710,
+    "road_name": "QUEENSBERRY STREET",
+    "description": "QUEENSBERRY STREET W Bd btwn RATHDOWNE STREET & LYGON STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5796.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123830502#0",
+     "89909469#2"
+    ]
+   },
+   {
+    "segment_id": 13769,
+    "road_name": "WILLIAM STREET",
+    "description": "WILLIAM STREET N Bd btwn BOURKE STREET & LONSDALE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8597.0,
+    "heavy_vehicles_2019": 556.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581959658#0",
+     "968328219"
+    ]
+   },
+   {
+    "segment_id": 14199,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE ST WEST E BD BTWN HARBOUR ESP & WURUNDJERI WAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 4350.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1274774673#1",
+     "1274774674",
+     "1550075449#0",
+     "207277768",
+     "716689903",
+     "984841497"
+    ]
+   },
+   {
+    "segment_id": 15509,
+    "road_name": "KINGS WAY",
+    "description": "KINGS WAY SE BD BTWN ONRAMP FROM CROWN & SOUTHERN LINK TOLLWAY",
+    "direction": "SOUTH BOUND",
+    "aadt_2019": 22199.0,
+    "heavy_vehicles_2019": 497.0,
+    "heavy_share_2019": 0.02,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "134620345#0",
+     "134621261",
+     "23212187",
+     "23212191#0",
+     "23212191#1",
+     "27165179",
+     "33906853",
+     "5234752"
+    ]
+   },
+   {
+    "segment_id": 13346,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET W Bd btwn RUSSELL STREET & SWANSTON STREET WALK",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3850.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126692423",
+     "208506747",
+     "208554968"
+    ]
+   },
+   {
+    "segment_id": 12752,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET W Bd btwn EXHIBITION STREET & RUSSELL STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3850.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208554600#0"
+    ]
+   },
+   {
+    "segment_id": 14115,
+    "road_name": "RUSSELL STREET",
+    "description": "RUSSELL STREET N Bd btwn FLINDERS STREET & COLLINS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 11238.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "199310502#1",
+     "199310502#2",
+     "199310502#3",
+     "199310502#4"
+    ]
+   },
+   {
+    "segment_id": 14073,
+    "road_name": "LINLITHGOW AVENUE",
+    "description": "LINLITHGOW AVENUE W Bd btwn ALEXANDRA AVENUE & LINLITHGOW AVENUE",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3668.0,
+    "heavy_vehicles_2019": 237.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-985376439",
+     "1216173528#1",
+     "1216173541"
+    ]
+   },
+   {
+    "segment_id": 14076,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET W Bd btwn KING STREET & SPENCER STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 15870.0,
+    "heavy_vehicles_2019": 1028.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "581959667#0"
+    ]
+   },
+   {
+    "segment_id": 13062,
+    "road_name": "LYGON STREET",
+    "description": "LYGON STREET N Bd btwn VICTORIA STREET & QUEENSBERRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6065.0,
+    "heavy_vehicles_2019": 392.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126693327#0",
+     "1126693327#1"
+    ]
+   },
+   {
+    "segment_id": 13345,
+    "road_name": "BOURKE STREET",
+    "description": "BOURKE STREET W Bd btwn KING STREET & SPENCER STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 2178.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126676738#0"
+    ]
+   },
+   {
+    "segment_id": 14465,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FWY E BD BTWN RAMPS AT WESTERN LINK TOLLWAY",
+    "direction": "EAST BOUND",
+    "aadt_2019": 82566.0,
+    "heavy_vehicles_2019": 8376.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "285898792"
+    ]
+   },
+   {
+    "segment_id": 12799,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET W Bd btwn WILLIAM STREET & KING STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 6554.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208642573"
+    ]
+   },
+   {
+    "segment_id": 13172,
+    "road_name": "SPRING STREET",
+    "description": "SPRING STREET N Bd btwn FLINDERS STREET & COLLINS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 2735.0,
+    "heavy_vehicles_2019": 177.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1192225877",
+     "131724927#0",
+     "131724927#1",
+     "131724927#2",
+     "131724936",
+     "131724962#0"
+    ]
+   },
+   {
+    "segment_id": 13548,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET W Bd btwn QUEEN STREET & WILLIAM STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 6948.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207831319#0",
+     "207831943"
+    ]
+   },
+   {
+    "segment_id": 12803,
+    "road_name": "COVENTRY STREET",
+    "description": "COVENTRY STREET W Bd btwn MORAY STREET & CLARENDON STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 1944.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1124004483#1",
+     "1124004483#3",
+     "1124004484",
+     "217628213#0",
+     "217628213#2",
+     "217628214"
+    ]
+   },
+   {
+    "segment_id": 12425,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET N Bd btwn LONSDALE STREET & LATROBE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 5943.0,
+    "heavy_vehicles_2019": 385.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1126650242#3",
+     "715611143#0"
+    ]
+   },
+   {
+    "segment_id": 13391,
+    "road_name": "ERROL STREET",
+    "description": "ERROL STREET N Bd btwn VICTORIA STREET & QUEENSBERRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 2936.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123814313",
+     "480358289#1"
+    ]
+   },
+   {
+    "segment_id": 13594,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET N Bd btwn BATMAN AVENUE FREEWAY & COLLINS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 10017.0,
+    "heavy_vehicles_2019": 648.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1290614684#1",
+     "4308541#0",
+     "4308541#2"
+    ]
+   },
+   {
+    "segment_id": 13984,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn DOWNIE STREET & SPENCER STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 8431.0,
+    "heavy_vehicles_2019": 546.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 12440,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn RUSSELL STREET & ST KILDA ROAD",
+    "direction": "WEST BOUND",
+    "aadt_2019": 15858.0,
+    "heavy_vehicles_2019": 1027.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1116145117",
+     "711993453"
+    ]
+   },
+   {
+    "segment_id": 14754,
+    "road_name": "SOUTHBANK BOULEVARD",
+    "description": "SOUTHBANK BOULEVARD W Bd btwn KAVANAGH STREET & CITY ROAD",
+    "direction": "WEST BOUND",
+    "aadt_2019": 2319.0,
+    "heavy_vehicles_2019": 150.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1489355336#0",
+     "1489355340",
+     "581717498#0",
+     "581717498#1"
+    ]
+   },
+   {
+    "segment_id": 13730,
+    "road_name": "STURT STREET",
+    "description": "STURT STREET N Bd btwn KINGS WAY & POWER STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6885.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-581037860#1",
+     "-581037860#2",
+     "569125161#0",
+     "581046814#0"
+    ]
+   },
+   {
+    "segment_id": 14149,
+    "road_name": "SWANSTON STREET",
+    "description": "SWANSTON STREET N Bd btwn VICTORIA STREET & QUEENSBERRY STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 3997.0,
+    "heavy_vehicles_2019": 258.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "179614833"
+    ]
+   },
+   {
+    "segment_id": 13661,
+    "road_name": "INGLES STREET ALT",
+    "description": "INGLES STREET NW BD BTWN FENNELL STREET & INGLES STREET OVERPASS (WEST GATE FREEWAY)",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 3456.0,
+    "heavy_vehicles_2019": 223.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-25427863",
+     "1016845380#0",
+     "1016845380#1",
+     "789322001"
+    ]
+   },
+   {
+    "segment_id": 13473,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn VICTORIA STREET & EXHIBITION STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5149.0,
+    "heavy_vehicles_2019": 333.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1312349176",
+     "25425692#1",
+     "581976096"
+    ]
+   },
+   {
+    "segment_id": 13686,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn SPENCER STREET & ADDERLEY STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 4284.0,
+    "heavy_vehicles_2019": 277.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 13479,
+    "road_name": "LINLITHGOW AVENUE",
+    "description": "LINLITHGOW AVENUE W Bd btwn LINLITHGOW AVENUE & ST KILDA ROAD",
+    "direction": "WEST BOUND",
+    "aadt_2019": 5314.0,
+    "heavy_vehicles_2019": 344.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1172628093#1",
+     "-1216173529",
+     "-1216173535",
+     "-1216173542",
+     "-985376439",
+     "-985376440",
+     "1216173528#1"
+    ]
+   },
+   {
+    "segment_id": 15704,
+    "road_name": "ST KILDA ROAD",
+    "description": "ST KILDA ROAD N Bd btwn LINLITHGOW AVENUE &",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9122.0,
+    "heavy_vehicles_2019": 590.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "1008818044#9",
+     "1008818045#7",
+     "254443127",
+     "569726889",
+     "71076871",
+     "71079797#0",
+     "71079797#1"
+    ]
+   },
+   {
+    "segment_id": 6447,
+    "road_name": "POWER STREET",
+    "description": "POWER ST SE BD BTWN RAMPS AT WEST GATE FWY/SOUTHERN LINK TOLLWAY",
+    "direction": "SOUTH EAST BOUND",
+    "aadt_2019": 14414.0,
+    "heavy_vehicles_2019": 764.0,
+    "heavy_share_2019": 0.05,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "5234818",
+     "963624497"
+    ]
+   },
+   {
+    "segment_id": 16072,
+    "road_name": "COLLINS STREET",
+    "description": "COLLINS STREET W Bd btwn ELIZABETH STREET & QUEEN STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 4809.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1123528662"
+    ]
+   },
+   {
+    "segment_id": 15620,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn ELIZABETH STREET & QUEEN STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 10934.0,
+    "heavy_vehicles_2019": 708.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "295476230#3"
+    ]
+   },
+   {
+    "segment_id": 15677,
+    "road_name": "DOMAIN TUNNEL",
+    "description": "SOUTHERN LINK TOLLWAY DOMAIN TUNNEL SW BD BTWN RAMPS AT POWER ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 64307.0,
+    "heavy_vehicles_2019": 6524.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "26619050",
+     "8066126-AddedOffRampEdge",
+     "8066129"
+    ]
+   },
+   {
+    "segment_id": 16073,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET E Bd btwn QUEEN STREET & ELIZABETH STREET",
+    "direction": "EAST BOUND",
+    "aadt_2019": 10773.0,
+    "heavy_vehicles_2019": 697.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "386416108#0",
+     "386416108#1",
+     "724454901"
+    ]
+   },
+   {
+    "segment_id": 15867,
+    "road_name": "ELIZABETH STREET",
+    "description": "ELIZABETH STREET N BD btwn COLLINS STREET & BOURKE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 4442.0,
+    "heavy_vehicles_2019": 287.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "208793255#1",
+     "208793255#2"
+    ]
+   },
+   {
+    "segment_id": 16252,
+    "road_name": "WEST GATE FREEWAY",
+    "description": "WEST GATE FREEWAY SW BD BTWN RAMPS AT POWER ST",
+    "direction": "WEST BOUND",
+    "aadt_2019": 64307.0,
+    "heavy_vehicles_2019": 6524.0,
+    "heavy_share_2019": 0.1,
+    "methodology": "Estimated",
+    "matched_edge_ids": []
+   },
+   {
+    "segment_id": 13978,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET N Bd btwn COLLINS STREET & BOURKE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9239.0,
+    "heavy_vehicles_2019": 598.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "207831780#0",
+     "207831780#1"
+    ]
+   },
+   {
+    "segment_id": 13598,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn SPENCER STREET & WURUNDJERI WAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 12275.0,
+    "heavy_vehicles_2019": 795.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "198715024",
+     "787612632",
+     "984852794",
+     "984852796",
+     "984863713",
+     "984863724"
+    ]
+   },
+   {
+    "segment_id": 13401,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn QUEEN STREET & WILLIAM STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 12318.0,
+    "heavy_vehicles_2019": 797.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1292625318#0",
+     "1292625318#1",
+     "296383692",
+     "622561169"
+    ]
+   },
+   {
+    "segment_id": 12441,
+    "road_name": "FRANKLIN STREET",
+    "description": "FRANKLIN STREET W Bd btwn SWANSTON STREET & ELIZABETH STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 4012.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "-1274557717#1",
+     "-1274557717#2",
+     "-485830402#0",
+     "848742947#0"
+    ]
+   },
+   {
+    "segment_id": 14365,
+    "road_name": "SPRING STREET",
+    "description": "SPRING STREET N Bd btwn COLLINS STREET & BOURKE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 7578.0,
+    "heavy_vehicles_2019": 490.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "131724927#1",
+     "131724927#2",
+     "218688446#0",
+     "218688446#3"
+    ]
+   },
+   {
+    "segment_id": 13393,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET N Bd btwn EXHIBITION STREET & VICTORIA STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 5541.0,
+    "heavy_vehicles_2019": 358.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "22758374",
+     "29020844#0",
+     "672401944#1"
+    ]
+   },
+   {
+    "segment_id": 12439,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn KINGS WAY & DOWNIE STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 12019.0,
+    "heavy_vehicles_2019": 778.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "968051641"
+    ]
+   },
+   {
+    "segment_id": 14022,
+    "road_name": "HARBOUR ESPLANADE",
+    "description": "DOCKLANDS HIGHWAY NWBd btwn LATROBE STREET & FOOTSCRAY ROAD",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 6953.0,
+    "heavy_vehicles_2019": 450.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "57018292",
+     "711952032#1",
+     "711952033",
+     "985009840",
+     "985009841",
+     "985009842"
+    ]
+   },
+   {
+    "segment_id": 13613,
+    "road_name": "GERTRUDE STREET",
+    "description": "GERTRUDE STREET W Bd btwn BRUNSWICK STREET & NICHOLSON STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 3397.0,
+    "heavy_vehicles_2019": 220.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "207642000#1",
+     "207642000#3",
+     "207642000#6"
+    ]
+   },
+   {
+    "segment_id": 13038,
+    "road_name": "INGLES STREET",
+    "description": "INGLES STREET NWBd btwn CROCKFORD STREET & NORMANBY ROAD",
+    "direction": "NORTH WEST BOUND",
+    "aadt_2019": 8638.0,
+    "heavy_vehicles_2019": 559.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1273572733#1",
+     "1273572733#2",
+     "217510509#0",
+     "217510509#2",
+     "217510509#3",
+     "217510509#4",
+     "217510509#5"
+    ]
+   },
+   {
+    "segment_id": 14069,
+    "road_name": "LA TROBE STREET",
+    "description": "LATROBE STREET W Bd btwn WILLIAM STREET & KING STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 7874.0,
+    "heavy_vehicles_2019": 510.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "505256327#0",
+     "505256327#1"
+    ]
+   },
+   {
+    "segment_id": 13697,
+    "road_name": "LONSDALE STREET",
+    "description": "LONSDALE STREET W Bd btwn ELIZABETH STREET & QUEEN STREET",
+    "direction": "WEST BOUND",
+    "aadt_2019": 15870.0,
+    "heavy_vehicles_2019": 1028.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "734406094#0",
+     "734406094#4"
+    ]
+   },
+   {
+    "segment_id": 14717,
+    "road_name": "RATHDOWNE STREET",
+    "description": "RATHDOWNE STREET N Bd btwn QUEENSBERRY STREET & GRATTAN STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 9909.0,
+    "heavy_vehicles_2019": 641.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "198994308#4"
+    ]
+   },
+   {
+    "segment_id": 14327,
+    "road_name": "QUEEN STREET",
+    "description": "QUEEN STREET N Bd btwn FLINDERS STREET & COLLINS STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 6804.0,
+    "heavy_vehicles_2019": 0.0,
+    "heavy_share_2019": 0.0,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "1319194947",
+     "968051645#1"
+    ]
+   },
+   {
+    "segment_id": 13595,
+    "road_name": "EXHIBITION STREET",
+    "description": "EXHIBITION STREET N Bd btwn BOURKE STREET & LONSDALE STREET",
+    "direction": "NORTH BOUND",
+    "aadt_2019": 8315.0,
+    "heavy_vehicles_2019": 538.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Actual",
+    "matched_edge_ids": [
+     "208506748#0",
+     "715211380"
+    ]
+   },
+   {
+    "segment_id": 13599,
+    "road_name": "FLINDERS STREET",
+    "description": "FLINDERS STREET W Bd btwn QUEENS WHARF ROAD & KINGS WAY",
+    "direction": "WEST BOUND",
+    "aadt_2019": 9330.0,
+    "heavy_vehicles_2019": 604.0,
+    "heavy_share_2019": 0.06,
+    "methodology": "Estimated",
+    "matched_edge_ids": [
+     "556168188#0"
+    ]
+   }
+  ]
+ },
+ "tirtl": {
+  "date": "2026-10-23",
+  "note": "UPSTREAM BOUND: West Gate Bridge is about 3 km west of the model boundary, with exits in between; these volumes bound, not equal, the West Gate Fwy flow entering the model. bins_15min[i] covers local time i*15 min to (i+1)*15 min.",
+  "sites": {
+   "504_E": {
+    "site": "504",
+    "description": "West Gate Bridge inbound (EB)",
+    "heading": "E",
+    "vehicles_day": 74563,
+    "vehicles_07_10": 7814,
+    "heavy_share": 0.205,
+    "am_reliability": {
+     "status": "unreliable",
+     "am_peak_bin": 1452,
+     "am_min_bin": 278,
+     "am_min_at": "07:15"
+    },
+    "bins_15min": [
+     195,
+     150,
+     121,
+     157,
+     114,
+     103,
+     84,
+     77,
+     79,
+     88,
+     112,
+     99,
+     83,
+     113,
+     129,
+     169,
+     185,
+     237,
+     304,
+     442,
+     577,
+     862,
+     1042,
+     1103,
+     1266,
+     1452,
+     1343,
+     1270,
+     940,
+     278,
+     343,
+     836,
+     1100,
+     500,
+     735,
+     660,
+     574,
+     565,
+     605,
+     678,
+     607,
+     606,
+     800,
+     954,
+     963,
+     1036,
+     1065,
+     1051,
+     975,
+     1067,
+     1047,
+     1060,
+     1148,
+     1249,
+     1075,
+     1193,
+     1254,
+     1252,
+     1210,
+     1047,
+     1117,
+     1171,
+     1095,
+     1130,
+     1305,
+     1369,
+     1377,
+     1336,
+     1310,
+     1513,
+     1408,
+     1407,
+     1344,
+     1388,
+     1276,
+     1189,
+     1118,
+     1176,
+     998,
+     867,
+     794,
+     795,
+     761,
+     708,
+     673,
+     654,
+     629,
+     663,
+     571,
+     539,
+     528,
+     486,
+     425,
+     393,
+     327,
+     294
+    ]
+   },
+   "505_W": {
+    "site": "505",
+    "description": "West Gate Bridge outbound (WB)",
+    "heading": "W",
+    "vehicles_day": 104596,
+    "vehicles_07_10": 15587,
+    "heavy_share": 0.194,
+    "am_reliability": {
+     "status": "plausible",
+     "am_peak_bin": 1471,
+     "am_min_bin": 1150,
+     "am_min_at": "09:15"
+    },
+    "bins_15min": [
+     409,
+     358,
+     334,
+     273,
+     301,
+     270,
+     178,
+     165,
+     183,
+     161,
+     173,
+     157,
+     147,
+     158,
+     148,
+     183,
+     193,
+     217,
+     283,
+     358,
+     477,
+     789,
+     1200,
+     1167,
+     1164,
+     1394,
+     1406,
+     1271,
+     1268,
+     1338,
+     1471,
+     1408,
+     1430,
+     1324,
+     1216,
+     1274,
+     1239,
+     1150,
+     1230,
+     1239,
+     1211,
+     1229,
+     1190,
+     1327,
+     1211,
+     1288,
+     1219,
+     1137,
+     1467,
+     1333,
+     1417,
+     1436,
+     1557,
+     1634,
+     1545,
+     1544,
+     1675,
+     1800,
+     1774,
+     1555,
+     1739,
+     1879,
+     1771,
+     1674,
+     1789,
+     1858,
+     1745,
+     1795,
+     1688,
+     1726,
+     1710,
+     1595,
+     1502,
+     1493,
+     1319,
+     1237,
+     1259,
+     1223,
+     1068,
+     1023,
+     1034,
+     1096,
+     1050,
+     1012,
+     994,
+     1081,
+     1105,
+     1049,
+     892,
+     1076,
+     1097,
+     1047,
+     951,
+     871,
+     806,
+     689
+    ]
+   }
+  },
+  "comparison_day": {
+   "date": "2026-10-16",
+   "sites": {
+    "504_E": {
+     "vehicles_day": 81694,
+     "vehicles_07_10": 11702,
+     "am_reliability": {
+      "status": "unreliable",
+      "am_peak_bin": 1546,
+      "am_min_bin": 434,
+      "am_min_at": "08:30"
+     }
+    },
+    "505_W": {
+     "vehicles_day": 103231,
+     "vehicles_07_10": 15501,
+     "am_reliability": {
+      "status": "plausible",
+      "am_peak_bin": 1486,
+      "am_min_bin": 1153,
+      "am_min_at": "09:00"
+     }
+    }
+   }
+  },
+  "assessment": "504 inbound (EB) is INCOMPLETE / UNRELIABLE in the AM peak: on the target day it collapses mid-peak (see am_reliability) and its day total is well below outbound; the same pattern appears on the comparison day (same weekday a week earlier). Either the logger undercounts in stop-and-go traffic or flow really breaks down; we cannot tell which, so do not use 504 as a bound for the AM peak. 505 outbound (WB) looks plausible."
+ }
+}

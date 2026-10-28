@@ -1,0 +1,35 @@
+[project]
+name = "melbourne-traffic-twin"
+version = "0.1.0"
+description = "Browser-based 3D traffic twin of Melbourne CBD, Southbank and Docklands"
+requires-python = ">=3.12,<3.13"
+dependencies = ["mtt-pipeline", "mtt-sim"]
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.8", "pyarrow>=17"]
+
+[tool.uv]
+package = false
+python-preference = "only-managed"
+# libsumo 1.28 is compiled against libarrow 25; a newer pyarrow can clash with it in the same process.
+constraint-dependencies = ["pyarrow>=25,<26"]
+
+[tool.uv.workspace]
+members = ["pipeline", "sim"]
+
+[tool.uv.sources]
+mtt-pipeline = { workspace = true }
+mtt-sim = { workspace = true }
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["pipeline/tests", "sim/tests", "tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["web", "data", "sim/out"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]

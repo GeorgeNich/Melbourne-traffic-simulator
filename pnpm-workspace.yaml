@@ -1,0 +1,7 @@
+packages:
+  - web
+
+# Keep pnpm's store and metadata cache inside the project (CLAUDE.md machine safety rules).
+storeDir: .pnpm-store
+cacheDir: .pnpm-store/cache
+engineStrict: true

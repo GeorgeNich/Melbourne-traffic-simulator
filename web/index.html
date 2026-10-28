@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:," />
+    <title>Melbourne Traffic Twin</title>
+    <style>
+      html, body, #root { margin: 0; height: 100%; background: #05070a; }
+      /* Attribution stays fully visible on a near-solid dark panel (alpha >= 0.9, e2e-checked). The extra
+         .maplibregl-map makes these win over maplibre-gl.css, which is injected after this block. */
+      .maplibregl-map .maplibregl-ctrl.maplibregl-ctrl-attrib { background-color: rgba(5, 7, 10, 0.94); color: #9aa5b1; font: 11px system-ui, sans-serif; }
+      .maplibregl-map .maplibregl-ctrl-attrib a { color: #b8c3cf; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,973 @@
+{
+ "about": "Australian Road Rules (Victoria) audit of sim/net/roads.net.xml and the SUMO behaviour. Evidence from network queries and TraCI micro-scenarios.",
+ "junction_types": {
+  "priority": 1553,
+  "traffic_light": 387,
+  "dead_end": 86,
+  "priority_stop": 64,
+  "left_before_right": 47
+ },
+ "rules": [
+  {
+   "rule": "Give way to the right at uncontrolled cross intersections (ARR r.72)",
+   "network": "47 left_before_right junctions (--junctions.left-before-right, plus right_of_way.nod.xml for unsigned cross intersections of equal minor streets at 50 km/h, where netconvert's 49 km/h threshold had made them priority junctions)",
+   "evidence": {
+    "micro_test": {
+     "junction_type_built": "left_before_right",
+     "first_through": "westbound",
+     "min_speed_mps": {
+      "northbound": 4.47,
+      "westbound": 7.82
+     },
+     "gives_way_to_the_right": true
+    },
+    "cross_intersections": {
+     "judged_by_type": {
+      "left_before_right": 35
+     },
+     "not_give_way_to_the_right": []
+    }
+   },
+   "verdict": "fixed",
+   "how": "SUMO's left-hand mode mirrors its default right_before_left into give way to the LEFT (tested: the westbound car stopped for one coming from its left). left_before_right in a left-hand network gives way to the right."
+  },
+  {
+   "rule": "T-intersections: the terminating road gives way (ARR r.69)",
+   "network": "the terminating road's edges get a lower priority than the continuing road's (sim/patches/net/t_intersections.edg.xml), and equal-priority T-junctions become priority junctions (right_of_way.nod.xml)",
+   "evidence": {
+    "t_intersections_judged": 312,
+    "continuing_road_yields": [],
+    "osm_roundabout_entries_lined_up_with_the_exit": [
+     {
+      "junction": "30287401",
+      "continuing": "Drummond Street"
+     },
+     {
+      "junction": "568948023",
+      "continuing": "Princes Street"
+     },
+     {
+      "junction": "5635896716",
+      "continuing": "Moray Street"
+     },
+     {
+      "junction": "8909430239",
+      "continuing": "Park Street"
+     },
+     {
+      "junction": "452375545",
+      "continuing": "Heather Street"
+     },
+     {
+      "junction": "452381244",
+      "continuing": "Convention Centre Place"
+     }
+    ],
+    "roundabout_note": "at these OSM junction=roundabout nodes the entering road gives way to the circulating one (r.114 overrides r.69), although the entry lines up with the exit"
+   },
+   "verdict": "fixed",
+   "how": "netconvert broke ties between equal-class streets by speed, so an untagged 50 km/h side street beat a continuing street signed 40 km/h: 69 of 311 judged T-intersections were backwards before"
+  },
+  {
+   "rule": "Give-way and stop signs (ARR r.67-69); stop means stop",
+   "network": "OSM highway=give_way / stop nodes mapped to the approach they sign; junctions with a stop-signed approach are priority_stop (SUMO does not import stop signs)",
+   "evidence": {
+    "by_sign_and_outcome": {
+     "give_way:approach gives way": 76,
+     "give_way:approach has priority": 6,
+     "give_way:no conflicting traffic": 6,
+     "give_way:road_not_in_network": 9,
+     "give_way:signalised (signals govern)": 2,
+     "stop:approach gives way": 6,
+     "stop:approach gives way and stops": 67,
+     "stop:approach has priority": 3,
+     "stop:no conflicting traffic": 8,
+     "stop:no movement": 1,
+     "stop:road_not_in_network": 10,
+     "stop:signalised (signals govern)": 2
+    },
+    "approaches_with_priority": [
+     {
+      "sign_node": 4603479250,
+      "sign": "give_way",
+      "approach": "27553209#1",
+      "road": "Gladstone Street",
+      "junction": "560213056",
+      "junction_type": "priority",
+      "states": "Mm"
+     },
+     {
+      "sign_node": 4603479263,
+      "sign": "give_way",
+      "approach": "27631084#8",
+      "road": "Buckhurst Street",
+      "junction": "303464943",
+      "junction_type": "priority",
+      "states": "Mm"
+     },
+     {
+      "sign_node": 4603479273,
+      "sign": "give_way",
+      "approach": "789321998#0",
+      "road": "Fennell Street",
+      "junction": "5477244547",
+      "junction_type": "priority",
+      "states": "Mm"
+     },
+     {
+      "sign_node": 8189021216,
+      "sign": "give_way",
+      "approach": "663093315",
+      "road": "",
+      "junction": "6207152062",
+      "junction_type": "priority",
+      "states": "M"
+     },
+     {
+      "sign_node": 9494147887,
+      "sign": "stop",
+      "approach": "20920276#1",
+      "road": "Young Street",
+      "junction": "224750210",
+      "junction_type": "priority_stop",
+      "states": "M"
+     },
+     {
+      "sign_node": 13967520591,
+      "sign": "give_way",
+      "approach": "-789932788",
+      "road": "Dunira Lane",
+      "junction": "7385490937",
+      "junction_type": "priority",
+      "states": "Mm"
+     },
+     {
+      "sign_node": 13969913048,
+      "sign": "give_way",
+      "approach": "200222217#0",
+      "road": "Raglan Street",
+      "junction": "243964681",
+      "junction_type": "priority",
+      "states": "Mm"
+     },
+     {
+      "sign_node": 13976195240,
+      "sign": "stop",
+      "approach": "1291659362",
+      "road": "Rosslyn Street",
+      "junction": "cluster_387153101_8960001700_8960001710_8960001711",
+      "junction_type": "priority_stop",
+      "states": "Ms"
+     },
+     {
+      "sign_node": 13976195257,
+      "sign": "stop",
+      "approach": "-26564451#1",
+      "road": "Earl Street",
+      "junction": "6930998717",
+      "junction_type": "priority_stop",
+      "states": "Mm"
+     }
+    ]
+   },
+   "verdict": "complies_with_exceptions",
+   "how": "stop-signed priority junctions became priority_stop (vehicles stop), and signed roads were given a lower edge priority than the others at their junction (sim/patches/net/right_of_way.nod.xml, give_way_priorities.edg.xml)",
+   "note": "approaches_with_priority are signed approaches whose movement still has priority over a conflicting one (equal-priority geometry netconvert resolves by straightness); 'no conflicting traffic' approaches have nothing to give way to"
+  },
+  {
+   "rule": "Roundabouts: give way to vehicles already in the roundabout (ARR r.114)",
+   "network": "SUMO roundabouts (--roundabouts.guess and OSM junction=roundabout)",
+   "evidence": {
+    "roundabouts": 34,
+    "entry_links": 113,
+    "entry_links_with_priority": [],
+    "circulating_links": 194,
+    "circulating_links_giving_way": []
+   },
+   "verdict": "complies"
+  },
+  {
+   "rule": "Keep left unless overtaking; overtake on the right (ARR r.129-130, 141)",
+   "network": "SUMO LC2013 lane changing; in a left-hand network lane 0 is the left lane and its keep-right tendency (lcKeepRight) keeps cars to lane 0",
+   "evidence": {
+    "lane_index_note": "lane 0 is the left (kerb) lane in a left-hand network",
+    "lone_car_lanes": [
+     2,
+     1,
+     0
+    ],
+    "lone_car_keeps_left": true,
+    "fast_car_lanes": [
+     0,
+     1,
+     0
+    ],
+    "fast_car_overtook_on_the_right": true,
+    "fast_car_back_in_left_lane": true
+   },
+   "verdict": "complies"
+  },
+  {
+   "rule": "Speed limits: signed maxspeed; 50 km/h default in built-up areas (ARR r.20, 25)",
+   "network": "OSM maxspeed where tagged; untagged non-motorway roads 50 km/h (sim/patches/osm/urban_speed_defaults.typ.xml), 40 km/h inside the Hoddle Grid (CBD area limit), shared zones 10 km/h",
+   "evidence": {
+    "edges_not_matching_osm_or_default": [],
+    "cbd_area_limit_40": {
+     "edges": 21,
+     "by_road": {
+      "Park Street": 2,
+      "Bond Street": 3,
+      "Little Queen Street": 2,
+      "Church Street": 2,
+      "Godfrey Street": 2,
+      "unnamed": 3,
+      "Crossley Street": 1,
+      "Little William Street": 1,
+      "Royal Lane": 1,
+      "Russell Place": 1,
+      "Gresham Street": 1,
+      "Collins Street": 1,
+      "Liverpool Street": 1
+     },
+     "km": 1.44,
+     "untagged_cbd_box_edges_left_at_50": [
+      {
+       "edge": "-1312557249",
+       "name": "A&apos;Beckett Street",
+       "kmh": 50
+      },
+      {
+       "edge": "-1444412100#0",
+       "name": "A&apos;Beckett Street",
+       "kmh": 50
+      },
+      {
+       "edge": "-181987928#1",
+       "name": "Anthony Street",
+       "kmh": 50
+      },
+      {
+       "edge": "-207884336",
+       "name": "Wills Street",
+       "kmh": 50
+      },
+      {
+       "edge": "-208642577#0",
+       "name": "A&apos;Beckett Street",
+       "kmh": 50
+      },
+      {
+       "edge": "-208642577#2",
+       "name": "A&apos;Beckett Street",
+       "kmh": 50
+      },
+      {
+       "edge": "1012622857",
+       "name": "Russell Street",
+       "kmh": 50
+      },
+      {
+       "edge": "1203843366",
+       "name": "Swanston Street",
+       "kmh": 50
+      },
+      {
+       "edge": "1312526396#0",
+       "name": "Queen Street",
+       "kmh": 50
+      },
+      {
+       "edge": "1312557249",
+       "name": "A&apos;Beckett Street",
+       "kmh": 50
+      },
+      {
+       "edge": "1436819347#1",
+       "name": "Anthony Street",
+       "kmh": 50
+      },
+      {
+       "edge": "207298905",
+       "name": "Collins Street",
+       "kmh": 50
+      },
+      {
+       "edge": "207884336",
+       "name": "Wills Street",
+       "kmh": 50
+      },
+      {
+       "edge": "207884337",
+       "name": "Queen Street",
+       "kmh": 50
+      },
+      {
+       "edge": "208642577#0",
+       "name": "A&apos;Beckett Street",
+       "kmh": 50
+      },
+      {
+       "edge": "208642577#1",
+       "name": "A&apos;Beckett Street",
+       "kmh": 50
+      },
+      {
+       "edge": "208642577#3",
+       "name": "A&apos;Beckett Street",
+       "kmh": 50
+      },
+      {
+       "edge": "4987076",
+       "name": "Wills Street",
+       "kmh": 50
+      },
+      {
+       "edge": "5118210#0",
+       "name": "Walsh Street",
+       "kmh": 50
+      },
+      {
+       "edge": "654245207#0",
+       "name": "Russell Street",
+       "kmh": 50
+      },
+      {
+       "edge": "778460621",
+       "name": "Swanston Street",
+       "kmh": 50
+      }
+     ]
+    },
+    "cbd_box": [
+     144.9515,
+     -37.8195,
+     144.974,
+     -37.8085
+    ],
+    "cbd_km_by_limit_kmh": {
+     "5": 0.19,
+     "10": 1.45,
+     "20": 6.22,
+     "30": 0.49,
+     "40": 28.85,
+     "50": 3.7,
+     "60": 1.1
+    },
+    "cbd_share_at_40_or_less": 0.886,
+    "cbd_edges_above_50": [
+     {
+      "edge": "-767384959#1",
+      "name": "Dudley Street",
+      "kmh": 60
+     },
+     {
+      "edge": "1137316139",
+      "name": "",
+      "kmh": 60
+     },
+     {
+      "edge": "131724933",
+      "name": "Batman Avenue",
+      "kmh": 60
+     },
+     {
+      "edge": "1352841570",
+      "name": "Batman Avenue",
+      "kmh": 60
+     },
+     {
+      "edge": "1436819393",
+      "name": "",
+      "kmh": 60
+     },
+     {
+      "edge": "217383025",
+      "name": "Dudley Street",
+      "kmh": 60
+     },
+     {
+      "edge": "217383026",
+      "name": "Dudley Street",
+      "kmh": 60
+     },
+     {
+      "edge": "569455493",
+      "name": "Dudley Street",
+      "kmh": 60
+     },
+     {
+      "edge": "767384959#1",
+      "name": "Dudley Street",
+      "kmh": 60
+     }
+    ]
+   },
+   "verdict": "complies",
+   "note": "cbd_edges_above_50 are OSM-tagged 60 km/h arterials on the CBD fringe (Dudley St, Batman Ave and their ramps), listed for review. cbd_area_limit_40: untagged roads inside the Hoddle Grid get the CBD 40 km/h area limit (sim/patches/net/cbd_speed_limit.edg.xml); untagged_cbd_box_edges_left_at_50 lie in the wider CBD_BOX but outside the grid (north of La Trobe St, Docklands, south of Flinders St), where the area limit is not established and nearby ways are tagged 50"
+  },
+  {
+   "rule": "No turning on a red light (ARR r.56-57; Australia has no general turn-on-red)",
+   "network": "SUMO default static signal programs (90 s placeholders)",
+   "evidence": {
+    "signalised_links": 2751,
+    "left_turns_green_while_same_lane_through_red": [],
+    "right_or_u_turn_arrows_while_same_lane_through_red": 37,
+    "arrow_note": "a right-turn (or U-turn) green while the shared lane's through movement is red is a protected turn arrow phase, which Australian signals use; allowed",
+    "turns_green_in_every_phase_while_their_approach_has_red": [],
+    "uncontrolled_links_at_signals_by_dir": {}
+   },
+   "verdict": "fixed",
+   "how": "with no pedestrians simulated, netconvert's default programs left kerb-side left turns green in every phase (a left turn on red); the build now makes each left turn follow its approach's through movement (sim/generated_patches.py no_left_turn_on_red; the build log prints how many links it changed: 58 in 48 programs)",
+   "note": "uncontrolled_links_at_signals are slip lanes and bays that netconvert left outside the signal ('o': give way, as at a slip lane with a give-way sign). Opposing right turns green together pass in front of each other in left-hand traffic: see opposing_right_turns",
+   "opposing_right_turns": {
+    "verdict_note": "compliant: opposing right turns green together pass in front of each other; where their paths do cross, both are permissive green ('g'), so SUMO makes them give way to each other",
+    "opposing_right_turn_pairs_green_together": 188,
+    "pairs_whose_paths_cross": 4,
+    "crossing": [
+     [
+      "cluster_1132023834_3394737409_3394737410_3394737414_#5more",
+      "135951295#3",
+      "6262173#0",
+      2
+     ],
+     [
+      "cluster_13976139571_13976139572_13976139573_13976139574_#4more",
+      "1290614684#1",
+      "199429376#2",
+      2
+     ],
+     [
+      "cluster_2190478922_2190478924_2190478928_2190478932_#4more",
+      "207831526",
+      "316166613#1",
+      2
+     ],
+     [
+      "cluster_2189145381_2189145390_2189145394_2189145403_#5more",
+      "207830036#0",
+      "207831319#0",
+      2
+     ]
+    ]
+   }
+  },
+  {
+   "rule": "Bus lanes: only buses may drive in them (ARR r.154-158)",
+   "network": "bus lanes from the extract's lane access tags (bus:lanes, lanes:bus, busway) closed to cars with --osm.lane-access (sim/bus_lanes.py)",
+   "evidence": {
+    "osm_ways_with_bus_lane_tags": 86,
+    "ways_closed": 75,
+    "ways_by_source": {
+     "lanes:bus": 54,
+     "busway": 17,
+     "bus:lanes": 2,
+     "lanes:bus:forward,busway:left": 1,
+     "lanes:bus,busway": 1
+    },
+    "ways_skipped": [
+     {
+      "way": 198005095,
+      "name": "Lonsdale Street",
+      "source": "lanes:bus",
+      "why": "no lanes tag: lane count unknown"
+     },
+     {
+      "way": 206506963,
+      "name": "Lonsdale Street",
+      "source": "lanes:bus",
+      "why": "no lanes tag: lane count unknown"
+     },
+     {
+      "way": 207831942,
+      "name": "Queen Street",
+      "source": "lanes:bus",
+      "why": "no lanes tag: lane count unknown"
+     },
+     {
+      "way": 209293507,
+      "name": "City Road",
+      "source": "lanes:bus",
+      "why": "two-way road: the tags do not say which direction has the bus lane"
+     },
+     {
+      "way": 782990506,
+      "name": "City Road",
+      "source": "lanes:bus",
+      "why": "two-way road: the tags do not say which direction has the bus lane"
+     },
+     {
+      "way": 782990507,
+      "name": "City Road",
+      "source": "lanes:bus",
+      "why": "two-way road: the tags do not say which direction has the bus lane"
+     },
+     {
+      "way": 1120751023,
+      "name": "Queen Street",
+      "source": "lanes:bus",
+      "why": "no lanes tag: lane count unknown"
+     },
+     {
+      "way": 1123482187,
+      "name": "Spring Street",
+      "source": "lanes:bus",
+      "why": "lanes=1 but 1 bus lane(s): closing would close the road"
+     },
+     {
+      "way": 1126800711,
+      "name": "Queen Street",
+      "source": "lanes:bus",
+      "why": "lanes=1 but 1 bus lane(s): closing would close the road"
+     },
+     {
+      "way": 1126800807,
+      "name": "Queen Street",
+      "source": "lanes:bus",
+      "why": "no lanes tag: lane count unknown"
+     },
+     {
+      "way": 1253825870,
+      "name": "City Road",
+      "source": "lanes:bus",
+      "why": "two-way road: the tags do not say which direction has the bus lane"
+     }
+    ],
+    "bus_only_lanes": 26,
+    "bus_only_lane_edges": 26,
+    "bus_only_lane_km": 1.39,
+    "bus_only_lanes_by_road": {
+     "Victoria Parade": 16,
+     "St Kilda Road": 3,
+     "Spring Street": 5,
+     "Power Street": 1,
+     "Peel Street": 1
+    },
+    "bus_only_lane_index": {
+     "0": 25,
+     "3": 1
+    },
+    "edges_without_a_car_lane": [],
+    "movements_only_buses_can_make": [],
+    "hours": {
+     "source": "https://www.melbourne.vic.gov.au/bus-lanes",
+     "source_note": "City of Melbourne, 'Bus lanes' page (read 2026-10-27). (c) City of Melbourne, not open-licensed: operating hours used as cited facts only, approved by George 2026-10-27",
+     "timed": [
+      {
+       "row": "queen_east",
+       "street": "Queen Street",
+       "side": "east",
+       "from": "Flinders Lane",
+       "to": "Lonsdale Street",
+       "hours": "Mo-Fr 16:30-18:30",
+       "lanes": [
+        "1126800685#0_0",
+        "1126800685#2_0",
+        "1503287996_0",
+        "191505563_0"
+       ],
+       "baseline": "open to cars (the baseline has no clock time)"
+      },
+      {
+       "row": "lonsdale_north",
+       "street": "Lonsdale Street",
+       "side": "north",
+       "from": "Spencer Street",
+       "to": "Exhibition Street",
+       "hours": "Mo-Fr 16:00-18:30",
+       "lanes": [
+        "1126802279#0_0",
+        "1126802279#2_0",
+        "1316060854#0_0",
+        "1317029146#1_0",
+        "1324972235#3_0",
+        "1324972235#5_0",
+        "135953376#0_0",
+        "135953376#1_0",
+        "197979802#2_0",
+        "198005098#0_0",
+        "198005098#2_0",
+        "198005100#1_0",
+        "505256328#0_0",
+        "581959663#1_0",
+        "734406095#1_0"
+       ],
+       "baseline": "open to cars (the baseline has no clock time)"
+      },
+      {
+       "row": "lonsdale_south",
+       "street": "Lonsdale Street",
+       "side": "south",
+       "from": "Spencer Street",
+       "to": "Spring Street",
+       "hours": "Mo-Fr 07:00-09:30",
+       "lanes": [
+        "1358973688#0_0",
+        "1358973688#1_0",
+        "1358973688#2_0",
+        "1358973688#4_0",
+        "198005097#0_0",
+        "198005097#3_0",
+        "198737797#0_0",
+        "386419596#1_0",
+        "386419596#5_0",
+        "581959650#0_0",
+        "581959667#0_0",
+        "734406093#1_0",
+        "734406094#0_0",
+        "734406094#4_0",
+        "993256437_0"
+       ],
+       "baseline": "open to cars (the baseline has no clock time)"
+      },
+      {
+       "row": "city_rd_inbound",
+       "street": "City Road",
+       "side": "inbound",
+       "from": "Clarendon Street",
+       "to": "Queens Bridge Street",
+       "hours": "Mo-Fr 06:30-10:00",
+       "lanes": [
+        "198994162#0_0",
+        "8066058_0"
+       ],
+       "baseline": "open to cars (the baseline has no clock time)"
+      }
+     ],
+     "always_on_listed_without_hours": [
+      {
+       "row": "spring_both",
+       "street": "Spring Street",
+       "side": "both",
+       "from": "Lonsdale Street",
+       "to": "Victoria Parade",
+       "lanes": [
+        "1253825976_0",
+        "198005395#0_0",
+        "198005395#1_0",
+        "25425328#0_0",
+        "61511897#0_0"
+       ],
+       "label": "full-time: the City of Melbourne lists it with no hours, and Transport Victoria's rule is that a bus-lane sign with no times operates 24/7 (https://transport.vic.gov.au/road-and-active-transport/road-rules-and-safety/driving-with-buses/driving-with-buses-video-transcript)"
+      }
+     ],
+     "always_on_unlisted": {
+      "lanes_by_road": {
+       "Victoria Parade": 16,
+       "St Kilda Road": 3,
+       "Power Street": 1,
+       "Peel Street": 1
+      },
+      "label": "full-time: no published hours; treated as 24/7 under Transport Victoria's rule that a bus-lane sign with no times operates full-time (signs not checked on site)"
+     },
+     "timed_lanes_open_in_baseline": 36,
+     "bus_only_lanes_in_baseline": 26
+    }
+   },
+   "verdict": "fixed (timed lanes per scenario clock; others full-time)",
+   "how": "counted (lanes:bus) and busway=lane bus lanes are placed on the kerb lane, where Victorian bus lanes run (r.158 lets cars cross into one to turn left); explicit bus:lanes values and sides are used as tagged. netconvert builds the junction connections with the bus lanes in place, so cars turn from the lanes they may use (movements_only_buses_can_make is empty). Hours (sim/bus_lane_hours.py): the City of Melbourne bus-lanes page gives part-time hours for Queen St east side (Mo-Fr 16:30-18:30), Lonsdale St north side (Mo-Fr 16:00-18:30), Lonsdale St south side (Mo-Fr 07:00-09:30) and City Rd inbound (Mo-Fr 06:30-10:00); those lanes are matched by street name, side (geometry) and cross streets, carry a busLaneHours lane param, and are OPEN to cars in this baseline network (no clock time). A scenario with a clock closes them in their hours (bus_lane_hours.bus_only_lanes). See evidence.hours for the lanes",
+   "labels": {
+    "timed": "part-time: City of Melbourne published hours (cited facts, not open-licensed data); open to cars in the baseline",
+    "Spring Street": "full-time: the City of Melbourne lists it with no hours, and Transport Victoria's rule is that a bus-lane sign with no times operates 24/7 (https://transport.vic.gov.au/road-and-active-transport/road-rules-and-safety/driving-with-buses/driving-with-buses-video-transcript)",
+    "Victoria Parade, St Kilda Road, Power Street, Peel Street and any other unlisted bus lane": "full-time: no published hours; treated as 24/7 under Transport Victoria's rule that a bus-lane sign with no times operates full-time (signs not checked on site)"
+   },
+   "assumptions": [
+    "kerb-lane placement of counted bus lanes (OSM gives only the count)",
+    "OSM has no bus-lane hours (no :conditional tags); hours come from the City of Melbourne page (https://www.melbourne.vic.gov.au/bus-lanes), used as cited facts with George's approval (2026-10-27)",
+    "timed lanes assume an ordinary weekday (public holidays unknown to a scenario)",
+    "only the OSM-tagged part of each listed stretch is a bus lane in the network (e.g. City Rd: 2 short one-way edges; its two-way ways do not say which direction has the bus lane and are skipped)"
+   ],
+   "not_modelled": "cars entering a bus lane for up to 100 m to turn (r.158(2)); buses themselves (cars only)"
+  },
+  {
+   "rule": "Time-based speed limits: school zones (maxspeed:conditional)",
+   "network": "signed limits only; conditional limits apply per scenario clock (sim/conditional_speeds.py)",
+   "evidence": {
+    "ways": [
+     {
+      "way": 13305896,
+      "name": "Dudley Street",
+      "maxspeed": "60",
+      "rule": "40 @ (Mo-Fr 08:00-09:30, 14:30-16:00; PH off; SH off)",
+      "conditional_kmh": 40.0,
+      "edges": [
+       "13305896"
+      ],
+      "weekly_windows": [
+       {
+        "days": "MTWTF",
+        "from": "08:00",
+        "to": "09:30"
+       },
+       {
+        "days": "MTWTF",
+        "from": "14:30",
+        "to": "16:00"
+       }
+      ]
+     },
+     {
+      "way": 26786309,
+      "name": "Crockford Street",
+      "maxspeed": "60",
+      "rule": "40 @ (08:00-24:00)",
+      "conditional_kmh": 40.0,
+      "edges": [
+       "26786309#0",
+       "26786309#1"
+      ],
+      "weekly_windows": [
+       {
+        "days": "MTWTFSS",
+        "from": "08:00",
+        "to": "24:00"
+       }
+      ]
+     },
+     {
+      "way": 26786310,
+      "name": "Bay Street",
+      "maxspeed": "60",
+      "rule": "40 @ (08:00-24:00)",
+      "conditional_kmh": 40.0,
+      "edges": [
+       "26786310"
+      ],
+      "weekly_windows": [
+       {
+        "days": "MTWTFSS",
+        "from": "08:00",
+        "to": "24:00"
+       }
+      ]
+     },
+     {
+      "way": 68869866,
+      "name": "Bay Street",
+      "maxspeed": "60",
+      "rule": "40 @ (08:00-24:00)",
+      "conditional_kmh": 40.0,
+      "edges": [
+       "68869866"
+      ],
+      "weekly_windows": [
+       {
+        "days": "MTWTFSS",
+        "from": "08:00",
+        "to": "24:00"
+       }
+      ]
+     },
+     {
+      "way": 985009845,
+      "name": "Dudley Street",
+      "maxspeed": "60",
+      "rule": "40 @ (Mo-Fr 08:00-09:30, 14:30-16:00; PH off; SH off)",
+      "conditional_kmh": 40.0,
+      "edges": [
+       "985009845"
+      ],
+      "weekly_windows": [
+       {
+        "days": "MTWTF",
+        "from": "08:00",
+        "to": "09:30"
+       },
+       {
+        "days": "MTWTF",
+        "from": "14:30",
+        "to": "16:00"
+       }
+      ]
+     },
+     {
+      "way": 985009846,
+      "name": "Dudley Street",
+      "maxspeed": "60",
+      "rule": "40 @ (Mo-Fr 08:00-09:30, 14:30-16:00; PH off; SH off)",
+      "conditional_kmh": 40.0,
+      "edges": [
+       "985009846#1",
+       "985009847"
+      ],
+      "weekly_windows": [
+       {
+        "days": "MTWTF",
+        "from": "08:00",
+        "to": "09:30"
+       },
+       {
+        "days": "MTWTF",
+        "from": "14:30",
+        "to": "16:00"
+       }
+      ]
+     },
+     {
+      "way": 985009847,
+      "name": "Dudley Street",
+      "maxspeed": "60",
+      "rule": "40 @ (Mo-Fr 08:00-09:30, 14:30-16:00; PH off; SH off)",
+      "conditional_kmh": 40.0,
+      "edges": [
+       "985009847"
+      ],
+      "weekly_windows": [
+       {
+        "days": "MTWTF",
+        "from": "08:00",
+        "to": "09:30"
+       },
+       {
+        "days": "MTWTF",
+        "from": "14:30",
+        "to": "16:00"
+       }
+      ]
+     },
+     {
+      "way": 1495847257,
+      "name": "Crockford Street",
+      "maxspeed": "60",
+      "rule": "40 @ (08:00-24:00)",
+      "conditional_kmh": 40.0,
+      "edges": [
+       "198990355#1"
+      ],
+      "weekly_windows": [
+       {
+        "days": "MTWTFSS",
+        "from": "08:00",
+        "to": "24:00"
+       }
+      ]
+     }
+    ],
+    "ways_in_network": 8,
+    "edges_in_network": 10,
+    "applied_in_baseline": false,
+    "why_not_baseline": "the baseline scenario is placeholder demand in simulation seconds with no time of day or weekday, so no window can contain it; the signed limits stay",
+    "phase3_am_peak": "apply with sim.conditional_speeds.edge_speeds(osm, idx, start time) when the scenario has a clock: on a school weekday the Dudley St school zone (40 km/h) runs 08:00-09:30 and Bay St / Crockford St (40 km/h) from 08:00, so a 07:00-09:00 AM peak would switch them on at 08:00"
+   },
+   "verdict": "not applied to baseline (no time of day); ready for the Phase 3 AM peak"
+  },
+  {
+   "rule": "Shared zones: 10 km/h unless signed lower, give way to pedestrians (ARR r.24, r.83)",
+   "network": "highway=living_street edges",
+   "evidence": {
+    "edges": 53,
+    "km": 3.84,
+    "speed_kmh_counts": {
+     "10": 44,
+     "20": 5,
+     "30": 2,
+     "5": 2
+    },
+    "above_10_kmh": [
+     {
+      "edge": "-208489243#0",
+      "name": "Little La Trobe Street",
+      "kmh": 20
+     },
+     {
+      "edge": "-208489243#1",
+      "name": "Little La Trobe Street",
+      "kmh": 20
+     },
+     {
+      "edge": "-228168410",
+      "name": "Duke Street",
+      "kmh": 30
+     },
+     {
+      "edge": "1274557996",
+      "name": "Little La Trobe Street",
+      "kmh": 20
+     },
+     {
+      "edge": "208489243#0",
+      "name": "Little La Trobe Street",
+      "kmh": 20
+     },
+     {
+      "edge": "208489243#1",
+      "name": "Little La Trobe Street",
+      "kmh": 20
+     },
+     {
+      "edge": "228168410",
+      "name": "Duke Street",
+      "kmh": 30
+     }
+    ]
+   },
+   "verdict": "complies (speed); pedestrians cannot_be_modelled",
+   "impact": "no pedestrians are simulated, so cars never yield to them in shared zones; they only drive at 10 km/h"
+  }
+ ],
+ "cannot_be_modelled": [
+  {
+   "item": "Hook turns (ARR r.34-35)",
+   "why": "SUMO has no hook-turn manoeuvre; OSM tags no hook-turn intersection here (0 ways, 0 relations).",
+   "impact": "at signed CBD intersections cars turn right from the centre lane at the same time as through traffic, instead of waiting in the kerb lane for the cross street's green: right-turn queues and conflicts look different from reality"
+  },
+  {
+   "item": "Trams",
+   "why": "cars only; no tram vehicles, schedules or tram signals",
+   "impact": "cars never queue behind trams, give way to them or stop for passengers at kerbside tram stops (r.163-164); tram-only lanes and tracks are either absent or driven as ordinary lanes (439 tram track ways in the raw data)"
+  },
+  {
+   "item": "Real signal timings",
+   "why": "no open signal-timing data for Melbourne (SCATS is not published)",
+   "impact": "every signal runs SUMO's static 90 s default program; no coordination (green waves), no actuation, no pedestrian-demand phases"
+  },
+  {
+   "item": "Clearways (kerb lanes open only in peak hours)",
+   "why": "OSM has no structured clearway or parking-lane-condition tags here (21 ways mention it in free text)",
+   "impact": "kerb lanes are always open, as if every clearway were in force (true in the AM peak on most arterials, too generous off-peak)"
+  },
+  {
+   "item": "Pedestrians and cyclists",
+   "why": "cars only (Phase 2 decision)",
+   "impact": "no give way to pedestrians at turns (r.62, r.72) or crossings, no pedestrian phases beyond the placeholder programs; bike lanes not simulated"
+  },
+  {
+   "item": "Buses and taxis",
+   "why": "cars only (Phase 2 decision); full-time bus lanes are closed to cars (see the bus lane rule) but no bus runs in them",
+   "impact": "no bus traffic or stops; bus lanes look empty"
+  }
+ ],
+ "known_issues": [
+  {
+   "item": "Looping junction lanes",
+   "status": "fixed",
+   "evidence": [],
+   "why": "two joined-junction shapes made SUMO route a left turn along a loop inside the junction (Nott St to Princes St, 85.6 m for a 23.4 m gap, through a house; a 49.8 m loop at Batmans Hill Dr, Docklands); both are now kept out of junction joining (build_net.JOIN_EXCLUDE) and this scan (junction lanes > 40 m and > 2.5 x their straight gap) finds none"
+  },
+  {
+   "item": "Edges stretched by junction joining",
+   "why": "netconvert moves the ends of edges into a joined junction, so near joined junctions an edge lies a few metres off its OSM line (alignment: share_within_own_way below share_within_any_carriageway)",
+   "impact": "cars near joined junctions are drawn slightly off their OSM centreline"
+  },
+  {
+   "item": "Elizabeth St at Bourke St: signals on separate stop-line nodes",
+   "status": "fixed",
+   "evidence": {
+    "junction": "cluster_2190478926_2190478936_2190561008_2190561011",
+    "type": "traffic_light",
+    "approaches": [
+     "Bourke Street",
+     "Elizabeth Street",
+     "Elizabeth Street"
+    ],
+    "stop_line_nodes_still_lights": [],
+    "one_signalised_junction": true
+   },
+   "why": "OSM's four-node box was not joined, so its three stop-line signals were their own lights and the box gave way to the right; sim/patches/osm/elizabeth_bourke_signals.nod.xml joins and signalises it"
+  },
+  {
+   "item": "Signed approaches that keep priority",
+   "evidence": "rules[Give-way and stop signs].evidence.approaches_with_priority",
+   "why": "netconvert resolves some equal-priority geometries by straightness"
+  }
+ ]
+}

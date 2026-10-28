@@ -1,0 +1,98 @@
+[
+ {
+  "_comment": "TEST FIXTURE, hand-written: not a real site. Schema of pipeline/reference/signal_sheets_verified.json.",
+  "site_id": "9001",
+  "site_name": "TEST ST/CROSS ST",
+  "sheet_date": "01/01/26",
+  "sheet_file": "test_fixture",
+  "phases": {
+   "sequence": "AB",
+   "by_phase": {
+    "A": {"signal_groups": ["1", "2", "4"], "min_green_s": 10.0, "max_green_s": 30.0, "yellow_s": 4.0, "all_red_s": 2.0},
+    "B": {"signal_groups": ["3"], "min_green_s": 8.0, "max_green_s": 17.0, "yellow_s": 3.5, "all_red_s": 1.5}
+   }
+  },
+  "signal_groups": {
+   "1": {"kind": "vehicle", "movements": [
+     {"street": "Test St", "heading": "NB", "turn": "L"},
+     {"street": "Test St", "heading": "NB", "turn": "T"},
+     {"street": "Test St", "heading": "NB", "turn": "R"}]},
+   "2": {"kind": "vehicle", "movements": [
+     {"street": "Test St", "heading": "SB", "turn": "L"},
+     {"street": "Test St", "heading": "SB", "turn": "T"},
+     {"street": "Test St", "heading": "SB", "turn": "R"}]},
+   "3": {"kind": "vehicle", "movements": [
+     {"street": "Cross St", "heading": "EB", "turn": "L"},
+     {"street": "Cross St", "heading": "EB", "turn": "T"},
+     {"street": "Cross St", "heading": "EB", "turn": "R"},
+     {"street": "Cross St", "heading": "WB", "turn": "L"},
+     {"street": "Cross St", "heading": "WB", "turn": "T"},
+     {"street": "Cross St", "heading": "WB", "turn": "R"}]},
+   "4": {"kind": "pedestrian", "ped": "P1", "movements": [{"street": "Cross St", "heading": null, "turn": "crossing"}]}
+  },
+  "pedestrians": {"P1": {"walk_s": 10.0, "clearance_1_s": 12.0, "clearance_2_s": null}},
+  "lane_layout": {
+   "Test St NB": [
+    {"lane": 1, "use": "bicycle", "arrows": null},
+    {"lane": 2, "use": "general", "arrows": "LT"},
+    {"lane": 3, "use": "general", "arrows": "R"}
+   ]
+  },
+  "provenance": {
+   "timings": {"status": "re_read", "page": "fixture", "notes": ""},
+   "phases": {"status": "re_read", "page": "fixture", "notes": ""},
+   "signal_groups": {"status": "re_read", "page": "fixture", "notes": ""},
+   "pedestrians": {"status": "re_read", "page": "fixture", "notes": ""},
+   "lane_layout": {"status": "re_read", "page": "fixture", "notes": ""}
+  }
+ },
+ {
+  "_comment": "TEST FIXTURE: timings and phase sequence known, movements not read.",
+  "site_id": "9002",
+  "site_name": "TEST",
+  "sheet_date": "01/01/26",
+  "sheet_file": "test_fixture",
+  "phases": {
+   "sequence": "A B C",
+   "by_phase": {
+    "A": {"signal_groups": ["1"], "min_green_s": 12.0, "max_green_s": 38.0, "yellow_s": 4.0, "all_red_s": 3.0},
+    "B": {"signal_groups": ["2"], "min_green_s": 6.0, "max_green_s": 14.0, "yellow_s": 3.0, "all_red_s": 2.0},
+    "C": {"signal_groups": [], "min_green_s": 5.0, "max_green_s": 0.0, "yellow_s": 3.0, "all_red_s": 1.0}
+   }
+  },
+  "signal_groups": null,
+  "pedestrians": null,
+  "lane_layout": null,
+  "provenance": {
+   "timings": {"status": "re_read", "page": "fixture", "notes": ""},
+   "phases": {"status": "re_read", "page": "fixture", "notes": ""},
+   "signal_groups": {"status": "not_read", "page": null, "notes": ""},
+   "pedestrians": {"status": "not_read", "page": null, "notes": ""},
+   "lane_layout": {"status": "not_read", "page": null, "notes": ""}
+  }
+ },
+ {
+  "_comment": "TEST FIXTURE: mid-block pedestrian crossing.",
+  "site_id": "9003",
+  "site_name": "TEST ST NR NOWHERE",
+  "sheet_date": "01/01/26",
+  "sheet_file": "test_fixture",
+  "phases": {
+   "sequence": "AC",
+   "by_phase": {
+    "A": {"signal_groups": ["1"], "min_green_s": 3.0, "max_green_s": 32.0, "yellow_s": 3.5, "all_red_s": 2.0},
+    "C": {"signal_groups": ["P1"], "min_green_s": 3.0, "max_green_s": null, "yellow_s": 3.5, "all_red_s": 0.0}
+   }
+  },
+  "signal_groups": null,
+  "pedestrians": {"P1": {"walk_s": 9.0, "clearance_1_s": 11.0, "clearance_2_s": 0.0}},
+  "lane_layout": null,
+  "provenance": {
+   "timings": {"status": "re_read", "page": "fixture", "notes": ""},
+   "phases": {"status": "re_read", "page": "fixture", "notes": ""},
+   "signal_groups": {"status": "not_read", "page": null, "notes": ""},
+   "pedestrians": {"status": "ai_checked", "page": null, "notes": ""},
+   "lane_layout": {"status": "not_read", "page": null, "notes": ""}
+  }
+ }
+]

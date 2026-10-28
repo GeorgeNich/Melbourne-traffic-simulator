@@ -1,0 +1,4562 @@
+{
+ "network": "roads.net.xml",
+ "relations": 285,
+ "by_status": {
+  "enforced": 261,
+  "not_applied": 5,
+  "not_in_network": 19
+ },
+ "by_via_and_status": {
+  "node:enforced": 220,
+  "node:not_applied": 3,
+  "node:not_in_network": 14,
+  "way:enforced": 41,
+  "way:not_applied": 2,
+  "way:not_in_network": 5
+ },
+ "conditional_decisions": {
+  "no_right_turn @ (Mo-Fr 07:00-09:30,16:00-18:30)": {
+   "applied": true,
+   "reason": "in force 7-9 am weekdays"
+  },
+  "no_right_turn @ (Mo-Fr 06:00-10:00,15:00-19:00)": {
+   "applied": true,
+   "reason": "in force 7-9 am weekdays"
+  },
+  "no_right_turn @ (Mo-Fr 07:00 - 09:30)": {
+   "applied": true,
+   "reason": "in force 7-9 am weekdays"
+  },
+  "no_left_turn @ (Mo-Fr 7:30-9:30)": {
+   "applied": true,
+   "reason": "in force 7:30-9:00, most of the 7-9 am peak"
+  },
+  "no_right_turn @ (Su-Tu 04:00-20:00; Fr-Sa 00:00-20:00)": {
+   "applied": true,
+   "reason": "in force 7-9 am on Mon, Tue and Fri (3 of 5 weekdays), not Wed/Thu"
+  },
+  "no_right_turn @ (Mo-Fr 16:00-18:30)": {
+   "applied": false,
+   "reason": "PM peak only (4-6:30 pm)"
+  },
+  "no_right_turn @ (height > 4)": {
+   "applied": false,
+   "reason": "vehicles over 4 m tall only; cars are not"
+  },
+  "no_left_turn @ (height > 3.9)": {
+   "applied": false,
+   "reason": "vehicles over 3.9 m tall only; cars are not"
+  }
+ },
+ "rows": [
+  {
+   "rel_id": 1651347,
+   "kind": "no_right_turn (conditional: no_right_turn @ (Mo-Fr 07:00-09:30,16:00-18:30))",
+   "via": "node",
+   "from_way": 1175874151,
+   "to_way": 963624496,
+   "from_name": "Power Street",
+   "to_name": "Kavanagh Street",
+   "status": "enforced",
+   "detail": "conditional, applied: in force 7-9 am weekdays. ",
+   "junctions": [
+    "cluster_298045595_298045597_8913555767_8913555768_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 1872998,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 198715390,
+   "to_way": 24531047,
+   "from_name": "Batman Avenue",
+   "to_name": "way 24531047",
+   "status": "enforced",
+   "detail": "movement does not exist: way(s) [24531047] have no edge (absorbed by junction joining) and the via node is no junction",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 3928849,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 295476229,
+   "to_way": 46829346,
+   "from_name": "Flinders Street",
+   "to_name": "Swanston Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2187874243_3313134379_3313134381_3313134382_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4145147,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 310190585,
+   "to_way": 43747554,
+   "from_name": "Cecil Street",
+   "to_name": "Haig Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "553816406"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4237175,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 131724927,
+   "to_way": 315099432,
+   "from_name": "Spring Street",
+   "to_name": "Collins Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13739734387_1449431331_1449431342_1449431465_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4240104,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 786200165,
+   "to_way": 569448147,
+   "from_name": "Spencer Street",
+   "to_name": "Abbotsford Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_10266726071_10266726072_127598515_332546101_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4240106,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 207460361,
+   "to_way": 1126679744,
+   "from_name": "New Chancery Lane",
+   "to_name": "Bourke Street",
+   "status": "not_in_network",
+   "detail": "way(s) [207460361] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4255083,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 665181108,
+   "to_way": 1070230023,
+   "from_name": "Nicholson Street",
+   "to_name": "Albert Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2324975789_3419354749_3419354751_3419354763_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4255085,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 1070230022,
+   "to_way": 316160749,
+   "from_name": "Albert Street",
+   "to_name": "Nicholson Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2324975789_3419354749_3419354751_3419354763_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4255170,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 135984691,
+   "to_way": 581989747,
+   "from_name": "Swanston Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_10904440439_1492410147_2183271187_2183271188_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4255177,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1276257409,
+   "to_way": 316166376,
+   "from_name": "La Trobe Street",
+   "to_name": "Swanston Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2181268832_2187770692_2383211191_2383211199_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4255188,
+   "kind": "no_straight_on",
+   "via": "node",
+   "from_way": 208547295,
+   "to_way": 1127386015,
+   "from_name": "Swanston Street",
+   "to_name": "Swanston Street",
+   "status": "not_in_network",
+   "detail": "except=bicycle does not exempt cars. way(s) [208547295, 1127386015] are not public car roads (unclassified access=permit)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4264188,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1183823613,
+   "to_way": 983871071,
+   "from_name": "Elizabeth Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1895925154_774546372_8976031240"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4264189,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 22818903,
+   "to_way": 983871061,
+   "from_name": "Elizabeth Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "1895925155"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4437416,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 39474083,
+   "to_way": 26786302,
+   "from_name": "City Road",
+   "to_name": "City Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "259132355"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4437418,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 26786105,
+   "to_way": 44074999,
+   "from_name": "Montague Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "560213051"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4437419,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 26786102,
+   "to_way": 26786104,
+   "from_name": "York Street",
+   "to_name": "York Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "293816081"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 4544357,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 207277348,
+   "to_way": 207277354,
+   "from_name": "Docklands Drive",
+   "to_name": "Waterfront Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1224854731_1224854738_1224854784_122752579_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 5768422,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 387598059,
+   "to_way": 387598060,
+   "from_name": "Collins Street",
+   "to_name": "King Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2180785571_2180785574_2180785588_2180785610_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 6616864,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 444840026,
+   "to_way": 198538930,
+   "from_name": "Queens Bridge Street",
+   "to_name": "way 198538930",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_3345061635_3345061641_3345061648_4520380444_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 6616873,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 296407704,
+   "to_way": 201053612,
+   "from_name": "Crockford Street",
+   "to_name": "way 201053612",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_293817615_293817618_302159154_3377595309"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 6723145,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 1183824140,
+   "to_way": 454602696,
+   "from_name": "Peel Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_777697587_777700831_777701894_777703067_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 6723156,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 286827526,
+   "to_way": 207799524,
+   "from_name": "Collins Street",
+   "to_name": "Spencer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2174950792_2174950793_2174950794_2180491134_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7044106,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 399136064,
+   "to_way": 479023751,
+   "from_name": "Flinders Street",
+   "to_name": "Spencer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_122705655_1479928134_1479930070_1479930102_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7074602,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 985113579,
+   "to_way": 254443128,
+   "from_name": "St Kilda Road",
+   "to_name": "St Kilda Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_11158256744_3393594193_828414268_846547014_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7084868,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 505037806,
+   "to_way": 481307370,
+   "from_name": "Wurundjeri Way",
+   "to_name": "Wurundjeri Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492131963_1492131965_296027650_296027719"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7084871,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 27007193,
+   "to_way": 39451666,
+   "from_name": "way 27007193",
+   "to_name": "Dudley Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492131963_1492131965_296027650_296027719"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7084873,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 857155148,
+   "to_way": 481307371,
+   "from_name": "Dudley Street",
+   "to_name": "55",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492131963_1492131965_296027650_296027719"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7234736,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 70809983,
+   "to_way": 492688400,
+   "from_name": "Harbour Esplanade",
+   "to_name": "Collins Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13152694926_13152694929_13185751339_844455902_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7939314,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 46305928,
+   "to_way": 581717500,
+   "from_name": "William Street",
+   "to_name": "Flinders Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1833110275_5880339363_591392087_9105320418"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7939315,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 984870585,
+   "to_way": 46305928,
+   "from_name": "Flinders Street",
+   "to_name": "William Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1833110275_5880339363_591392087_9105320418"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 7939316,
+   "kind": "no_right_turn (conditional: no_right_turn @ (Mo-Fr 06:00-10:00,15:00-19:00))",
+   "via": "node",
+   "from_way": 968051642,
+   "to_way": 982406879,
+   "from_name": "Flinders Street",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "conditional, applied: in force 7-9 am weekdays. ",
+   "junctions": [
+    "cluster_1479928057_1479928084_36822153_589475485_#8more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8097121,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 38313357,
+   "to_way": 568351595,
+   "from_name": "Montague-West Gate In Ramp On",
+   "to_name": "Montague-West Gate In Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452352275"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8097122,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 568351595,
+   "to_way": 568351599,
+   "from_name": "Montague-West Gate In Ramp On",
+   "to_name": "Montague-West Gate In Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452354292"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8097265,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 982206095,
+   "to_way": 568354789,
+   "from_name": "West Gate Out-Montague Ramp Of",
+   "to_name": "West Gate Out - Montague Ramp Of",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "36823151"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8097268,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 568351599,
+   "to_way": 38313371,
+   "from_name": "Montague-West Gate In Ramp On",
+   "to_name": "Montague - West Gate In Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_3142873401_3885768484_452354294"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8097374,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 982206083,
+   "to_way": 568362741,
+   "from_name": "Montague Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "3142873403"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8097873,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 568380320,
+   "to_way": 59914437,
+   "from_name": "City Road",
+   "to_name": "Whiteman Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "553816715"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8105076,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1127447831,
+   "to_way": 1127447832,
+   "from_name": "Ferrars Street",
+   "to_name": "Ferrars Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9728290649"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8106329,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 24590950,
+   "to_way": 24590948,
+   "from_name": "Park Street",
+   "to_name": "Park Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "267327526"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8109573,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 581959665,
+   "to_way": 963120900,
+   "from_name": "King Street",
+   "to_name": "Little Lonsdale Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_26034528_9146197650_9146197651_9146197652_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8109727,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 569450730,
+   "to_way": 62646710,
+   "from_name": "Victoria Street",
+   "to_name": "Errol Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_702460953_702465424_780982646_8928702135"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8109817,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 198874547,
+   "to_way": 30179550,
+   "from_name": "Dudley Street",
+   "to_name": "Dudley Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "332544910"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8109818,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 963120915,
+   "to_way": 963120917,
+   "from_name": "King Street",
+   "to_name": "Rosslyn Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13751647373_259616740_30942993_3394768953_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8109820,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 893221975,
+   "to_way": 1436793800,
+   "from_name": "Peel Street",
+   "to_name": "Peel Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2189143648_2189143649_9146197756_9146197757_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8109822,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 983871061,
+   "to_way": 582018440,
+   "from_name": "Victoria Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1895925154_774546372_8976031240"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8110071,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 492688400,
+   "to_way": 569460349,
+   "from_name": "Collins Street",
+   "to_name": "Harbour Esplanade",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13152694926_13152694929_13185751339_844455902_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8110072,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 569460352,
+   "to_way": 97790802,
+   "from_name": "Bourke Street",
+   "to_name": "Bourke Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1132023834_3394737409_3394737410_3394737414_#5more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8112976,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 209747362,
+   "to_way": 206507104,
+   "from_name": "Nicholson Street",
+   "to_name": "Nicholson Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2200514710_2200514713"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8113001,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 792324823,
+   "to_way": 792324821,
+   "from_name": "Nicholson Street",
+   "to_name": "Nicholson Street",
+   "status": "not_in_network",
+   "detail": "way(s) [39799116] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8113040,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 790271207,
+   "to_way": 315099433,
+   "from_name": "Macarthur Street",
+   "to_name": "Spring Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13739734387_1449431331_1449431342_1449431465_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8113121,
+   "kind": "no_right_turn (conditional: no_right_turn @ (Mo-Fr 16:00-18:30))",
+   "via": "way",
+   "from_way": 199429372,
+   "to_way": 386419593,
+   "from_name": "Russell Street",
+   "to_name": "Collins Street",
+   "status": "not_applied",
+   "detail": "PM peak only (4-6:30 pm)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8113152,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 985376436,
+   "to_way": 1216173541,
+   "from_name": "Alexandra Avenue",
+   "to_name": "Linlithgow Avenue",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_243963300_9109600423"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8113155,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 581714221,
+   "to_way": 412569388,
+   "from_name": "Southbank Boulevard",
+   "to_name": "Southbank Boulevard",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "243096971",
+    "243097143"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8113157,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 569726891,
+   "to_way": 412569387,
+   "from_name": "Southbank Boulevard",
+   "to_name": "Southbank Boulevard",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "197019550"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8114049,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 569757625,
+   "to_way": 45478856,
+   "from_name": "Ingles Street",
+   "to_name": "Ingles Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "277119279"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8114072,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 6262171,
+   "to_way": 569758998,
+   "from_name": "Footscray Road",
+   "to_name": "Footscray Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_41667991_560997597_8942967487_9708618420"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8114134,
+   "kind": "only_straight_on",
+   "via": "way",
+   "from_way": 1436410507,
+   "to_way": 198874330,
+   "from_name": "Dynon Road",
+   "to_name": "Spencer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_30942256_332543902_332544824_332544825_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8132081,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 296377647,
+   "to_way": 767675588,
+   "from_name": "Williamstown Road",
+   "to_name": "Williamstown Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2952016091"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8132083,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 296377475,
+   "to_way": 291715826,
+   "from_name": "Williamstown Road",
+   "to_name": "Williamstown Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13969912967_2952017046_2952017059_9360554509"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8132085,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 296377474,
+   "to_way": 198941893,
+   "from_name": "Williamstown Road",
+   "to_name": "Williamstown Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2952017062"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8184584,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 207128344,
+   "to_way": 22882672,
+   "from_name": "Footscray Road",
+   "to_name": "Citylink Onramp",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2172718107_30286983_3285623814_3285623815_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8184585,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 576909848,
+   "to_way": 285898779,
+   "from_name": "Footscray Road",
+   "to_name": "Footscray Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2172718107_30286983_3285623814_3285623815_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8184614,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 191053253,
+   "to_way": 1154876209,
+   "from_name": "Victoria Parade",
+   "to_name": "Brunswick Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13741922619_30287465_3419344120_8869200174_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8184622,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 1123561254,
+   "to_way": 315099431,
+   "from_name": "Collins Street",
+   "to_name": "Spring Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13739734387_1449431331_1449431342_1449431465_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8184627,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 576912585,
+   "to_way": 576912584,
+   "from_name": "Spring Street",
+   "to_name": "Spring Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2189497200_2189497210_2189497226_2189497232"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8215461,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 26786104,
+   "to_way": 555951431,
+   "from_name": "York Street",
+   "to_name": "City Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_259132363_293816123_36823348_36823356"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8215465,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 580628689,
+   "to_way": 580628688,
+   "from_name": "Wurundjeri Way",
+   "to_name": "Wurundjeri Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_247533244_247533245_9878403442_9878403443"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8215466,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 580628691,
+   "to_way": 580628690,
+   "from_name": "Wurundjeri Way",
+   "to_name": "Wurundjeri Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_247533244_247533245_9878403442_9878403443"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8215520,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 38313359,
+   "to_way": 780655769,
+   "from_name": "Montague - CityLink Out Ramp On",
+   "to_name": "Montague - Citylink Out Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452352328"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8215522,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 569460354,
+   "to_way": 207277769,
+   "from_name": "Bourke Street",
+   "to_name": "Harbour Esplanade",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1132023834_3394737409_3394737410_3394737414_#5more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8219557,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 756667943,
+   "to_way": 581031735,
+   "from_name": "Kings Way",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265525307_2265526854_2265526874_2265526907_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8219570,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 217377324,
+   "to_way": 217377326,
+   "from_name": "Sturt Street",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "299892221"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8219571,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 19012681,
+   "to_way": 5234831,
+   "from_name": "Power Street",
+   "to_name": "Power Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_3345073162_3345073163_36821617_9694068732"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8221921,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 1054956683,
+   "to_way": 5234831,
+   "from_name": "Power Street",
+   "to_name": "Power Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_3345073162_3345073163_36821617_9694068732"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8223898,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1435748184,
+   "to_way": 965130923,
+   "from_name": "Abbotsford Street",
+   "to_name": "Abbotsford Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "8928178048"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8223905,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 581658406,
+   "to_way": 1094726667,
+   "from_name": "Spencer Street",
+   "to_name": "Spencer Street",
+   "status": "not_in_network",
+   "detail": "way(s) [965332779] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8223911,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1126654551,
+   "to_way": 965836955,
+   "from_name": "Adderley Street",
+   "to_name": "Adderley Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_289602744_289602822_5232347245"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8223941,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 581660716,
+   "to_way": 139214694,
+   "from_name": "Batman Avenue",
+   "to_name": "way 139214694",
+   "status": "enforced",
+   "detail": "except=hgv does not exempt cars. ",
+   "junctions": [
+    "cluster_1525908991_1525908996"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8226059,
+   "kind": "no_right_turn (conditional: no_right_turn @ (Su-Tu 04:00-20:00; Fr-Sa 00:00-20:00))",
+   "via": "node",
+   "from_way": 581714211,
+   "to_way": 198731659,
+   "from_name": "City Road",
+   "to_name": "Moray Street",
+   "status": "enforced",
+   "detail": "conditional, applied: in force 7-9 am on Mon, Tue and Fri (3 of 5 weekdays), not Wed/Thu. ",
+   "junctions": [
+    "cluster_207108370_259132664_3498500908_3498500909_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8226063,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 1175875988,
+   "to_way": 581714216,
+   "from_name": "Kings Way",
+   "to_name": "Park Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265417413_2265417415_2682666777_2682666779_#8more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8226093,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 207799524,
+   "to_way": 286827529,
+   "from_name": "Spencer Street",
+   "to_name": "Collins Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2174950792_2174950793_2174950794_2180491134_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8226094,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 23910118,
+   "to_way": 32527491,
+   "from_name": "Park Street",
+   "to_name": "Park Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "259161166"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227781,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 581959642,
+   "to_way": 581959645,
+   "from_name": "William Street",
+   "to_name": "La Trobe Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2189145385_2189145386_2189145388_2189145408_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227782,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 581959644,
+   "to_way": 581959646,
+   "from_name": "William Street",
+   "to_name": "La Trobe Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2189145385_2189145386_2189145388_2189145408_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227788,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 581959669,
+   "to_way": 581959668,
+   "from_name": "King Street",
+   "to_name": "Lonsdale Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_259616706_26034526_3394726298_3394726300_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227883,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 316166611,
+   "to_way": 209107654,
+   "from_name": "Collins Street",
+   "to_name": "Collins Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2187874241"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227885,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 316166615,
+   "to_way": 208498191,
+   "from_name": "Collins Street",
+   "to_name": "Collins Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13739734378_2187874240_2193369804"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227886,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 386419592,
+   "to_way": 386419594,
+   "from_name": "Russell Street",
+   "to_name": "Russell Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1985557929_2180785601_2180785611_2180785616_#9more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227925,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 581989733,
+   "to_way": 581989731,
+   "from_name": "way 581989733",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "774546433"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227926,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 62205977,
+   "to_way": 581989732,
+   "from_name": "way 62205977",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "775933297"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227930,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 179613468,
+   "to_way": 62207851,
+   "from_name": "Therry Street",
+   "to_name": "Therry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "775942455"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8227931,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 1183823825,
+   "to_way": 581989741,
+   "from_name": "Victoria Street",
+   "to_name": "Swanston Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_10904440439_1492410147_2183271187_2183271188_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8228032,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 582018436,
+   "to_way": 582018435,
+   "from_name": "Elizabeth Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_777832607_777832638_777833057_777833061"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8228033,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 62205971,
+   "to_way": 582018436,
+   "from_name": "Elizabeth Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_777832607_777832638_777833057_777833061"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8228034,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 582018438,
+   "to_way": 783079774,
+   "from_name": "Elizabeth Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_777832607_777832638_777833057_777833061"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8228035,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 1183823612,
+   "to_way": 582018438,
+   "from_name": "Elizabeth Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_777832607_777832638_777833057_777833061"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8228036,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 582018428,
+   "to_way": 582018423,
+   "from_name": "Elizabeth Street",
+   "to_name": "Queensberry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "767737643"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8523088,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 386878912,
+   "to_way": 206506958,
+   "from_name": "Spencer Street",
+   "to_name": "Lonsdale Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492150938_1492150960_1492150966_1492150967_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8643352,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1352485048,
+   "to_way": 622561169,
+   "from_name": "William Street",
+   "to_name": "Flinders Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1833110275_5880339363_591392087_9105320418"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 8643353,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 46305934,
+   "to_way": 622561170,
+   "from_name": "William Street",
+   "to_name": "Flinders Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "1833110277"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9348872,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 658620793,
+   "to_way": 672401685,
+   "from_name": "La Trobe Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2190483583_2190483587_2190483588_2190483590_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9348873,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 1312349175,
+   "to_way": 581976093,
+   "from_name": "La Trobe Street",
+   "to_name": "Exhibition Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2181268826_2181275344_2291073957_3367904409_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9892917,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 489278207,
+   "to_way": 29020834,
+   "from_name": "Mackenzie Street",
+   "to_name": "Mackenzie Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "319157116"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9893044,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 711611140,
+   "to_way": 711611139,
+   "from_name": "Victoria Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1691676467_2615820738_774545099_775933327"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9898094,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 711952034,
+   "to_way": 711952033,
+   "from_name": "Harbour Esplanade",
+   "to_name": "Harbour Esplanade",
+   "status": "not_in_network",
+   "detail": "way(s) [663755940] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9898340,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 208506747,
+   "to_way": 1126692508,
+   "from_name": "Bourke Street",
+   "to_name": "Bourke Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2188404536"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9910814,
+   "kind": "no_left_turn (conditional: no_left_turn @ (Mo-Fr 7:30-9:30))",
+   "via": "node",
+   "from_way": 713108487,
+   "to_way": 27631165,
+   "from_name": "Coventry Street",
+   "to_name": "Morris Street",
+   "status": "enforced",
+   "detail": "conditional, applied: in force 7:30-9:00, most of the 7-9 am peak. ",
+   "junctions": [
+    "303466093"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9911004,
+   "kind": "no_straight_on",
+   "via": "node",
+   "from_way": 330761842,
+   "to_way": 201053612,
+   "from_name": "Boundary Street",
+   "to_name": "way 201053612",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_293817615_293817618_302159154_3377595309"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 9969447,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 217597348,
+   "to_way": 718619754,
+   "from_name": "Clarendon Street",
+   "to_name": "Clarendon Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2268883691_2268883692"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10411396,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 582018444,
+   "to_way": 582018415,
+   "from_name": "Elizabeth Street",
+   "to_name": "Queensberry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "307350279"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10766961,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1008818045,
+   "to_way": 581714221,
+   "from_name": "St Kilda Road",
+   "to_name": "Southbank Boulevard",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_3401024069_846566368_846566369_846566630"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10766962,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 569726889,
+   "to_way": 412569388,
+   "from_name": "St Kilda Road",
+   "to_name": "Southbank Boulevard",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "243097143"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10766963,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 25427595,
+   "to_way": 569726891,
+   "from_name": "St Kilda Road",
+   "to_name": "Southbank Boulevard",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_3401024069_846566368_846566369_846566630"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10766964,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1159052700,
+   "to_way": 412569387,
+   "from_name": "St Kilda Road",
+   "to_name": "Southbank Boulevard",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "197019550"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10766965,
+   "kind": "only_right_turn",
+   "via": "node",
+   "from_way": 19012674,
+   "to_way": 39451956,
+   "from_name": "Power Street",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2341546888_36821472_9950251062_9950251063_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10766966,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 217377322,
+   "to_way": 217377325,
+   "from_name": "Grant Street",
+   "to_name": "Grant Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2266485207"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10766967,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 777369818,
+   "to_way": 777369819,
+   "from_name": "Grant Street",
+   "to_name": "Grant Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_299892336_7253929654_7253929656"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10766968,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 777369821,
+   "to_way": 777369820,
+   "from_name": "Dodds Street",
+   "to_name": "Grant Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_299892336_7253929654_7253929656"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10775256,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 581031735,
+   "to_way": 581031736,
+   "from_name": "Kings Way",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265525307_2265526854_2265526874_2265526907_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10775257,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 217272589,
+   "to_way": 979797347,
+   "from_name": "Sturt Street",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265525307_2265526854_2265526874_2265526907_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 10775259,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 217272672,
+   "to_way": 217272671,
+   "from_name": "Coventry Street",
+   "to_name": "Coventry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13838003329_2265525313_2265526882_2265526919"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 11161136,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 581037861,
+   "to_way": 217377326,
+   "from_name": "Sturt Street",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "299892221"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 11533869,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 784419711,
+   "to_way": 789312782,
+   "from_name": "Montague Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "305838036"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 11732540,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 1068181381,
+   "to_way": 966626620,
+   "from_name": "Pearl River Road Offramp",
+   "to_name": "way 966626620",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_41667991_560997597_8942967487_9708618420"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166192,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1175845436,
+   "to_way": 979758341,
+   "from_name": "Kings Way",
+   "to_name": "Albert Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_159337598_159337614_1834131915_36820276"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166194,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1175845435,
+   "to_way": 172515820,
+   "from_name": "Kings Way",
+   "to_name": "Albert Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_159337598_159337614_1834131915_36820276"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166195,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 979758340,
+   "to_way": 767354520,
+   "from_name": "Albert Road",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_159337598_159337614_1834131915_36820276"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166197,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 15857036,
+   "to_way": 262609962,
+   "from_name": "Kings Way",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_159337598_159337614_1834131915_36820276"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166472,
+   "kind": "no_right_turn (conditional: no_right_turn @ (Mo-Fr 07:00 - 09:30))",
+   "via": "way",
+   "from_way": 1175845435,
+   "to_way": 262609964,
+   "from_name": "Kings Way",
+   "to_name": "Albert Road",
+   "status": "enforced",
+   "detail": "conditional, applied: in force 7-9 am weekdays. ",
+   "junctions": [
+    "cluster_159337598_159337614_1834131915_36820276"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166548,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 581714215,
+   "to_way": 581714213,
+   "from_name": "Park Street",
+   "to_name": "Park Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265417413_2265417415_2682666777_2682666779_#8more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166550,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 979789789,
+   "to_way": 581714214,
+   "from_name": "way 979789789",
+   "to_name": "Park Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265417413_2265417415_2682666777_2682666779_#8more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166552,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1175875989,
+   "to_way": 581714215,
+   "from_name": "Kings Way",
+   "to_name": "Park Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265417413_2265417415_2682666777_2682666779_#8more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13166665,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 581046815,
+   "to_way": 217272669,
+   "from_name": "Kings Way",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265525307_2265526854_2265526874_2265526907_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13169890,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 980094560,
+   "to_way": 963360111,
+   "from_name": "Dorcas Street",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_8911176718_8911176726"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13169891,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 963360112,
+   "to_way": 979797346,
+   "from_name": "Eastern Road",
+   "to_name": "Dorcas Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_8911176718_8911176726"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13169892,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 581031740,
+   "to_way": 581031742,
+   "from_name": "Dorcas Street",
+   "to_name": "Dorcas Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "5560710830"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13169926,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 26104307,
+   "to_way": 581031745,
+   "from_name": "Coventry Street",
+   "to_name": "Coventry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_285764494_5560710836_5560710841"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13169927,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 217268787,
+   "to_way": 217268785,
+   "from_name": "York Street",
+   "to_name": "York Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2265495840_2265495842_2265495843_2682666743_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13170004,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 321792822,
+   "to_way": 321792824,
+   "from_name": "Miles Street",
+   "to_name": "Miles Street",
+   "status": "not_in_network",
+   "detail": "way(s) [321792822, 321792824] are not public car roads (service access=yes)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13178349,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1254132458,
+   "to_way": 485229677,
+   "from_name": "CityLink In - Kings Ramp Of",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2682666741_2682666742_36820470_36822694_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13186540,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 568375949,
+   "to_way": 783844081,
+   "from_name": "Montague Street",
+   "to_name": "Convention Centre Place",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1883787502_2074161379_36823157_36823654_#10more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13186541,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 981208574,
+   "to_way": 963544297,
+   "from_name": "Montague Street",
+   "to_name": "Lorimer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1883787502_2074161379_36823157_36823654_#10more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13186542,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 790988810,
+   "to_way": 981208575,
+   "from_name": "way 790988810",
+   "to_name": "Lorimer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1883787502_2074161379_36823157_36823654_#10more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13186543,
+   "kind": "only_right_turn",
+   "via": "node",
+   "from_way": 981208576,
+   "to_way": 783887409,
+   "from_name": "way 981208576",
+   "to_name": "Lorimer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1883787502_2074161379_36823157_36823654_#10more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13186544,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 791012550,
+   "to_way": 556168191,
+   "from_name": "Lorimer Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1883787502_2074161379_36823157_36823654_#10more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13186545,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 981208580,
+   "to_way": 981208576,
+   "from_name": "Montague Street",
+   "to_name": "way 981208576",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1883787502_2074161379_36823157_36823654_#10more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13186546,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 756389913,
+   "to_way": 783887409,
+   "from_name": "Montague Street",
+   "to_name": "Lorimer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1883787502_2074161379_36823157_36823654_#10more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198763,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 568362744,
+   "to_way": 1254450684,
+   "from_name": "West Gate In-Montague Ramp Of",
+   "to_name": "West Gate In - Montague Ramp Of",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "3142873403"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198764,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 39452240,
+   "to_way": 982206083,
+   "from_name": "Montague Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "7380213988"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198765,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 1254450682,
+   "to_way": 789303527,
+   "from_name": "Montague - West Gate Out Ramp On",
+   "to_name": "Montague - West Gate Out Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "7380213988"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198766,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 504914082,
+   "to_way": 39452240,
+   "from_name": "Montague Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452352328"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198767,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 38313709,
+   "to_way": 982206085,
+   "from_name": "Montague-West Gate Out Ramp On",
+   "to_name": "Montague Street Onramp",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452350405"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198768,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 780655769,
+   "to_way": 982206084,
+   "from_name": "Montague - Citylink Out Ramp On",
+   "to_name": "Montague-Citylink Out Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452350405"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198769,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 1254450685,
+   "to_way": 38313359,
+   "from_name": "Montague - CityLink Out Ramp On",
+   "to_name": "Montague - CityLink Out Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "11657940884"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198770,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 1254450683,
+   "to_way": 982206080,
+   "from_name": "West Gate In - Montague Ramp Of",
+   "to_name": "West Gate In - Montague Ramp Of",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "11657940884"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198771,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 982206080,
+   "to_way": 982206081,
+   "from_name": "West Gate In - Montague Ramp Of",
+   "to_name": "West Gate In - Montague Ramp Of",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452352275"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198772,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 790988813,
+   "to_way": 982206079,
+   "from_name": "Montague Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452354704"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198773,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 235776780,
+   "to_way": 568354787,
+   "from_name": "West Gate Out - Montague Ramp Of",
+   "to_name": "West Gate Out - Montague Ramp Of",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452354704"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198774,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 568354789,
+   "to_way": 235776780,
+   "from_name": "West Gate Out - Montague Ramp Of",
+   "to_name": "West Gate Out - Montague Ramp Of",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "452354292"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198775,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 198989602,
+   "to_way": 38313371,
+   "from_name": "Montague Street",
+   "to_name": "Montague - West Gate In Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_3142873401_3885768484_452354294"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198776,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 982206089,
+   "to_way": 982206088,
+   "from_name": "Montague Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "36823151"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198777,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1127447343,
+   "to_way": 197846381,
+   "from_name": "Munro Street",
+   "to_name": "Montague Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_7296210380_7296254646_7380266265_9085527862_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13198778,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 197846381,
+   "to_way": 1127447367,
+   "from_name": "Montague Street",
+   "to_name": "Munro Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_7296210380_7296254646_7380266265_9085527862_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13216883,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 22588265,
+   "to_way": 983606201,
+   "from_name": "way 22588265",
+   "to_name": "Plummer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "242310771"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13216884,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 983606207,
+   "to_way": 983606202,
+   "from_name": "Graham Street",
+   "to_name": "Plummer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_12540075666_13969913008_13969913009_13969913010_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13220094,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 62110983,
+   "to_way": 581989734,
+   "from_name": "Elizabeth Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1895925154_774546372_8976031240"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13235911,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 45443674,
+   "to_way": 984811440,
+   "from_name": "Swinging Basin Lane",
+   "to_name": "Lorimer Street",
+   "status": "not_in_network",
+   "detail": "way(s) [45443674] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13235912,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 45478986,
+   "to_way": 984811440,
+   "from_name": "way 45478986",
+   "to_name": "Lorimer Street",
+   "status": "not_in_network",
+   "detail": "way(s) [45478986] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236273,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 207277768,
+   "to_way": 984841499,
+   "from_name": "Bourke Street",
+   "to_name": "Bourke Street",
+   "status": "not_in_network",
+   "detail": "way(s) [984841496] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236274,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 1274774671,
+   "to_way": 1274774673,
+   "from_name": "Bourke Street",
+   "to_name": "Bourke Street",
+   "status": "not_in_network",
+   "detail": "way(s) [984841496] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236382,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 984852768,
+   "to_way": 968153046,
+   "from_name": "Wurundjeri Way",
+   "to_name": "way 968153046",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_8957021700_8957021710_9105117352_9105117353"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236383,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 984852784,
+   "to_way": 207277766,
+   "from_name": "Wurundjeri Way",
+   "to_name": "Wurundjeri Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_122705649_122705650_122769918_13722451142_#7more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236384,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 207277766,
+   "to_way": 258070011,
+   "from_name": "Wurundjeri Way",
+   "to_name": "way 258070011",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_122705649_122705650_122769918_13722451142_#7more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236385,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 662272978,
+   "to_way": 984852785,
+   "from_name": "Wurundjeri Way",
+   "to_name": "Flinders Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_122705649_122705650_122769918_13722451142_#7more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236473,
+   "kind": "no_right_turn (conditional: no_right_turn @ (height > 4))",
+   "via": "node",
+   "from_way": 198715023,
+   "to_way": 206507326,
+   "from_name": "Flinders Street",
+   "to_name": "Spencer Street",
+   "status": "not_applied",
+   "detail": "vehicles over 4 m tall only; cars are not",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236474,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 984863714,
+   "to_way": 787612632,
+   "from_name": "Maritime Place",
+   "to_name": "Flinders Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_122705652_2202858913_2202858915_589747750_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13236604,
+   "kind": "no_left_turn (conditional: no_left_turn @ (height > 3.9))",
+   "via": "node",
+   "from_way": 1292625318,
+   "to_way": 1352485046,
+   "from_name": "Flinders Street",
+   "to_name": "William Street",
+   "status": "not_applied",
+   "detail": "vehicles over 3.9 m tall only; cars are not",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13238244,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 985009844,
+   "to_way": 27007177,
+   "from_name": "Footscray Road",
+   "to_name": "Dudley Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_60653725_60653733_60653735_92130447"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13238291,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 27007193,
+   "to_way": 481307371,
+   "from_name": "way 27007193",
+   "to_name": "55",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492131963_1492131965_296027650_296027719"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13238292,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 857155148,
+   "to_way": 481307370,
+   "from_name": "Dudley Street",
+   "to_name": "Wurundjeri Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492131963_1492131965_296027650_296027719"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13238293,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 505037806,
+   "to_way": 39451666,
+   "from_name": "Wurundjeri Way",
+   "to_name": "Dudley Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492131963_1492131965_296027650_296027719"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13238345,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 286827633,
+   "to_way": 8095795,
+   "from_name": "way 286827633",
+   "to_name": "32",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_60653725_60653733_60653735_92130447"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13238346,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 285898790,
+   "to_way": 286827641,
+   "from_name": "Footscray Road",
+   "to_name": "Footscray Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_60653725_60653733_60653735_92130447"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13238347,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 8095795,
+   "to_way": 286827633,
+   "from_name": "32",
+   "to_name": "way 286827633",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_60653725_60653733_60653735_92130447"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13239486,
+   "kind": "only_right_turn",
+   "via": "node",
+   "from_way": 1203843365,
+   "to_way": 254443128,
+   "from_name": "St Kilda Road",
+   "to_name": "St Kilda Road",
+   "status": "enforced",
+   "detail": "except=bicycle does not exempt cars. ",
+   "junctions": [
+    "cluster_11158256744_3393594193_828414268_846547014_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13244130,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 985376436,
+   "to_way": 714104001,
+   "from_name": "Alexandra Avenue",
+   "to_name": "Boathouse Drive",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "6713198142"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13244131,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 985376446,
+   "to_way": 670842916,
+   "from_name": "Olympic Boulevard",
+   "to_name": "Alexandra Avenue",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "6282173383"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13244132,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 762797860,
+   "to_way": 25432238,
+   "from_name": "Alexandra Avenue",
+   "to_name": "Olympic Boulevard",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "6282174124"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13244133,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1339694574,
+   "to_way": 24589915,
+   "from_name": "way 1339694574",
+   "to_name": "Alexandra Avenue",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1588112477_243434000"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13244134,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 985376448,
+   "to_way": 985376447,
+   "from_name": "Boathouse Drive",
+   "to_name": "Alexandra Avenue",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_243963300_9109600423"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13244135,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 985376431,
+   "to_way": 985376448,
+   "from_name": "Boathouse Drive",
+   "to_name": "Boathouse Drive",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9109600424"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13244169,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 985383987,
+   "to_way": 581660717,
+   "from_name": "Olympic Boulevard",
+   "to_name": "Batman Avenue",
+   "status": "enforced",
+   "detail": "no connection at the junction comes from the from way at the via",
+   "junctions": [
+    "cluster_13900267479_60095429_6282174090_6282174093_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13244170,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 670842909,
+   "to_way": 985383987,
+   "from_name": "Olympic Boulevard",
+   "to_name": "Olympic Boulevard",
+   "status": "enforced",
+   "detail": "no connection at the junction comes from the from way at the via",
+   "junctions": [
+    "cluster_13900267479_60095429_6282174090_6282174093_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13299005,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 930126925,
+   "to_way": 990647299,
+   "from_name": "Southbank Boulevard",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_847528091_847529551_847530367_847530551_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13585365,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 581658391,
+   "to_way": 349836922,
+   "from_name": "Dynon Road",
+   "to_name": "Citylink Onramp",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_130040518_30942487_9360244826"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13585884,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 767675588,
+   "to_way": 767675587,
+   "from_name": "Williamstown Road",
+   "to_name": "Graham Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_242314183_2952016081_2952016084_2952016092_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13615561,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 327695289,
+   "to_way": 778984242,
+   "from_name": "CityLink In - Lorimer Ramp Of",
+   "to_name": "Lorimer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_36825302_36825305_3885768481_3885768482_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13615569,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 984814777,
+   "to_way": 984814770,
+   "from_name": "Lorimer Street",
+   "to_name": "Rogers Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "529157849"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13615570,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 984814768,
+   "to_way": 1016845383,
+   "from_name": "Rogers Street",
+   "to_name": "Lorimer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "529157836"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13615571,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 685575921,
+   "to_way": 1016845385,
+   "from_name": "Regatta Way",
+   "to_name": "Lorimer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "1425817981"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13615572,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 569757625,
+   "to_way": 1016845388,
+   "from_name": "Ingles Street",
+   "to_name": "Lorimer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_277119276_9378938544"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13636206,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1018419578,
+   "to_way": 46305471,
+   "from_name": "Queens Bridge Street",
+   "to_name": "way 46305471",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_591401042_591408092_591408190_9393412333"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13636208,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1132680022,
+   "to_way": 952562525,
+   "from_name": "Queens Bridge Street",
+   "to_name": "Banana Alley",
+   "status": "not_in_network",
+   "detail": "way(s) [952562525] are not public car roads (service access=yes)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13687615,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1022123482,
+   "to_way": 641709738,
+   "from_name": "Normanby Road",
+   "to_name": "way 641709738",
+   "status": "not_in_network",
+   "detail": "way(s) [641709738] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 13902662,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 1126654265,
+   "to_way": 56730487,
+   "from_name": "Batman Street",
+   "to_name": "Adderley Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_289602744_289602822_5232347245"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14030456,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1056569726,
+   "to_way": 106475585,
+   "from_name": "way 1056569726",
+   "to_name": "way 106475585",
+   "status": "not_in_network",
+   "detail": "way(s) [1056569726, 106475585] are not public car roads (unclassified access=private)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14098321,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 782090436,
+   "to_way": 966626619,
+   "from_name": "Footscray Road",
+   "to_name": "way 966626619",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_41667991_560997597_8942967487_9708618420"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14257863,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 665181108,
+   "to_way": 658631148,
+   "from_name": "Nicholson Street",
+   "to_name": "Albert Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2324975789_3419354749_3419354751_3419354763_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14283314,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1192225876,
+   "to_way": 207639965,
+   "from_name": "Spring Street",
+   "to_name": "Macarthur Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13739734387_1449431331_1449431342_1449431465_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14283315,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 131724927,
+   "to_way": 131724963,
+   "from_name": "Spring Street",
+   "to_name": "Collins Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13739734387_1449431331_1449431342_1449431465_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14315521,
+   "kind": "no_right_turn (conditional: no_right_turn @ (Mo-Fr 16:00-18:30))",
+   "via": "way",
+   "from_way": 1175845436,
+   "to_way": 262609963,
+   "from_name": "Kings Way",
+   "to_name": "Albert Road",
+   "status": "not_applied",
+   "detail": "PM peak only (4-6:30 pm)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14320772,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 190727196,
+   "to_way": 1075695447,
+   "from_name": "Russell Street",
+   "to_name": "Bourke Street",
+   "status": "enforced",
+   "detail": "except=taxi does not exempt cars. ",
+   "junctions": [
+    "cluster_2187983881_2187983882_2187983885_2187983891_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14338780,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1513898669,
+   "to_way": 187177450,
+   "from_name": "way 1513898669",
+   "to_name": "Moray Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "1426013262"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14338781,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 217272248,
+   "to_way": 8066058,
+   "from_name": "City Road",
+   "to_name": "City Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "259132599"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14347072,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 971038197,
+   "to_way": 971038196,
+   "from_name": "Griffin Crescent",
+   "to_name": "Griffin Crescent",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "8986939789"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14348901,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 45791960,
+   "to_way": 233925328,
+   "from_name": "way 45791960",
+   "to_name": "way 233925328",
+   "status": "not_in_network",
+   "detail": "way(s) [45791960, 233925328] are not public car roads (service access=permissive)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14348902,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 172481680,
+   "to_way": 386879409,
+   "from_name": "Footscray Road Offramp",
+   "to_name": "Footscray Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2172718107_30286983_3285623814_3285623815_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14388207,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 262609962,
+   "to_way": 15857036,
+   "from_name": "Kings Way",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_159337598_159337614_1834131915_36820276"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14388208,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 979770620,
+   "to_way": 979766831,
+   "from_name": "Albert Road",
+   "to_name": "Albert Road",
+   "status": "enforced",
+   "detail": "no connection at the junction comes from the from way at the via",
+   "junctions": [
+    "8909103943"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14431805,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 286827108,
+   "to_way": 208498191,
+   "from_name": "Swanston Street",
+   "to_name": "Collins Street",
+   "status": "not_in_network",
+   "detail": "except=bicycle does not exempt cars. way(s) [286827108] are not public car roads (unclassified access=permit)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 14454867,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1183823818,
+   "to_way": 787172938,
+   "from_name": "Victoria Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "1895925155"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 15320680,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1132329210,
+   "to_way": 787583813,
+   "from_name": "Southgate Avenue",
+   "to_name": "City Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_10557845091_10557845092_10557845093_10557845099_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 15817861,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 664287434,
+   "to_way": 386878911,
+   "from_name": "La Trobe Street",
+   "to_name": "Spencer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492145777_1492145829_1492145844_1492149374_#5more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 15817862,
+   "kind": "no_right_turn",
+   "via": "way",
+   "from_way": 25428380,
+   "to_way": 135952923,
+   "from_name": "La Trobe Street",
+   "to_name": "Spencer Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1492145777_1492145829_1492145844_1492149374_#5more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 16339470,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 983871071,
+   "to_way": 62110983,
+   "from_name": "Victoria Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "774546374"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 16339471,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 316628752,
+   "to_way": 62110989,
+   "from_name": "Victoria Street",
+   "to_name": "Elizabeth Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1895925154_774546372_8976031240"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 16339472,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 62207595,
+   "to_way": 316628752,
+   "from_name": "Elizabeth Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1895925154_774546372_8976031240"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 16413291,
+   "kind": "no_right_turn (conditional: no_right_turn @ (height > 4))",
+   "via": "node",
+   "from_way": 1212677494,
+   "to_way": 968051642,
+   "from_name": "Kings Way",
+   "to_name": "Flinders Street",
+   "status": "not_applied",
+   "detail": "vehicles over 4 m tall only; cars are not",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 16699707,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1172337445,
+   "to_way": 189309033,
+   "from_name": "St Kilda Road",
+   "to_name": "way 189309033",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "121169739"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17258618,
+   "kind": "only_right_turn",
+   "via": "node",
+   "from_way": 5235237,
+   "to_way": 980542675,
+   "from_name": "way 5235237",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2682666741_2682666742_36820470_36822694_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17258620,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 980542677,
+   "to_way": 980542678,
+   "from_name": "Kings Way",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2682666741_2682666742_36820470_36822694_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17258621,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 980542678,
+   "to_way": 485229677,
+   "from_name": "Kings Way",
+   "to_name": "Kings Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2682666741_2682666742_36820470_36822694_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17258623,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 980110336,
+   "to_way": 1254132458,
+   "from_name": "CityLink In - Kings Ramp Of",
+   "to_name": "CityLink In - Kings Ramp Of",
+   "status": "enforced",
+   "detail": "only the from and to ways meet at the via node: nothing else to do",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17263985,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 789312783,
+   "to_way": 1254450682,
+   "from_name": "Montague - West Gate Out Ramp On",
+   "to_name": "Montague - West Gate Out Ramp On",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "11657904466"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17263986,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 1254450684,
+   "to_way": 1254450683,
+   "from_name": "West Gate In - Montague Ramp Of",
+   "to_name": "West Gate In - Montague Ramp Of",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "11657904466"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652418,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936594,
+   "to_way": 1085936595,
+   "from_name": "Wells Street",
+   "to_name": "Wells Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950383691"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652419,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936592,
+   "to_way": 1085936593,
+   "from_name": "Coventry Street",
+   "to_name": "Coventry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950383690"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652420,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936597,
+   "to_way": 1085936596,
+   "from_name": "Coventry Street",
+   "to_name": "Coventry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950383693"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652421,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936591,
+   "to_way": 1085936590,
+   "from_name": "Wells Street",
+   "to_name": "Wells Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950383689"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652422,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936584,
+   "to_way": 1085936583,
+   "from_name": "Wells Street",
+   "to_name": "Wells Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950383652"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652423,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936581,
+   "to_way": 1085936582,
+   "from_name": "Dorcas Street",
+   "to_name": "Dorcas Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950383650"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652424,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936586,
+   "to_way": 1085936585,
+   "from_name": "Dorcas Street",
+   "to_name": "Dorcas Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950383653"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652425,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936588,
+   "to_way": 1085936587,
+   "from_name": "Wells Street",
+   "to_name": "Wells Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950383655"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652426,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936564,
+   "to_way": 1085936563,
+   "from_name": "Dodds Street",
+   "to_name": "Dodds Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950251066"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652427,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 971869878,
+   "to_way": 971869879,
+   "from_name": "Coventry Street",
+   "to_name": "Coventry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "8995058607"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652428,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936565,
+   "to_way": 1085936566,
+   "from_name": "Dodds Street",
+   "to_name": "Dodds Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950251071"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652429,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1085936568,
+   "to_way": 1085936567,
+   "from_name": "Coventry Street",
+   "to_name": "Coventry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "9950251073"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652430,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 217528689,
+   "to_way": 27459479,
+   "from_name": "Heather Street",
+   "to_name": "Heather Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "301497227"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652431,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 23910106,
+   "to_way": 23910105,
+   "from_name": "Heather Street",
+   "to_name": "Heather Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_259161051_380060572"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652432,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 217628212,
+   "to_way": 217628218,
+   "from_name": "Moray Street",
+   "to_name": "Moray Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2269294140"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652433,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 217628214,
+   "to_way": 217628220,
+   "from_name": "Coventry Street",
+   "to_name": "Coventry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2269300125"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652434,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 217628215,
+   "to_way": 217628216,
+   "from_name": "Coventry Street",
+   "to_name": "Coventry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "654006893"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652435,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 581046814,
+   "to_way": 217272668,
+   "from_name": "Sturt Street",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2265525306"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17652436,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 980094561,
+   "to_way": 963360112,
+   "from_name": "Eastern Road",
+   "to_name": "Eastern Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "8911166402"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 17720275,
+   "kind": "only_straight_on",
+   "via": "way",
+   "from_way": 296383969,
+   "to_way": 1292625318,
+   "from_name": "Flinders Street",
+   "to_name": "Flinders Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_11982946469_13739763550_2189272905_591393322_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 18176714,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 17036367,
+   "to_way": 1324972235,
+   "from_name": "Drewery Lane",
+   "to_name": "Lonsdale Street",
+   "status": "not_in_network",
+   "detail": "way(s) [17036367] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 18575712,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1038111502,
+   "to_way": 1038111506,
+   "from_name": "Market Street",
+   "to_name": "Flinders Lane",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_12514091450_2189156622_8955976554_8955976556_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 18575713,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1352511909,
+   "to_way": 208643585,
+   "from_name": "Flinders Lane",
+   "to_name": "Flinders Lane",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_12514091450_2189156622_8955976554_8955976556_#3more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19032389,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1123836814,
+   "to_way": 316166375,
+   "from_name": "Swanston Street",
+   "to_name": "La Trobe Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2181268832_2187770692_2383211191_2383211199_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19168238,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1461757732,
+   "to_way": 1461662160,
+   "from_name": "St Kilda Road",
+   "to_name": "Domain Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "11943253540"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19542442,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1126652259,
+   "to_way": 28464791,
+   "from_name": "Elizabeth Street",
+   "to_name": "Therry Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_2190483578_2190483598"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19673158,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1123528683,
+   "to_way": 1435065637,
+   "from_name": "Collins Street",
+   "to_name": "Navigation Drive",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13190365847_13190365848_13190365855_13190365857_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19673159,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 44158377,
+   "to_way": 1435055241,
+   "from_name": "Navigation Drive",
+   "to_name": "Collins Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13190365847_13190365848_13190365855_13190365857_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19673173,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 40002212,
+   "to_way": 1123528678,
+   "from_name": "Batmans Hill Drive",
+   "to_name": "Collins Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_13185671777_13185671778_13185671780_13185671781_#7more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19680673,
+   "kind": "no_u_turn",
+   "via": "way",
+   "from_way": 1435605828,
+   "to_way": 1435605826,
+   "from_name": "Hawke Street",
+   "to_name": "Hawke Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_3202917978_3218226994_8927996670_8927996671"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19716108,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 206507243,
+   "to_way": 206507244,
+   "from_name": "Spencer Street",
+   "to_name": "Dryburgh Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_30942256_332543902_332544824_332544825_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19756023,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 454602696,
+   "to_way": 62258467,
+   "from_name": "Victoria Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_777697587_777700831_777701894_777703067_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19756024,
+   "kind": "only_left_turn",
+   "via": "node",
+   "from_way": 1444814164,
+   "to_way": 316628750,
+   "from_name": "Queen Street",
+   "to_name": "Victoria Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_1691676467_2615820738_774545099_775933327"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19909330,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 990647300,
+   "to_way": 217377202,
+   "from_name": "Sturt Street",
+   "to_name": "Sturt Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_847528091_847529551_847530367_847530551_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 19981202,
+   "kind": "only_straight_on",
+   "via": "node",
+   "from_way": 959708811,
+   "to_way": 1459964019,
+   "from_name": "West Gate Tunnel",
+   "to_name": "West Gate Tunnel",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "5556315220"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20003118,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1286706401,
+   "to_way": 1289270261,
+   "from_name": "St Kilda Road",
+   "to_name": "way 1289270261",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "11955272191"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20006831,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 45148636,
+   "to_way": 1461752976,
+   "from_name": "way 45148636",
+   "to_name": "way 1461752976",
+   "status": "not_in_network",
+   "detail": "way(s) [45148636, 1461752976] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20006832,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1461752973,
+   "to_way": 1461752971,
+   "from_name": "way 1461752973",
+   "to_name": "way 1461752971",
+   "status": "not_in_network",
+   "detail": "way(s) [1461752973, 1461752971] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20062917,
+   "kind": "no_right_turn",
+   "via": "node",
+   "from_way": 1058715335,
+   "to_way": 1209937156,
+   "from_name": "City Road",
+   "to_name": "Ferrars Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_303464659_9085527964_9085527965_9085527966_#2more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20274690,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 966626633,
+   "to_way": 966626634,
+   "from_name": "Docklands Drive",
+   "to_name": "Docklands Drive",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "8942990214"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20274691,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1484226801,
+   "to_way": 851399808,
+   "from_name": "way 1484226801",
+   "to_name": "way 851399808",
+   "status": "not_in_network",
+   "detail": "way(s) [1484226801, 851399808] are not public car roads (service)",
+   "junctions": [],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20504326,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 959708815,
+   "to_way": 959708809,
+   "from_name": "Wurundjeri Way",
+   "to_name": "West Gate Tunnel",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_11047591902_11047591904_11047596605_8879528290_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20504327,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1444855790,
+   "to_way": 1353291426,
+   "from_name": "West Gate Tunnel",
+   "to_name": "Wurundjeri Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_11047591902_11047591904_11047596605_8879528290_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20504328,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1353291427,
+   "to_way": 1500953720,
+   "from_name": "West Gate Tunnel",
+   "to_name": "Wurundjeri Way",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_11047591902_11047591904_11047596605_8879528290_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20504329,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 1353291425,
+   "to_way": 824006809,
+   "from_name": "Wurundjeri Way",
+   "to_name": "West Gate Tunnel",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_11047591902_11047591904_11047596605_8879528290_#4more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20505766,
+   "kind": "no_left_turn",
+   "via": "node",
+   "from_way": 172481740,
+   "to_way": 13859318,
+   "from_name": "Dynon Road Offramp",
+   "to_name": "Dynon Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_130039242_130039433_1833875775_1833875777_#6more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20505767,
+   "kind": "only_right_turn",
+   "via": "node",
+   "from_way": 486902705,
+   "to_way": 1014558279,
+   "from_name": "Wurundjeri Way",
+   "to_name": "Dynon Road",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "4794459428"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 20505802,
+   "kind": "only_right_turn",
+   "via": "node",
+   "from_way": 1500977096,
+   "to_way": 340881502,
+   "from_name": "way 1500977096",
+   "to_name": "Roden Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "cluster_30942795_387153023_387153031_9708564401_#1more"
+   ],
+   "offending": [],
+   "missing": []
+  },
+  {
+   "rel_id": 21039586,
+   "kind": "no_u_turn",
+   "via": "node",
+   "from_way": 1355029694,
+   "to_way": 22588324,
+   "from_name": "Graham Street",
+   "to_name": "Graham Street",
+   "status": "enforced",
+   "detail": "",
+   "junctions": [
+    "2081966169"
+   ],
+   "offending": [],
+   "missing": []
+  }
+ ]
+}

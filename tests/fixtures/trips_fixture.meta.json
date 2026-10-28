@@ -1,0 +1,17 @@
+{
+  "scenario": "fixture",
+  "demand": "test_fixture",
+  "duration_s": 300,
+  "seed": 20261027,
+  "sumo_version": "none: hand-made test fixture, not a SUMO run",
+  "vehicles": 40,
+  "teleports": 0,
+  "tunnel_vehicles": 2,
+  "generated_at": "2026-10-26T16:15:53Z",
+  "_test_fixture": true,
+  "_notes": [
+    "TEST FIXTURE, not simulated traffic: hand-picked routes over real roads_3d.geojson ways, timed at free-flow class speeds with random signal stops (web/scripts/make-trips-fixture.mjs, seeded).",
+    "Every z is the roads_3d.geojson vertex height (Stage B). The Domain Tunnel cars (fixture-domain-tunnel-west-*) drive the CityLink Domain Tunnel westbound at its real roads_3d depth (-30 m, estimated in roads_3d), from deep underground at the SIM_EXTRACT_BBOX east edge to the western portal, to exercise the X-ray tunnel styling; no other car goes below ground.",
+    "Dev/test only (TWIN_USE_FIXTURE=1 or =trips). Never bundled into a build."
+  ]
+}

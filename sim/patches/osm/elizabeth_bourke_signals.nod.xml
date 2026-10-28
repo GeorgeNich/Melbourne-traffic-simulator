@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PATCH (OSM stage, hand-written): Elizabeth St at Bourke St is ONE signalised intersection.
+
+  OSM maps it as a box of four plain nodes (2190478926, 2190478936, 2190561008, 2190561011; Elizabeth
+  St is two one-way carriageways, Bourke St one-way eastbound) with the signals on the approaches'
+  stop lines, 5.7-10.1 m before the box (6-26 m from node 2190478936): 13634634815 (Elizabeth St
+  northbound), 3394726646 (Elizabeth St southbound) and 3394726641 (Bourke St eastbound), all
+  highway=traffic_signals with no crossing tag. netconvert's junction join did not cluster the box,
+  so tls.guess-signals had no intersection to move the signals onto: each stop line became its own
+  90 s light and the box stayed four give-way-to-the-right (left_before_right) junctions, so cars
+  stopped at a light and then gave way inside the intersection.
+
+  Fix, as for the other stop-line signals (stop_line_signals.nod.xml): the four box nodes are joined
+  into one signalised junction (one program), and the three stop-line signal nodes become plain
+  nodes, so the intersection's own program controls every approach and cars stop once. Timings stay
+  SUMO's default placeholders.
+
+  The join gives its position explicitly: x/y are the mean of the four nodes in the import's
+  projection before netconvert shifts the network to its origin (UTM zone 55, WGS84, metres:
+  "+proj=utm +zone=55 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"). Without them netconvert 1.28
+  places a node-file join at y = -2^30 in a left-hand network (its "no position" marker is mirrored
+  with the network and then taken as a real position). sim/tests/test_patches_osm.py checks that
+  x/y still match the four OSM nodes.
+-->
+<nodes>
+    <join nodes="2190478926 2190478936 2190561008 2190561011" x="320712.01" y="-4187159.63" type="traffic_light"/>
+    <!-- Elizabeth St northbound stop line, 5.7 m before the box -->
+    <node id="13634634815" type="priority"/>
+    <!-- Elizabeth St southbound stop line, 9.9 m before the box -->
+    <node id="3394726646" type="priority"/>
+    <!-- Bourke St eastbound stop line, 10.1 m before the box -->
+    <node id="3394726641" type="priority"/>
+</nodes>

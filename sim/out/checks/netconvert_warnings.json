@@ -1,0 +1,1405 @@
+{
+ "about": "netconvert warnings of the network build, each class fixed or justified. pass2_final_network is the shipped sim/net/roads.net.xml.",
+ "pass1_osm_import": {
+  "turn_signs_not_applicable": {
+   "verdict": "justified",
+   "reason": "OSM turn:lanes arrows that do not fit the roads actually connected (arrow counts and targets differ); netconvert falls back to its own lane assignment for that approach. Where that left a one-sided approach without its turn, turn_lanes.con.xml adds it.",
+   "count": 124,
+   "instances": [
+    "Ignoring turn sign information for 5 lanes on edge 24429960#0 with 4 driving lanes",
+    "Ignoring turn sign information for 5 lanes on edge 24429960#1 with 4 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 38315383#0 with 2 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 38315383#1 with 2 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 217836956 with 1 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 258070010#0 with 2 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 258070010#1 with 2 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 504914082#0 with 2 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 504914082#1 with 2 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 982206092 with 2 driving lanes",
+    "Ignoring turn sign information for 5 lanes on edge 984852765 with 4 driving lanes",
+    "Ignoring turn sign information for 5 lanes on edge 984852768 with 4 driving lanes",
+    "Ignoring turn sign information for 5 lanes on edge 984852775 with 4 driving lanes",
+    "Ignoring turn sign information for 5 lanes on edge 984852776 with 4 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 984863709 with 2 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 984863723 with 2 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 985009848 with 1 driving lanes",
+    "Ignoring turn sign information for 2 lanes on edge 1018419580 with 1 driving lanes",
+    "Ignoring turn sign information for 3 lanes on edge 1308553596 with 1 driving lanes",
+    "Ignoring turn sign information for 2 lanes on edge 1458571609 with 1 driving lanes",
+    "Ignoring turn sign information for 2 lanes on edge 1458571610 with 1 driving lanes",
+    "Cannot apply turn sign information for edge '-1014558278' because there are 2 signed connections with directions 's' but target edge '349836922' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '-1014558281' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '-1014590951' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '-13078236#2' because there are 3 signed directions and 4 targets (after target pruning)",
+    "Cannot apply turn sign information for edge '-198994161#0' because there are 2 signed connections with directions 's' but target edge '-59914437#2' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '-569726888' because there are 2 signed connections with directions 'l' but target edge '-762797860' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '-982206097#1' because there are 4 signed directions but only 3 targets",
+    "Cannot apply turn sign information for edge '-982206100' because there are 4 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '-983606201' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '-983606202#1' because there are 2 signed connections with directions 'r' but target edge '983606221' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '-984811445' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '1014558284' because there are 2 signed connections with directions 's' but target edge '-474312238' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '1014558286' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '1016845378' because there are 4 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '1018419583#0' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '1018419590' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '1021618036' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '1123999816' because there are 3 signed directions and 4 targets (after target pruning)",
+    "Cannot apply turn sign information for edge '1124015749#0' because there are 3 signed connections with directions 'r' but target edge '-444842203#1' has only 2 suitable lanes",
+    "Cannot apply turn sign information for edge '1175845307' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '1175845435' because there are 4 signed connections with directions 's' but target edge '979758341#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '1175845436' because there are 4 signed connections with directions 's' but target edge '172515820' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '1183823614' because there are 2 signed connections with directions 'l' but target edge '62110983' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '1183823819' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '1308553593' because there are 2 signed connections with directions 's' but target edge '27555906' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '13305896' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '1448399162' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '1461495238' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '1498373606' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '1500954785' because there are 3 signed connections with directions 's' but target edge '172481679' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '15857035' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '19012674#0' because there are 2 signed connections with directions 'r' but target edge '-581037859#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '198714840' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '199192291' because there are 2 signed directions and 3 targets (after target pruning)",
+    "Cannot apply turn sign information for edge '207277350' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '230844254' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '312190545' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '327699889#0' because there are 3 signed connections with directions 'r' but target edge '198726074' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '33108717#0' because there are 4 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '398983313' because there are 4 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '46305934' because there are 2 signed connections with directions 's' but target edge '878771432#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '5234752' because there are 3 signed connections with directions 's' but target edge '5234964#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '5235179' because there are 2 signed connections with directions 'r' but target edge '38315382#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '568375948' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '569125161#0' because there are 2 signed connections with directions 's' but target edge '581046814#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '580628689#0' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '580628691#0' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '581989731' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '581989737' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '622561171' because there are 2 signed connections with directions 's' but target edge '1352485050' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '670842907' because there are 2 signed connections with directions 's' but target edge '376017254' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '715573250' because there are 2 signed connections with directions 'L' but target edge '38314253#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '73508181' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '775921575' because there are 2 signed connections with directions 'l' but target edge '172481740#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '780554650' because there are 3 signed connections with directions 'r' but target edge '-27555906' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '780554652#1' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '783040287' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '787528070#1' because there are 3 signed connections with directions 's' but target edge '60725196#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '790397544' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '790988811' because there are 3 signed connections with directions 's' but target edge '398983207' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '9621861#1' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '965924523' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '979758334' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '979758338' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '979766825#1' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '979789766' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '979789790' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '980094562' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '980098306#0' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '980106004' because there are 4 signed connections with directions 's' but target edge '217268784#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '980110340' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '980542670' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '980542671' because there are 2 signed connections with directions 's' but target edge '5235238' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '980542675' because there are 2 signed connections with directions 's' but target edge '980542673' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '981208573' because there are 3 signed connections with directions 'R' but target edge '38315382#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '981208585' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '981208587' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '982206079' because there are 2 signed connections with directions 'r' but target edge '1254450685' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '983606208' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '983606211#3' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '983606215' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '984811438#0' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '984811444' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '984811447' because there are 2 signed connections with directions 's' but target edge '41374323' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '984814778' because there are 2 signed connections with directions 's' but target edge '42393355' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '984852763#1' because there are 2 signed connections with directions 'r' but target edge '27462659#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '984852774' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '984852777' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '984852779' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '984852781' because there are 2 signed connections with directions 'r' but target edge '27462783' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '984852794' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '984852796' because there are 2 signed directions and 3 targets (after target pruning)",
+    "Cannot apply turn sign information for edge '984863711#0' because there are 3 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '984863713' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '985003637' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '985003640' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '985009841' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '985009842' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '985009846#1' because there are 3 signed connections with directions 'r' but target edge '711952035' has only 2 suitable lanes",
+    "Cannot apply turn sign information for edge '985009852' because there are 3 signed directions but only 2 targets",
+    "Cannot apply turn sign information for edge '985032686' because there are 2 signed connections with directions 'r' but target edge '46225230#0' has only 1 suitable lanes",
+    "Cannot apply turn sign information for edge '985376435' because there are 2 signed directions but only 1 targets",
+    "Cannot apply turn sign information for edge '985384185' because there are 3 signed directions but only 1 targets"
+   ]
+  },
+  "restriction_ignored": {
+   "verdict": "fixed",
+   "reason": "netconvert drops via-way, conditional and ambiguous restrictions; sim/patches/net/turn_restrictions.con.xml applies them (all 285 relations accounted for in sim/out/checks/turn_restrictions.json).",
+   "count": 122,
+   "instances": [
+    "Ignoring restriction relation '1651347' with unknown type.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '4237175'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '4240104'.",
+    "from-edge '207460361' of restriction relation could not be determined",
+    "Ignoring restriction relation '4240106'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '4255085'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '4255170'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '6723145'.",
+    "Ignoring restriction relation '7939316' with unknown type.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8109820'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8110072'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8112976'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8113001'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8113040'.",
+    "Ignoring restriction relation '8113121' with unknown type.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8113155'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8114134'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8184585'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8184622'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8184627'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8215461'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8215465'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8215466'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8215522'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8221921'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8223905'.",
+    "Ignoring restriction relation '8226059' with unknown type.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8226063'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8227781'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8227782'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8227788'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8227886'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '8227931'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '9348873'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '9893044'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '9898094'.",
+    "Ignoring restriction relation '9910814' with unknown type.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '13166197'.",
+    "Ignoring restriction relation '13166472' with unknown type.",
+    "from-edge '321792822' of restriction relation could not be determined",
+    "Ignoring restriction relation '13170004'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '13186545'.",
+    "from-edge '45443674' of restriction relation could not be determined",
+    "Ignoring restriction relation '13235911'.",
+    "from-edge '45478986' of restriction relation could not be determined",
+    "Ignoring restriction relation '13235912'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '13236273'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '13236274'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '13236383'.",
+    "Ignoring restriction relation '13236473' with unknown type.",
+    "Ignoring restriction relation '13236604' with unknown type.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '13238345'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '13238346'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '13238347'.",
+    "to-edge '952562525' of restriction relation could not be determined",
+    "Ignoring restriction relation '13636208'.",
+    "to-edge '641709738' of restriction relation could not be determined",
+    "Ignoring restriction relation '13687615'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '14257863'.",
+    "Ignoring restriction relation '14315521' with unknown type.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '14320772'.",
+    "from-edge '45791960' of restriction relation could not be determined",
+    "Ignoring restriction relation '14348901'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '14388207'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '15817861'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '15817862'.",
+    "Ignoring restriction relation '16413291' with unknown type.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '17720275'.",
+    "from-edge '17036367' of restriction relation could not be determined",
+    "Ignoring restriction relation '18176714'.",
+    "direction of restriction relation could not be determined",
+    "Ignoring restriction relation '19680673'.",
+    "from-edge '45148636' of restriction relation could not be determined",
+    "Ignoring restriction relation '20006831'.",
+    "from-edge '1461752973' of restriction relation could not be determined",
+    "Ignoring restriction relation '20006832'.",
+    "from-edge '1484226801' of restriction relation could not be determined",
+    "Ignoring restriction relation '20274691'."
+   ]
+  },
+  "isolated_road_removed": {
+   "verdict": "justified",
+   "reason": "Pieces left with no junction at either end after clipping and dropping service roads (--remove-edges.isolated).",
+   "count": 17,
+   "instances": [
+    "Removed a road without junctions: -1201563471#1,-1201563471#0.",
+    "Removed a road without junctions: -218551634#1,-218551634#0.",
+    "Removed a road without junctions: -218551636.",
+    "Removed a road without junctions: -218551637.",
+    "Removed a road without junctions: -218551638.",
+    "Removed a road without junctions: -33111353,-33111355.",
+    "Removed a road without junctions: -456872905.",
+    "Removed a road without junctions: -979766828.",
+    "Removed a road without junctions: 1201563471#0,1201563471#1.",
+    "Removed a road without junctions: 218551634#0,218551634#1.",
+    "Removed a road without junctions: 218551636.",
+    "Removed a road without junctions: 218551637.",
+    "Removed a road without junctions: 218551638.",
+    "Removed a road without junctions: 27550483.",
+    "Removed a road without junctions: 33111355,33111353.",
+    "Removed a road without junctions: 456872905.",
+    "Removed a road without junctions: 61462160#0,61462160#1."
+   ]
+  },
+  "explicit_join_wins": {
+   "verdict": "fixed",
+   "reason": "netconvert had kept these nodes out of its automatic junction joining (it gives no reason); the hand patch sim/patches/osm/elizabeth_bourke_signals.nod.xml joins them on purpose (Elizabeth St / Bourke St box, one signalised junction), and the explicit join wins, as intended.",
+   "count": 4,
+   "instances": [
+    {
+     "junction": "2190478926"
+    },
+    {
+     "junction": "2190561011"
+    },
+    {
+     "junction": "2190478936"
+    },
+    {
+     "junction": "2190561008"
+    }
+   ]
+  },
+  "junction_join_heuristics": {
+   "verdict": "justified",
+   "reason": "netconvert explaining why it joined fewer nodes than the 15 m distance allows (parallel roads, slip lanes, non-compact clusters): its safety rules, by design.",
+   "count": 79,
+   "instances": [
+    "Reducing junction cluster 3394779111,3394779114,3394779115,3394779117,471259500,702451422,702462230,702478450,767585539,9086096496 (parallel incoming -61512028,794819947#0).",
+    "Reducing junction cluster 2317966813,2318307716,2318307719,2318307720,268533992,4283908160,8872118096,8873674099,8873674102 (parallel incoming 24706227#2,790271208#0).",
+    "Not joining junctions 2317966813,2318307716,2318307719,2318307720,268533992,4283908160,8872118096,8873674099,8873674102 (not compact (maxEdge=790271208#1 length=14.45)).",
+    "Reducing junction cluster 10266719860,10266719861,10266719862,10266719863,2365009329,33317568,387153044,781093374,781093704,781112986,781112992,8759910235 (parallel incoming -25927656#0,969541490).",
+    "Not joining junctions 127649149,702354305 (only 1 edge within and no cross-traffic).",
+    "Reducing junction cluster 10277595975,10277595976,10277595977,11655178923,277089910,501027474,767584691,8870964254 (parallel incoming 198994310,207882673#0).",
+    "Not joining junctions 11350312971,11943253542,121169739,6197451276,848376249,9308089029,9308089030,9308089031,9308089032,9308089041,9308089056 (parallel incoming 1158909840#0,1223684259).",
+    "Reducing junction cluster 10302227130,242400119,4603479267,8986927786 (parallel incoming -1126666548,39585956#1).",
+    "Not joining junctions 10302227130,242400119,4603479267,8986927786 (after reduction).",
+    "Not joining junctions 10561545318,10561545329,1900234252 (slip lane).",
+    "Reducing junction cluster 10561653307,11268579990,11268579993,1490182710,1490182711,265516842,7147522205 (parallel incoming -985376437#1,985376439).",
+    "Reducing junction cluster 11268580004,197019550,243096971,243097143,3296127076,3296127078,3401024069,846565378,846565380,846566361,846566367,846566368,846566369,846566630,992496487,9950383901 (6 incoming edges).",
+    "Reducing junction cluster 387152932,387152982,5797723046,8937184018 (not compact (maxEdge=172482246#1 length=8.58)).",
+    "Reducing junction cluster 11639927986,159337595,159337598,159337614,159339409,1834131915,2682666782,2682666783,2682666786,2682666787,36820276,560635789,582783189,8909103943,8909704065,9063685168,9063685172,9100483918 (9 incoming edges).",
+    "Not joining junctions 12097534712,302158308 (only 1 edge within and no cross-traffic).",
+    "Not joining junctions 289602682,710049084 (only 1 edge within and no cross-traffic).",
+    "Not joining junctions 11657904466,11657940884,1793100651,3142873403,3142873404,36823151,36823340,36823401,3885768483,452350405,452352275,452352328,452354292,452354569,452354704,452360251,7223656239,7379344709,7380213988,8915204680 (9 incoming edges).",
+    "Reducing junction cluster 11964927272,13389865864,30942252,5556315220,5556316724 (parallel outgoing 1459964018,486810538).",
+    "Reducing junction cluster 120346330,12540080924,341542979 (parallel incoming 1355029695,188874412#0).",
+    "Reducing junction cluster 12117992881,267327810,8906532288 (parallel incoming 1308553588#0,1323592393).",
+    "Reducing junction cluster 1224872741,1224872744,1224872747,1224872754,13763078780,13763111547,41667991,41667993,52506648,560997597,76459307,8942967487,9708618420,9806115770 (parallel incoming 31094522#0,31094523#0).",
+    "Not joining junctions 12385802744,12385802745,12385802746,12385802747 (long edge).",
+    "Not joining junctions 302519799,302519800 (parallel incoming -979747254,598535482).",
+    "Reducing junction cluster 12513818497,12513822703,1833110275,1833110277,2189143650,3394728756,3394728757,3394728758,5880339360,5880339363,591392066,591392087,6167247287,9105320418 (parallel incoming 1018419594#0,984870583#0).",
+    "Not joining junctions 2266563656,2266563661,2266563663 (not compact (maxEdge=968469953 length=12.40)).",
+    "Reducing junction cluster 12580376993,1449431389,269334278,741702104 (parallel incoming 131724956#1,46225230#0).",
+    "Not joining junctions 12580376993,1449431389,269334278,741702104 (long edge).",
+    "Reducing junction cluster 127601472,13760442193,287630779,387152981 (parallel incoming 26262182,569761624).",
+    "Not joining junctions 127641620,387153094 (only 1 entry node).",
+    "Not joining junctions 127642432,387153036 (only 1 entry node).",
+    "Not joining junctions 127643363,387153000 (only 1 entry node).",
+    "Reducing junction cluster 127652487,3481124173,387152993,8928250827 (not compact (maxEdge=61532904#2 length=6.19)).",
+    "Not joining junctions 35285653,777795238 (only 1 edge within and no cross-traffic).",
+    "Reducing junction cluster 13597280708,305835836,529206081,7380356075 (parallel incoming 789321996#1,789321997#0).",
+    "Reducing junction cluster 13744386682,1691676467,2615820738,774545099,774545122,775933327 (parallel outgoing 1051675237,62205978).",
+    "Reducing junction cluster 13747663098,13747665507,1725216788,2296976215 (parallel outgoing -1501668603#1,969954078#3).",
+    "Reducing junction cluster 13871185393,245532558,245533066,245535095,594801681 (parallel incoming 22820234#1,22820239#2).",
+    "Not joining junctions 13871185393,245532558,245533066,245535095,594801681 (after reduction).",
+    "Not joining junctions 13886906459,13886906467,2952016091,8986939789 (not compact (maxEdge=767675588#0 length=12.63)).",
+    "Not joining junctions 305106872,387152937 (only 1 entry node).",
+    "Reducing junction cluster 1492131948,26680090,277125043,3313036363,3313036365,60653725,60653733,60653735,8935216805,9086085346,92130447 (parallel incoming 985009844#0,985009850#0).",
+    "Reducing junction cluster 1492175302,1492175304,1492410146,1492410192,4419701256,4419701257 (only 1 entry node).",
+    "Reducing junction cluster 1588112477,243434000,3793626742,6282174124,8906064536,9109600417 (6 incoming edges).",
+    "Reducing junction cluster 1725216833,1725216852,1895925154,1895925155,1953969337,3933094360,3933094364,3933094365,7658011641,774508242,774519013,774546370,774546372,774546374,774546433,775933250,775933295,775933297,777771693,8976031240 (7 incoming edges).",
+    "Reducing junction cluster 1883787502,2074161379,36823157,36823654,36824950,452380773,452380775,591215868,6514967964,7321449524,7379344733,8912819646,8912819655,8912819714,9076421619 (parallel outgoing 5235179,568375948).",
+    "Reducing junction cluster 197019557,207154293,848374901 (parallel incoming 505256321#1,71079850#2).",
+    "Not joining junctions 197019557,207154293,848374901 (after reduction).",
+    "Reducing junction cluster 2091718833,301065405,5560710823,5560710830,583440797,8911166416,8911176718,8911176726,8911176764 (parallel incoming -963360116,-980094560).",
+    "Reducing junction cluster 2164826094,301542605,589763533,6690692246 (parallel incoming 27462659#1,984852777).",
+    "Not joining junctions 2174950798,8959936632 (only 1 edge within and no cross-traffic).",
+    "Reducing junction cluster 2189497215,2189497243,26034671 (parallel outgoing 208675774,208677470#0).",
+    "Not joining junctions 2266485205,2266485209 (parallel incoming 217377323#1,217377325).",
+    "Reducing junction cluster 2267913247,2267913265,243964094,9387873056,9387873064 (parallel incoming -1017793719#1,-792055329#0).",
+    "Reducing junction cluster 2277912698,529157829,529157836,529157848,529157849,5884356129,9026322205,9104812172,9104812173 (7 incoming edges).",
+    "Reducing junction cluster 2384091372,2384091373,2615827667,30287324,30287325,30287404,319157116 (parallel incoming -255866964#0,958581820).",
+    "Reducing junction cluster 259132363,293816081,293816123,3377587674,36823348,36823356,582931984,582932783,582932786 (parallel incoming 26786302#0,39474084#5).",
+    "Not joining junctions 259616744,6695934644 (only 1 edge within and no cross-traffic).",
+    "Not joining junctions 2640744064,2640748699 (parallel incoming -258742343,258741787#1).",
+    "Not joining junctions 2681590311,370709150,370709151 (not compact (maxEdge=32918962#3 length=10.20)).",
+    "Reducing junction cluster 287629445,702460953,702465421,702465424,777773681,780982646,780982647,8928702135 (parallel outgoing -5724644,480358289#1).",
+    "Not joining junctions 299897713,848375420 (parallel incoming 1008818044#3,1008818045#3).",
+    "Reducing junction cluster 301542599,3743608239,760180221,8915227903,8915227908,8957021700,8957021701,8957021702,8957021704,8957021710,9105117352,9105117353,9105117359 (parallel incoming -27462659#1,787528070#0).",
+    "Reducing junction cluster 306382946,6567524127,702354815,702363497,702372647,8937084826,8937084827 (parallel outgoing -33803203,478936889#2).",
+    "Reducing junction cluster 307350279,307350280,767737643,767737648,775926005,775946936,775946937,777827023,777827943,777828117,777832607,777832638,777833052,777833057,777833061 (6 incoming edges).",
+    "Reducing junction cluster 369113180,370709000,370709030,370982632 (parallel outgoing 32918930,32918935).",
+    "Not joining junctions 6713198142,6713198145,9109600424 (not compact (maxEdge=985376431 length=7.47)).",
+    "Not joining junctions 417514067,9063810029,9063810030 (parallel incoming 581714220,963166839#2).",
+    "Not joining junctions 5556316811,8879528305 (parallel incoming 959708825,959708827).",
+    "Not joining junctions 4887670700,4887670707 (parallel incoming -656235298#2,-685575912#2).",
+    "Not joining junctions 589664669,589664980,8158019796,8158019797,9105247473 (slip lane).",
+    "Not joining junctions 6696001860,702352970 (only 1 edge within and no cross-traffic).",
+    "Not joining junctions 6794073377,6794073380 (only 1 edge within and no cross-traffic).",
+    "Not joining junctions 736011483,846566997 (parallel incoming 1008818044#6,1008818045#5).",
+    "Reducing junction cluster 775933064,775933086,775933087,775933210 (parallel incoming 207778983#0,582018440#1).",
+    "Not joining junctions 775933064,775933086,775933087,775933210 (after reduction).",
+    "Not joining junctions 777782541,777782984,777783101,8971403162,8971403163 (not compact (maxEdge=172406386#4 length=10.40)).",
+    "Reducing junction cluster 777830142,777830308,777832599,777832977 (parallel incoming 1097194665#0,271670474).",
+    "Not joining junctions 777830142,777830308,777832599,777832977 (after reduction).",
+    "Not joining junctions 8873674090,8873674104 (only 1 edge within and no cross-traffic)."
+   ]
+  },
+  "sharp_turn": {
+   "verdict": "justified",
+   "reason": "OSM geometry bends more tightly than a car could turn where a way meets a junction (usually a slip lane or a short joined-junction approach). Edge geometry is visual only in SUMO: it changes neither speed nor routing.",
+   "count": 25,
+   "instances": [
+    {
+     "radius": "5.32",
+     "edge": "-16863761"
+    },
+    {
+     "radius": "8.69",
+     "edge": "-253394999#2"
+    },
+    {
+     "radius": "3.05",
+     "edge": "-26262194#0"
+    },
+    {
+     "radius": "8.87",
+     "edge": "1068181379#1"
+    },
+    {
+     "radius": "7.41",
+     "edge": "1436819383"
+    },
+    {
+     "radius": "7.96",
+     "edge": "1499816511"
+    },
+    {
+     "radius": "5.32",
+     "edge": "16863761"
+    },
+    {
+     "radius": "7.94",
+     "edge": "23910064#2"
+    },
+    {
+     "radius": "8.43",
+     "edge": "24590259#6"
+    },
+    {
+     "radius": "8.69",
+     "edge": "253394999#1"
+    },
+    {
+     "radius": "8.78",
+     "edge": "27524371#1"
+    },
+    {
+     "radius": "8.48",
+     "edge": "284935833#0"
+    },
+    {
+     "radius": "7.48",
+     "edge": "330756468#5"
+    },
+    {
+     "radius": "7.76",
+     "edge": "330756468#6"
+    },
+    {
+     "radius": "7.95",
+     "edge": "39451705#0"
+    },
+    {
+     "radius": "8.44",
+     "edge": "42392363#0"
+    },
+    {
+     "radius": "6.15",
+     "edge": "45801652#3"
+    },
+    {
+     "radius": "5.30",
+     "edge": "6262165"
+    },
+    {
+     "radius": "3.86",
+     "edge": "665212668"
+    },
+    {
+     "radius": "5.68",
+     "edge": "841082575"
+    },
+    {
+     "radius": "8.85",
+     "edge": "966626631"
+    },
+    {
+     "radius": "7.39",
+     "edge": "966626631"
+    },
+    {
+     "radius": "3.06",
+     "edge": "966626633"
+    },
+    {
+     "radius": "8.20",
+     "edge": "984811456#0"
+    },
+    {
+     "radius": "7.28",
+     "edge": "984863720#1"
+    }
+   ]
+  },
+  "segment_angle": {
+   "verdict": "justified",
+   "reason": "A kink in the OSM geometry of the edge: visual only.",
+   "count": 2,
+   "instances": [
+    {
+     "edge": "1306216563"
+    },
+    {
+     "edge": "33407440#0"
+    }
+   ]
+  },
+  "junction_shape_offset": {
+   "verdict": "justified",
+   "reason": "Large joined junctions whose outline is offset from the merged node position: geometry.",
+   "count": 6,
+   "instances": [
+    {
+     "junction": "1132070461"
+    },
+    {
+     "junction": "36823680"
+    },
+    {
+     "junction": "7379125300"
+    },
+    {
+     "junction": "7379344694"
+    },
+    {
+     "junction": "847532415"
+    },
+    {
+     "junction": "8989301898"
+    }
+   ]
+  },
+  "roundabout_redefined": {
+   "verdict": "justified",
+   "reason": "--roundabouts.guess redefines OSM roundabouts after junction joining; 'incomplete' ones are roundabouts with a part that is not a passenger road.",
+   "count": 24,
+   "instances": [
+    "Replacing loaded roundabout '22757636#0 22757636#1 22757636#2 22757636#3 22757636#4 22757636#5 22757636#6 22757636#7 22757636#8' with '22757636#1 22757636#2 22757636#3 22757636#4 22757636#5 22757636#6 22757636#7 22757636#8'.",
+    "Replacing loaded roundabout '349766542#0 349766542#1 349766542#2 349766542#3 349766542#4 349766542#5 349766542#6' with '349766542#1 349766542#2 349766542#3 349766542#4 349766542#5 349766542#6'.",
+    "Replacing loaded roundabout '217628219#0 217628219#1 217628219#2 217628219#3 217628219#4 217628219#5 217628219#6 217628219#7 217628219#8' with '217628219#1 217628219#2 217628219#3 217628219#4 217628219#5 217628219#6 217628219#7 217628219#8'.",
+    "Replacing loaded roundabout '19870079#0 19870079#1 19870079#2 19870079#3 19870079#4 19870079#5 19870079#6 19870079#7 19870079#8' with '19870079#1 19870079#2 19870079#3 19870079#4 19870079#5 19870079#6 19870079#7 19870079#8'.",
+    "Replacing loaded roundabout '23910064#0 23910064#1 23910064#2 23910064#3 23910064#4 23910064#5 23910064#6 23910064#7 23910064#8' with '23910064#1 23910064#2 23910064#3 23910064#4 23910064#5 23910064#6 23910064#7 23910064#8'.",
+    "Replacing loaded roundabout '24590259#0 24590259#1 24590259#10 24590259#2 24590259#3 24590259#4 24590259#5 24590259#6 24590259#7 24590259#8 24590259#9' with '24590259#1 24590259#10 24590259#2 24590259#3 24590259#4 24590259#5 24590259#6 24590259#7 24590259#8 24590259#9'.",
+    "Replacing loaded roundabout '25927669#0 25927669#1 25927669#2 25927669#3 25927669#4 25927669#5 25927669#6 25927669#7 25927669#8' with '25927669#1 25927669#2 25927669#3 25927669#4 25927669#5 25927669#6 25927669#7 25927669#8'.",
+    "Replacing loaded roundabout '249648592 984863719#0 984863719#1 984863720#0 984863720#1 984863720#2 984863721' with '249648592 984863719#0 984863719#1 984863720#1 984863720#2 984863721'.",
+    "Replacing loaded roundabout '330756468#0 330756468#1 330756468#2 330756468#3 330756468#4 330756468#5 330756468#6' with '330756468#1 330756468#2 330756468#3 330756468#4 330756468#5 330756468#6'.",
+    "Replacing loaded roundabout '33841009#0 33841009#1 33841009#2 33841009#3 33841009#4 33841009#5 33841009#6' with '33841009#1 33841009#4 33841009#5 33841009#6'.",
+    "Replacing loaded roundabout '972298759#0 972298759#1 972298759#2 972298759#3' with '972298759#1 972298759#2 972298759#3'.",
+    "Replacing loaded roundabout '37867363#0 37867363#1 37867363#2 37867363#3 37867363#4 37867363#5 37867363#6 37867363#7 37867363#8' with '37867363#1 37867363#2 37867363#3 37867363#4 37867363#5 37867363#6 37867363#7 37867363#8'.",
+    "Replacing loaded roundabout '37867366#0 37867366#1 37867366#2 37867366#3 37867366#4 37867366#5 37867366#6 37867366#7 37867366#8' with '37867366#1 37867366#2 37867366#3 37867366#4 37867366#5 37867366#6 37867366#7 37867366#8'.",
+    "Replacing loaded roundabout '37867652#0 37867652#1 37867652#2 37867652#3 37867652#4' with '37867652#1 37867652#2 37867652#3 37867652#4'.",
+    "Replacing loaded roundabout '38315400#0 38315400#1 38315400#2 38315400#3 38315400#4 38315400#5' with '38315400#1 38315400#2 38315400#5'.",
+    "Replacing loaded roundabout '1051193769 1122535480 1122535481 1122535482 1137316139 1137316228 1436793806 1436793846 1436819383 1436819393' with '1122535480 1122535482 1137316139 1137316228 1436793846 1436819383 1436819393'.",
+    "Replacing loaded roundabout '1499816504 1499816505 1499816506 1499816507 1499816508 1499816509 1499816510 1499816511 30810114' with '1499816506 1499816507 1499816509 1499816510 1499816511'.",
+    "Replacing loaded roundabout '696343065#0 696343065#1 696343065#2 696343065#3 696343065#4' with '696343065#1 696343065#2 696343065#3 696343065#4'.",
+    "Replacing loaded roundabout '1499816498 1499816499 1499816500 1499816501 1499816502 1499816503 30810101' with '1499816498 1499816499 1499816500 1499816501 1499816502 1499816503'.",
+    "Replacing loaded roundabout '1490451166 1490451167 1490451168 1490451169 1490451170 59914390' with '1490451166 1490451167 1490451168 1490451169 1490451170'.",
+    "Replacing loaded roundabout '1490451151 1490451152 1490451153 1490451154 32772776' with '1490451151 1490451152 1490451153 1490451154'.",
+    "Writing incomplete roundabout. Edges: '1499254550#0 1499254550#3' no longer exist'",
+    "Writing incomplete roundabout. Edges: '45801652#0 45801652#2' no longer exist'",
+    "Writing incomplete roundabout. Edges: '552240879#0 552240879#3' no longer exist'"
+   ]
+  },
+  "lane_not_fed": {
+   "verdict": "justified",
+   "reason": "A lane that starts at the junction (the road widens: an added turn pocket or lane). No incoming lane leads straight into it; cars reach it by changing lanes, as on the road.",
+   "count": 8,
+   "instances": [
+    {
+     "lane": "1014558286_1",
+     "junction": "4794459318"
+    },
+    {
+     "lane": "481307370_0",
+     "junction": "cluster_1492131963_1492131965_296027650_296027719"
+    },
+    {
+     "lane": "481307370_1",
+     "junction": "cluster_1492131963_1492131965_296027650_296027719"
+    },
+    {
+     "lane": "581989731_1",
+     "junction": "774546433"
+    },
+    {
+     "lane": "581989731_2",
+     "junction": "774546433"
+    },
+    {
+     "lane": "714104001_0",
+     "junction": "6713198142"
+    },
+    {
+     "lane": "984811444_1",
+     "junction": "5231693127"
+    },
+    {
+     "lane": "984871817_0",
+     "junction": "cluster_11639928009_12117992887_13408009718_13408009719_#3more"
+    }
+   ]
+  },
+  "signal_without_links": {
+   "verdict": "justified",
+   "reason": "Signals at the end of a road whose continuation is not a car road or lies beyond the extract (listed as dead_end in sim/out/checks/signals.json).",
+   "count": 6,
+   "instances": [
+    "The traffic light '2188339982' does not control any links; it will not be build.",
+    "Could not build program '0' for traffic light '2188339982'",
+    "The traffic light '3394778775' does not control any links; it will not be build.",
+    "Could not build program '0' for traffic light '3394778775'",
+    "The traffic light '5819785593' does not control any links; it will not be build.",
+    "Could not build program '0' for traffic light '5819785593'"
+   ]
+  },
+  "turn_speed_reduced": {
+   "verdict": "justified",
+   "reason": "SUMO lowers the speed through a junction where the path through it curves; that is the intended physics, not an error.",
+   "count": 38,
+   "instances": [
+    {
+     "connection": "-129207856#1_0->187177450_0"
+    },
+    {
+     "connection": "984814771_0->1016845390#0_0"
+    },
+    {
+     "connection": "23910118#0_0->1126583874_0"
+    },
+    {
+     "connection": "23910118#0_0->1126583874_1"
+    },
+    {
+     "connection": "1461662160_0->179293018_2"
+    },
+    {
+     "connection": "45977970#1_0->179293018_0"
+    },
+    {
+     "connection": "580637968_0->1209937173_0"
+    },
+    {
+     "connection": "-1370937740_0->-984852770_0"
+    },
+    {
+     "connection": "253394999#1_0->-27631084#8_0"
+    },
+    {
+     "connection": "27631084#8_0->-253394999#2_0"
+    },
+    {
+     "connection": "982206094#1_0->784419711-AddedOnRampEdge_0"
+    },
+    {
+     "connection": "-32656673#0_0->33411116_0"
+    },
+    {
+     "connection": "-33411116_0->32656673#0_0"
+    },
+    {
+     "connection": "982206085_0->780655768-AddedOnRampEdge_0"
+    },
+    {
+     "connection": "982206085_1->780655768-AddedOnRampEdge_1"
+    },
+    {
+     "connection": "1219511618_0->38313043-AddedOnRampEdge_0"
+    },
+    {
+     "connection": "-43747581#1_0->-1017793714_0"
+    },
+    {
+     "connection": "1017793714_0->43747581#0_0"
+    },
+    {
+     "connection": "580418102_0->959708837_0"
+    },
+    {
+     "connection": "580418102_1->959708837_1"
+    },
+    {
+     "connection": "-789322000#0_0->789322003#0_0"
+    },
+    {
+     "connection": "789321997#2_0->789322000#0_0"
+    },
+    {
+     "connection": "777282583#2_0->1416090886_0"
+    },
+    {
+     "connection": "665212670_0->-662536311_0"
+    },
+    {
+     "connection": "5235164_0->981208583_0"
+    },
+    {
+     "connection": "70811690_0->60725196#1_0"
+    },
+    {
+     "connection": "857155146_0->13301454_0"
+    },
+    {
+     "connection": "857155146_1->13301454_1"
+    },
+    {
+     "connection": "984811437#0_0->984811443_0"
+    },
+    {
+     "connection": "984811437#0_1->984811443_1"
+    },
+    {
+     "connection": "984811437#0_1->984811443_2"
+    },
+    {
+     "connection": "-984811452_0->22597518#0_0"
+    },
+    {
+     "connection": "-10586996#1_0->-10586996#0_0"
+    },
+    {
+     "connection": "10586996#0_0->10586996#1_0"
+    },
+    {
+     "connection": "580637963#1_0->1016845389_0"
+    },
+    {
+     "connection": "-1016845389_0->580637966_0"
+    },
+    {
+     "connection": "208664857#1_0->1029898629#0_1"
+    },
+    {
+     "connection": "208664857#1_1->1029898629#0_2"
+    }
+   ]
+  },
+  "intersecting_turns": {
+   "verdict": "justified",
+   "reason": "Two opposing turns across the centre line (right turns here: in a left-hand network SUMO's 'left turn' check covers them) whose paths overlap inside a compact junction. SUMO does not make such turns foes, so two cars turning at once may overlap visually inside the junction; flow is unaffected (no teleports at these junctions in the smoke runs). A larger junction radius everywhere would distort the city geometry instead.",
+   "count": 38,
+   "instances": [
+    {
+     "junction": "cluster_10266719836_10266719839_777773673_777775583_#6more",
+     "a": "1293349181#0_1",
+     "b": "1291928548_0"
+    },
+    {
+     "junction": "cluster_10266719852_10266719853_10266719857_10266719858_#6more",
+     "a": "480358289#1_0",
+     "b": "1123814312#0_1"
+    },
+    {
+     "junction": "cluster_10266719867_10266719868_10266719870_1880686094_#8more",
+     "a": "1253825865#0_0",
+     "b": "1038113056#0_1"
+    },
+    {
+     "junction": "cluster_111302426_111302447_11876199916_196913363_#5more",
+     "a": "968808852_0",
+     "b": "19013358#4_1"
+    },
+    {
+     "junction": "cluster_1132023834_3394737409_3394737410_3394737414_#5more",
+     "a": "6262173#0_0",
+     "b": "135951295#3_0"
+    },
+    {
+     "junction": "cluster_1132023834_3394737409_3394737410_3394737414_#5more",
+     "a": "448300741#7_0",
+     "b": "1274774680#0_0"
+    },
+    {
+     "junction": "cluster_127638260_8960001707_8960001708_8960001709",
+     "a": "965116098#1_0",
+     "b": "33803206#0_0"
+    },
+    {
+     "junction": "cluster_13152694926_13152694929_13185751339_844455902_#4more",
+     "a": "43870461#0_0",
+     "b": "238527436#0_0"
+    },
+    {
+     "junction": "cluster_13152694926_13152694929_13185751339_844455902_#4more",
+     "a": "1435055241_0",
+     "b": "1434567868#0_0"
+    },
+    {
+     "junction": "cluster_13739734387_1449431331_1449431342_1449431465_#4more",
+     "a": "208678438#2_1",
+     "b": "131724927#2_0"
+    },
+    {
+     "junction": "cluster_13976139571_13976139572_13976139573_13976139574_#4more",
+     "a": "576911613_0",
+     "b": "207831781_0"
+    },
+    {
+     "junction": "cluster_13976139571_13976139572_13976139573_13976139574_#4more",
+     "a": "199429376#2_0",
+     "b": "1290614684#1_0"
+    },
+    {
+     "junction": "cluster_1985557923_1985557927_26034669_3367904400_#6more",
+     "a": "198737797#0_0",
+     "b": "1317029146#1_0"
+    },
+    {
+     "junction": "cluster_2020813849_2020813869_2020813871_2020813875_#4more",
+     "a": "734406094#4_0",
+     "b": "505256328#0_0"
+    },
+    {
+     "junction": "cluster_2020813849_2020813869_2020813871_2020813875_#4more",
+     "a": "734406094#4_0",
+     "b": "505256328#0_1"
+    },
+    {
+     "junction": "cluster_2020813849_2020813869_2020813871_2020813875_#4more",
+     "a": "734406094#4_1",
+     "b": "505256328#0_0"
+    },
+    {
+     "junction": "cluster_2174950792_2174950793_2174950794_2180491134_#3more",
+     "a": "207830034_0",
+     "b": "198989380_0"
+    },
+    {
+     "junction": "cluster_2174950792_2174950793_2174950794_2180491134_#3more",
+     "a": "931222616#1_0",
+     "b": "198715025_1"
+    },
+    {
+     "junction": "cluster_2180785582_2180785597_2180785617_2180822307_#4more",
+     "a": "1503287996_1",
+     "b": "1319194947_0"
+    },
+    {
+     "junction": "cluster_2180785582_2180785597_2180785617_2180822307_#4more",
+     "a": "1123528665#3_0",
+     "b": "1123528662_0"
+    },
+    {
+     "junction": "cluster_2189145380_2189145397_2189145399_2189145404_#4more",
+     "a": "711989783#1_1",
+     "b": "581959657#0_1"
+    },
+    {
+     "junction": "cluster_2189145381_2189145390_2189145394_2189145403_#5more",
+     "a": "207831319#0_0",
+     "b": "207830036#0_0"
+    },
+    {
+     "junction": "cluster_2189145381_2189145390_2189145394_2189145403_#5more",
+     "a": "505256329#1_0",
+     "b": "208642574#1_0"
+    },
+    {
+     "junction": "cluster_2189145385_2189145386_2189145388_2189145408_#3more",
+     "a": "581959644_0",
+     "b": "581959642#0_0"
+    },
+    {
+     "junction": "cluster_2189145385_2189145386_2189145388_2189145408_#3more",
+     "a": "664287431#2_1",
+     "b": "1312971508_1"
+    },
+    {
+     "junction": "cluster_2190478922_2190478924_2190478928_2190478932_#4more",
+     "a": "316166613#1_0",
+     "b": "207831526_0"
+    },
+    {
+     "junction": "cluster_2190478922_2190478924_2190478928_2190478932_#4more",
+     "a": "286827105#0_0",
+     "b": "207778723_0"
+    },
+    {
+     "junction": "cluster_2190483583_2190483587_2190483588_2190483590_#4more",
+     "a": "715611143#0_0",
+     "b": "1126651860_0"
+    },
+    {
+     "junction": "cluster_259616706_26034526_3394726298_3394726300_#4more",
+     "a": "581959663#1_0",
+     "b": "198005097#3_0"
+    },
+    {
+     "junction": "cluster_26034668_277089929_317537930_3419354750_#6more",
+     "a": "61511897#0_0",
+     "b": "208675774_0"
+    },
+    {
+     "junction": "cluster_301537542_301537543_560986691_560986727_#1more",
+     "a": "448300741#2_0",
+     "b": "329659971#4_0"
+    },
+    {
+     "junction": "cluster_611991913_611991914_777800550_777800877",
+     "a": "1123779622_1",
+     "b": "1122547503_0"
+    },
+    {
+     "junction": "cluster_611991913_611991914_777800550_777800877",
+     "a": "62261477#0_0",
+     "b": "48159972_0"
+    },
+    {
+     "junction": "cluster_6696001853_6696001862_702352971_702352972",
+     "a": "712160484#0_0",
+     "b": "55949470#0_0"
+    },
+    {
+     "junction": "cluster_6696001853_6696001862_702352971_702352972",
+     "a": "1122544771_0",
+     "b": "1122544768_0"
+    },
+    {
+     "junction": "cluster_777706218_777710193_777721749_777721838",
+     "a": "62258467_0",
+     "b": "581989771#2_0"
+    },
+    {
+     "junction": "cluster_777706218_777710193_777721749_777721838",
+     "a": "62260822_0",
+     "b": "62258521#0_0"
+    },
+    {
+     "junction": "cluster_777773646_777773654_777778398_777778401_#8more",
+     "a": "62258465#2_0",
+     "b": "1122543873#2_0"
+    }
+   ]
+  }
+ },
+ "pass2_final_network": {
+  "sharp_turn": {
+   "verdict": "justified",
+   "reason": "OSM geometry bends more tightly than a car could turn where a way meets a junction (usually a slip lane or a short joined-junction approach). Edge geometry is visual only in SUMO: it changes neither speed nor routing.",
+   "count": 25,
+   "instances": [
+    {
+     "radius": "5.32",
+     "edge": "-16863761"
+    },
+    {
+     "radius": "8.69",
+     "edge": "-253394999#2"
+    },
+    {
+     "radius": "3.05",
+     "edge": "-26262194#0"
+    },
+    {
+     "radius": "8.87",
+     "edge": "1068181379#1"
+    },
+    {
+     "radius": "7.41",
+     "edge": "1436819383"
+    },
+    {
+     "radius": "7.96",
+     "edge": "1499816511"
+    },
+    {
+     "radius": "5.32",
+     "edge": "16863761"
+    },
+    {
+     "radius": "7.94",
+     "edge": "23910064#2"
+    },
+    {
+     "radius": "8.43",
+     "edge": "24590259#6"
+    },
+    {
+     "radius": "8.69",
+     "edge": "253394999#1"
+    },
+    {
+     "radius": "8.78",
+     "edge": "27524371#1"
+    },
+    {
+     "radius": "8.48",
+     "edge": "284935833#0"
+    },
+    {
+     "radius": "7.48",
+     "edge": "330756468#5"
+    },
+    {
+     "radius": "7.76",
+     "edge": "330756468#6"
+    },
+    {
+     "radius": "7.95",
+     "edge": "39451705#0"
+    },
+    {
+     "radius": "8.44",
+     "edge": "42392363#0"
+    },
+    {
+     "radius": "6.15",
+     "edge": "45801652#3"
+    },
+    {
+     "radius": "5.30",
+     "edge": "6262165"
+    },
+    {
+     "radius": "3.86",
+     "edge": "665212668"
+    },
+    {
+     "radius": "5.68",
+     "edge": "841082575"
+    },
+    {
+     "radius": "8.85",
+     "edge": "966626631"
+    },
+    {
+     "radius": "7.39",
+     "edge": "966626631"
+    },
+    {
+     "radius": "3.06",
+     "edge": "966626633"
+    },
+    {
+     "radius": "8.20",
+     "edge": "984811456#0"
+    },
+    {
+     "radius": "7.28",
+     "edge": "984863720#1"
+    }
+   ]
+  },
+  "segment_angle": {
+   "verdict": "justified",
+   "reason": "A kink in the OSM geometry of the edge: visual only.",
+   "count": 2,
+   "instances": [
+    {
+     "edge": "1306216563"
+    },
+    {
+     "edge": "33407440#0"
+    }
+   ]
+  },
+  "junction_shape_offset": {
+   "verdict": "justified",
+   "reason": "Large joined junctions whose outline is offset from the merged node position: geometry.",
+   "count": 6,
+   "instances": [
+    {
+     "junction": "1132070461"
+    },
+    {
+     "junction": "36823680"
+    },
+    {
+     "junction": "7379125300"
+    },
+    {
+     "junction": "7379344694"
+    },
+    {
+     "junction": "847532415"
+    },
+    {
+     "junction": "8989301898"
+    }
+   ]
+  },
+  "lane_not_fed": {
+   "verdict": "justified",
+   "reason": "A lane that starts at the junction (the road widens: an added turn pocket or lane). No incoming lane leads straight into it; cars reach it by changing lanes, as on the road.",
+   "count": 7,
+   "instances": [
+    {
+     "lane": "1014558286_1",
+     "junction": "4794459318"
+    },
+    {
+     "lane": "1123803840_0",
+     "junction": "cluster_30942256_332543902_332544824_332544825_#2more"
+    },
+    {
+     "lane": "1123803840_1",
+     "junction": "cluster_30942256_332543902_332544824_332544825_#2more"
+    },
+    {
+     "lane": "581989731_1",
+     "junction": "774546433"
+    },
+    {
+     "lane": "581989731_2",
+     "junction": "774546433"
+    },
+    {
+     "lane": "714104001_0",
+     "junction": "6713198142"
+    },
+    {
+     "lane": "984811444_1",
+     "junction": "5231693127"
+    }
+   ]
+  },
+  "turn_speed_reduced": {
+   "verdict": "justified",
+   "reason": "SUMO lowers the speed through a junction where the path through it curves; that is the intended physics, not an error.",
+   "count": 38,
+   "instances": [
+    {
+     "connection": "-129207856#1_0->187177450_0"
+    },
+    {
+     "connection": "984814771_0->1016845390#0_0"
+    },
+    {
+     "connection": "23910118#0_0->1126583874_0"
+    },
+    {
+     "connection": "23910118#0_0->1126583874_1"
+    },
+    {
+     "connection": "1461662160_0->179293018_2"
+    },
+    {
+     "connection": "45977970#1_0->179293018_0"
+    },
+    {
+     "connection": "580637968_0->1209937173_0"
+    },
+    {
+     "connection": "-1370937740_0->-984852770_0"
+    },
+    {
+     "connection": "253394999#1_0->-27631084#8_0"
+    },
+    {
+     "connection": "27631084#8_0->-253394999#2_0"
+    },
+    {
+     "connection": "982206094#1_0->784419711-AddedOnRampEdge_0"
+    },
+    {
+     "connection": "-32656673#0_0->33411116_0"
+    },
+    {
+     "connection": "-33411116_0->32656673#0_0"
+    },
+    {
+     "connection": "982206085_0->780655768-AddedOnRampEdge_0"
+    },
+    {
+     "connection": "982206085_1->780655768-AddedOnRampEdge_1"
+    },
+    {
+     "connection": "1219511618_0->38313043-AddedOnRampEdge_0"
+    },
+    {
+     "connection": "-43747581#1_0->-1017793714_0"
+    },
+    {
+     "connection": "1017793714_0->43747581#0_0"
+    },
+    {
+     "connection": "580418102_0->959708837_0"
+    },
+    {
+     "connection": "580418102_1->959708837_1"
+    },
+    {
+     "connection": "-789322000#0_0->789322003#0_0"
+    },
+    {
+     "connection": "789321997#2_0->789322000#0_0"
+    },
+    {
+     "connection": "777282583#2_0->1416090886_0"
+    },
+    {
+     "connection": "665212670_0->-662536311_0"
+    },
+    {
+     "connection": "5235164_0->981208583_0"
+    },
+    {
+     "connection": "70811690_0->60725196#1_0"
+    },
+    {
+     "connection": "857155146_0->13301454_0"
+    },
+    {
+     "connection": "857155146_1->13301454_1"
+    },
+    {
+     "connection": "984811437#0_0->984811443_0"
+    },
+    {
+     "connection": "984811437#0_1->984811443_1"
+    },
+    {
+     "connection": "984811437#0_1->984811443_2"
+    },
+    {
+     "connection": "-984811452_0->22597518#0_0"
+    },
+    {
+     "connection": "-10586996#1_0->-10586996#0_0"
+    },
+    {
+     "connection": "10586996#0_0->10586996#1_0"
+    },
+    {
+     "connection": "580637963#1_0->1016845389_0"
+    },
+    {
+     "connection": "-1016845389_0->580637966_0"
+    },
+    {
+     "connection": "208664857#1_0->1029898629#0_1"
+    },
+    {
+     "connection": "208664857#1_1->1029898629#0_2"
+    }
+   ]
+  },
+  "intersecting_turns": {
+   "verdict": "justified",
+   "reason": "Two opposing turns across the centre line (right turns here: in a left-hand network SUMO's 'left turn' check covers them) whose paths overlap inside a compact junction. SUMO does not make such turns foes, so two cars turning at once may overlap visually inside the junction; flow is unaffected (no teleports at these junctions in the smoke runs). A larger junction radius everywhere would distort the city geometry instead.",
+   "count": 31,
+   "instances": [
+    {
+     "junction": "cluster_10266719836_10266719839_777773673_777775583_#6more",
+     "a": "1293349181#0_1",
+     "b": "1291928548_0"
+    },
+    {
+     "junction": "cluster_10266719852_10266719853_10266719857_10266719858_#6more",
+     "a": "480358289#1_0",
+     "b": "1123814312#0_1"
+    },
+    {
+     "junction": "cluster_10266719867_10266719868_10266719870_1880686094_#8more",
+     "a": "1253825865#0_0",
+     "b": "1038113056#0_1"
+    },
+    {
+     "junction": "cluster_111302426_111302447_11876199916_196913363_#5more",
+     "a": "968808852_0",
+     "b": "19013358#4_1"
+    },
+    {
+     "junction": "cluster_1132023834_3394737409_3394737410_3394737414_#5more",
+     "a": "6262173#0_0",
+     "b": "135951295#3_0"
+    },
+    {
+     "junction": "cluster_127638260_8960001707_8960001708_8960001709",
+     "a": "965116098#1_0",
+     "b": "33803206#0_0"
+    },
+    {
+     "junction": "cluster_13976139571_13976139572_13976139573_13976139574_#4more",
+     "a": "576911613_0",
+     "b": "207831781_0"
+    },
+    {
+     "junction": "cluster_13976139571_13976139572_13976139573_13976139574_#4more",
+     "a": "199429376#2_0",
+     "b": "1290614684#1_0"
+    },
+    {
+     "junction": "cluster_1985557923_1985557927_26034669_3367904400_#6more",
+     "a": "198737797#0_0",
+     "b": "1317029146#1_0"
+    },
+    {
+     "junction": "cluster_2020813849_2020813869_2020813871_2020813875_#4more",
+     "a": "734406094#4_0",
+     "b": "505256328#0_0"
+    },
+    {
+     "junction": "cluster_2020813849_2020813869_2020813871_2020813875_#4more",
+     "a": "734406094#4_0",
+     "b": "505256328#0_1"
+    },
+    {
+     "junction": "cluster_2020813849_2020813869_2020813871_2020813875_#4more",
+     "a": "734406094#4_1",
+     "b": "505256328#0_0"
+    },
+    {
+     "junction": "cluster_2180785582_2180785597_2180785617_2180822307_#4more",
+     "a": "1503287996_1",
+     "b": "1319194947_0"
+    },
+    {
+     "junction": "cluster_2180785582_2180785597_2180785617_2180822307_#4more",
+     "a": "1123528665#3_0",
+     "b": "1123528662_0"
+    },
+    {
+     "junction": "cluster_2189145380_2189145397_2189145399_2189145404_#4more",
+     "a": "711989783#1_1",
+     "b": "581959657#0_1"
+    },
+    {
+     "junction": "cluster_2189145381_2189145390_2189145394_2189145403_#5more",
+     "a": "207831319#0_0",
+     "b": "207830036#0_0"
+    },
+    {
+     "junction": "cluster_2189145381_2189145390_2189145394_2189145403_#5more",
+     "a": "505256329#1_0",
+     "b": "208642574#1_0"
+    },
+    {
+     "junction": "cluster_2189145385_2189145386_2189145388_2189145408_#3more",
+     "a": "664287431#2_1",
+     "b": "1312971508_1"
+    },
+    {
+     "junction": "cluster_2190478922_2190478924_2190478928_2190478932_#4more",
+     "a": "316166613#1_0",
+     "b": "207831526_0"
+    },
+    {
+     "junction": "cluster_2190478922_2190478924_2190478928_2190478932_#4more",
+     "a": "286827105#0_0",
+     "b": "207778723_0"
+    },
+    {
+     "junction": "cluster_2190483583_2190483587_2190483588_2190483590_#4more",
+     "a": "715611143#0_0",
+     "b": "1126651860_0"
+    },
+    {
+     "junction": "cluster_259616706_26034526_3394726298_3394726300_#4more",
+     "a": "581959663#1_0",
+     "b": "198005097#3_0"
+    },
+    {
+     "junction": "cluster_26034668_277089929_317537930_3419354750_#6more",
+     "a": "61511897#0_0",
+     "b": "208675774_0"
+    },
+    {
+     "junction": "cluster_301537542_301537543_560986691_560986727_#1more",
+     "a": "448300741#2_0",
+     "b": "329659971#4_0"
+    },
+    {
+     "junction": "cluster_611991913_611991914_777800550_777800877",
+     "a": "1123779622_1",
+     "b": "1122547503_0"
+    },
+    {
+     "junction": "cluster_611991913_611991914_777800550_777800877",
+     "a": "62261477#0_0",
+     "b": "48159972_0"
+    },
+    {
+     "junction": "cluster_6696001853_6696001862_702352971_702352972",
+     "a": "712160484#0_0",
+     "b": "55949470#0_0"
+    },
+    {
+     "junction": "cluster_6696001853_6696001862_702352971_702352972",
+     "a": "1122544771_0",
+     "b": "1122544768_0"
+    },
+    {
+     "junction": "cluster_777706218_777710193_777721749_777721838",
+     "a": "62258467_0",
+     "b": "581989771#2_0"
+    },
+    {
+     "junction": "cluster_777706218_777710193_777721749_777721838",
+     "a": "62260822_0",
+     "b": "62258521#0_0"
+    },
+    {
+     "junction": "cluster_777773646_777773654_777778398_777778401_#8more",
+     "a": "62258465#2_0",
+     "b": "1122543873#2_0"
+    }
+   ]
+  }
+ }
+}

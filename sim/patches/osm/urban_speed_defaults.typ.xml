@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PATCH: default speeds for OSM ways that have no maxspeed tag.
+
+  Why: SUMO's generic OSM typemap (osmNetconvert.typ.xml) gives untagged roads rural speeds
+  (primary/secondary/trunk 100 km/h, tertiary 80 km/h, *_link 80 km/h). In the extract, 308 tertiary,
+  162 primary, 21 secondary, 15 trunk and ~150 link ways have no maxspeed tag, all inside built-up
+  Melbourne, so they would run at freeway speeds through the CBD.
+
+  Rule used (not a measurement): the Victorian default speed limit in a built-up area is 50 km/h
+  where no limit is signed (Road Safety Road Rules 2017 (Vic), rule 25). Every tagged maxspeed
+  still wins over these defaults.
+
+  Only `speed` differs from SUMO's typemap; every other attribute is copied unchanged, because a type
+  loaded from a later file replaces the earlier one completely. motorway and motorway_link keep
+  SUMO's defaults (100 / 80 km/h): every motorway way in the extract is tagged, and the untagged
+  links are freeway ramps, which are signed, not built-up streets.
+-->
+<types>
+    <type id="highway.trunk"          numLanes="2" speed="13.89" priority="13" oneway="false" disallow="rail rail_urban rail_electric rail_fast tram drone aircraft scooter container wheelchair subway cable_car ship pedestrian bicycle"/>
+    <type id="highway.primary"        numLanes="2" speed="13.89" priority="12" oneway="false" disallow="rail rail_urban rail_electric rail_fast tram drone aircraft scooter container wheelchair subway cable_car ship"/>
+    <type id="highway.secondary"      numLanes="1" speed="13.89" priority="11" oneway="false" disallow="rail rail_urban rail_electric rail_fast tram drone aircraft scooter container wheelchair subway cable_car ship"/>
+    <type id="highway.tertiary"       numLanes="1" speed="13.89" priority="10" oneway="false" disallow="rail rail_urban rail_electric rail_fast tram drone aircraft scooter container wheelchair subway cable_car ship"/>
+    <type id="highway.trunk_link"     numLanes="1" speed="13.89" priority="8"  oneway="false" disallow="rail rail_urban rail_electric rail_fast tram drone aircraft scooter container wheelchair subway cable_car ship pedestrian bicycle"/>
+    <type id="highway.primary_link"   numLanes="1" speed="13.89" priority="7"  oneway="false" disallow="rail rail_urban rail_electric rail_fast tram drone aircraft scooter container wheelchair subway cable_car ship"/>
+    <type id="highway.secondary_link" numLanes="1" speed="13.89" priority="6"  oneway="false" disallow="rail rail_urban rail_electric rail_fast tram drone aircraft scooter container wheelchair subway cable_car ship"/>
+    <type id="highway.tertiary_link"  numLanes="1" speed="13.89" priority="5"  oneway="false" disallow="rail rail_urban rail_electric rail_fast tram drone aircraft scooter container wheelchair subway cable_car ship"/>
+</types>

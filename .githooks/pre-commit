@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Runs the full local check suite before every commit. Enabled per repo with:
+#   git config core.hooksPath .githooks
+# check.sh loads nvm and runs `nvm use` itself, so Node 22 is used even without a shell profile.
+exec "$(git rev-parse --show-toplevel)/scripts/check.sh"

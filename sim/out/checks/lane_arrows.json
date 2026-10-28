@@ -1,0 +1,3542 @@
+{
+ "description": "Lane arrows from the verified DTP signal sheets (sim/lane_arrows.py).",
+ "status": {
+  "changed": 57,
+  "unchanged": 30,
+  "skipped": 34
+ },
+ "lanes_widened": 53,
+ "approaches": [
+  {
+   "site_id": "2900",
+   "approach": "Little Bourke St WB",
+   "edge": "735338668#0",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "206506959#5": [
+     0
+    ],
+    "616097570#2": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "206506959#5": [
+     1
+    ],
+    "616097570#2": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "2901",
+   "approach": "Lonsdale St EB",
+   "edge": "198737801#0",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "198005395#0": [
+     0
+    ],
+    "69025365": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "198005395#0": [
+     0
+    ],
+    "69025365": [
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "2901",
+   "approach": "Lonsdale St WB",
+   "edge": "1070230023",
+   "status": "unchanged",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "198005395#0": [
+     1
+    ],
+    "993256437": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "198005395#0": [
+     1
+    ],
+    "993256437": [
+     0,
+     1
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "2901",
+   "approach": "Spring St NB",
+   "edge": "208675774",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "198005395#0": [
+     0
+    ],
+    "69025365": [
+     0
+    ],
+    "993256437": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "198005395#0": [
+     0
+    ],
+    "69025365": [
+     0
+    ],
+    "993256437": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 2: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "2901",
+   "approach": "Spring St SB",
+   "edge": "61511897#0",
+   "status": "skipped: sheet shows 3 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "69025365": [
+     0,
+     1
+    ],
+    "993256437": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "2903",
+   "approach": "Lonsdale St EB",
+   "edge": "1317029146#1",
+   "status": "skipped: sheet shows 4 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1444413646#0": [
+     0,
+     1
+    ],
+    "187918254#0": [
+     0,
+     1
+    ],
+    "198005100#1": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default T"
+   ]
+  },
+  {
+   "site_id": "2903",
+   "approach": "Lonsdale St WB",
+   "edge": "198737797#0",
+   "status": "skipped: sheet shows 3 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1358973688#0": [
+     0,
+     1
+    ],
+    "1444413646#0": [
+     0,
+     1
+    ],
+    "187918254#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default RT"
+   ]
+  },
+  {
+   "site_id": "2903",
+   "approach": "Russell St NB",
+   "edge": "198005096#4",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "1358973688#0": [
+     0
+    ],
+    "187918254#0": [
+     0,
+     1
+    ],
+    "198005100#1": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "1358973688#0": [
+     0
+    ],
+    "187918254#0": [
+     1,
+     2
+    ],
+    "198005100#1": [
+     3
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 4"
+   ]
+  },
+  {
+   "site_id": "2903",
+   "approach": "Russell St SB",
+   "edge": "190727195#1",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "1358973688#0": [
+     1
+    ],
+    "1444413646#0": [
+     0,
+     1
+    ],
+    "198005100#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1358973688#0": [
+     3
+    ],
+    "1444413646#0": [
+     1,
+     2
+    ],
+    "198005100#1": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 4"
+   ]
+  },
+  {
+   "site_id": "2904",
+   "approach": "Caledonian Lane NB",
+   "edge": null,
+   "status": "skipped: approach matches 0 edges",
+   "lanes_before": null,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "2904",
+   "approach": "Lonsdale St EB",
+   "edge": "734406095#1",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default RT"
+   ]
+  },
+  {
+   "site_id": "2904",
+   "approach": "Lonsdale St WB",
+   "edge": "386419596#1",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T"
+   ]
+  },
+  {
+   "site_id": "2906",
+   "approach": "Lonsdale St EB",
+   "edge": "198005098#2",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1126650242#3": [
+     1
+    ],
+    "1126650513#1": [
+     1
+    ],
+    "1126802279#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "1126650242#3": [
+     0
+    ],
+    "1126650513#1": [
+     1
+    ],
+    "1126802279#0": [
+     0,
+     1
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "2906",
+   "approach": "Lonsdale St WB",
+   "edge": "734406093#1",
+   "status": "skipped: sheet shows 4 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1126650242#3": [
+     1
+    ],
+    "1126650513#1": [
+     1
+    ],
+    "734406094#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default T"
+   ]
+  },
+  {
+   "site_id": "2907",
+   "approach": "Lonsdale St EB",
+   "edge": "505256328#0",
+   "status": "skipped: sheet shows 3 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1126800685#0": [
+     0,
+     1
+    ],
+    "198005098#0": [
+     0,
+     1
+    ],
+    "5095075#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "2907",
+   "approach": "Lonsdale St WB",
+   "edge": "734406094#4",
+   "status": "skipped: sheet shows 3 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1126800685#0": [
+     0,
+     1
+    ],
+    "5095075#0": [
+     0,
+     1
+    ],
+    "581959650#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "2907",
+   "approach": "Queen St NB",
+   "edge": "1489991596#1",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "198005098#0": [
+     1
+    ],
+    "5095075#0": [
+     0,
+     1
+    ],
+    "581959650#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "198005098#0": [
+     3
+    ],
+    "5095075#0": [
+     1,
+     2
+    ],
+    "581959650#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 4"
+   ]
+  },
+  {
+   "site_id": "2907",
+   "approach": "Queen St SB",
+   "edge": "191505321#2",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "1126800685#0": [
+     0,
+     1
+    ],
+    "198005098#0": [
+     0
+    ],
+    "581959650#0": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "1126800685#0": [
+     1
+    ],
+    "198005098#0": [
+     0
+    ],
+    "581959650#0": [
+     2
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "2909",
+   "approach": "King St NB",
+   "edge": "711989785#0",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "1316060854#0": [
+     2
+    ],
+    "581959665#0": [
+     0,
+     1,
+     2
+    ],
+    "581959667#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1316060854#0": [
+     3
+    ],
+    "581959665#0": [
+     0,
+     1,
+     2
+    ],
+    "581959667#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default T",
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "2909",
+   "approach": "King St SB",
+   "edge": "581959669#0",
+   "status": "unchanged",
+   "lanes_before": 3,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "108715490#0": [
+     0,
+     1,
+     2
+    ],
+    "1316060854#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "108715490#0": [
+     0,
+     1,
+     2
+    ],
+    "1316060854#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default RT",
+    "arrow R shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "2909",
+   "approach": "Lonsdale St EB",
+   "edge": "581959663#1",
+   "status": "skipped: sheet shows 4 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "108715490#0": [
+     0,
+     1
+    ],
+    "1316060854#0": [
+     0,
+     1
+    ],
+    "581959665#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default T"
+   ]
+  },
+  {
+   "site_id": "2909",
+   "approach": "Lonsdale St WB",
+   "edge": "198005097#3",
+   "status": "skipped: sheet shows 3 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "108715490#0": [
+     0,
+     1
+    ],
+    "1316060854#0": [
+     1
+    ],
+    "581959665#0": [
+     0,
+     1
+    ],
+    "581959667#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default RT"
+   ]
+  },
+  {
+   "site_id": "2912",
+   "approach": "Little Lonsdale St EB",
+   "edge": "316166393#1",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "187918254#3": [
+     0
+    ],
+    "190727195#1": [
+     0
+    ],
+    "323916050#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "187918254#3": [
+     0
+    ],
+    "190727195#1": [
+     1
+    ],
+    "323916050#0": [
+     0,
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "2912",
+   "approach": "Russell St NB",
+   "edge": "187918254#0",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "187918254#3": [
+     0,
+     1
+    ],
+    "323916050#0": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "187918254#3": [
+     0,
+     1,
+     2
+    ],
+    "323916050#0": [
+     2
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3",
+    "arrow L shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "2912",
+   "approach": "Russell St SB",
+   "edge": "190727195#0",
+   "status": "skipped: lanes [2] would have no movement",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "190727195#1": [
+     0,
+     1
+    ],
+    "323916050#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lanes 2 -> 3",
+    "arrow R shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "2913",
+   "approach": "Little Lonsdale St EB",
+   "edge": "715611144#1",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 1,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "2913",
+   "approach": "Swanston St NB",
+   "edge": null,
+   "status": "skipped: approach matches 0 edges",
+   "lanes_before": null,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "2914",
+   "approach": "Elizabeth St NB",
+   "edge": "1126650242#3",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "715611143#0": [
+     0
+    ],
+    "715611144#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "715611143#0": [
+     0
+    ],
+    "715611144#1": [
+     1
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "2914",
+   "approach": "Elizabeth St SB",
+   "edge": "1010839939",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1126650781": [
+     0
+    ],
+    "715611144#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1126650781": [
+     0
+    ],
+    "715611144#1": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT",
+    "arrow R shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "2914",
+   "approach": "Little Lonsdale St EB",
+   "edge": "1435039927#1",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1126650781": [
+     0
+    ],
+    "715611143#0": [
+     0
+    ],
+    "715611144#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1126650781": [
+     0
+    ],
+    "715611143#0": [
+     0
+    ],
+    "715611144#1": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "2916",
+   "approach": "Little Lonsdale St EB",
+   "edge": "135953375#2",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1127383196#1": [
+     0
+    ],
+    "235931746#2": [
+     0
+    ],
+    "715611130#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1127383196#1": [
+     0
+    ],
+    "235931746#2": [
+     0
+    ],
+    "715611130#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 2: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "2916",
+   "approach": "William St NB",
+   "edge": "581959652",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1127383196#1": [
+     0
+    ],
+    "715611130#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1127383196#1": [
+     1
+    ],
+    "715611130#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 2: no arrows, road-rule default LT",
+    "lanes 1 -> 2",
+    "arrow L shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "2916",
+   "approach": "William St SB",
+   "edge": "235931746#0",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1127383196#1": [
+     0
+    ],
+    "235931746#2": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1127383196#1": [
+     0
+    ],
+    "235931746#2": [
+     0
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "2922",
+   "approach": "Elizabeth St NB",
+   "edge": "715611143#0",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "672401683#0": [
+     0
+    ],
+    "672401684": [
+     0
+    ],
+    "672401689": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "672401683#0": [
+     0,
+     1
+    ],
+    "672401684": [
+     0
+    ],
+    "672401689": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 2",
+    "R to 672401684: no lane arrow shows it, kept lanes [0]"
+   ]
+  },
+  {
+   "site_id": "2922",
+   "approach": "Elizabeth St SB",
+   "edge": "1126651860",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1010839939": [
+     0
+    ],
+    "672401684": [
+     0
+    ],
+    "672401689": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1010839939": [
+     0
+    ],
+    "672401684": [
+     0
+    ],
+    "672401689": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "2922",
+   "approach": "La Trobe St EB",
+   "edge": "135952928",
+   "status": "unchanged",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "672401683#0": [
+     0
+    ],
+    "672401684": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "672401683#0": [
+     0
+    ],
+    "672401684": [
+     0,
+     1
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "2922",
+   "approach": "La Trobe St WB",
+   "edge": "279989319",
+   "status": "skipped: sheet shows 1 car lanes, network has 2",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1010839939": [
+     0
+    ],
+    "672401683#0": [
+     1
+    ],
+    "672401689": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "2926",
+   "approach": "La Trobe St EB",
+   "edge": "1253825982#2",
+   "status": "skipped: sheet shows 1 car lanes, network has 2",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "30179566#0": [
+     0
+    ],
+    "581959647": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "2926",
+   "approach": "La Trobe St WB",
+   "edge": "1312971512",
+   "status": "skipped: sheet shows 1 car lanes, network has 2",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1169295050": [
+     0
+    ],
+    "135952945": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 2: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "2926",
+   "approach": "Spencer St NB",
+   "edge": "616097571#1",
+   "status": "unchanged",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "135952945": [
+     0
+    ],
+    "30179566#0": [
+     0,
+     1
+    ],
+    "581959647": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "135952945": [
+     0
+    ],
+    "30179566#0": [
+     0,
+     1
+    ],
+    "581959647": [
+     1
+    ]
+   },
+   "notes": [
+    "lane 2: no arrows, road-rule default LT",
+    "lane 3: no arrows, road-rule default RT"
+   ]
+  },
+  {
+   "site_id": "2926",
+   "approach": "Spencer St SB",
+   "edge": "198874544#0",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "1169295050": [
+     0,
+     1
+    ],
+    "135952945": [
+     1
+    ],
+    "581959647": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1169295050": [
+     0,
+     1
+    ],
+    "135952945": [
+     2
+    ],
+    "581959647": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "2929",
+   "approach": "Flinders St EB",
+   "edge": "968051639#0",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "134618936#1": [
+     0
+    ],
+    "134620345#0": [
+     1
+    ],
+    "550361772#0": [
+     0,
+     1
+    ],
+    "968051641": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "134618936#1": [
+     0
+    ],
+    "134620345#0": [
+     3
+    ],
+    "550361772#0": [
+     1,
+     2
+    ],
+    "968051641": [
+     1
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 4",
+    "U to 968051641: no lane arrow shows it, kept lanes [1]"
+   ]
+  },
+  {
+   "site_id": "2929",
+   "approach": "Flinders St WB",
+   "edge": "556168188#0",
+   "status": "skipped: lanes [3] would have no movement",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "134620345#0": [
+     0
+    ],
+    "968051641": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lanes 2 -> 4",
+    "arrow R shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "2929",
+   "approach": "King St NB",
+   "edge": "134621274#0",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "134618936#1": [
+     0,
+     1,
+     2
+    ],
+    "550361772#0": [
+     2
+    ],
+    "968051641": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "134618936#1": [
+     1,
+     2
+    ],
+    "550361772#0": [
+     3
+    ],
+    "968051641": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "2929",
+   "approach": "King St SB",
+   "edge": "207516094#0",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "134620345#0": [
+     0,
+     1,
+     2
+    ],
+    "550361772#0": [
+     0
+    ],
+    "968051641": [
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "134620345#0": [
+     1,
+     2
+    ],
+    "550361772#0": [
+     0
+    ],
+    "968051641": [
+     3
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "4511",
+   "approach": "Franklin St EB",
+   "edge": "62106231#1",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1126652258": [
+     0
+    ],
+    "208793253#0": [
+     1
+    ],
+    "208793849#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1126652258": [
+     0
+    ],
+    "208793253#0": [
+     1
+    ],
+    "208793849#0": [
+     0,
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT"
+   ]
+  },
+  {
+   "site_id": "4511",
+   "approach": "Franklin St WB",
+   "edge": "848742947#0",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "1126652258": [
+     1
+    ],
+    "191658734#1": [
+     0,
+     1
+    ],
+    "208793253#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1126652258": [
+     2
+    ],
+    "191658734#1": [
+     1,
+     2
+    ],
+    "208793253#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "4512",
+   "approach": "A'Beckett St EB",
+   "edge": "1444412313#0",
+   "status": "skipped: sheet shows 1 car lanes, network has 2",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1436819332#1": [
+     0
+    ],
+    "1444412330": [
+     1
+    ],
+    "1458571606#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4512",
+   "approach": "A'Beckett St WB",
+   "edge": "-1436819332#1",
+   "status": "skipped: sheet shows 1 car lanes, network has 2",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "-1444412313#1": [
+     0
+    ],
+    "1444412330": [
+     0
+    ],
+    "1458571606#0": [
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4512",
+   "approach": "Elizabeth St NB",
+   "edge": "672401683#0",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "-1444412313#1": [
+     0
+    ],
+    "1436819332#1": [
+     0
+    ],
+    "1458571606#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "-1444412313#1": [
+     0
+    ],
+    "1436819332#1": [
+     0
+    ],
+    "1458571606#0": [
+     0
+    ]
+   },
+   "notes": [
+    "L to -1444412313#1: no lane arrow shows it, kept lanes [0]",
+    "R to 1436819332#1: no lane arrow shows it, kept lanes [0]"
+   ]
+  },
+  {
+   "site_id": "4512",
+   "approach": "Elizabeth St SB",
+   "edge": "208793253#0",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "-1444412313#1": [
+     0
+    ],
+    "1436819332#1": [
+     0
+    ],
+    "1444412330": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "-1444412313#1": [
+     0
+    ],
+    "1436819332#1": [
+     0
+    ],
+    "1444412330": [
+     0
+    ]
+   },
+   "notes": [
+    "R to -1444412313#1: no lane arrow shows it, kept lanes [0]",
+    "L to 1436819332#1: no lane arrow shows it, kept lanes [0]"
+   ]
+  },
+  {
+   "site_id": "4517",
+   "approach": "Dudley St EB",
+   "edge": "30179549",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "-746789182#0": [
+     1
+    ],
+    "27008379": [
+     1
+    ],
+    "569455489": [
+     0
+    ],
+    "767384959#1": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "-746789182#0": [
+     1
+    ],
+    "27008379": [
+     2
+    ],
+    "569455489": [
+     0
+    ],
+    "767384959#1": [
+     0,
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lanes 2 -> 3",
+    "U to -746789182#0: no lane arrow shows it, kept lanes [1]"
+   ]
+  },
+  {
+   "site_id": "4517",
+   "approach": "Dudley St WB",
+   "edge": "-767384959#1",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "-746789182#0": [
+     0,
+     1
+    ],
+    "27008379": [
+     0
+    ],
+    "569455489": [
+     1
+    ],
+    "767384959#1": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "-746789182#0": [
+     0,
+     1
+    ],
+    "27008379": [
+     0
+    ],
+    "569455489": [
+     2
+    ],
+    "767384959#1": [
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lanes 2 -> 3",
+    "U to 767384959#1: no lane arrow shows it, kept lanes [1]"
+   ]
+  },
+  {
+   "site_id": "4517",
+   "approach": "King St NB",
+   "edge": "135953468#0",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "-746789182#0": [
+     0
+    ],
+    "569455489": [
+     0,
+     1
+    ],
+    "767384959#1": [
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "-746789182#0": [
+     0
+    ],
+    "569455489": [
+     0,
+     1,
+     2
+    ],
+    "767384959#1": [
+     3
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "4517",
+   "approach": "King St SB",
+   "edge": "794821098#0",
+   "status": "changed",
+   "lanes_before": 5,
+   "lanes_after": 5,
+   "turn_lanes_before": {
+    "-746789182#0": [
+     4
+    ],
+    "27008379": [
+     1,
+     2,
+     3
+    ],
+    "767384959#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "-746789182#0": [
+     4
+    ],
+    "27008379": [
+     0,
+     1,
+     2,
+     3
+    ],
+    "767384959#1": [
+     0
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "4525",
+   "approach": "Flinders St EB",
+   "edge": null,
+   "status": "skipped: approach matches 0 edges",
+   "lanes_before": null,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4525",
+   "approach": "Flinders St WB",
+   "edge": "46227878#0",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 1,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4525",
+   "approach": "World Trade Centre Access NB",
+   "edge": null,
+   "status": "skipped: approach matches 0 edges",
+   "lanes_before": null,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4564",
+   "approach": "Flinders St EB",
+   "edge": "296399431#0",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "386416108#0": [
+     0,
+     1
+    ],
+    "968051645#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "386416108#0": [
+     1,
+     2
+    ],
+    "968051645#1": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "4564",
+   "approach": "Flinders St WB",
+   "edge": "295476230#3",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "296383692": [
+     0,
+     1
+    ],
+    "968051645#1": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "296383692": [
+     0
+    ],
+    "968051645#1": [
+     1
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "4564",
+   "approach": "Queen St SB",
+   "edge": "207831942#0",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "296383692": [
+     0
+    ],
+    "386416108#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "296383692": [
+     1,
+     2
+    ],
+    "386416108#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 3"
+   ]
+  },
+  {
+   "site_id": "4565",
+   "approach": "Flinders St EB",
+   "edge": "556168189#0",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "1038111502#0": [
+     0
+    ],
+    "296399431#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "1038111502#0": [
+     0
+    ],
+    "296399431#0": [
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "4565",
+   "approach": "Flinders St WB",
+   "edge": "296383692",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "1292625318#0": [
+     0,
+     1
+    ],
+    "1352491643#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1292625318#0": [
+     2,
+     3
+    ],
+    "1352491643#1": [
+     0,
+     1
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 4"
+   ]
+  },
+  {
+   "site_id": "4565",
+   "approach": "Market St NB",
+   "edge": null,
+   "status": "skipped: approach matches 0 edges",
+   "lanes_before": null,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4565",
+   "approach": "Market St SB",
+   "edge": "1038111504#0",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1292625318#0": [
+     0
+    ],
+    "296399431#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1292625318#0": [
+     0
+    ],
+    "296399431#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT",
+    "arrow T shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "4566",
+   "approach": "Flinders St EB",
+   "edge": "550361772#1",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4566",
+   "approach": "Flinders St WB",
+   "edge": "1292625318#0",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4566",
+   "approach": "William St NB",
+   "edge": null,
+   "status": "skipped: approach matches 2 edges",
+   "lanes_before": null,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4566",
+   "approach": "William St SB",
+   "edge": "968051653#0",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 1,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4567",
+   "approach": "Flinders St EB",
+   "edge": "210177006#0",
+   "status": "unchanged",
+   "lanes_before": 4,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "134621272#0": [
+     3
+    ],
+    "198715025": [
+     0
+    ],
+    "968051639#0": [
+     1,
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "134621272#0": [
+     3
+    ],
+    "198715025": [
+     0
+    ],
+    "968051639#0": [
+     1,
+     2
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "4567",
+   "approach": "Flinders St WB",
+   "edge": "968051641",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "134621272#0": [
+     0
+    ],
+    "198715024": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "134621272#0": [
+     0
+    ],
+    "198715024": [
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "4567",
+   "approach": "Spencer St NB",
+   "edge": "134621885#0",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "198715024": [
+     0
+    ],
+    "198715025": [
+     0,
+     1
+    ],
+    "968051639#0": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "198715024": [
+     0
+    ],
+    "198715025": [
+     1,
+     2
+    ],
+    "968051639#0": [
+     3
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 4"
+   ]
+  },
+  {
+   "site_id": "4567",
+   "approach": "Spencer St SB",
+   "edge": "207799527#2",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "134621272#0": [
+     0,
+     1
+    ],
+    "198715024": [
+     1
+    ],
+    "968051639#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "134621272#0": [
+     1
+    ],
+    "198715024": [
+     2
+    ],
+    "968051639#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "4573",
+   "approach": "William St NB",
+   "edge": "878771432#0",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "-1352511908#0": [
+     0
+    ],
+    "208642574#1": [
+     0
+    ],
+    "968051651": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "-1352511908#0": [
+     3
+    ],
+    "208642574#1": [
+     1,
+     2
+    ],
+    "968051651": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 4"
+   ]
+  },
+  {
+   "site_id": "4574",
+   "approach": "Flinders Lane EB",
+   "edge": "-208643582#5",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "-963120887#4": [
+     0
+    ],
+    "207516091#0": [
+     0
+    ],
+    "207516094#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "-963120887#4": [
+     0
+    ],
+    "207516091#0": [
+     0
+    ],
+    "207516094#0": [
+     1
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "4574",
+   "approach": "Flinders Lane WB",
+   "edge": "963120887#3",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "207516091#0": [
+     0
+    ],
+    "207516094#0": [
+     0
+    ],
+    "208643582#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207516091#0": [
+     2
+    ],
+    "207516094#0": [
+     0
+    ],
+    "208643582#1": [
+     1
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 3"
+   ]
+  },
+  {
+   "site_id": "4574",
+   "approach": "King St NB",
+   "edge": "134618936#1",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "-963120887#4": [
+     2
+    ],
+    "207516091#0": [
+     0,
+     1,
+     2
+    ],
+    "208643582#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "-963120887#4": [
+     3
+    ],
+    "207516091#0": [
+     0,
+     1,
+     2
+    ],
+    "208643582#1": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "4574",
+   "approach": "King St SB",
+   "edge": "215312149#0",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "-963120887#4": [
+     0
+    ],
+    "207516094#0": [
+     0,
+     1,
+     2
+    ],
+    "208643582#1": [
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "-963120887#4": [
+     0
+    ],
+    "207516094#0": [
+     0,
+     1,
+     2
+    ],
+    "208643582#1": [
+     3
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "4577",
+   "approach": "Collins St EB",
+   "edge": "208498191",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "207831778#1": [
+     0
+    ],
+    "207831779#0": [
+     0
+    ],
+    "207831781": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207831778#1": [
+     1
+    ],
+    "207831779#0": [
+     0
+    ],
+    "207831781": [
+     0,
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "4577",
+   "approach": "Collins St WB",
+   "edge": "1123528657",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "207831636#0": [
+     0
+    ],
+    "207831778#1": [
+     0
+    ],
+    "207831779#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207831636#0": [
+     0,
+     1
+    ],
+    "207831778#1": [
+     0
+    ],
+    "207831779#0": [
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "4577",
+   "approach": "Russell St NB",
+   "edge": "199310502#4",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "207831636#0": [
+     0
+    ],
+    "207831779#0": [
+     0,
+     1
+    ],
+    "207831781": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "207831636#0": [
+     0
+    ],
+    "207831779#0": [
+     1,
+     2
+    ],
+    "207831781": [
+     3
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 4"
+   ]
+  },
+  {
+   "site_id": "4577",
+   "approach": "Russell St SB",
+   "edge": "199429372#2",
+   "status": "unchanged",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "207831636#0": [
+     1
+    ],
+    "207831778#1": [
+     0,
+     1
+    ],
+    "207831781": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207831636#0": [
+     1
+    ],
+    "207831778#1": [
+     0,
+     1
+    ],
+    "207831781": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT"
+   ]
+  },
+  {
+   "site_id": "4578",
+   "approach": "Collins St EB",
+   "edge": "207831528#2",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 1,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4578",
+   "approach": "Collins St WB",
+   "edge": "207831636#0",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 1,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4580",
+   "approach": "Collins St EB",
+   "edge": "207831526",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "207831528#1": [
+     0
+    ],
+    "208793255#1": [
+     0
+    ],
+    "559997292": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207831528#1": [
+     0
+    ],
+    "208793255#1": [
+     0
+    ],
+    "559997292": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4580",
+   "approach": "Collins St WB",
+   "edge": "316166613#1",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1123528662": [
+     0
+    ],
+    "208793255#1": [
+     0
+    ],
+    "559997292": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1123528662": [
+     0,
+     1
+    ],
+    "208793255#1": [
+     1
+    ],
+    "559997292": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "4580",
+   "approach": "Elizabeth St NB",
+   "edge": "207778723",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1123528662": [
+     0
+    ],
+    "207831528#1": [
+     0
+    ],
+    "208793255#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1123528662": [
+     0
+    ],
+    "207831528#1": [
+     0
+    ],
+    "208793255#1": [
+     0,
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lanes 1 -> 2",
+    "R to 207831528#1: no lane arrow shows it, kept lanes [0]"
+   ]
+  },
+  {
+   "site_id": "4580",
+   "approach": "Elizabeth St SB",
+   "edge": "286827105#0",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1123528662": [
+     0
+    ],
+    "207831528#1": [
+     0
+    ],
+    "559997292": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1123528662": [
+     0
+    ],
+    "207831528#1": [
+     0
+    ],
+    "559997292": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4583",
+   "approach": "Collins St EB",
+   "edge": "207830036#0",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1123528665#1": [
+     0
+    ],
+    "208641736#0": [
+     0
+    ],
+    "208642575#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1123528665#1": [
+     0,
+     1
+    ],
+    "208641736#0": [
+     0
+    ],
+    "208642575#0": [
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "4583",
+   "approach": "Collins St WB",
+   "edge": "207831319#0",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "208641736#0": [
+     0
+    ],
+    "208642573": [
+     0
+    ],
+    "208642575#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "208641736#0": [
+     0
+    ],
+    "208642573": [
+     0
+    ],
+    "208642575#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4583",
+   "approach": "William St NB",
+   "edge": "208642574#1",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1123528665#1": [
+     0
+    ],
+    "208641736#0": [
+     0
+    ],
+    "208642573": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1123528665#1": [
+     0
+    ],
+    "208641736#0": [
+     0,
+     1
+    ],
+    "208642573": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 2",
+    "R to 1123528665#1: no lane arrow shows it, kept lanes [0]"
+   ]
+  },
+  {
+   "site_id": "4583",
+   "approach": "William St SB",
+   "edge": "505256329#1",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1123528665#1": [
+     0
+    ],
+    "208642573": [
+     0
+    ],
+    "208642575#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1123528665#1": [
+     0
+    ],
+    "208642573": [
+     0
+    ],
+    "208642575#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 2: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4584",
+   "approach": "Collins St EB",
+   "edge": "1123528672",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "207830036#0": [
+     0
+    ],
+    "963120890#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207830036#0": [
+     0,
+     1
+    ],
+    "963120890#1": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "lanes 1 -> 2",
+    "arrow R shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "4584",
+   "approach": "Collins St WB",
+   "edge": "208642573",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "207830034": [
+     0
+    ],
+    "207830036#0": [
+     0
+    ],
+    "215312149#0": [
+     0
+    ],
+    "963120890#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207830034": [
+     0,
+     1
+    ],
+    "207830036#0": [
+     0
+    ],
+    "215312149#0": [
+     0
+    ],
+    "963120890#1": [
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "lanes 1 -> 2",
+    "U to 207830036#0: no lane arrow shows it, kept lanes [0]"
+   ]
+  },
+  {
+   "site_id": "4584",
+   "approach": "King St NB",
+   "edge": "207516091#0",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "207830034": [
+     0
+    ],
+    "207830036#0": [
+     2
+    ],
+    "963120890#1": [
+     0,
+     1,
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "207830034": [
+     0
+    ],
+    "207830036#0": [
+     3
+    ],
+    "963120890#1": [
+     0,
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "4584",
+   "approach": "King St SB",
+   "edge": "711989781#3",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "207830034": [
+     2
+    ],
+    "207830036#0": [
+     0
+    ],
+    "215312149#0": [
+     0,
+     1,
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "207830034": [
+     3
+    ],
+    "207830036#0": [
+     0
+    ],
+    "215312149#0": [
+     0,
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "4592",
+   "approach": "King St NB",
+   "edge": "963120891#0",
+   "status": "unchanged",
+   "lanes_before": 3,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "207516093#0": [
+     0,
+     1,
+     2
+    ],
+    "323916051#1": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207516093#0": [
+     0,
+     1,
+     2
+    ],
+    "323916051#1": [
+     0
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "4592",
+   "approach": "King St SB",
+   "edge": "711989781#0",
+   "status": "unchanged",
+   "lanes_before": 3,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "323916051#1": [
+     2
+    ],
+    "711989781#2": [
+     0,
+     1,
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "323916051#1": [
+     2
+    ],
+    "711989781#2": [
+     0,
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "R to 323916051#1: no lane arrow shows it, kept lanes [2]"
+   ]
+  },
+  {
+   "site_id": "4592",
+   "approach": "Little Collins St EB",
+   "edge": "-323916051#3",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "207516093#0": [
+     0
+    ],
+    "711989781#2": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207516093#0": [
+     0
+    ],
+    "711989781#2": [
+     1
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "4592",
+   "approach": "Little Collins St WB",
+   "edge": "968328214#4",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "207516093#0": [
+     0
+    ],
+    "323916051#1": [
+     0
+    ],
+    "711989781#2": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "207516093#0": [
+     0
+    ],
+    "323916051#1": [
+     0
+    ],
+    "711989781#2": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4595",
+   "approach": "Bourke St EB",
+   "edge": "208554967#0",
+   "status": "skipped: sheet shows 1 car lanes, network has 2",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1111312089": [
+     1
+    ],
+    "1291652854": [
+     0,
+     1
+    ],
+    "198005096#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4595",
+   "approach": "Russell St NB",
+   "edge": "207831779#1",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "1291652854": [
+     1
+    ],
+    "198005096#0": [
+     0,
+     1
+    ],
+    "208506747": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1291652854": [
+     2
+    ],
+    "198005096#0": [
+     1,
+     2
+    ],
+    "208506747": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "4595",
+   "approach": "Russell St SB",
+   "edge": "190727196#0",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "1111312089": [
+     0
+    ],
+    "1291652854": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1111312089": [
+     1,
+     2
+    ],
+    "1291652854": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default RT",
+    "lanes 1 -> 3",
+    "arrow R shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "4599",
+   "approach": "Bourke St EB",
+   "edge": "1126680795#0",
+   "status": "unchanged",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "191505563": [
+     1
+    ],
+    "296383691#5": [
+     0
+    ],
+    "315229024#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "191505563": [
+     1
+    ],
+    "296383691#5": [
+     0
+    ],
+    "315229024#0": [
+     0,
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "R to 191505563: no lane arrow shows it, kept lanes [1]"
+   ]
+  },
+  {
+   "site_id": "4599",
+   "approach": "Bourke St WB",
+   "edge": "208506442#4",
+   "status": "unchanged",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1126680783#0": [
+     0,
+     1
+    ],
+    "191505563": [
+     0
+    ],
+    "296383691#5": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "1126680783#0": [
+     0,
+     1
+    ],
+    "191505563": [
+     0
+    ],
+    "296383691#5": [
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "R to 296383691#5: no lane arrow shows it, kept lanes [1]"
+   ]
+  },
+  {
+   "site_id": "4599",
+   "approach": "Queen St NB",
+   "edge": "296383691#1",
+   "status": "changed",
+   "lanes_before": 2,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "1126680783#0": [
+     0
+    ],
+    "296383691#5": [
+     0,
+     1
+    ],
+    "315229024#0": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "1126680783#0": [
+     0
+    ],
+    "296383691#5": [
+     0,
+     1
+    ],
+    "315229024#0": [
+     2
+    ]
+   },
+   "notes": [
+    "lanes 2 -> 3"
+   ]
+  },
+  {
+   "site_id": "4599",
+   "approach": "Queen St SB",
+   "edge": "1126800685#2",
+   "status": "skipped: sheet shows 3 lanes, edge 2 (not widened)",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {
+    "1126680783#0": [
+     0,
+     1
+    ],
+    "191505563": [
+     0,
+     1
+    ],
+    "315229024#0": [
+     0,
+     1
+    ]
+   },
+   "turn_lanes_after": {},
+   "notes": []
+  },
+  {
+   "site_id": "4601",
+   "approach": "Bourke St EB",
+   "edge": "1253825868",
+   "status": "unchanged",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1126676738#0": [
+     1
+    ],
+    "711989781#0": [
+     1
+    ],
+    "711989783#0": [
+     0,
+     1
+    ],
+    "963120895#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1126676738#0": [
+     1
+    ],
+    "711989781#0": [
+     1
+    ],
+    "711989783#0": [
+     0,
+     1
+    ],
+    "963120895#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "U to 1126676738#0: no lane arrow shows it, kept lanes [1]"
+   ]
+  },
+  {
+   "site_id": "4601",
+   "approach": "Bourke St WB",
+   "edge": "963120893#1",
+   "status": "unchanged",
+   "lanes_before": 2,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1126676738#0": [
+     0,
+     1
+    ],
+    "711989781#0": [
+     0
+    ],
+    "711989783#0": [
+     1
+    ],
+    "963120895#0": [
+     1
+    ]
+   },
+   "turn_lanes_after": {
+    "1126676738#0": [
+     0,
+     1
+    ],
+    "711989781#0": [
+     0
+    ],
+    "711989783#0": [
+     1
+    ],
+    "963120895#0": [
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "U to 711989783#0: no lane arrow shows it, kept lanes [1]"
+   ]
+  },
+  {
+   "site_id": "4601",
+   "approach": "King St NB",
+   "edge": "207516093#0",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "1126676738#0": [
+     0
+    ],
+    "711989783#0": [
+     2
+    ],
+    "963120895#0": [
+     0,
+     1,
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "1126676738#0": [
+     0
+    ],
+    "711989783#0": [
+     3
+    ],
+    "963120895#0": [
+     0,
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "4601",
+   "approach": "King St SB",
+   "edge": "963120897#0",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "1126676738#0": [
+     2
+    ],
+    "711989781#0": [
+     0,
+     1,
+     2
+    ],
+    "711989783#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1126676738#0": [
+     3
+    ],
+    "711989781#0": [
+     0,
+     1,
+     2
+    ],
+    "711989783#0": [
+     0
+    ]
+   },
+   "notes": [
+    "lanes 3 -> 4"
+   ]
+  },
+  {
+   "site_id": "4605",
+   "approach": "Little Bourke St WB",
+   "edge": "715211389#5",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 1,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4606",
+   "approach": "Elizabeth St NB",
+   "edge": "1126651020#1",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1126651020#2": [
+     0
+    ],
+    "715211394#2": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1126651020#2": [
+     0
+    ],
+    "715211394#2": [
+     0
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "4606",
+   "approach": "Elizabeth St SB",
+   "edge": "1126650513#1",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "235931748#1": [
+     0
+    ],
+    "715211394#2": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "235931748#1": [
+     0
+    ],
+    "715211394#2": [
+     1
+    ]
+   },
+   "notes": [
+    "lanes 1 -> 2"
+   ]
+  },
+  {
+   "site_id": "4606",
+   "approach": "Little Bourke St WB",
+   "edge": "715211389#12",
+   "status": "unchanged",
+   "lanes_before": 1,
+   "lanes_after": 1,
+   "turn_lanes_before": {
+    "1126651020#2": [
+     0
+    ],
+    "235931748#1": [
+     0
+    ],
+    "715211394#2": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1126651020#2": [
+     0
+    ],
+    "235931748#1": [
+     0
+    ],
+    "715211394#2": [
+     0
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4609",
+   "approach": "King St NB",
+   "edge": "963120895#0",
+   "status": "unchanged",
+   "lanes_before": 3,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "711989785#0": [
+     0,
+     1,
+     2
+    ],
+    "735338668#0": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "711989785#0": [
+     0,
+     1,
+     2
+    ],
+    "735338668#0": [
+     0
+    ]
+   },
+   "notes": []
+  },
+  {
+   "site_id": "4609",
+   "approach": "King St SB",
+   "edge": "108715490#0",
+   "status": "unchanged",
+   "lanes_before": 3,
+   "lanes_after": 3,
+   "turn_lanes_before": {
+    "735338668#0": [
+     2
+    ],
+    "963120897#0": [
+     0,
+     1,
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "735338668#0": [
+     2
+    ],
+    "963120897#0": [
+     0,
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "R to 735338668#0: no lane arrow shows it, kept lanes [2]"
+   ]
+  },
+  {
+   "site_id": "4609",
+   "approach": "Little Bourke St WB",
+   "edge": "1442942598#0",
+   "status": "skipped: edge ends at a through-only light, not the drawn intersection",
+   "lanes_before": 2,
+   "lanes_after": null,
+   "turn_lanes_before": {},
+   "turn_lanes_after": {},
+   "notes": [
+    "lane 1: no arrows, road-rule default LRT"
+   ]
+  },
+  {
+   "site_id": "4920",
+   "approach": "City Rd EB",
+   "edge": "767710459",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "1132329206#0": [
+     0
+    ],
+    "787583813": [
+     0,
+     1,
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "1132329206#0": [
+     0
+    ],
+    "787583813": [
+     1,
+     2,
+     3
+    ]
+   },
+   "notes": [
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default T",
+    "lane 4: no arrows, road-rule default RT",
+    "lanes 3 -> 4",
+    "arrow R shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "4920",
+   "approach": "City Rd WB",
+   "edge": "19012777#2",
+   "status": "changed",
+   "lanes_before": 3,
+   "lanes_after": 4,
+   "turn_lanes_before": {
+    "1132329206#0": [
+     2
+    ],
+    "1132329207": [
+     0,
+     1,
+     2
+    ]
+   },
+   "turn_lanes_after": {
+    "1132329206#0": [
+     3
+    ],
+    "1132329207": [
+     0,
+     1,
+     2
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default T",
+    "lane 3: no arrows, road-rule default T",
+    "lanes 3 -> 4",
+    "arrow L shown, no such movement in the network"
+   ]
+  },
+  {
+   "site_id": "4920",
+   "approach": "Southgate Ave SB",
+   "edge": "1132329210#0",
+   "status": "changed",
+   "lanes_before": 1,
+   "lanes_after": 2,
+   "turn_lanes_before": {
+    "1132329206#0": [
+     0
+    ],
+    "1132329207": [
+     0
+    ]
+   },
+   "turn_lanes_after": {
+    "1132329206#0": [
+     0
+    ],
+    "1132329207": [
+     1
+    ]
+   },
+   "notes": [
+    "lane 1: no arrows, road-rule default LT",
+    "lane 2: no arrows, road-rule default RT",
+    "lanes 1 -> 2",
+    "arrow L shown, no such movement in the network",
+    "arrow T shown, no such movement in the network",
+    "U to 1132329206#0: no lane arrow shows it, kept lanes [0]"
+   ]
+  }
+ ]
+}

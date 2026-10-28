@@ -1,0 +1,6840 @@
+{
+ "description": "Verification report for data/processed/counts.parquet (not a contract file). Real SCATS counts for the listed day(s), cleaned, QC'd against the same weekday in earlier weeks, mapped to SUMO approach edges.",
+ "licence": "Derived from DTP Traffic Signal Volume Data and Traffic Signal Configuration Data Sheets (CC BY 4.0), modified; see data/SOURCES.md",
+ "attribution": "Traffic counts: Contains Department of Transport and Planning (Victoria) Traffic Signal Volume Data, CC BY 4.0, modified",
+ "target_day": "2026-10-23",
+ "target_day_reason": "Most recent normal working weekday published on 2026-10-27 (October 2026 ZIP, last modified 2026-10-26T13:03Z, held 1-25 Oct; 24-25 Oct are a weekend and Mon 26 Oct was not yet published). Friday in Victorian school Term 4 (5 Oct - 18 Dec), not a public holiday.",
+ "days": [
+  "2026-10-23"
+ ],
+ "calibrate_to": "data/processed/counts.parquet rows whose bin_start falls on target_day",
+ "rules": {
+  "qc_weeks": 3,
+  "qc_margin_drop": 1.5,
+  "qc_margin_flag": 1.2,
+  "am_qc_ratio": 1.5,
+  "night_qc_ratio": 3.0,
+  "night_min_excess": 200,
+  "dead_min_vehicles": 50,
+  "am_window": [
+   "07:00:00",
+   "10:00:00"
+  ],
+  "coverage": "only approaches whose every general-traffic lane has its own stop-line loop are written"
+ },
+ "detector_map": {
+  "sites_read": 51,
+  "sites_not_mapped": [
+   {
+    "site": 4573,
+    "note": "not mapped: William St NB is one diagonal loop over four lanes (partial) and the other loop numbers are too blurred to read with confidence"
+   },
+   {
+    "site": 4575,
+    "note": "not mapped: rotated multi-leg layout (Spring St / Collins St / Macarthur St with tram curves); approach directions not certain enough from the drawing"
+   },
+   {
+    "site": 4591,
+    "note": "not mapped: sheet says detectors 1 and 8 are not used and 2,4 are bike loops, but det 1 counts ~2,000/day and det 4 ~4,200/day in the volume data; the sheet and the data disagree"
+   },
+   {
+    "site": 4882,
+    "note": "not mapped: five-leg junction (City Rd / Moray St / Queensbridge St / Kings Way), drawing too blurred to assign every loop"
+   }
+  ],
+  "rows": 400,
+  "rows_by_source": {
+   "data_engineer_read": 294,
+   "george_ai_verified": 106
+  },
+  "approaches": 169,
+  "approaches_full_coverage": 156,
+  "approaches_with_edge": 163,
+  "edge_name_mismatches": [
+   {
+    "approach_id": "2901-2",
+    "street": "Lonsdale St",
+    "edge_id": "1070230023"
+   }
+  ]
+ },
+ "recheck_10pct": {
+  "method": "random.Random(20261027).sample of the mapped sites, 10% rounded (5 of 47); each detector map re-read at full resolution from our own sheet copy and compared detector by detector with the first reading",
+  "sites": [
+   2901,
+   2907,
+   2908,
+   2916,
+   4595
+  ],
+  "confirmed": [
+   2901,
+   2907,
+   2908,
+   2916
+  ],
+  "corrected": [
+   {
+    "site": 4595,
+    "finding": "Russell St NB and SB each have a left-turn lane with no loop; first reading had both approaches as full coverage",
+    "fix": "approaches 4595-3 and 4595-4 set to partial (not written to counts.parquet)"
+   }
+  ],
+  "result": "4 of 5 confirmed, 1 corrected (coverage error, not a direction or detector-number error)"
+ },
+ "per_day": [
+  {
+   "date": "2026-10-23",
+   "qc_days": [
+    "2026-10-16",
+    "2026-10-09",
+    "2026-09-18"
+   ],
+   "sites_used": [
+    "2397",
+    "2835",
+    "2901",
+    "2902",
+    "2903",
+    "2904",
+    "2906",
+    "2907",
+    "2908",
+    "2909",
+    "2910",
+    "2916",
+    "2919",
+    "2920",
+    "2921",
+    "2922",
+    "2923",
+    "2924",
+    "2925",
+    "2926",
+    "2929",
+    "4370",
+    "4437",
+    "4560",
+    "4561",
+    "4563",
+    "4564",
+    "4565",
+    "4566",
+    "4567",
+    "4577",
+    "4580",
+    "4583",
+    "4584",
+    "4585",
+    "4593",
+    "4595",
+    "4597",
+    "4599",
+    "4600",
+    "4601",
+    "4602",
+    "4608",
+    "4880",
+    "4881"
+   ],
+   "approaches_used": [
+    {
+     "approach_id": "2397-1",
+     "site_id": "2397",
+     "street": "Kings Way",
+     "direction": "SE",
+     "detectors": [
+      5,
+      6,
+      7
+     ],
+     "edge_id": "980542677#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 22881,
+     "vehicles_07_10": 3487,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2397-2",
+     "site_id": "2397",
+     "street": "Kings Way",
+     "direction": "NW",
+     "detectors": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "edge_id": "980542671",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 25096,
+     "vehicles_07_10": 4957,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2835-1",
+     "site_id": "2835",
+     "street": "Spencer St",
+     "direction": "SB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": "616097570#5",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5875,
+     "vehicles_07_10": 762,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2835-2",
+     "site_id": "2835",
+     "street": "Spencer St",
+     "direction": "NB",
+     "detectors": [
+      2
+     ],
+     "edge_id": "931222615#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5574,
+     "vehicles_07_10": 617,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2835-3",
+     "site_id": "2835",
+     "street": "Little Collins St",
+     "direction": "WB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "323916051#4",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2550,
+     "vehicles_07_10": 378,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2901-1",
+     "site_id": "2901",
+     "street": "Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      8,
+      9,
+      10
+     ],
+     "edge_id": "198737801#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 10171,
+     "vehicles_07_10": 1033,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2901-2",
+     "site_id": "2901",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      6,
+      7
+     ],
+     "edge_id": "1070230023",
+     "edge_reason": "ok",
+     "edge_name_match": false,
+     "bins": 96,
+     "vehicles_day": 7853,
+     "vehicles_07_10": 1516,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2901-3",
+     "site_id": "2901",
+     "street": "Spring St",
+     "direction": "NB",
+     "detectors": [
+      2
+     ],
+     "edge_id": "208675774",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 1953,
+     "vehicles_07_10": 267,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2901-4",
+     "site_id": "2901",
+     "street": "Spring St",
+     "direction": "SB",
+     "detectors": [
+      3,
+      5
+     ],
+     "edge_id": "61511897#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2093,
+     "vehicles_07_10": 397,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2902-1",
+     "site_id": "2902",
+     "street": "Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "edge_id": "198005100#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 12079,
+     "vehicles_07_10": 1216,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2902-2",
+     "site_id": "2902",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8,
+      9
+     ],
+     "edge_id": "993256437",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 10134,
+     "vehicles_07_10": 1862,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2902-3",
+     "site_id": "2902",
+     "street": "Exhibition St",
+     "direction": "NB",
+     "detectors": [
+      2,
+      3
+     ],
+     "edge_id": "715211380",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7087,
+     "vehicles_07_10": 906,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2902-4",
+     "site_id": "2902",
+     "street": "Exhibition St",
+     "direction": "SB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "45368568#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6030,
+     "vehicles_07_10": 972,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2903-3",
+     "site_id": "2903",
+     "street": "Russell St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "edge_id": "198005096#4",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 11279,
+     "vehicles_07_10": 1330,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2903-4",
+     "site_id": "2903",
+     "street": "Russell St",
+     "direction": "SB",
+     "detectors": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "edge_id": "190727195#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 11526,
+     "vehicles_07_10": 1961,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2904-1",
+     "site_id": "2904",
+     "street": "Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      8,
+      9,
+      10
+     ],
+     "edge_id": "734406095#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 15778,
+     "vehicles_07_10": 1674,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2904-2",
+     "site_id": "2904",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      5,
+      6,
+      7
+     ],
+     "edge_id": "386419596#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 13374,
+     "vehicles_07_10": 2303,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2906-2",
+     "site_id": "2906",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "edge_id": "734406093#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 12432,
+     "vehicles_07_10": 2057,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2907-1",
+     "site_id": "2907",
+     "street": "Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      10,
+      11,
+      12
+     ],
+     "edge_id": "505256328#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 10763,
+     "vehicles_07_10": 1394,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2907-2",
+     "site_id": "2907",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8,
+      9
+     ],
+     "edge_id": "734406094#4",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 12126,
+     "vehicles_07_10": 1912,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2907-4",
+     "site_id": "2907",
+     "street": "Queen St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6
+     ],
+     "edge_id": "191505321#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6608,
+     "vehicles_07_10": 1008,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2908-1",
+     "site_id": "2908",
+     "street": "William St",
+     "direction": "SB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "235931746#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6847,
+     "vehicles_07_10": 937,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2908-2",
+     "site_id": "2908",
+     "street": "William St",
+     "direction": "NB",
+     "detectors": [
+      2,
+      3
+     ],
+     "edge_id": "581959658#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5024,
+     "vehicles_07_10": 573,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2909-1",
+     "site_id": "2909",
+     "street": "Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "edge_id": "581959663#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6723,
+     "vehicles_07_10": 1153,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2909-2",
+     "site_id": "2909",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8,
+      9
+     ],
+     "edge_id": "198005097#3",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 9438,
+     "vehicles_07_10": 1181,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2909-3",
+     "site_id": "2909",
+     "street": "King St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      14
+     ],
+     "edge_id": "711989785#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 23874,
+     "vehicles_07_10": 3748,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2910-1",
+     "site_id": "2910",
+     "street": "Spencer St",
+     "direction": "SB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": "1126674043#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6907,
+     "vehicles_07_10": 1343,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2910-2",
+     "site_id": "2910",
+     "street": "Spencer St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "206506959#5",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7618,
+     "vehicles_07_10": 925,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2910-3",
+     "site_id": "2910",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      5,
+      6,
+      7
+     ],
+     "edge_id": "581959667#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4292,
+     "vehicles_07_10": 572,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2916-1",
+     "site_id": "2916",
+     "street": "William St",
+     "direction": "NB",
+     "detectors": [
+      2,
+      3
+     ],
+     "edge_id": "581959652",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4143,
+     "vehicles_07_10": 511,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2916-2",
+     "site_id": "2916",
+     "street": "William St",
+     "direction": "SB",
+     "detectors": [
+      5
+     ],
+     "edge_id": "235931746#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6462,
+     "vehicles_07_10": 952,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2916-3",
+     "site_id": "2916",
+     "street": "Little Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      6
+     ],
+     "edge_id": "135953375#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 1373,
+     "vehicles_07_10": 163,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2919-2",
+     "site_id": "2919",
+     "street": "La Trobe St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8
+     ],
+     "edge_id": "1312349176",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4423,
+     "vehicles_07_10": 821,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2919-3",
+     "site_id": "2919",
+     "street": "Exhibition St",
+     "direction": "NB",
+     "detectors": [
+      2,
+      3
+     ],
+     "edge_id": "198737812#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6657,
+     "vehicles_07_10": 769,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2919-4",
+     "site_id": "2919",
+     "street": "Exhibition St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6
+     ],
+     "edge_id": "198994314",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6202,
+     "vehicles_07_10": 1237,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2920-1",
+     "site_id": "2920",
+     "street": "La Trobe St",
+     "direction": "EB",
+     "detectors": [
+      8,
+      9
+     ],
+     "edge_id": "316166375",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6286,
+     "vehicles_07_10": 826,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2920-2",
+     "site_id": "2920",
+     "street": "La Trobe St",
+     "direction": "WB",
+     "detectors": [
+      6,
+      7
+     ],
+     "edge_id": "279989318#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6089,
+     "vehicles_07_10": 1121,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2920-3",
+     "site_id": "2920",
+     "street": "Russell St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      10
+     ],
+     "edge_id": "187918254#3",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 11251,
+     "vehicles_07_10": 1105,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2920-4",
+     "site_id": "2920",
+     "street": "Russell St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      11
+     ],
+     "edge_id": "187918256#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 8472,
+     "vehicles_07_10": 1754,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2921-1",
+     "site_id": "2921",
+     "street": "La Trobe St",
+     "direction": "EB",
+     "detectors": [
+      7
+     ],
+     "edge_id": "658620795",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6928,
+     "vehicles_07_10": 938,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2921-2",
+     "site_id": "2921",
+     "street": "La Trobe St",
+     "direction": "WB",
+     "detectors": [
+      5
+     ],
+     "edge_id": "279989317",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7656,
+     "vehicles_07_10": 1241,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2921-3",
+     "site_id": "2921",
+     "street": "Swanston St",
+     "direction": "SB",
+     "detectors": [
+      3
+     ],
+     "edge_id": "1123836814",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 1975,
+     "vehicles_07_10": 292,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2922-2",
+     "site_id": "2922",
+     "street": "Elizabeth St",
+     "direction": "SB",
+     "detectors": [
+      1
+     ],
+     "edge_id": "1126651860",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4478,
+     "vehicles_07_10": 485,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2922-3",
+     "site_id": "2922",
+     "street": "La Trobe St",
+     "direction": "EB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "135952928",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6821,
+     "vehicles_07_10": 1002,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2922-4",
+     "site_id": "2922",
+     "street": "La Trobe St",
+     "direction": "WB",
+     "detectors": [
+      8
+     ],
+     "edge_id": "279989319",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5128,
+     "vehicles_07_10": 771,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2923-1",
+     "site_id": "2923",
+     "street": "La Trobe St",
+     "direction": "EB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "658620787#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6243,
+     "vehicles_07_10": 1049,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2923-2",
+     "site_id": "2923",
+     "street": "La Trobe St",
+     "direction": "WB",
+     "detectors": [
+      2,
+      3
+     ],
+     "edge_id": "658620802#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6579,
+     "vehicles_07_10": 947,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2924-1",
+     "site_id": "2924",
+     "street": "La Trobe St",
+     "direction": "EB",
+     "detectors": [
+      8
+     ],
+     "edge_id": "664287431#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7338,
+     "vehicles_07_10": 1226,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2924-2",
+     "site_id": "2924",
+     "street": "La Trobe St",
+     "direction": "WB",
+     "detectors": [
+      6
+     ],
+     "edge_id": "1312971508",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5870,
+     "vehicles_07_10": 812,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2924-4",
+     "site_id": "2924",
+     "street": "William St",
+     "direction": "SB",
+     "detectors": [
+      4
+     ],
+     "edge_id": "581959642#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5817,
+     "vehicles_07_10": 837,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2925-1",
+     "site_id": "2925",
+     "street": "La Trobe St",
+     "direction": "EB",
+     "detectors": [
+      11,
+      12
+     ],
+     "edge_id": "581959647",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5112,
+     "vehicles_07_10": 970,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2925-2",
+     "site_id": "2925",
+     "street": "La Trobe St",
+     "direction": "WB",
+     "detectors": [
+      9,
+      10
+     ],
+     "edge_id": "505256327#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5036,
+     "vehicles_07_10": 705,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2925-4",
+     "site_id": "2925",
+     "street": "King St",
+     "direction": "SB",
+     "detectors": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "edge_id": "207883957#6",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 14264,
+     "vehicles_07_10": 3302,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2926-1",
+     "site_id": "2926",
+     "street": "La Trobe St",
+     "direction": "EB",
+     "detectors": [
+      10
+     ],
+     "edge_id": "1253825982#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3895,
+     "vehicles_07_10": 703,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2926-2",
+     "site_id": "2926",
+     "street": "La Trobe St",
+     "direction": "WB",
+     "detectors": [
+      8
+     ],
+     "edge_id": "1312971512",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3415,
+     "vehicles_07_10": 513,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2926-3",
+     "site_id": "2926",
+     "street": "Spencer St",
+     "direction": "NB",
+     "detectors": [
+      2,
+      3
+     ],
+     "edge_id": "616097571#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 8265,
+     "vehicles_07_10": 937,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2926-4",
+     "site_id": "2926",
+     "street": "Spencer St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6
+     ],
+     "edge_id": "198874544#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 9687,
+     "vehicles_07_10": 1916,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2929-2",
+     "site_id": "2929",
+     "street": "Flinders St",
+     "direction": "WB",
+     "detectors": [
+      9,
+      10,
+      11,
+      12
+     ],
+     "edge_id": "556168188#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 89,
+     "vehicles_day": 8818,
+     "vehicles_07_10": null,
+     "bins_missing_07_10": 5,
+     "flags": {
+      "12": "7 intervals -1 (alarm); bins dropped"
+     }
+    },
+    {
+     "approach_id": "2929-3",
+     "site_id": "2929",
+     "street": "King St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "edge_id": "134621274#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 25322,
+     "vehicles_07_10": 5048,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "2929-4",
+     "site_id": "2929",
+     "street": "King St",
+     "direction": "SB",
+     "detectors": [
+      5,
+      6,
+      7,
+      8
+     ],
+     "edge_id": "207516094#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 93,
+     "vehicles_day": 19552,
+     "vehicles_07_10": null,
+     "bins_missing_07_10": 3,
+     "flags": {
+      "8": "3 intervals -1 (alarm); bins dropped"
+     }
+    },
+    {
+     "approach_id": "4370-2",
+     "site_id": "4370",
+     "street": "Wurundjeri Way",
+     "direction": "WB",
+     "detectors": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "edge_id": "984852798",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 27962,
+     "vehicles_07_10": 5115,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4437-2",
+     "site_id": "4437",
+     "street": "Wurundjeri Way",
+     "direction": "NW",
+     "detectors": [
+      1,
+      2,
+      3,
+      13
+     ],
+     "edge_id": "787528069",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 18170,
+     "vehicles_07_10": 2544,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4437-3",
+     "site_id": "4437",
+     "street": "Bourke St",
+     "direction": "NE",
+     "detectors": [
+      8,
+      9,
+      10,
+      11
+     ],
+     "edge_id": "1550075449#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 58,
+     "vehicles_day": 3279,
+     "vehicles_07_10": null,
+     "bins_missing_07_10": 10,
+     "flags": {
+      "11": "38 intervals -1 (alarm); bins dropped"
+     }
+    },
+    {
+     "approach_id": "4560-1",
+     "site_id": "4560",
+     "street": "Flinders St",
+     "direction": "EB",
+     "detectors": [
+      9,
+      10,
+      11
+     ],
+     "edge_id": "187918252#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 13111,
+     "vehicles_07_10": 1722,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4560-2",
+     "site_id": "4560",
+     "street": "Flinders St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8
+     ],
+     "edge_id": "711983628#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7559,
+     "vehicles_07_10": 1377,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4560-4",
+     "site_id": "4560",
+     "street": "Batman Ave",
+     "direction": "NW",
+     "detectors": [
+      1,
+      2,
+      3
+     ],
+     "edge_id": "1352841570",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7734,
+     "vehicles_07_10": 1656,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4561-1",
+     "site_id": "4561",
+     "street": "Flinders St",
+     "direction": "EB",
+     "detectors": [
+      3,
+      4,
+      5
+     ],
+     "edge_id": "790262282#3",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 15452,
+     "vehicles_07_10": 2301,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4561-2",
+     "site_id": "4561",
+     "street": "Flinders St",
+     "direction": "WB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "198715270#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 8009,
+     "vehicles_07_10": 1487,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4561-3",
+     "site_id": "4561",
+     "street": "Russell St",
+     "direction": "SB",
+     "detectors": [
+      8,
+      9,
+      10
+     ],
+     "edge_id": "207831778#5",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 10284,
+     "vehicles_07_10": 1358,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4561-4",
+     "site_id": "4561",
+     "street": "Russell St Extension",
+     "direction": "NB",
+     "detectors": [
+      6,
+      7
+     ],
+     "edge_id": "176480949#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 744,
+     "vehicles_07_10": 41,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4563-1",
+     "site_id": "4563",
+     "street": "Flinders St",
+     "direction": "EB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "386416108#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 9579,
+     "vehicles_07_10": 1431,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4563-2",
+     "site_id": "4563",
+     "street": "Flinders St",
+     "direction": "WB",
+     "detectors": [
+      4
+     ],
+     "edge_id": "295476230#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5551,
+     "vehicles_07_10": 748,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4564-1",
+     "site_id": "4564",
+     "street": "Flinders St",
+     "direction": "EB",
+     "detectors": [
+      3,
+      4,
+      5
+     ],
+     "edge_id": "296399431#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 14197,
+     "vehicles_07_10": 2386,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4564-2",
+     "site_id": "4564",
+     "street": "Flinders St",
+     "direction": "WB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "295476230#3",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5855,
+     "vehicles_07_10": 772,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4564-3",
+     "site_id": "4564",
+     "street": "Queen St",
+     "direction": "SB",
+     "detectors": [
+      6,
+      7,
+      8
+     ],
+     "edge_id": "207831942#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 12401,
+     "vehicles_07_10": 1730,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4565-1",
+     "site_id": "4565",
+     "street": "Flinders St",
+     "direction": "EB",
+     "detectors": [
+      5,
+      6,
+      7
+     ],
+     "edge_id": "556168189#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 13261,
+     "vehicles_07_10": 2318,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4565-2",
+     "site_id": "4565",
+     "street": "Flinders St",
+     "direction": "WB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": "296383692",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 8474,
+     "vehicles_07_10": 848,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4565-3",
+     "site_id": "4565",
+     "street": "Market St",
+     "direction": "SB",
+     "detectors": [
+      9
+     ],
+     "edge_id": "1038111504#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 1379,
+     "vehicles_07_10": 160,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4566-1",
+     "site_id": "4566",
+     "street": "Flinders St",
+     "direction": "EB",
+     "detectors": [
+      11,
+      12
+     ],
+     "edge_id": "550361772#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 10193,
+     "vehicles_07_10": 1889,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4566-2",
+     "site_id": "4566",
+     "street": "Flinders St",
+     "direction": "WB",
+     "detectors": [
+      8,
+      9,
+      10
+     ],
+     "edge_id": "1292625318#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 9151,
+     "vehicles_07_10": 908,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4566-3",
+     "site_id": "4566",
+     "street": "William St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3
+     ],
+     "edge_id": "1352485053",
+     "edge_reason": "lane group matched by lanes",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5167,
+     "vehicles_07_10": 768,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4566-4",
+     "site_id": "4566",
+     "street": "William St",
+     "direction": "NB",
+     "detectors": [
+      4,
+      5
+     ],
+     "edge_id": "1352485047",
+     "edge_reason": "lane group matched by lanes",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2850,
+     "vehicles_07_10": 388,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4566-5",
+     "site_id": "4566",
+     "street": "William St",
+     "direction": "SB",
+     "detectors": [
+      6,
+      7
+     ],
+     "edge_id": "968051653#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3576,
+     "vehicles_07_10": 484,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4567-1",
+     "site_id": "4567",
+     "street": "Flinders St",
+     "direction": "EB",
+     "detectors": [
+      10,
+      11,
+      12,
+      13
+     ],
+     "edge_id": "210177006#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 16622,
+     "vehicles_07_10": 2783,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4567-2",
+     "site_id": "4567",
+     "street": "Flinders St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8,
+      9
+     ],
+     "edge_id": "968051641",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 9248,
+     "vehicles_07_10": 962,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4567-4",
+     "site_id": "4567",
+     "street": "Spencer St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      14
+     ],
+     "edge_id": "134621885#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 9024,
+     "vehicles_07_10": 1227,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4577-1",
+     "site_id": "4577",
+     "street": "Collins St",
+     "direction": "EB",
+     "detectors": [
+      6
+     ],
+     "edge_id": "208498191",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5292,
+     "vehicles_07_10": 732,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4577-2",
+     "site_id": "4577",
+     "street": "Collins St",
+     "direction": "WB",
+     "detectors": [
+      5
+     ],
+     "edge_id": "1123528657",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4677,
+     "vehicles_07_10": 711,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4577-3",
+     "site_id": "4577",
+     "street": "Russell St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      7,
+      8
+     ],
+     "edge_id": "199310502#4",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 11573,
+     "vehicles_07_10": 1619,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4577-4",
+     "site_id": "4577",
+     "street": "Russell St",
+     "direction": "SB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": "199429372#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 8716,
+     "vehicles_07_10": 1317,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4580-1",
+     "site_id": "4580",
+     "street": "Collins St",
+     "direction": "EB",
+     "detectors": [
+      7
+     ],
+     "edge_id": "207831526",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4047,
+     "vehicles_07_10": 604,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4580-2",
+     "site_id": "4580",
+     "street": "Collins St",
+     "direction": "WB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "316166613#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6054,
+     "vehicles_07_10": 905,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4580-3",
+     "site_id": "4580",
+     "street": "Elizabeth St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "207778723",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3809,
+     "vehicles_07_10": 514,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4580-4",
+     "site_id": "4580",
+     "street": "Elizabeth St",
+     "direction": "SB",
+     "detectors": [
+      3
+     ],
+     "edge_id": "286827105#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2353,
+     "vehicles_07_10": 396,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4583-1",
+     "site_id": "4583",
+     "street": "Collins St",
+     "direction": "EB",
+     "detectors": [
+      7,
+      8
+     ],
+     "edge_id": "207830036#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 95,
+     "vehicles_day": 5491,
+     "vehicles_07_10": 838,
+     "bins_missing_07_10": 0,
+     "flags": {
+      "7": "1 intervals -1 (alarm); bins dropped"
+     }
+    },
+    {
+     "approach_id": "4583-2",
+     "site_id": "4583",
+     "street": "Collins St",
+     "direction": "WB",
+     "detectors": [
+      5
+     ],
+     "edge_id": "207831319#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4215,
+     "vehicles_07_10": 546,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4583-3",
+     "site_id": "4583",
+     "street": "William St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "208642574#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5575,
+     "vehicles_07_10": 779,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4584-1",
+     "site_id": "4584",
+     "street": "Collins St",
+     "direction": "EB",
+     "detectors": [
+      9,
+      10
+     ],
+     "edge_id": "1123528672",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3775,
+     "vehicles_07_10": 518,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4584-2",
+     "site_id": "4584",
+     "street": "Collins St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8
+     ],
+     "edge_id": "208642573",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5883,
+     "vehicles_07_10": 737,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4584-3",
+     "site_id": "4584",
+     "street": "King St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      11
+     ],
+     "edge_id": "207516091#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 24836,
+     "vehicles_07_10": 4401,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4584-4",
+     "site_id": "4584",
+     "street": "King St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6,
+      13
+     ],
+     "edge_id": "711989781#3",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 21405,
+     "vehicles_07_10": 3925,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4585-1",
+     "site_id": "4585",
+     "street": "Collins St",
+     "direction": "EB",
+     "detectors": [
+      8
+     ],
+     "edge_id": "198989380",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3622,
+     "vehicles_07_10": 511,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4585-2",
+     "site_id": "4585",
+     "street": "Collins St",
+     "direction": "WB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "207830034",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5521,
+     "vehicles_07_10": 686,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4585-3",
+     "site_id": "4585",
+     "street": "Spencer St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "198715025",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5636,
+     "vehicles_07_10": 645,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4585-4",
+     "site_id": "4585",
+     "street": "Spencer St",
+     "direction": "SB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": "931222616#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5814,
+     "vehicles_07_10": 760,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4593-1",
+     "site_id": "4593",
+     "street": "Spring St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5
+     ],
+     "edge_id": "131724919",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5483,
+     "vehicles_07_10": 1097,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4593-2",
+     "site_id": "4593",
+     "street": "Spring St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "218688446#3",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5370,
+     "vehicles_07_10": 760,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4593-3",
+     "site_id": "4593",
+     "street": "Bourke St",
+     "direction": "EB",
+     "detectors": [
+      6,
+      7
+     ],
+     "edge_id": "208506752#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3994,
+     "vehicles_07_10": 358,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4595-1",
+     "site_id": "4595",
+     "street": "Bourke St",
+     "direction": "EB",
+     "detectors": [
+      7,
+      8
+     ],
+     "edge_id": "208554967#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2399,
+     "vehicles_07_10": 219,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4595-2",
+     "site_id": "4595",
+     "street": "Bourke St",
+     "direction": "WB",
+     "detectors": [
+      5
+     ],
+     "edge_id": "208554600#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2258,
+     "vehicles_07_10": 230,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4597-2",
+     "site_id": "4597",
+     "street": "Elizabeth St",
+     "direction": "NB",
+     "detectors": [
+      10,
+      11
+     ],
+     "edge_id": "208793255#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4677,
+     "vehicles_07_10": 697,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4597-3",
+     "site_id": "4597",
+     "street": "Elizabeth St",
+     "direction": "SB",
+     "detectors": [
+      12
+     ],
+     "edge_id": "235931748#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3474,
+     "vehicles_07_10": 559,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4599-1",
+     "site_id": "4599",
+     "street": "Bourke St",
+     "direction": "EB",
+     "detectors": [
+      9,
+      10
+     ],
+     "edge_id": "1126680795#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3373,
+     "vehicles_07_10": 461,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4599-3",
+     "site_id": "4599",
+     "street": "Queen St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3
+     ],
+     "edge_id": "296383691#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7217,
+     "vehicles_07_10": 932,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4599-4",
+     "site_id": "4599",
+     "street": "Queen St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6
+     ],
+     "edge_id": "1126800685#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 71,
+     "vehicles_day": 6252,
+     "vehicles_07_10": null,
+     "bins_missing_07_10": 5,
+     "flags": {
+      "4": "25 intervals -1 (alarm); bins dropped"
+     }
+    },
+    {
+     "approach_id": "4600-1",
+     "site_id": "4600",
+     "street": "William St",
+     "direction": "SB",
+     "detectors": [
+      5
+     ],
+     "edge_id": "968328218#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5657,
+     "vehicles_07_10": 954,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4600-2",
+     "site_id": "4600",
+     "street": "William St",
+     "direction": "NB",
+     "detectors": [
+      2,
+      3
+     ],
+     "edge_id": "968328215#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5388,
+     "vehicles_07_10": 705,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4600-3",
+     "site_id": "4600",
+     "street": "Bourke St",
+     "direction": "WB",
+     "detectors": [
+      6,
+      7
+     ],
+     "edge_id": "581959657#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 3642,
+     "vehicles_07_10": 428,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4600-4",
+     "site_id": "4600",
+     "street": "Bourke St",
+     "direction": "EB",
+     "detectors": [
+      8
+     ],
+     "edge_id": "711989783#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2696,
+     "vehicles_07_10": 462,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4601-1",
+     "site_id": "4601",
+     "street": "Bourke St",
+     "direction": "EB",
+     "detectors": [
+      9,
+      10
+     ],
+     "edge_id": "1253825868",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2092,
+     "vehicles_07_10": 247,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4601-2",
+     "site_id": "4601",
+     "street": "Bourke St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8
+     ],
+     "edge_id": "963120893#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 76,
+     "vehicles_day": 2991,
+     "vehicles_07_10": 507,
+     "bins_missing_07_10": 0,
+     "flags": {
+      "7": "20 intervals -1 (alarm); bins dropped"
+     }
+    },
+    {
+     "approach_id": "4601-3",
+     "site_id": "4601",
+     "street": "King St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      11
+     ],
+     "edge_id": "207516093#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 24698,
+     "vehicles_07_10": 4077,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4601-4",
+     "site_id": "4601",
+     "street": "King St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6,
+      13
+     ],
+     "edge_id": "963120897#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 20709,
+     "vehicles_07_10": 3873,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4602-1",
+     "site_id": "4602",
+     "street": "Spencer St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "206506959#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7118,
+     "vehicles_07_10": 777,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4602-2",
+     "site_id": "4602",
+     "street": "Spencer St",
+     "direction": "SB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": "616097570#2",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 5540,
+     "vehicles_07_10": 848,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4602-3",
+     "site_id": "4602",
+     "street": "Bourke St",
+     "direction": "WB",
+     "detectors": [
+      5,
+      6
+     ],
+     "edge_id": "1126676738#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2332,
+     "vehicles_07_10": 252,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4608-1",
+     "site_id": "4608",
+     "street": "William St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5
+     ],
+     "edge_id": "1156474528",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 6302,
+     "vehicles_07_10": 1055,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4608-2",
+     "site_id": "4608",
+     "street": "William St",
+     "direction": "NB",
+     "detectors": [
+      2
+     ],
+     "edge_id": "968328219",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4973,
+     "vehicles_07_10": 631,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4880-1",
+     "site_id": "4880",
+     "street": "City Rd",
+     "direction": "SW",
+     "detectors": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "edge_id": "1132329207",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 23851,
+     "vehicles_07_10": 3972,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4880-2",
+     "site_id": "4880",
+     "street": "City Rd",
+     "direction": "NE",
+     "detectors": [
+      5,
+      6,
+      7,
+      8,
+      9
+     ],
+     "edge_id": "767313614#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 24827,
+     "vehicles_07_10": 3939,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4880-3",
+     "site_id": "4880",
+     "street": "Southbank Blvd",
+     "direction": "SE",
+     "detectors": [
+      13,
+      14,
+      15
+     ],
+     "edge_id": "1126593435",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 2492,
+     "vehicles_07_10": 288,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4880-4",
+     "site_id": "4880",
+     "street": "Southbank Blvd",
+     "direction": "NW",
+     "detectors": [
+      10,
+      11,
+      12
+     ],
+     "edge_id": "581717498#1",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 4764,
+     "vehicles_07_10": 730,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4881-1",
+     "site_id": "4881",
+     "street": "City Rd",
+     "direction": "NE",
+     "detectors": [
+      4,
+      5,
+      6,
+      7
+     ],
+     "edge_id": "782990503",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 13111,
+     "vehicles_07_10": 2081,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4881-2",
+     "site_id": "4881",
+     "street": "City Rd",
+     "direction": "SW",
+     "detectors": [
+      1,
+      2,
+      3,
+      15
+     ],
+     "edge_id": "198538932",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 26736,
+     "vehicles_07_10": 4151,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4881-3",
+     "site_id": "4881",
+     "street": "Power St",
+     "direction": "SE",
+     "detectors": [
+      11,
+      12,
+      13,
+      16
+     ],
+     "edge_id": "198538934#0",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 7659,
+     "vehicles_07_10": 1071,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    },
+    {
+     "approach_id": "4881-4",
+     "site_id": "4881",
+     "street": "Power St",
+     "direction": "NW",
+     "detectors": [
+      8,
+      9,
+      10
+     ],
+     "edge_id": "782990502",
+     "edge_reason": "ok",
+     "edge_name_match": true,
+     "bins": 96,
+     "vehicles_day": 15083,
+     "vehicles_07_10": 2145,
+     "bins_missing_07_10": 0,
+     "flags": {}
+    }
+   ],
+   "approaches_dropped": [
+    {
+     "approach_id": "2900-1",
+     "site_id": "2900",
+     "street": "Spencer St",
+     "direction": "NB",
+     "detectors": [
+      1
+     ],
+     "edge_id": "206506959#3",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "2900-2",
+     "site_id": "2900",
+     "street": "Spencer St",
+     "direction": "SB",
+     "detectors": [
+      2
+     ],
+     "edge_id": "616097570#0",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "2900-3",
+     "site_id": "2900",
+     "street": "Little Bourke St",
+     "direction": "WB",
+     "detectors": [
+      3
+     ],
+     "edge_id": "735338668#0",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "2903-1",
+     "site_id": "2903",
+     "street": "Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      12,
+      13,
+      14,
+      15
+     ],
+     "edge_id": "1317029146#1",
+     "reason": "detector fault: det 15: deviation (day total 54 outside [1833, 5382] (QC days 2750, 3240, 3588))"
+    },
+    {
+     "approach_id": "2903-2",
+     "site_id": "2903",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      9,
+      10,
+      11
+     ],
+     "edge_id": "198737797#0",
+     "reason": "detector fault: det 10: deviation (day total 3 outside [1120, 2660] (QC days 1680, 1687, 1773))"
+    },
+    {
+     "approach_id": "2904-3",
+     "site_id": "2904",
+     "street": "Swanston St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": null,
+     "reason": "no SUMO edge: no approach edge heading NB"
+    },
+    {
+     "approach_id": "2904-4",
+     "site_id": "2904",
+     "street": "Swanston St",
+     "direction": "SB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": null,
+     "reason": "no SUMO edge: no approach edge heading SB"
+    },
+    {
+     "approach_id": "2906-1",
+     "site_id": "2906",
+     "street": "Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      5
+     ],
+     "edge_id": "198005098#2",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "2907-3",
+     "site_id": "2907",
+     "street": "Queen St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      13
+     ],
+     "edge_id": "1489991596#1",
+     "reason": "detector fault: det 1: fully_alarmed (all 96 intervals are -1 (alarm)); det 2: fully_alarmed (all 96 intervals are -1 (alarm)); det 3: fully_alarmed (all 96 intervals are -1 (alarm))"
+    },
+    {
+     "approach_id": "2908-3",
+     "site_id": "2908",
+     "street": "Lonsdale St",
+     "direction": "WB",
+     "detectors": [
+      7
+     ],
+     "edge_id": "581959650#0",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "2908-4",
+     "site_id": "2908",
+     "street": "Lonsdale St",
+     "direction": "EB",
+     "detectors": [
+      8,
+      9
+     ],
+     "edge_id": "197979802#2",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "2909-4",
+     "site_id": "2909",
+     "street": "King St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6
+     ],
+     "edge_id": "581959669#0",
+     "reason": "detector fault: det 6: fully_alarmed (all 96 intervals are -1 (alarm))"
+    },
+    {
+     "approach_id": "2910-4",
+     "site_id": "2910",
+     "street": "Car Park Access Rd",
+     "direction": "EB",
+     "detectors": [
+      8,
+      9,
+      10
+     ],
+     "edge_id": null,
+     "reason": "no SUMO edge: no approach edge heading EB"
+    },
+    {
+     "approach_id": "2919-1",
+     "site_id": "2919",
+     "street": "La Trobe St",
+     "direction": "EB",
+     "detectors": [
+      9,
+      10
+     ],
+     "edge_id": "1312349178",
+     "reason": "detector fault: det 9: deviation (day total 506 outside [702, 1860] (QC days 1071, 1053, 1240))"
+    },
+    {
+     "approach_id": "2922-1",
+     "site_id": "2922",
+     "street": "Elizabeth St",
+     "direction": "NB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": "715611143#0",
+     "reason": "detector fault: det 3: deviation (day total 415 outside [876, 2186] (QC days 1314, 1457, 1334))"
+    },
+    {
+     "approach_id": "2924-3",
+     "site_id": "2924",
+     "street": "William St",
+     "direction": "NB",
+     "detectors": [
+      2
+     ],
+     "edge_id": null,
+     "reason": "no SUMO edge: approach splits over 2 edges"
+    },
+    {
+     "approach_id": "2925-3",
+     "site_id": "2925",
+     "street": "King St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2,
+      3,
+      4
+     ],
+     "edge_id": "569443032#0",
+     "reason": "detector fault: det 3: fully_alarmed (all 96 intervals are -1 (alarm))"
+    },
+    {
+     "approach_id": "2929-1",
+     "site_id": "2929",
+     "street": "Flinders St",
+     "direction": "EB",
+     "detectors": [
+      13,
+      14,
+      15,
+      16
+     ],
+     "edge_id": "968051639#0",
+     "reason": "detector fault: det 14: never_counts (zero on the day and on every QC day)"
+    },
+    {
+     "approach_id": "4370-1",
+     "site_id": "4370",
+     "street": "Wurundjeri Way",
+     "direction": "EB",
+     "detectors": [
+      5,
+      6,
+      7,
+      12
+     ],
+     "edge_id": null,
+     "reason": "no SUMO edge: no approach edge heading EB"
+    },
+    {
+     "approach_id": "4437-1",
+     "site_id": "4437",
+     "street": "Wurundjeri Way",
+     "direction": "SE",
+     "detectors": [
+      4,
+      5,
+      6,
+      7,
+      14
+     ],
+     "edge_id": "580628690",
+     "reason": "detector fault: det 14: deviation (day total 9433 outside [2289, 6231] (QC days 4154, 3449, 3433))"
+    },
+    {
+     "approach_id": "4560-3",
+     "site_id": "4560",
+     "street": "Exhibition St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6
+     ],
+     "edge_id": "198715273#3",
+     "reason": "detector fault: det 4: fully_alarmed (all 96 intervals are -1 (alarm)); det 5: fully_alarmed (all 96 intervals are -1 (alarm)); det 6: fully_alarmed (all 96 intervals are -1 (alarm))"
+    },
+    {
+     "approach_id": "4565-4",
+     "site_id": "4565",
+     "street": "(diagonal approach from the south-east)",
+     "direction": "NW",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": null,
+     "reason": "no SUMO edge: no approach edge heading NW"
+    },
+    {
+     "approach_id": "4567-3",
+     "site_id": "4567",
+     "street": "Spencer St",
+     "direction": "SB",
+     "detectors": [
+      4,
+      5,
+      6
+     ],
+     "edge_id": "207799527#2",
+     "reason": "detector fault: det 6: fully_alarmed (all 96 intervals are -1 (alarm))"
+    },
+    {
+     "approach_id": "4581-1",
+     "site_id": "4581",
+     "street": "Queen St",
+     "direction": "NB",
+     "detectors": [
+      1
+     ],
+     "edge_id": "1319194947",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "4581-2",
+     "site_id": "4581",
+     "street": "Queen St",
+     "direction": "SB",
+     "detectors": [
+      2
+     ],
+     "edge_id": "1503287996",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "4581-3",
+     "site_id": "4581",
+     "street": "Collins St",
+     "direction": "WB",
+     "detectors": [
+      3
+     ],
+     "edge_id": "1123528662",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "4581-4",
+     "site_id": "4581",
+     "street": "Collins St",
+     "direction": "EB",
+     "detectors": [
+      4
+     ],
+     "edge_id": "1123528665#3",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "4583-4",
+     "site_id": "4583",
+     "street": "William St",
+     "direction": "SB",
+     "detectors": [
+      4
+     ],
+     "edge_id": "505256329#1",
+     "reason": "profile check: profile: AM 07-10 total 1144 is 1.56x the QC days' median 732 (QC days 732, 630, 741; allowed x1.5)"
+    },
+    {
+     "approach_id": "4595-3",
+     "site_id": "4595",
+     "street": "Russell St",
+     "direction": "NB",
+     "detectors": [
+      1,
+      2
+     ],
+     "edge_id": "207831779#1",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "4595-4",
+     "site_id": "4595",
+     "street": "Russell St",
+     "direction": "SB",
+     "detectors": [
+      3,
+      4
+     ],
+     "edge_id": "190727196#0",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "4597-1",
+     "site_id": "4597",
+     "street": "Bourke St",
+     "direction": "EB",
+     "detectors": [
+      1
+     ],
+     "edge_id": "315229024#2",
+     "reason": "partial lane coverage (multi-lane loop)"
+    },
+    {
+     "approach_id": "4599-2",
+     "site_id": "4599",
+     "street": "Bourke St",
+     "direction": "WB",
+     "detectors": [
+      7,
+      8
+     ],
+     "edge_id": "208506442#4",
+     "reason": "detector fault: det 7: fully_alarmed (all 96 intervals are -1 (alarm)); det 8: fully_alarmed (all 96 intervals are -1 (alarm))"
+    },
+    {
+     "approach_id": "4608-3",
+     "site_id": "4608",
+     "street": "Little Bourke St",
+     "direction": "WB",
+     "detectors": [
+      6,
+      7
+     ],
+     "edge_id": "1201027245#11",
+     "reason": "detector fault: det 7: fully_alarmed (all 96 intervals are -1 (alarm))"
+    }
+   ],
+   "detectors_checked": 370,
+   "detectors_dropped_for_faults": 18,
+   "detectors_flagged": 7,
+   "detector_status_counts": {
+    "drop_deviation": 5,
+    "drop_fully_alarmed": 12,
+    "drop_never_counts": 1,
+    "flag_deviation": 1,
+    "flag_partial": 6,
+    "ok": 345
+   },
+   "detector_status": {
+    "2397:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2397:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2397:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2397:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2397:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2397:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2397:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2835:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2835:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2835:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2835:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2835:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2901:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2901:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2901:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2901:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2901:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2901:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2901:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2901:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2902:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:10": {
+     "status": "drop_deviation",
+     "detail": "day total 3 outside [1120, 2660] (QC days 1680, 1687, 1773)"
+    },
+    "2903:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:14": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:15": {
+     "status": "drop_deviation",
+     "detail": "day total 54 outside [1833, 5382] (QC days 2750, 3240, 3588)"
+    },
+    "2903:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2903:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2904:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2904:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2904:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2904:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2904:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2904:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2906:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2906:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2906:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2906:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:1": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "2907:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:2": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "2907:3": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "2907:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2907:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2908:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2908:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2908:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2908:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:14": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:6": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "2909:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2909:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2910:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2910:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2910:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2910:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2910:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2910:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2910:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2916:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2916:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2916:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2916:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2919:9": {
+     "status": "drop_deviation",
+     "detail": "day total 506 outside [702, 1860] (QC days 1071, 1053, 1240)"
+    },
+    "2920:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2920:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2921:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2921:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2921:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2922:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2922:3": {
+     "status": "drop_deviation",
+     "detail": "day total 415 outside [876, 2186] (QC days 1314, 1457, 1334)"
+    },
+    "2922:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2922:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2922:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2922:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2923:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2923:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2923:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2923:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2924:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2924:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2924:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:3": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "2925:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2925:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2926:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2926:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2926:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2926:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2926:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2926:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2926:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:12": {
+     "status": "flag_partial",
+     "detail": "7 intervals -1 (alarm); bins dropped"
+    },
+    "2929:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:14": {
+     "status": "drop_never_counts",
+     "detail": "zero on the day and on every QC day"
+    },
+    "2929:15": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:16": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "2929:8": {
+     "status": "flag_partial",
+     "detail": "3 intervals -1 (alarm); bins dropped"
+    },
+    "2929:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4370:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4370:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4370:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4370:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:11": {
+     "status": "flag_partial",
+     "detail": "38 intervals -1 (alarm); bins dropped"
+    },
+    "4437:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:14": {
+     "status": "drop_deviation",
+     "detail": "day total 9433 outside [2289, 6231] (QC days 4154, 3449, 3433)"
+    },
+    "4437:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4437:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4560:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4560:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4560:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4560:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4560:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4560:4": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "4560:5": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "4560:6": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "4560:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4560:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4560:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4561:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4563:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4563:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4563:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4564:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4564:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4564:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4564:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4564:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4564:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4564:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4564:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4565:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4565:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4565:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4565:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4565:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4565:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4566:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:14": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:6": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "4567:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4567:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4577:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4577:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4577:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4577:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4577:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4577:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4577:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4577:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4580:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4580:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4580:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4580:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4580:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4580:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4583:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4583:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4583:4": {
+     "status": "flag_deviation",
+     "detail": "day total 6971 outside [3976, 5916] (QC days 4930, 4862, 4771) but within x1.5"
+    },
+    "4583:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4583:7": {
+     "status": "flag_partial",
+     "detail": "1 intervals -1 (alarm); bins dropped"
+    },
+    "4583:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4584:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4585:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4585:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4585:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4585:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4585:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4585:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4585:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4593:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4593:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4593:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4593:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4593:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4593:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4595:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4595:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4595:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4597:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4597:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4597:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4599:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4599:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4599:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4599:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4599:4": {
+     "status": "flag_partial",
+     "detail": "25 intervals -1 (alarm); bins dropped"
+    },
+    "4599:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4599:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4599:7": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "4599:8": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "4599:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4600:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4600:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4600:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4600:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4600:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4600:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:7": {
+     "status": "flag_partial",
+     "detail": "20 intervals -1 (alarm); bins dropped"
+    },
+    "4601:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4601:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4602:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4602:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4602:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4602:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4602:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4602:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4608:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4608:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4608:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4608:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4608:7": {
+     "status": "drop_fully_alarmed",
+     "detail": "all 96 intervals are -1 (alarm)"
+    },
+    "4880:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:14": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:15": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4880:9": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:1": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:10": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:11": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:12": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:13": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:15": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:16": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:2": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:3": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:4": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:5": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:6": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:7": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:8": {
+     "status": "ok",
+     "detail": ""
+    },
+    "4881:9": {
+     "status": "ok",
+     "detail": ""
+    }
+   }
+  }
+ ],
+ "parquet": {
+  "path": "data/processed/counts.parquet",
+  "rows": 12962,
+  "bytes": 19483
+ },
+ "raw_sizes_per_day": {
+  "VSDATA_20260918.csv.gz": 4773044,
+  "VSDATA_20261009.csv.gz": 4823253,
+  "VSDATA_20261016.csv.gz": 4829635,
+  "VSDATA_20261023.csv.gz": 4839304
+ },
+ "inputs_sha256": {
+  "sim/net/roads.net.xml": "e05c0145c98243eef61c301eae1ca38df7f82e4132607b3077c699d0c563c251",
+  "pipeline/reference/scats_detector_map.json": "5ed8b1ec0708b0d8bfc7577ad750feda32c33d040cc5b634db82cfdced0d8ac6",
+  "data/raw/scats/victorian_traffic_signals.csv": "e5fd0df86f223db345ffbdeb21db188e2240f4eb7409e4998ea5fde0a8a766af",
+  "data/raw/scats/VSDATA_20260918.csv.gz": "84768f98d15a70ded0b01ccd01baff5e6056858c7ef5fd0c9d2fba8a6f576537",
+  "data/raw/scats/VSDATA_20261009.csv.gz": "27e91fdd2d4f3451f2ff07dd229a966f8e07b8e434ceab012c5117ab50386879",
+  "data/raw/scats/VSDATA_20261016.csv.gz": "df419f31cec9aa603da97d3571c39a09fe72c8f617f3d8196fcae6ae87680c19",
+  "data/raw/scats/VSDATA_20261023.csv.gz": "d3b6cd65865ce0b3245e41ea549d4d970d4cc34b06c284d4c36de47b6aa067be"
+ },
+ "spot_check": {
+  "for": "George",
+  "how": "open data/processed/checks/counts_spotcheck/index.html; record a verdict per site (george_verdict in counts_spotcheck/spotcheck.json)",
+  "sites": [
+   2397,
+   2902,
+   2903,
+   2908,
+   2910,
+   2922,
+   2929,
+   4437,
+   4560,
+   4566,
+   4567,
+   4584,
+   4600,
+   4880,
+   4881
+  ],
+  "entries": [
+   {
+    "site": 2397,
+    "name": "KINGSWAY/SOUTHERN LINK",
+    "sheet_file": "data/raw/scats/sheets/2250-2499/2397.htm",
+    "sheet_page": "Group Allocation tab (2397_files/sheet002.htm), DETECTOR MAP",
+    "sheet_image": null,
+    "edges_image": "data/processed/checks/counts_spotcheck/2397_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "2397-1",
+      "street": "Kings Way",
+      "direction": "SE",
+      "detectors": [
+       5,
+       6,
+       7
+      ],
+      "edge_id": "980542677#0"
+     },
+     {
+      "approach_id": "2397-2",
+      "street": "Kings Way",
+      "direction": "NW",
+      "detectors": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "edge_id": "980542671"
+     }
+    ],
+    "note": "map rotated, north arrow points up-left: Kings Way drawn horizontal; headings NW/SE from the SUMO approach-edge bearings (322 deg / 138 deg), qa round 1",
+    "george_ai_comparison": "no AI approach data for this site",
+    "george_verdict": null
+   },
+   {
+    "site": 2902,
+    "name": "EXHIBITION/LONSDALE",
+    "sheet_file": "data/raw/scats/sheets/2750-2999/2902.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/2902_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/2902_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "2902-1",
+      "street": "Lonsdale St",
+      "direction": "EB",
+      "detectors": [
+       10,
+       11,
+       12,
+       13
+      ],
+      "edge_id": "198005100#1"
+     },
+     {
+      "approach_id": "2902-2",
+      "street": "Lonsdale St",
+      "direction": "WB",
+      "detectors": [
+       7,
+       8,
+       9
+      ],
+      "edge_id": "993256437"
+     },
+     {
+      "approach_id": "2902-3",
+      "street": "Exhibition St",
+      "direction": "NB",
+      "detectors": [
+       2,
+       3
+      ],
+      "edge_id": "715211380"
+     },
+     {
+      "approach_id": "2902-4",
+      "street": "Exhibition St",
+      "direction": "SB",
+      "detectors": [
+       5,
+       6
+      ],
+      "edge_id": "45368568#2"
+     }
+    ],
+    "note": "",
+    "george_ai_comparison": "AI swapped Lonsdale EB/WB and typed 14,15 as stop-line",
+    "george_verdict": null
+   },
+   {
+    "site": 2903,
+    "name": "RUSSELL/LONSDALE",
+    "sheet_file": "data/raw/scats/sheets/2750-2999/2903.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/2903_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/2903_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "2903-3",
+      "street": "Russell St",
+      "direction": "NB",
+      "detectors": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "edge_id": "198005096#4"
+     },
+     {
+      "approach_id": "2903-4",
+      "street": "Russell St",
+      "direction": "SB",
+      "detectors": [
+       5,
+       6,
+       7,
+       8
+      ],
+      "edge_id": "190727195#1"
+     }
+    ],
+    "note": "",
+    "george_ai_comparison": "AI swapped Lonsdale EB/WB; typed 8 unused",
+    "george_verdict": null
+   },
+   {
+    "site": 2908,
+    "name": "WILLIAM/LONSDALE",
+    "sheet_file": "data/raw/scats/sheets/2750-2999/2908.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/2908_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/2908_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "2908-1",
+      "street": "William St",
+      "direction": "SB",
+      "detectors": [
+       5,
+       6
+      ],
+      "edge_id": "235931746#2"
+     },
+     {
+      "approach_id": "2908-2",
+      "street": "William St",
+      "direction": "NB",
+      "detectors": [
+       2,
+       3
+      ],
+      "edge_id": "581959658#0"
+     }
+    ],
+    "note": "map rotated (north arrow points up-left); Lonsdale WB is one diagonal loop over 4 lanes, Lonsdale EB det 8 is a diagonal loop over 2 lanes",
+    "george_ai_comparison": "AI typed 10,11 as queue",
+    "george_verdict": null
+   },
+   {
+    "site": 2910,
+    "name": "SPENCER/LONSDALE",
+    "sheet_file": "data/raw/scats/sheets/2750-2999/2910.htm",
+    "sheet_page": "Group Allocation tab (2910_files/sheet002.htm), DETECTOR MAP",
+    "sheet_image": null,
+    "edges_image": "data/processed/checks/counts_spotcheck/2910_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "2910-1",
+      "street": "Spencer St",
+      "direction": "SB",
+      "detectors": [
+       3,
+       4
+      ],
+      "edge_id": "1126674043#0"
+     },
+     {
+      "approach_id": "2910-2",
+      "street": "Spencer St",
+      "direction": "NB",
+      "detectors": [
+       1,
+       2
+      ],
+      "edge_id": "206506959#5"
+     },
+     {
+      "approach_id": "2910-3",
+      "street": "Lonsdale St",
+      "direction": "WB",
+      "detectors": [
+       5,
+       6,
+       7
+      ],
+      "edge_id": "581959667#0"
+     }
+    ],
+    "note": "map rotated: Spencer St drawn horizontal, Lonsdale St from the top (east)",
+    "george_ai_comparison": "AI: 1-3 Spencer NB, 4-7 Spencer SB, 8-10 Lonsdale WB, 13-15 car park EB (all wrong except Spencer NB partly)",
+    "george_verdict": null
+   },
+   {
+    "site": 2922,
+    "name": "ELIZABETH/LATROBE",
+    "sheet_file": "data/raw/scats/sheets/2750-2999/2922.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/2922_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/2922_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "2922-2",
+      "street": "Elizabeth St",
+      "direction": "SB",
+      "detectors": [
+       1
+      ],
+      "edge_id": "1126651860"
+     },
+     {
+      "approach_id": "2922-3",
+      "street": "La Trobe St",
+      "direction": "EB",
+      "detectors": [
+       5,
+       6
+      ],
+      "edge_id": "135952928"
+     },
+     {
+      "approach_id": "2922-4",
+      "street": "La Trobe St",
+      "direction": "WB",
+      "detectors": [
+       8
+      ],
+      "edge_id": "279989319"
+     }
+    ],
+    "note": "map rotated (north arrow points right): Elizabeth St drawn horizontal",
+    "george_ai_comparison": "AI reversed every direction and typed 1 as bicycle",
+    "george_verdict": null
+   },
+   {
+    "site": 2929,
+    "name": "KING ST/FLINDERS ST",
+    "sheet_file": "data/raw/scats/sheets/2750-2999/2929.htm",
+    "sheet_page": "Group Allocation tab (2929_files/sheet002.htm), DETECTOR MAP",
+    "sheet_image": null,
+    "edges_image": "data/processed/checks/counts_spotcheck/2929_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "2929-2",
+      "street": "Flinders St",
+      "direction": "WB",
+      "detectors": [
+       9,
+       10,
+       11,
+       12
+      ],
+      "edge_id": "556168188#0"
+     },
+     {
+      "approach_id": "2929-3",
+      "street": "King St",
+      "direction": "NB",
+      "detectors": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "edge_id": "134621274#0"
+     },
+     {
+      "approach_id": "2929-4",
+      "street": "King St",
+      "direction": "SB",
+      "detectors": [
+       5,
+       6,
+       7,
+       8
+      ],
+      "edge_id": "207516094#0"
+     }
+    ],
+    "note": "Flinders EB det 14 reads zero on every day",
+    "george_ai_comparison": "",
+    "george_verdict": null
+   },
+   {
+    "site": 4437,
+    "name": "WURUNDJERI/BOURKE",
+    "sheet_file": "data/raw/scats/sheets/4250-4449/4437.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/4437_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/4437_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "4437-2",
+      "street": "Wurundjeri Way",
+      "direction": "NW",
+      "detectors": [
+       1,
+       2,
+       3,
+       13
+      ],
+      "edge_id": "787528069"
+     },
+     {
+      "approach_id": "4437-3",
+      "street": "Bourke St",
+      "direction": "NE",
+      "detectors": [
+       8,
+       9,
+       10,
+       11
+      ],
+      "edge_id": "1550075449#0"
+     }
+    ],
+    "note": "map rotated, north arrow points up-left: Wurundjeri Way drawn horizontal, the Docklands Bourke St leg (west of Wurundjeri Way) from the bottom; T-junction",
+    "george_ai_comparison": "no AI approach data for this site",
+    "george_verdict": null
+   },
+   {
+    "site": 4560,
+    "name": "EXHIBITION/FLINDERS",
+    "sheet_file": "data/raw/scats/sheets/4500-4749/4560.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/4560_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/4560_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "4560-1",
+      "street": "Flinders St",
+      "direction": "EB",
+      "detectors": [
+       9,
+       10,
+       11
+      ],
+      "edge_id": "187918252#2"
+     },
+     {
+      "approach_id": "4560-2",
+      "street": "Flinders St",
+      "direction": "WB",
+      "detectors": [
+       7,
+       8
+      ],
+      "edge_id": "711983628#0"
+     },
+     {
+      "approach_id": "4560-4",
+      "street": "Batman Ave",
+      "direction": "NW",
+      "detectors": [
+       1,
+       2,
+       3
+      ],
+      "edge_id": "1352841570"
+     }
+    ],
+    "note": "map rotated: Exhibition St drawn on the left (north), Flinders St vertical, Batman Ave on the right",
+    "george_ai_comparison": "",
+    "george_verdict": null
+   },
+   {
+    "site": 4566,
+    "name": "WILLIAM/FLINDERS",
+    "sheet_file": "data/raw/scats/sheets/4500-4749/4566.htm",
+    "sheet_page": "Group Allocation tab (4566_files/sheet002.htm), DETECTOR MAP",
+    "sheet_image": null,
+    "edges_image": "data/processed/checks/counts_spotcheck/4566_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "4566-1",
+      "street": "Flinders St",
+      "direction": "EB",
+      "detectors": [
+       11,
+       12
+      ],
+      "edge_id": "550361772#1"
+     },
+     {
+      "approach_id": "4566-2",
+      "street": "Flinders St",
+      "direction": "WB",
+      "detectors": [
+       8,
+       9,
+       10
+      ],
+      "edge_id": "1292625318#0"
+     },
+     {
+      "approach_id": "4566-3",
+      "street": "William St",
+      "direction": "NB",
+      "detectors": [
+       1,
+       2,
+       3
+      ],
+      "edge_id": "1352485053"
+     },
+     {
+      "approach_id": "4566-4",
+      "street": "William St",
+      "direction": "NB",
+      "detectors": [
+       4,
+       5
+      ],
+      "edge_id": "1352485047"
+     },
+     {
+      "approach_id": "4566-5",
+      "street": "William St",
+      "direction": "SB",
+      "detectors": [
+       6,
+       7
+      ],
+      "edge_id": "968051653#0"
+     }
+    ],
+    "note": "William St NB arrives as two carriageways either side of an island: lanes 1-3 (left/through) and lanes 4-5 (right turns); each lane group is its own approach edge",
+    "george_ai_comparison": "AI: 1-5 Flinders EB, 6-7 WB, 8-10 William NB, 11-12 William SB (wrong)",
+    "george_verdict": null
+   },
+   {
+    "site": 4567,
+    "name": "SPENCER/FLINDERS",
+    "sheet_file": "data/raw/scats/sheets/4500-4749/4567.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/4567_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/4567_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "4567-1",
+      "street": "Flinders St",
+      "direction": "EB",
+      "detectors": [
+       10,
+       11,
+       12,
+       13
+      ],
+      "edge_id": "210177006#0"
+     },
+     {
+      "approach_id": "4567-2",
+      "street": "Flinders St",
+      "direction": "WB",
+      "detectors": [
+       7,
+       8,
+       9
+      ],
+      "edge_id": "968051641"
+     },
+     {
+      "approach_id": "4567-4",
+      "street": "Spencer St",
+      "direction": "NB",
+      "detectors": [
+       1,
+       2,
+       3,
+       14
+      ],
+      "edge_id": "134621885#0"
+     }
+    ],
+    "note": "14 is the left-turn slip lane loop on Spencer St NB (own stop line)",
+    "george_ai_comparison": "",
+    "george_verdict": null
+   },
+   {
+    "site": 4584,
+    "name": "KING/COLLINS",
+    "sheet_file": "data/raw/scats/sheets/4500-4749/4584.htm",
+    "sheet_page": "Group Allocation tab (4584_files/sheet002.htm), DETECTOR MAP",
+    "sheet_image": null,
+    "edges_image": "data/processed/checks/counts_spotcheck/4584_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "4584-1",
+      "street": "Collins St",
+      "direction": "EB",
+      "detectors": [
+       9,
+       10
+      ],
+      "edge_id": "1123528672"
+     },
+     {
+      "approach_id": "4584-2",
+      "street": "Collins St",
+      "direction": "WB",
+      "detectors": [
+       7,
+       8
+      ],
+      "edge_id": "208642573"
+     },
+     {
+      "approach_id": "4584-3",
+      "street": "King St",
+      "direction": "NB",
+      "detectors": [
+       1,
+       2,
+       3,
+       11
+      ],
+      "edge_id": "207516091#0"
+     },
+     {
+      "approach_id": "4584-4",
+      "street": "King St",
+      "direction": "SB",
+      "detectors": [
+       4,
+       5,
+       6,
+       13
+      ],
+      "edge_id": "711989781#3"
+     }
+    ],
+    "note": "",
+    "george_ai_comparison": "AI swapped Collins EB/WB",
+    "george_verdict": null
+   },
+   {
+    "site": 4600,
+    "name": "WILLIAM/BOURKE",
+    "sheet_file": "data/raw/scats/sheets/4500-4749/4600.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/4600_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/4600_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "4600-1",
+      "street": "William St",
+      "direction": "SB",
+      "detectors": [
+       5
+      ],
+      "edge_id": "968328218#0"
+     },
+     {
+      "approach_id": "4600-2",
+      "street": "William St",
+      "direction": "NB",
+      "detectors": [
+       2,
+       3
+      ],
+      "edge_id": "968328215#1"
+     },
+     {
+      "approach_id": "4600-3",
+      "street": "Bourke St",
+      "direction": "WB",
+      "detectors": [
+       6,
+       7
+      ],
+      "edge_id": "581959657#0"
+     },
+     {
+      "approach_id": "4600-4",
+      "street": "Bourke St",
+      "direction": "EB",
+      "detectors": [
+       8
+      ],
+      "edge_id": "711989783#1"
+     }
+    ],
+    "note": "map rotated (north arrow points left): William St drawn horizontal",
+    "george_ai_comparison": "no AI approach data for this site",
+    "george_verdict": null
+   },
+   {
+    "site": 4880,
+    "name": "CITY/SOUTHBANK",
+    "sheet_file": "data/raw/scats/sheets/4750-4999/4880.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/4880_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/4880_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "4880-1",
+      "street": "City Rd",
+      "direction": "SW",
+      "detectors": [
+       1,
+       2,
+       3,
+       4
+      ],
+      "edge_id": "1132329207"
+     },
+     {
+      "approach_id": "4880-2",
+      "street": "City Rd",
+      "direction": "NE",
+      "detectors": [
+       5,
+       6,
+       7,
+       8,
+       9
+      ],
+      "edge_id": "767313614#0"
+     },
+     {
+      "approach_id": "4880-3",
+      "street": "Southbank Blvd",
+      "direction": "SE",
+      "detectors": [
+       13,
+       14,
+       15
+      ],
+      "edge_id": "1126593435"
+     },
+     {
+      "approach_id": "4880-4",
+      "street": "Southbank Blvd",
+      "direction": "NW",
+      "detectors": [
+       10,
+       11,
+       12
+      ],
+      "edge_id": "581717498#1"
+     }
+    ],
+    "note": "map rotated, north arrow points up-left (map-up = NE): City Rd from top/bottom, Southbank Blvd from left/right",
+    "george_ai_comparison": "no AI approach data for this site",
+    "george_verdict": null
+   },
+   {
+    "site": 4881,
+    "name": "CITY/POWER",
+    "sheet_file": "data/raw/scats/sheets/4750-4999/4881.pdf",
+    "sheet_page": "PDF page 2 (Controller Operation Specification, DETECTOR MAP)",
+    "sheet_image": "data/processed/checks/counts_spotcheck/4881_sheet.jpg",
+    "edges_image": "data/processed/checks/counts_spotcheck/4881_edges.svg",
+    "approaches": [
+     {
+      "approach_id": "4881-1",
+      "street": "City Rd",
+      "direction": "NE",
+      "detectors": [
+       4,
+       5,
+       6,
+       7
+      ],
+      "edge_id": "782990503"
+     },
+     {
+      "approach_id": "4881-2",
+      "street": "City Rd",
+      "direction": "SW",
+      "detectors": [
+       1,
+       2,
+       3,
+       15
+      ],
+      "edge_id": "198538932"
+     },
+     {
+      "approach_id": "4881-3",
+      "street": "Power St",
+      "direction": "SE",
+      "detectors": [
+       11,
+       12,
+       13,
+       16
+      ],
+      "edge_id": "198538934#0"
+     },
+     {
+      "approach_id": "4881-4",
+      "street": "Power St",
+      "direction": "NW",
+      "detectors": [
+       8,
+       9,
+       10
+      ],
+      "edge_id": "782990502"
+     }
+    ],
+    "note": "map rotated, north arrow points up-right (map-up = NE)",
+    "george_ai_comparison": "no AI approach data for this site",
+    "george_verdict": null
+   }
+  ]
+ },
+ "aadt_sanity": {
+  "note": "Order-of-magnitude check only: SCATS day total on the approach edge vs the 2019 AADT of an AADT segment matched to the same edge. Different year (2019 vs 2026), a single day vs an annual average, and a stop-line approach vs a road segment; a ratio outside [0.2, 5.0] is flagged.",
+  "pairs": 126,
+  "approaches_compared": 123,
+  "median_ratio": 0.82,
+  "flagged": 0,
+  "rows": [
+   {
+    "date": "2026-10-23",
+    "approach_id": "2397-1",
+    "edge_id": "980542677#0",
+    "scats_vehicles_day": 22881,
+    "scats_bins": 96,
+    "aadt_segment_id": 4903,
+    "aadt_2019": 24755.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.92,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2397-2",
+    "edge_id": "980542671",
+    "scats_vehicles_day": 25096,
+    "scats_bins": 96,
+    "aadt_segment_id": 11622,
+    "aadt_2019": 24755.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.01,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2835-1",
+    "edge_id": "616097570#5",
+    "scats_vehicles_day": 5875,
+    "scats_bins": 96,
+    "aadt_segment_id": 1974,
+    "aadt_2019": 11358.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.52,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2835-2",
+    "edge_id": "931222615#0",
+    "scats_vehicles_day": 5574,
+    "scats_bins": 96,
+    "aadt_segment_id": 9054,
+    "aadt_2019": 8507.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.66,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2901-1",
+    "edge_id": "198737801#0",
+    "scats_vehicles_day": 10171,
+    "scats_bins": 96,
+    "aadt_segment_id": 6779,
+    "aadt_2019": 11364.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.9,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2902-1",
+    "edge_id": "198005100#1",
+    "scats_vehicles_day": 12079,
+    "scats_bins": 96,
+    "aadt_segment_id": 6401,
+    "aadt_2019": 11997.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.01,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2902-2",
+    "edge_id": "993256437",
+    "scats_vehicles_day": 10134,
+    "scats_bins": 96,
+    "aadt_segment_id": 13059,
+    "aadt_2019": 9950.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.02,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2902-3",
+    "edge_id": "715211380",
+    "scats_vehicles_day": 7087,
+    "scats_bins": 96,
+    "aadt_segment_id": 13595,
+    "aadt_2019": 8315.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.85,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2902-4",
+    "edge_id": "45368568#2",
+    "scats_vehicles_day": 6030,
+    "scats_bins": 96,
+    "aadt_segment_id": 6129,
+    "aadt_2019": 9728.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.62,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2903-3",
+    "edge_id": "198005096#4",
+    "scats_vehicles_day": 11279,
+    "scats_bins": 96,
+    "aadt_segment_id": 14116,
+    "aadt_2019": 10238.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.1,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2903-4",
+    "edge_id": "190727195#1",
+    "scats_vehicles_day": 11526,
+    "scats_bins": 96,
+    "aadt_segment_id": 6861,
+    "aadt_2019": 12291.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.94,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2904-1",
+    "edge_id": "734406095#1",
+    "scats_vehicles_day": 15778,
+    "scats_bins": 96,
+    "aadt_segment_id": 5820,
+    "aadt_2019": 14895.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.06,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2904-2",
+    "edge_id": "386419596#1",
+    "scats_vehicles_day": 13374,
+    "scats_bins": 96,
+    "aadt_segment_id": 14074,
+    "aadt_2019": 15870.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.84,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2906-2",
+    "edge_id": "734406093#1",
+    "scats_vehicles_day": 12432,
+    "scats_bins": 96,
+    "aadt_segment_id": 14074,
+    "aadt_2019": 15870.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.78,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2907-1",
+    "edge_id": "505256328#0",
+    "scats_vehicles_day": 10763,
+    "scats_bins": 96,
+    "aadt_segment_id": 5818,
+    "aadt_2019": 14895.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.72,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2907-2",
+    "edge_id": "734406094#4",
+    "scats_vehicles_day": 12126,
+    "scats_bins": 96,
+    "aadt_segment_id": 13697,
+    "aadt_2019": 15870.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.76,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2907-4",
+    "edge_id": "191505321#2",
+    "scats_vehicles_day": 6608,
+    "scats_bins": 96,
+    "aadt_segment_id": 6840,
+    "aadt_2019": 9080.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.73,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2908-1",
+    "edge_id": "235931746#2",
+    "scats_vehicles_day": 6847,
+    "scats_bins": 96,
+    "aadt_segment_id": 7687,
+    "aadt_2019": 8597.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.8,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2908-2",
+    "edge_id": "581959658#0",
+    "scats_vehicles_day": 5024,
+    "scats_bins": 96,
+    "aadt_segment_id": 13769,
+    "aadt_2019": 8597.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.58,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2909-1",
+    "edge_id": "581959663#1",
+    "scats_vehicles_day": 6723,
+    "scats_bins": 96,
+    "aadt_segment_id": 6400,
+    "aadt_2019": 14895.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.45,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2909-2",
+    "edge_id": "198005097#3",
+    "scats_vehicles_day": 9438,
+    "scats_bins": 96,
+    "aadt_segment_id": 14075,
+    "aadt_2019": 15870.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.59,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2909-3",
+    "edge_id": "711989785#0",
+    "scats_vehicles_day": 23874,
+    "scats_bins": 96,
+    "aadt_segment_id": 9592,
+    "aadt_2019": 22846.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.04,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2910-1",
+    "edge_id": "1126674043#0",
+    "scats_vehicles_day": 6907,
+    "scats_bins": 96,
+    "aadt_segment_id": 1788,
+    "aadt_2019": 13659.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.51,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2910-2",
+    "edge_id": "206506959#5",
+    "scats_vehicles_day": 7618,
+    "scats_bins": 96,
+    "aadt_segment_id": 8666,
+    "aadt_2019": 9269.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.82,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2910-3",
+    "edge_id": "581959667#0",
+    "scats_vehicles_day": 4292,
+    "scats_bins": 96,
+    "aadt_segment_id": 14076,
+    "aadt_2019": 15870.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.27,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2916-1",
+    "edge_id": "581959652",
+    "scats_vehicles_day": 4143,
+    "scats_bins": 96,
+    "aadt_segment_id": 14815,
+    "aadt_2019": 8597.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.48,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2916-2",
+    "edge_id": "235931746#0",
+    "scats_vehicles_day": 6462,
+    "scats_bins": 96,
+    "aadt_segment_id": 7687,
+    "aadt_2019": 8597.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.75,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2919-2",
+    "edge_id": "1312349176",
+    "scats_vehicles_day": 4423,
+    "scats_bins": 96,
+    "aadt_segment_id": 13473,
+    "aadt_2019": 5149.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.86,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2919-3",
+    "edge_id": "198737812#1",
+    "scats_vehicles_day": 6657,
+    "scats_bins": 96,
+    "aadt_segment_id": 12434,
+    "aadt_2019": 9728.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.68,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2919-4",
+    "edge_id": "198994314",
+    "scats_vehicles_day": 6202,
+    "scats_bins": 96,
+    "aadt_segment_id": 6312,
+    "aadt_2019": 9044.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.69,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2920-1",
+    "edge_id": "316166375",
+    "scats_vehicles_day": 6286,
+    "scats_bins": 96,
+    "aadt_segment_id": 6218,
+    "aadt_2019": 9997.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.63,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2920-2",
+    "edge_id": "279989318#0",
+    "scats_vehicles_day": 6089,
+    "scats_bins": 96,
+    "aadt_segment_id": 14067,
+    "aadt_2019": 9780.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.62,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2920-3",
+    "edge_id": "187918254#3",
+    "scats_vehicles_day": 11251,
+    "scats_bins": 96,
+    "aadt_segment_id": 14731,
+    "aadt_2019": 9400.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.2,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2920-4",
+    "edge_id": "187918256#1",
+    "scats_vehicles_day": 8472,
+    "scats_bins": 96,
+    "aadt_segment_id": 6475,
+    "aadt_2019": 9289.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.91,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2921-1",
+    "edge_id": "658620795",
+    "scats_vehicles_day": 6928,
+    "scats_bins": 96,
+    "aadt_segment_id": 5809,
+    "aadt_2019": 9971.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.69,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2921-2",
+    "edge_id": "279989317",
+    "scats_vehicles_day": 7656,
+    "scats_bins": 96,
+    "aadt_segment_id": 13054,
+    "aadt_2019": 10899.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.7,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2921-3",
+    "edge_id": "1123836814",
+    "scats_vehicles_day": 1975,
+    "scats_bins": 96,
+    "aadt_segment_id": 7097,
+    "aadt_2019": 5489.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.36,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2922-2",
+    "edge_id": "1126651860",
+    "scats_vehicles_day": 4478,
+    "scats_bins": 96,
+    "aadt_segment_id": 6304,
+    "aadt_2019": 7683.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.58,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2922-3",
+    "edge_id": "135952928",
+    "scats_vehicles_day": 6821,
+    "scats_bins": 96,
+    "aadt_segment_id": 5808,
+    "aadt_2019": 9518.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.72,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2922-4",
+    "edge_id": "279989319",
+    "scats_vehicles_day": 5128,
+    "scats_bins": 96,
+    "aadt_segment_id": 14068,
+    "aadt_2019": 11687.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.44,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2923-1",
+    "edge_id": "658620787#2",
+    "scats_vehicles_day": 6243,
+    "scats_bins": 96,
+    "aadt_segment_id": 6736,
+    "aadt_2019": 8695.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.72,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2923-2",
+    "edge_id": "658620802#0",
+    "scats_vehicles_day": 6579,
+    "scats_bins": 96,
+    "aadt_segment_id": 13474,
+    "aadt_2019": 9518.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.69,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2924-1",
+    "edge_id": "664287431#2",
+    "scats_vehicles_day": 7338,
+    "scats_bins": 96,
+    "aadt_segment_id": 6396,
+    "aadt_2019": 7874.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.93,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2924-2",
+    "edge_id": "1312971508",
+    "scats_vehicles_day": 5870,
+    "scats_bins": 96,
+    "aadt_segment_id": 13475,
+    "aadt_2019": 8695.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.68,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2924-4",
+    "edge_id": "581959642#0",
+    "scats_vehicles_day": 5817,
+    "scats_bins": 96,
+    "aadt_segment_id": 6549,
+    "aadt_2019": 7254.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.8,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2925-1",
+    "edge_id": "581959647",
+    "scats_vehicles_day": 5112,
+    "scats_bins": 96,
+    "aadt_segment_id": 6395,
+    "aadt_2019": 5988.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.85,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2925-2",
+    "edge_id": "505256327#1",
+    "scats_vehicles_day": 5036,
+    "scats_bins": 96,
+    "aadt_segment_id": 14069,
+    "aadt_2019": 7874.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.64,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2925-4",
+    "edge_id": "207883957#6",
+    "scats_vehicles_day": 14264,
+    "scats_bins": 96,
+    "aadt_segment_id": 1750,
+    "aadt_2019": 14530.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.98,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2926-1",
+    "edge_id": "1253825982#2",
+    "scats_vehicles_day": 3895,
+    "scats_bins": 96,
+    "aadt_segment_id": 6217,
+    "aadt_2019": 4284.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.91,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2926-2",
+    "edge_id": "1312971512",
+    "scats_vehicles_day": 3415,
+    "scats_bins": 96,
+    "aadt_segment_id": 13685,
+    "aadt_2019": 5329.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.64,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2926-3",
+    "edge_id": "616097571#1",
+    "scats_vehicles_day": 8265,
+    "scats_bins": 96,
+    "aadt_segment_id": 8667,
+    "aadt_2019": 13659.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.61,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2926-4",
+    "edge_id": "198874544#0",
+    "scats_vehicles_day": 9687,
+    "scats_bins": 96,
+    "aadt_segment_id": 1973,
+    "aadt_2019": 9608.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.01,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2929-2",
+    "edge_id": "556168188#0",
+    "scats_vehicles_day": 8818,
+    "scats_bins": 89,
+    "aadt_segment_id": 13985,
+    "aadt_2019": 8082.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.09,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2929-2",
+    "edge_id": "556168188#0",
+    "scats_vehicles_day": 8818,
+    "scats_bins": 89,
+    "aadt_segment_id": 13599,
+    "aadt_2019": 9330.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.95,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2929-3",
+    "edge_id": "134621274#0",
+    "scats_vehicles_day": 25322,
+    "scats_bins": 96,
+    "aadt_segment_id": 15125,
+    "aadt_2019": 22995.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.1,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "2929-4",
+    "edge_id": "207516094#0",
+    "scats_vehicles_day": 19552,
+    "scats_bins": 93,
+    "aadt_segment_id": 2273,
+    "aadt_2019": 19415.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.01,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4370-2",
+    "edge_id": "984852798",
+    "scats_vehicles_day": 27962,
+    "scats_bins": 96,
+    "aadt_segment_id": 429,
+    "aadt_2019": 27187.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.03,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4437-2",
+    "edge_id": "787528069",
+    "scats_vehicles_day": 18170,
+    "scats_bins": 96,
+    "aadt_segment_id": 14202,
+    "aadt_2019": 15851.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.15,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4437-3",
+    "edge_id": "1550075449#0",
+    "scats_vehicles_day": 3279,
+    "scats_bins": 58,
+    "aadt_segment_id": 14199,
+    "aadt_2019": 4350.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.75,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4560-1",
+    "edge_id": "187918252#2",
+    "scats_vehicles_day": 13111,
+    "scats_bins": 96,
+    "aadt_segment_id": 6138,
+    "aadt_2019": 12753.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.03,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4560-2",
+    "edge_id": "711983628#0",
+    "scats_vehicles_day": 7559,
+    "scats_bins": 96,
+    "aadt_segment_id": 13986,
+    "aadt_2019": 7245.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.04,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4560-4",
+    "edge_id": "1352841570",
+    "scats_vehicles_day": 7734,
+    "scats_bins": 96,
+    "aadt_segment_id": 8089,
+    "aadt_2019": 8042.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.96,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4561-1",
+    "edge_id": "790262282#3",
+    "scats_vehicles_day": 15452,
+    "scats_bins": 96,
+    "aadt_segment_id": 6137,
+    "aadt_2019": 20520.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.75,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4561-2",
+    "edge_id": "198715270#1",
+    "scats_vehicles_day": 8009,
+    "scats_bins": 96,
+    "aadt_segment_id": 13400,
+    "aadt_2019": 11263.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.71,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4561-3",
+    "edge_id": "207831778#5",
+    "scats_vehicles_day": 10284,
+    "scats_bins": 96,
+    "aadt_segment_id": 6476,
+    "aadt_2019": 11238.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.92,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4563-1",
+    "edge_id": "386416108#1",
+    "scats_vehicles_day": 9579,
+    "scats_bins": 96,
+    "aadt_segment_id": 16073,
+    "aadt_2019": 10773.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.89,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4563-2",
+    "edge_id": "295476230#2",
+    "scats_vehicles_day": 5551,
+    "scats_bins": 96,
+    "aadt_segment_id": 15865,
+    "aadt_2019": 9550.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.58,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4564-1",
+    "edge_id": "296399431#0",
+    "scats_vehicles_day": 14197,
+    "scats_bins": 96,
+    "aadt_segment_id": 5727,
+    "aadt_2019": 11997.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.18,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4564-2",
+    "edge_id": "295476230#3",
+    "scats_vehicles_day": 5855,
+    "scats_bins": 96,
+    "aadt_segment_id": 15620,
+    "aadt_2019": 10934.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.54,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4564-3",
+    "edge_id": "207831942#0",
+    "scats_vehicles_day": 12401,
+    "scats_bins": 96,
+    "aadt_segment_id": 7368,
+    "aadt_2019": 6804.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.82,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4565-1",
+    "edge_id": "556168189#0",
+    "scats_vehicles_day": 13261,
+    "scats_bins": 96,
+    "aadt_segment_id": 5727,
+    "aadt_2019": 11997.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.11,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4565-2",
+    "edge_id": "296383692",
+    "scats_vehicles_day": 8474,
+    "scats_bins": 96,
+    "aadt_segment_id": 13401,
+    "aadt_2019": 12318.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.69,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4566-1",
+    "edge_id": "550361772#1",
+    "scats_vehicles_day": 10193,
+    "scats_bins": 96,
+    "aadt_segment_id": 6136,
+    "aadt_2019": 9330.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.09,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4566-1",
+    "edge_id": "550361772#1",
+    "scats_vehicles_day": 10193,
+    "scats_bins": 96,
+    "aadt_segment_id": 6663,
+    "aadt_2019": 8082.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.26,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4566-2",
+    "edge_id": "1292625318#0",
+    "scats_vehicles_day": 9151,
+    "scats_bins": 96,
+    "aadt_segment_id": 13401,
+    "aadt_2019": 12318.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.74,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4566-5",
+    "edge_id": "968051653#0",
+    "scats_vehicles_day": 3576,
+    "scats_bins": 96,
+    "aadt_segment_id": 7689,
+    "aadt_2019": 8362.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.43,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4567-1",
+    "edge_id": "210177006#0",
+    "scats_vehicles_day": 16622,
+    "scats_bins": 96,
+    "aadt_segment_id": 5725,
+    "aadt_2019": 11299.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.47,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4567-2",
+    "edge_id": "968051641",
+    "scats_vehicles_day": 9248,
+    "scats_bins": 96,
+    "aadt_segment_id": 12439,
+    "aadt_2019": 12019.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.77,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4567-4",
+    "edge_id": "134621885#0",
+    "scats_vehicles_day": 9024,
+    "scats_bins": 96,
+    "aadt_segment_id": 9616,
+    "aadt_2019": 10716.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.84,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4577-1",
+    "edge_id": "208498191",
+    "scats_vehicles_day": 5292,
+    "scats_bins": 96,
+    "aadt_segment_id": 15619,
+    "aadt_2019": 6741.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.79,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4577-2",
+    "edge_id": "1123528657",
+    "scats_vehicles_day": 4677,
+    "scats_bins": 96,
+    "aadt_segment_id": 13940,
+    "aadt_2019": 7224.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.65,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4577-3",
+    "edge_id": "199310502#4",
+    "scats_vehicles_day": 11573,
+    "scats_bins": 96,
+    "aadt_segment_id": 14115,
+    "aadt_2019": 11238.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.03,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4577-4",
+    "edge_id": "199429372#2",
+    "scats_vehicles_day": 8716,
+    "scats_bins": 96,
+    "aadt_segment_id": 6862,
+    "aadt_2019": 10737.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.81,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4580-1",
+    "edge_id": "207831526",
+    "scats_vehicles_day": 4047,
+    "scats_bins": 96,
+    "aadt_segment_id": 15241,
+    "aadt_2019": 4809.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.84,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4580-2",
+    "edge_id": "316166613#1",
+    "scats_vehicles_day": 6054,
+    "scats_bins": 96,
+    "aadt_segment_id": 15864,
+    "aadt_2019": 6741.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.9,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4580-3",
+    "edge_id": "207778723",
+    "scats_vehicles_day": 3809,
+    "scats_bins": 96,
+    "aadt_segment_id": 15622,
+    "aadt_2019": 2941.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.3,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4580-4",
+    "edge_id": "286827105#0",
+    "scats_vehicles_day": 2353,
+    "scats_bins": 96,
+    "aadt_segment_id": 15868,
+    "aadt_2019": 4442.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.53,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4583-1",
+    "edge_id": "207830036#0",
+    "scats_vehicles_day": 5491,
+    "scats_bins": 95,
+    "aadt_segment_id": 6085,
+    "aadt_2019": 6750.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.81,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4583-2",
+    "edge_id": "207831319#0",
+    "scats_vehicles_day": 4215,
+    "scats_bins": 96,
+    "aadt_segment_id": 13548,
+    "aadt_2019": 6948.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.61,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4584-1",
+    "edge_id": "1123528672",
+    "scats_vehicles_day": 3775,
+    "scats_bins": 96,
+    "aadt_segment_id": 6084,
+    "aadt_2019": 4308.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.88,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4584-2",
+    "edge_id": "208642573",
+    "scats_vehicles_day": 5883,
+    "scats_bins": 96,
+    "aadt_segment_id": 12799,
+    "aadt_2019": 6554.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.9,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4584-3",
+    "edge_id": "207516091#0",
+    "scats_vehicles_day": 24836,
+    "scats_bins": 96,
+    "aadt_segment_id": 8624,
+    "aadt_2019": 24155.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.03,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4584-4",
+    "edge_id": "711989781#3",
+    "scats_vehicles_day": 21405,
+    "scats_bins": 96,
+    "aadt_segment_id": 1939,
+    "aadt_2019": 19287.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.11,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4585-2",
+    "edge_id": "207830034",
+    "scats_vehicles_day": 5521,
+    "scats_bins": 96,
+    "aadt_segment_id": 13942,
+    "aadt_2019": 5779.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.96,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4585-3",
+    "edge_id": "198715025",
+    "scats_vehicles_day": 5636,
+    "scats_bins": 96,
+    "aadt_segment_id": 9053,
+    "aadt_2019": 8713.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.65,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4585-4",
+    "edge_id": "931222616#1",
+    "scats_vehicles_day": 5814,
+    "scats_bins": 96,
+    "aadt_segment_id": 1974,
+    "aadt_2019": 11358.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.51,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4593-1",
+    "edge_id": "131724919",
+    "scats_vehicles_day": 5483,
+    "scats_bins": 96,
+    "aadt_segment_id": 7402,
+    "aadt_2019": 5703.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.96,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4593-2",
+    "edge_id": "218688446#3",
+    "scats_vehicles_day": 5370,
+    "scats_bins": 96,
+    "aadt_segment_id": 14365,
+    "aadt_2019": 7578.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.71,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4593-3",
+    "edge_id": "208506752#2",
+    "scats_vehicles_day": 3994,
+    "scats_bins": 96,
+    "aadt_segment_id": 6041,
+    "aadt_2019": 3850.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.04,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4595-1",
+    "edge_id": "208554967#0",
+    "scats_vehicles_day": 2399,
+    "scats_bins": 96,
+    "aadt_segment_id": 5096,
+    "aadt_2019": 3850.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.62,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4595-1",
+    "edge_id": "208554967#0",
+    "scats_vehicles_day": 2399,
+    "scats_bins": 96,
+    "aadt_segment_id": 6040,
+    "aadt_2019": 3850.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.62,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4595-2",
+    "edge_id": "208554600#0",
+    "scats_vehicles_day": 2258,
+    "scats_bins": 96,
+    "aadt_segment_id": 12752,
+    "aadt_2019": 3850.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.59,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4597-2",
+    "edge_id": "208793255#2",
+    "scats_vehicles_day": 4677,
+    "scats_bins": 96,
+    "aadt_segment_id": 15867,
+    "aadt_2019": 4442.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.05,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4597-3",
+    "edge_id": "235931748#1",
+    "scats_vehicles_day": 3474,
+    "scats_bins": 96,
+    "aadt_segment_id": 16074,
+    "aadt_2019": 4442.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.78,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4599-1",
+    "edge_id": "1126680795#0",
+    "scats_vehicles_day": 3373,
+    "scats_bins": 96,
+    "aadt_segment_id": 5095,
+    "aadt_2019": 3708.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.91,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4599-3",
+    "edge_id": "296383691#1",
+    "scats_vehicles_day": 7217,
+    "scats_bins": 96,
+    "aadt_segment_id": 14707,
+    "aadt_2019": 6804.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.06,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4599-4",
+    "edge_id": "1126800685#2",
+    "scats_vehicles_day": 6252,
+    "scats_bins": 71,
+    "aadt_segment_id": 6841,
+    "aadt_2019": 9080.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.69,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4600-1",
+    "edge_id": "968328218#0",
+    "scats_vehicles_day": 5657,
+    "scats_bins": 96,
+    "aadt_segment_id": 7452,
+    "aadt_2019": 8597.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.66,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4600-2",
+    "edge_id": "968328215#1",
+    "scats_vehicles_day": 5388,
+    "scats_bins": 96,
+    "aadt_segment_id": 14186,
+    "aadt_2019": 9941.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.54,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4600-3",
+    "edge_id": "581959657#0",
+    "scats_vehicles_day": 3642,
+    "scats_bins": 96,
+    "aadt_segment_id": 13344,
+    "aadt_2019": 3708.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.98,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4600-4",
+    "edge_id": "711989783#1",
+    "scats_vehicles_day": 2696,
+    "scats_bins": 96,
+    "aadt_segment_id": 5489,
+    "aadt_2019": 3762.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.72,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4601-1",
+    "edge_id": "1253825868",
+    "scats_vehicles_day": 2092,
+    "scats_bins": 96,
+    "aadt_segment_id": 5488,
+    "aadt_2019": 2178.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.96,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4601-2",
+    "edge_id": "963120893#1",
+    "scats_vehicles_day": 2991,
+    "scats_bins": 76,
+    "aadt_segment_id": 12365,
+    "aadt_2019": 3762.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.8,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4601-3",
+    "edge_id": "207516093#0",
+    "scats_vehicles_day": 24698,
+    "scats_bins": 96,
+    "aadt_segment_id": 9591,
+    "aadt_2019": 23645.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.04,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4601-4",
+    "edge_id": "963120897#0",
+    "scats_vehicles_day": 20709,
+    "scats_bins": 96,
+    "aadt_segment_id": 1752,
+    "aadt_2019": 19974.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.04,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4602-1",
+    "edge_id": "206506959#0",
+    "scats_vehicles_day": 7118,
+    "scats_bins": 96,
+    "aadt_segment_id": 9054,
+    "aadt_2019": 8507.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.84,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4602-2",
+    "edge_id": "616097570#2",
+    "scats_vehicles_day": 5540,
+    "scats_bins": 96,
+    "aadt_segment_id": 1391,
+    "aadt_2019": 9328.0,
+    "aadt_methodology": "Actual",
+    "ratio": 0.59,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4602-3",
+    "edge_id": "1126676738#0",
+    "scats_vehicles_day": 2332,
+    "scats_bins": 96,
+    "aadt_segment_id": 13345,
+    "aadt_2019": 2178.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.07,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4608-1",
+    "edge_id": "1156474528",
+    "scats_vehicles_day": 6302,
+    "scats_bins": 96,
+    "aadt_segment_id": 7452,
+    "aadt_2019": 8597.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.73,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4608-2",
+    "edge_id": "968328219",
+    "scats_vehicles_day": 4973,
+    "scats_bins": 96,
+    "aadt_segment_id": 13769,
+    "aadt_2019": 8597.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.58,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4880-1",
+    "edge_id": "1132329207",
+    "scats_vehicles_day": 23851,
+    "scats_bins": 96,
+    "aadt_segment_id": 8088,
+    "aadt_2019": 16380.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.46,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4880-2",
+    "edge_id": "767313614#0",
+    "scats_vehicles_day": 24827,
+    "scats_bins": 96,
+    "aadt_segment_id": 614,
+    "aadt_2019": 16567.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 1.5,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4880-3",
+    "edge_id": "1126593435",
+    "scats_vehicles_day": 2492,
+    "scats_bins": 96,
+    "aadt_segment_id": 6497,
+    "aadt_2019": 5474.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.46,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4880-4",
+    "edge_id": "581717498#1",
+    "scats_vehicles_day": 4764,
+    "scats_bins": 96,
+    "aadt_segment_id": 14754,
+    "aadt_2019": 2319.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 2.05,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4881-1",
+    "edge_id": "782990503",
+    "scats_vehicles_day": 13111,
+    "scats_bins": 96,
+    "aadt_segment_id": 9441,
+    "aadt_2019": 10483.0,
+    "aadt_methodology": "Actual",
+    "ratio": 1.25,
+    "flag": false
+   },
+   {
+    "date": "2026-10-23",
+    "approach_id": "4881-3",
+    "edge_id": "198538934#0",
+    "scats_vehicles_day": 7659,
+    "scats_bins": 96,
+    "aadt_segment_id": 7364,
+    "aadt_2019": 9057.0,
+    "aadt_methodology": "Estimated",
+    "ratio": 0.85,
+    "flag": false
+   }
+  ]
+ }
+}

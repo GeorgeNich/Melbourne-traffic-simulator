@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PATCH: OSM turn restrictions that netconvert's own import does not apply.
+
+  Generated from the turn-restriction audit (sim/checks/restrictions.py) on the unpatched import
+  (sim/work/roads_osm.net.xml) by the network build's refresh-patches option, then reviewed.
+  Each <delete> removes one connection (all its lanes) that performs a movement the OSM relation
+  forbids; a <connection> adds the one movement an only_* relation requires when the import has
+  no connection for it (a U-turn bay merged into the main carriageway). netconvert misses these
+  because the via is a way (often one that junction joining absorbed), because the relation is
+  conditional (decided for the weekday AM peak, see CONDITIONAL_DECISIONS in
+  sim/checks/restrictions.py), or because the from/to way runs through the via node so it cannot
+  tell the direction.
+
+  Edge ids are those of the imported network; if the OSM extract or the import options change,
+  regenerate (uv run python -m sim.build_net with the refresh-patches option) and check the
+  audit (sim/out/checks/turn_restrictions.json) before committing.
+-->
+<connections>
+    <!-- relation 1651347: no_right_turn (conditional: no_right_turn @ (Mo-Fr 07:00-09:30,16:00-18:30)), Power Street to Kavanagh Street (via node) -->
+    <delete from="327700106" to="662536312#1"/>
+    <!-- relation 4237175: no_right_turn, Spring Street to Collins Street (via way) -->
+    <delete from="131724927#2" to="207639965#1"/>
+    <!-- relation 4240104: no_right_turn, Spencer Street to Abbotsford Street (via way) -->
+    <delete from="786200165#0" to="1122544768"/>
+    <!-- relation 4255083: no_left_turn, Nicholson Street to Albert Street (via node) -->
+    <delete from="208677470#0" to="1070230023"/>
+    <!-- relation 4255085: no_right_turn, Albert Street to Nicholson Street (via way) -->
+    <delete from="69025365" to="1253825867"/>
+    <!-- relation 4255170: no_right_turn, Swanston Street to Victoria Street (via way) -->
+    <delete from="1123836812#2" to="208031602"/>
+    <!-- relation 4544357: no_right_turn, Docklands Drive to Waterfront Way (via node) -->
+    <delete from="1126658675#2" to="13309027#1"/>
+    <!-- relation 5768422: no_right_turn, Collins Street to King Street (via node) -->
+    <delete from="1123528672" to="207830034"/>
+    <delete from="1123528672" to="215312149#0"/>
+    <!-- relation 6616864: no_right_turn, Queens Bridge Street to way 198538930 (via node) -->
+    <delete from="1018419575" to="198538934#0"/>
+    <!-- relation 6616873: no_right_turn, Crockford Street to way 201053612 (via node) -->
+    <delete from="296407704#0" to="26786307#1"/>
+    <!-- relation 6723145: no_right_turn, Peel Street to Victoria Street (via way) -->
+    <delete from="10448453#2" to="62258467"/>
+    <!-- relation 6723156: no_right_turn, Collins Street to Spencer Street (via node) -->
+    <delete from="198989380" to="207799527#0"/>
+    <!-- relation 7044106: no_right_turn, Flinders Street to Spencer Street (via node) -->
+    <delete from="968051641" to="198715025"/>
+    <!-- relation 7234736: no_right_turn, Harbour Esplanade to Collins Street (via node) -->
+    <delete from="238527436#0" to="569460351"/>
+    <!-- relation 7939314: no_right_turn, William Street to Flinders Street (via node) -->
+    <delete from="622561170" to="622561169"/>
+    <delete from="712187000" to="622561169"/>
+    <!-- relation 7939315: no_right_turn, Flinders Street to William Street (via node). Also covers deletions listed under relation(s) [7939314] -->
+    <delete from="622561170" to="1352485046"/>
+    <!-- relation 7939316: no_right_turn (conditional: no_right_turn @ (Mo-Fr 06:00-10:00,15:00-19:00)), Flinders Street to Kings Way (via node) -->
+    <delete from="556168188#0" to="134618936#1"/>
+    <delete from="556168188#0" to="550361772#0"/>
+    <!-- relation 8109573: no_right_turn, King Street to Little Lonsdale Street (via node) -->
+    <delete from="581959665#0" to="135953375#0"/>
+    <!-- relation 8109727: no_right_turn, Victoria Street to Errol Street (via node) -->
+    <delete from="893662866#1" to="55962870"/>
+    <!-- relation 8109818: no_right_turn, King Street to Rosslyn Street (via node) -->
+    <delete from="1132679394#0" to="-33803212"/>
+    <delete from="1132679394#0" to="569455487#0"/>
+    <delete from="794824456#0" to="-33803212"/>
+    <delete from="794824456#0" to="569455487#0"/>
+    <!-- relation 8110071: no_right_turn, Collins Street to Harbour Esplanade (via node) -->
+    <delete from="1435055241" to="370664618#0"/>
+    <!-- relation 8113040: no_right_turn, Macarthur Street to Spring Street (via way) -->
+    <delete from="790271207#0" to="218688446#0"/>
+    <!-- relation 8114134: only_straight_on, Dynon Road to Spencer Street (via way) -->
+    <delete from="55949191#2" to="1123803836"/>
+    <delete from="55949191#2" to="1123803840"/>
+    <!-- relation 8184584: no_left_turn, Footscray Road to Citylink Onramp (via node) -->
+    <delete from="207128344#0" to="22882672"/>
+    <!-- relation 8184614: no_right_turn, Victoria Parade to Brunswick Street (via node) -->
+    <delete from="1029898629#0" to="1154876209"/>
+    <!-- relation 8184622: no_right_turn, Collins Street to Spring Street (via way) -->
+    <delete from="576911615" to="131724930"/>
+    <!-- relation 8215461: no_right_turn, York Street to City Road (via way) -->
+    <delete from="26786104#1" to="39474083"/>
+    <!-- relation 8215522: no_right_turn, Bourke Street to Harbour Esplanade (via way) -->
+    <delete from="448300741#7" to="43870461#0"/>
+    <!-- relation 8223941: no_right_turn, Batman Avenue to way 139214694 (via node) -->
+    <delete from="581660716" to="985384185"/>
+    <!-- relation 8226059: no_right_turn (conditional: no_right_turn @ (Su-Tu 04:00-20:00; Fr-Sa 00:00-20:00)), City Road to Moray Street (via node) -->
+    <delete from="782990501" to="198726075"/>
+    <!-- relation 8226063: no_right_turn, Kings Way to Park Street (via way) -->
+    <delete from="581714218#1" to="-581714214#0"/>
+    <!-- relation 8226093: no_right_turn, Spencer Street to Collins Street (via node) -->
+    <delete from="931222616#1" to="207298905"/>
+    <!-- relation 8227781: no_right_turn, William Street to La Trobe Street (via way) -->
+    <delete from="581959642#0" to="505256327#0"/>
+    <!-- relation 8227782: no_right_turn, William Street to La Trobe Street (via way) -->
+    <delete from="581959644" to="581959641"/>
+    <!-- relation 8227788: no_right_turn, King Street to Lonsdale Street (via way) -->
+    <delete from="581959663#1" to="581959667#0"/>
+    <delete from="581959669#0" to="581959667#0"/>
+    <!-- relation 8227931: no_right_turn, Victoria Street to Swanston Street (via way) -->
+    <delete from="581989735" to="208033313#0"/>
+    <!-- relation 9348872: no_right_turn, La Trobe Street to Elizabeth Street (via node) -->
+    <delete from="135952928" to="1010839939"/>
+    <!-- relation 9348873: no_right_turn, La Trobe Street to Exhibition Street (via way) -->
+    <delete from="1312349176" to="22758374"/>
+    <!-- relation 9893044: no_u_turn, Victoria Street to Victoria Street (via way) -->
+    <delete from="711611140#0" to="62205978"/>
+    <!-- relation 9910814: no_left_turn (conditional: no_left_turn @ (Mo-Fr 7:30-9:30)), Coventry Street to Morris Street (via node) -->
+    <delete from="-713108487" to="27631165"/>
+    <!-- relation 9911004: no_straight_on, Boundary Street to way 201053612 (via node) -->
+    <delete from="-330761847#0" to="26786307#1"/>
+    <!-- relation 10766965: only_right_turn, Power Street to Sturt Street (via node) -->
+    <delete from="19012674#0" to="-581037859#0"/>
+    <!-- relation 13166195: no_left_turn, Albert Road to Kings Way (via node) -->
+    <delete from="1252211306" to="767354520#0"/>
+    <!-- relation 13166472: no_right_turn (conditional: no_right_turn @ (Mo-Fr 07:00 - 09:30)), Kings Way to Albert Road (via way) -->
+    <delete from="1175845435" to="979758341#0"/>
+    <!-- relation 13166550: only_left_turn, way 979789789 to Park Street (via node) -->
+    <delete from="963166839#3" to="198712896#0"/>
+    <delete from="963166839#3" to="979789774"/>
+    <delete from="963166839#3" to="979789776"/>
+    <!-- relation 13169891: no_right_turn, Eastern Road to Dorcas Street (via node) -->
+    <delete from="963360112" to="980094558"/>
+    <!-- relation 13178349: no_left_turn, CityLink In - Kings Ramp Of to Kings Way (via node) -->
+    <delete from="327700046" to="485229677#0"/>
+    <!-- relation 13186541: no_right_turn, Montague Street to Lorimer Street (via node) -->
+    <delete from="981208573" to="556168191"/>
+    <delete from="981208573" to="783887409"/>
+    <!-- relation 13186542: no_left_turn, way 790988810 to Lorimer Street (via node) -->
+    <delete from="5235179" to="38315382#0"/>
+    <delete from="5235179" to="568375948"/>
+    <!-- relation 13186544: no_left_turn, Lorimer Street to Montague Street (via node) -->
+    <delete from="791012550#0" to="556168191"/>
+    <!-- relation 13186546: no_left_turn, Montague Street to Lorimer Street (via node) -->
+    <delete from="981208581" to="783887409"/>
+    <!-- relation 13198777: no_right_turn, Munro Street to Montague Street (via node) -->
+    <delete from="568382962#0" to="-197846381#1"/>
+    <!-- relation 13198778: no_right_turn, Montague Street to Munro Street (via node) -->
+    <delete from="197846381#1" to="1127446610#1"/>
+    <!-- relation 13216884: no_left_turn, Graham Street to Plummer Street (via node) -->
+    <delete from="983606207#0" to="983606202#1"/>
+    <!-- relation 13236382: no_right_turn, Wurundjeri Way to way 968153046 (via node) -->
+    <delete from="24429960#1" to="984852766"/>
+    <!-- relation 13236384: no_right_turn, Wurundjeri Way to way 258070011 (via node) -->
+    <delete from="984852790" to="27462783"/>
+    <!-- relation 13236474: no_left_turn, Maritime Place to Flinders Street (via node) -->
+    <delete from="984863714#0" to="787612632"/>
+    <!-- relation 13238291: no_left_turn, way 27007193 to 55 (via node) -->
+    <delete from="27007193#0" to="481307371"/>
+    <!-- relation 13238293: no_left_turn, Wurundjeri Way to Dudley Street (via node) -->
+    <delete from="505037806#0" to="39451666"/>
+    <!-- relation 13239486: only_right_turn, St Kilda Road to St Kilda Road (via node). Its only allowed movement had no connection, so it is added -->
+    <delete from="71076871" to="254443127"/>
+    <connection from="71076871" to="1123976273" fromLane="0" toLane="1"/>
+    <!-- relation 13244133: no_right_turn, way 1339694574 to Alexandra Avenue (via node) -->
+    <delete from="376017254" to="-24589915#0"/>
+    <!-- relation 13244134: no_right_turn, Boathouse Drive to Alexandra Avenue (via node) -->
+    <delete from="985376448" to="1216173541"/>
+    <delete from="985376448" to="985376436"/>
+    <!-- relation 13244169: no_left_turn, Olympic Boulevard to Batman Avenue (via node) -->
+    <delete from="985383991" to="581660717"/>
+    <!-- relation 13585365: no_left_turn, Dynon Road to Citylink Onramp (via node) -->
+    <delete from="581658391#0" to="349836922"/>
+    <!-- relation 13585884: no_left_turn, Williamstown Road to Graham Street (via node) -->
+    <delete from="767675588#3" to="767675587"/>
+    <!-- relation 13615572: no_left_turn, Ingles Street to Lorimer Street (via node) -->
+    <delete from="-569757625" to="580637963#0"/>
+    <!-- relation 14257863: no_right_turn, Nicholson Street to Albert Street (via way) -->
+    <delete from="208677470#0" to="665181107"/>
+    <!-- relation 14320772: no_right_turn, Russell Street to Bourke Street (via way) -->
+    <delete from="190727196#0" to="208506747"/>
+    <!-- relation 14348902: no_left_turn, Footscray Road Offramp to Footscray Road (via node) -->
+    <delete from="172481680#0" to="386879409"/>
+    <!-- relation 15320680: no_left_turn, Southgate Avenue to City Road (via node) -->
+    <delete from="1132329210#0" to="787583813"/>
+    <!-- relation 15817861: no_right_turn, La Trobe Street to Spencer Street (via way) -->
+    <delete from="1312971512" to="30179566#0"/>
+    <!-- relation 15817862: no_right_turn, La Trobe Street to Spencer Street (via way) -->
+    <delete from="1253825982#2" to="1169295050"/>
+    <!-- relation 16339471: no_right_turn, Victoria Street to Elizabeth Street (via node) -->
+    <delete from="62207595" to="208793254"/>
+    <delete from="62207595" to="581989734"/>
+    <delete from="983871061" to="208793254"/>
+    <delete from="983871061" to="581989734"/>
+    <!-- relation 16339472: no_right_turn, Elizabeth Street to Victoria Street (via node). Also covers deletions listed under relation(s) [16339471] -->
+    <delete from="62207595" to="983871071"/>
+    <!-- relation 17652431: no_right_turn, Heather Street to Heather Street (via node) -->
+    <delete from="23910106#0" to="23910105"/>
+    <!-- relation 17720275: only_straight_on, Flinders Street to Flinders Street (via way) -->
+    <delete from="296383692" to="1038111502#0"/>
+    <!-- relation 19542442: no_right_turn, Elizabeth Street to Therry Street (via node) -->
+    <delete from="1126652259" to="1426007102"/>
+    <!-- relation 19673158: no_right_turn, Collins Street to Navigation Drive (via node) -->
+    <delete from="1435055239#0" to="42555580#1"/>
+    <!-- relation 19673173: no_right_turn, Batmans Hill Drive to Collins Street (via node) -->
+    <delete from="40002212#1" to="569460350"/>
+    <!-- relation 19716108: no_right_turn, Spencer Street to Dryburgh Street (via node) -->
+    <delete from="569448149#0" to="1123803840"/>
+    <!-- relation 20062917: no_right_turn, City Road to Ferrars Street (via node) -->
+    <delete from="444842203#0" to="1209937156"/>
+    <!-- relation 20504326: no_left_turn, Wurundjeri Way to West Gate Tunnel (via node) -->
+    <delete from="959708815#1" to="959708809"/>
+    <!-- relation 20504327: no_left_turn, West Gate Tunnel to Wurundjeri Way (via node) -->
+    <delete from="959708813" to="1353291426"/>
+    <!-- relation 20504328: no_left_turn, West Gate Tunnel to Wurundjeri Way (via node) -->
+    <delete from="486810538" to="1500953720"/>
+    <!-- relation 20504329: no_left_turn, Wurundjeri Way to West Gate Tunnel (via node) -->
+    <delete from="699012816" to="824006809"/>
+    <!-- relation 20505766: no_left_turn, Dynon Road Offramp to Dynon Road (via node) -->
+    <delete from="172481740#0" to="13859318"/>
+</connections>

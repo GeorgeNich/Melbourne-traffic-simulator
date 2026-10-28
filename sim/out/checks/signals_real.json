@@ -1,0 +1,3508 @@
+{
+ "description": "Tier of each SUMO traffic light's program (sim/signals_real.py).",
+ "accepted_provenance": [
+  "ai_checked",
+  "re_read"
+ ],
+ "pos_vehicle_green_cap_s": 90.0,
+ "max_green_meaning": "unclear on the sheets (legend: 'used only in VA/Isolated mode'; 'forced off after this maximum extension green time'); the two readings are max green = min green + extension (MAX_GREEN_TOTAL False) and extension = the total max green (True); both were run on attempt 3a's routes and the better reading kept (sim/work/am_peak/ablate*/report.json)",
+ "max_green_reading": "total",
+ "tiers": {
+  "default": 265,
+  "real_timings": 73,
+  "real_phases": 49
+ },
+ "sites": 221,
+ "site_notes": [
+  {
+   "site_id": "1045",
+   "note": "split site: paired to 3 lights"
+  },
+  {
+   "site_id": "1045",
+   "note": "spans 3 lights"
+  },
+  {
+   "site_id": "1063",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "1065",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "1067",
+   "note": "split site: paired to 2 lights"
+  },
+  {
+   "site_id": "1067",
+   "note": "spans 2 lights"
+  },
+  {
+   "site_id": "1074",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "1075",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "1318",
+   "note": "light cluster_2189497200_2189497210_2189497226_2189497232 lost"
+  },
+  {
+   "site_id": "1425",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "1563",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "1711",
+   "note": "split site: paired to 2 lights"
+  },
+  {
+   "site_id": "1711",
+   "note": "spans 2 lights"
+  },
+  {
+   "site_id": "2402",
+   "note": "light cluster_2265495840_2265495842_2265495843_2682666743_#6more kept by nearer site"
+  },
+  {
+   "site_id": "2480",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "2479",
+   "note": "light cluster_2187983881_2187983882_2187983885_2187983891_#4more lost"
+  },
+  {
+   "site_id": "2950",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "2989",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "3416",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "3460",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "3544",
+   "note": "split site: paired to 2 lights"
+  },
+  {
+   "site_id": "3544",
+   "note": "spans 2 lights"
+  },
+  {
+   "site_id": "3752",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "3966",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "4162",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "4370",
+   "note": "split site: paired to 2 lights"
+  },
+  {
+   "site_id": "4370",
+   "note": "spans 2 lights"
+  },
+  {
+   "site_id": "4450",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "4508",
+   "note": "split site: paired to 2 lights"
+  },
+  {
+   "site_id": "4508",
+   "note": "spans 2 lights"
+  },
+  {
+   "site_id": "4509",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "4515",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "4525",
+   "note": "split site: paired to 2 lights"
+  },
+  {
+   "site_id": "4525",
+   "note": "spans 2 lights"
+  },
+  {
+   "site_id": "4525",
+   "note": "light 589664980 kept by nearer site"
+  },
+  {
+   "site_id": "4535",
+   "note": "split site: paired to 3 lights"
+  },
+  {
+   "site_id": "4535",
+   "note": "spans 3 lights"
+  },
+  {
+   "site_id": "4525",
+   "note": "light cluster_122705655_1479928134_1479930070_1479930102_#4more lost"
+  },
+  {
+   "site_id": "4582",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "1319",
+   "note": "light cluster_2189497200_2189497210_2189497226_2189497232 lost"
+  },
+  {
+   "site_id": "2481",
+   "note": "light cluster_2187983881_2187983882_2187983885_2187983891_#4more lost"
+  },
+  {
+   "site_id": "4596",
+   "note": "no traffic light within 60 m"
+  },
+  {
+   "site_id": "4876",
+   "note": "split site: paired to 2 lights"
+  },
+  {
+   "site_id": "4876",
+   "note": "spans 2 lights"
+  },
+  {
+   "site_id": "3972",
+   "note": "light cluster_3345061635_3345061641_3345061648_4520380444_#6more lost"
+  },
+  {
+   "site_id": "4889",
+   "note": "no traffic light within 60 m"
+  }
+ ],
+ "lights": [
+  {
+   "tls": "10274908270",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "10277595977",
+   "site_id": "2918",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "10278810318",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "10279827261",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "10279827262",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "10279827263",
+   "site_id": "4406",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "10279827264",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "10892555699",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "10975626990",
+   "site_id": "4569",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 66.0,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "11268579985",
+   "site_id": "3973",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 109.5,
+   "notes": []
+  },
+  {
+   "tls": "11268579998",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "11301421332",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "11301421333",
+   "site_id": "2393",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1132070481",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "11964927276",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1217532917",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1224872747",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "12385802746",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "12385802747",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "12580376993",
+   "site_id": "2931",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13073535658",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13100080887",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13369139665",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13369139669",
+   "site_id": "2395",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13389865864",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13404088721",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13404088722",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13739734379",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "13739819367",
+   "site_id": "1067",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 121.0,
+   "notes": []
+  },
+  {
+   "tls": "13739819368",
+   "site_id": "1067",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 121.0,
+   "notes": []
+  },
+  {
+   "tls": "1449431215",
+   "site_id": "4575",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1492131972",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1492150969",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1525908983",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "176696956",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1793100651",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1833110273",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1838361782",
+   "site_id": "4570",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "1883787524",
+   "site_id": "4902",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 142.0,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "197019549",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "197019551",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "2109946478",
+   "site_id": "4894",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 68.0,
+   "notes": []
+  },
+  {
+   "tls": "2187770693",
+   "site_id": "4605",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 15.0,
+   "notes": [
+    "group 1: no approach edge for Swanston St NB",
+    "group 2: no approach edge for Swanston St SB",
+    "group 3: no L link from Little Bourke St WB"
+   ]
+  },
+  {
+   "tls": "2187874241",
+   "site_id": "4578",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 87.0,
+   "notes": [
+    "group 1: no approach edge for Swanston St NB",
+    "group 2: no approach edge for Swanston St SB",
+    "group 3: no T link from Collins St WB",
+    "group 4: no T link from Collins St EB",
+    "group 9: no T link from Collins St WB",
+    "real phases rejected: 1 car links in no phase [0]",
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "2187874242",
+   "site_id": "4588",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "2189143650",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "2267913253",
+   "site_id": "4876",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 64.0,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "2267913275",
+   "site_id": "4876",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 64.0,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "2268843842",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "2268843901",
+   "site_id": "3418",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "252588486",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "259132625",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "2613010008",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "26680090",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "301539234",
+   "site_id": "1045",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 40.0,
+   "notes": [
+    "group 1: no approach edge for Spencer St NB"
+   ]
+  },
+  {
+   "tls": "30287464",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3296127076",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3296127078",
+   "site_id": "4532",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3394728756",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3394728757",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3394728758",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3543024079",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "361405044",
+   "site_id": "4884",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 87.1,
+   "notes": []
+  },
+  {
+   "tls": "36822151",
+   "site_id": "2927",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "36822340",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "370709178",
+   "site_id": "4892",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 62.0,
+   "notes": []
+  },
+  {
+   "tls": "370709183",
+   "site_id": "4893",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 72.0,
+   "notes": []
+  },
+  {
+   "tls": "3793626742",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3884089008",
+   "site_id": "4476",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3884089013",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3885768479",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3933094360",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3933094364",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3933094365",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "3933095114",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "4415760631",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "4423067480",
+   "site_id": "4900",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "444585649",
+   "site_id": "3536",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 62.0,
+   "notes": []
+  },
+  {
+   "tls": "452351310",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "452354569",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "452360251",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "5556316811",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "5560746010",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "560986844",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "582893310",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "585671928",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "5880339360",
+   "site_id": "4566",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 30.0,
+   "notes": [
+    "group 1: no L link from William St NB",
+    "group 2: no L link from William St SB",
+    "group 2: no T link from William St SB",
+    "group 2: no R link from William St SB",
+    "group 3: no T link from Flinders St WB",
+    "group 4: no L link from Flinders St EB",
+    "group 4: no T link from Flinders St EB",
+    "group 5: no R link from William St NB",
+    "group 6: no R link from Flinders St WB"
+   ]
+  },
+  {
+   "tls": "589664980",
+   "site_id": "1045",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 125.5,
+   "notes": [
+    "group 1: no approach edge for Spencer St NB",
+    "group 2: no T link from Spencer St SB",
+    "real phases rejected: 1 car links in no phase [0]"
+   ]
+  },
+  {
+   "tls": "591429446",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "591431036",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "5957906923",
+   "site_id": "3166",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "598156479",
+   "site_id": "4530",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 40.0,
+   "notes": [
+    "group 1: no T link from Swanston St NB"
+   ]
+  },
+  {
+   "tls": "598156578",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "60653700",
+   "site_id": "1068",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 70.0,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "6167254910",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "6167254911",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "6167254948",
+   "site_id": "1711",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 113.0,
+   "notes": [
+    "group 1: no T link from Flinders St WB",
+    "resolved vehicle groups in no phase of the sequence: ['2']",
+    "real phases rejected: 2 car links in no phase [0, 1]"
+   ]
+  },
+  {
+   "tls": "6167254949",
+   "site_id": "1711",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 113.0,
+   "notes": [
+    "group 2: no T link from Flinders St EB",
+    "resolved vehicle groups in no phase of the sequence: ['1']",
+    "real phases rejected: 2 car links in no phase [0, 1]"
+   ]
+  },
+  {
+   "tls": "6167441083",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "6167441084",
+   "site_id": "4579",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 119.0,
+   "notes": [
+    "group 1: no T link from Collins St EB",
+    "resolved vehicle groups in no phase of the sequence: ['1']",
+    "real phases rejected: 1 car links in no phase [0]"
+   ]
+  },
+  {
+   "tls": "6282174124",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "6282174160",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "636754479",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "636754534",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "664380075",
+   "site_id": "4159",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 118.5,
+   "notes": []
+  },
+  {
+   "tls": "6731941332",
+   "site_id": "2905",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 127.0,
+   "notes": []
+  },
+  {
+   "tls": "711763473",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "7223656239",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "7239073991",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "7265071010",
+   "site_id": "4921",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 61.5,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "7293755045",
+   "site_id": "3544",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "7293755046",
+   "site_id": "3544",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "7379344725",
+   "site_id": "4901",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 119.0,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "7512769216",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "7512769217",
+   "site_id": "1045",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 125.5,
+   "notes": [
+    "group 1: no approach edge for Spencer St NB",
+    "group 2: no T link from Spencer St SB",
+    "real phases rejected: 2 car links in no phase [0, 1]"
+   ]
+  },
+  {
+   "tls": "760180221",
+   "site_id": "4370",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 91.5,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "7684121853",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "774504426",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "774519013",
+   "site_id": "4388",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 85.5,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "774545122",
+   "site_id": "4508",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 121.0,
+   "notes": []
+  },
+  {
+   "tls": "774546370",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "774547223",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "775926005",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "775942450",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "775942452",
+   "site_id": "4402",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "775946937",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "777827023",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "777827943",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "777828117",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "777833052",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "844493149",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846546021",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846557812",
+   "site_id": "2936",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 112.5,
+   "notes": []
+  },
+  {
+   "tls": "846558226",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846565363",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846565378",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846565380",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846566361",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846566367",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846566753",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "846566999",
+   "site_id": "4533",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 115.0,
+   "notes": []
+  },
+  {
+   "tls": "847528076",
+   "site_id": "4888",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "848374897",
+   "site_id": "4534",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "848376688",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "8633692081",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "8879528305",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "8911176970",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "8915204680",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "8915227908",
+   "site_id": "4370",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 91.5,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "9118733333",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9146197625",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9308089029",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9308089030",
+   "site_id": "4535",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9308089031",
+   "site_id": "4535",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9308089032",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9308089041",
+   "site_id": "4535",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9756035267",
+   "site_id": "4598",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 117.0,
+   "notes": []
+  },
+  {
+   "tls": "9756035268",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9765780334",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "9765780335",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_11943253540",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_277089910",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_277164392",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_452352328",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_741702052",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_8957021702",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_9105320422",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_cluster_159337598_159337614_1834131915_36820276",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_cluster_2365009329_33317568_387153044_781093374",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_cluster_259132363_293816123_36823348_36823356",
+   "site_id": "4886",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 110.0,
+   "notes": []
+  },
+  {
+   "tls": "GS_cluster_41667991_560997597_8942967487_9708618420",
+   "site_id": "4435",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_cluster_471259500_702451422_702462230_702478450",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_cluster_60653725_60653733_60653735_92130447",
+   "site_id": "4373",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "GS_cluster_702460953_702465424_780982646_8928702135",
+   "site_id": "1051",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10266719836_10266719839_777773673_777775583_#6more",
+   "site_id": "4503",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10266719843_10266719844_10266719845_10266719846_#11more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10266719852_10266719853_10266719857_10266719858_#6more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10266719867_10266719868_10266719870_1880686094_#8more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10266719875_10266719876_10266719878_3394778771_#8more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10266726070_3394764075_3394764077_3394764078_#5more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10266726071_10266726072_127598515_332546101_#6more",
+   "site_id": "4519",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10274908277_10274908278_10274908279_13190457162_#3more",
+   "site_id": "1188",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 57.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10277381706_10277381707_10277381708_10277402309_#3more",
+   "site_id": "4556",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 69.2,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1042174041_137181160_1725216746_1725216770_#3more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10557845091_10557845092_10557845093_10557845099_#3more",
+   "site_id": "4920",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 92.1,
+   "notes": []
+  },
+  {
+   "tls": "cluster_107172365_259159793_8915393795_8915393796_#1more",
+   "site_id": "4922",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_107172451_13651522587_243097131_243097376_#5more",
+   "site_id": "4880",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10904440439_1492410147_2183271187_2183271188_#4more",
+   "site_id": "4389",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10910012488_1492410149_1492410158_1492410162_#5more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_10975627001_1985557921",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11047591902_11047591904_11047596605_8879528290_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_111302426_111302447_11876199916_196913363_#5more",
+   "site_id": "4878",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 120.1,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11135234153_11135234154_26034670_3367904396_#6more",
+   "site_id": "2902",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 73.0,
+   "notes": [
+    "resolved vehicle groups in no phase of the sequence: ['6', '8']",
+    "11 unphased car links run as filter with their approach [0, 1, 4, 6, 7, 9, 10, 12, 13, 15, 17]"
+   ]
+  },
+  {
+   "tls": "cluster_11135234155_11135234156_26034663_589403294",
+   "site_id": "2911",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11158256744_3393594193_828414268_846547014_#2more",
+   "site_id": "4531",
+   "tier": "default",
+   "reason": "mid-block crossing site on an intersection light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11209349468_2418857948_3109028049_5473447457_#6more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11268579990_265516842",
+   "site_id": "4549",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 60.4,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1131986101_1131986113_1131986163_3199579114_#3more",
+   "site_id": "1066",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1132023834_3394737409_3394737410_3394737414_#5more",
+   "site_id": "4372",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 92.6,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11639928009_12117992887_13408009718_13408009719_#3more",
+   "site_id": "4536",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11639928010_13073535651_2263442679_2263442695",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11639928014_11639928015_120346307_8986977474_#7more",
+   "site_id": "3542",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 110.4,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11655178927_1492153091_1492153093_1492153100_#6more",
+   "site_id": "2925",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 89.5,
+   "notes": [
+    "6 unphased car links run as filter with their approach [0, 8, 9, 10, 18, 19]"
+   ]
+  },
+  {
+   "tls": "cluster_11738479666_1558806077_2187770698_7912946298",
+   "site_id": "2913",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 15.0,
+   "notes": [
+    "group 1: no approach edge for Swanston St SB",
+    "group 3: no L link from Little Lonsdale St EB",
+    "group 3: no R link from Little Lonsdale St EB",
+    "group 4: no approach edge for Swanston St NB"
+   ]
+  },
+  {
+   "tls": "cluster_11876051538_369109134",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11934121743_197024820",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11943253544_3296127074",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11964927272_30942252",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_11982946469_13739763550_2189272905_591393322_#6more",
+   "site_id": "4565",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 68.5,
+   "notes": [
+    "group 1: no approach edge for Market St NB",
+    "group 2: no T link from Market St SB",
+    "group 5: no approach edge for Market St NB",
+    "2 unphased car links run as filter with their approach [4, 6]"
+   ]
+  },
+  {
+   "tls": "cluster_12117992881_8906532288",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_12147013374_2181268830_2181268836_2181275335_#5more",
+   "site_id": "2920",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 72.5,
+   "notes": [
+    "8 unphased car links run as filter with their approach [0, 3, 4, 6, 7, 10, 11, 13]"
+   ]
+  },
+  {
+   "tls": "cluster_1224854731_1224854738_1224854784_122752579_#3more",
+   "site_id": "3967",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1224869052_1224869054_1224869076_1224869077_#2more",
+   "site_id": "1069",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_122705649_122705650_122769918_13722451142_#7more",
+   "site_id": "4526",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_122705652_2202858913_2202858915_589747750_#3more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_122705655_1479928134_1479930070_1479930102_#4more",
+   "site_id": "4567",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 123.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_12514091450_2189156622_8955976554_8955976556_#3more",
+   "site_id": "3410",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_12540075666_13969913008_13969913009_13969913010_#2more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_12597774237_2189377511_3419344106",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_130039064_130039824",
+   "site_id": "4487",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 118.4,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "cluster_130039242_130039433_1833875775_1833875777_#6more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_130040518_30942487_9360244826",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13073535657_2265417410",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13152694926_13152694929_13185751339_844455902_#4more",
+   "site_id": "1141",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13152694937_3743608245_589814363_7393587506_#2more",
+   "site_id": "1191",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 45.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13185671777_13185671778_13185671780_13185671781_#7more",
+   "site_id": "1072",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 83.3,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13190365847_13190365848_13190365855_13190365857_#6more",
+   "site_id": "1142",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 67.4,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13201753862_13976139568_13976139569_13976139570_#6more",
+   "site_id": "4568",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 66.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13205964386_13205964387_2190483582_2190483584_#6more",
+   "site_id": "4512",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 71.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13254899786_2183273514_2183273515_2183273517_#2more",
+   "site_id": "4523",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13734161752_13734161753_3313058669_3313058670_#4more",
+   "site_id": "4437",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 99.0,
+   "notes": [
+    "group 3: no T link from Bourke St EB",
+    "3 unphased car links run as filter with their approach [9, 10, 11]",
+    "real phases rejected: 3 car links lose their protected green vs default [9, 10, 11]"
+   ]
+  },
+  {
+   "tls": "cluster_13739734378_2187874240_2193369804",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13739734387_1449431331_1449431342_1449431465_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13739763536_2190478937_2190478940",
+   "site_id": "4571",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13741922619_30287465_3419344120_8869200174_#1more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13751647373_259616740_30942993_3394768953_#6more",
+   "site_id": "4514",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13763111530_14055483052_4415760632_5556316808_#2more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13792614710_13792614711_13792614712_13792614713_#2more",
+   "site_id": "4883",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 116.6,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13807289053_13807289054_13807289055_1985557912_#1more",
+   "site_id": "4604",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13838003329_2265525313_2265526882_2265526919",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_13976139571_13976139572_13976139573_13976139574_#4more",
+   "site_id": "4576",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 72.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1449297301_1449297305_1449297324_1449297336_#2more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1449355139_1449431482_1449431504_1449431630_#2more",
+   "site_id": "2932",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 41.5,
+   "notes": [
+    "1 unphased car links run as filter with their approach [5]"
+   ]
+  },
+  {
+   "tls": "cluster_1449355165_1449431535_1449431603_1449431611_#5more",
+   "site_id": "4560",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1449431388_1449431464_1449431544_8873761628",
+   "site_id": "2024",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 55.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1479928057_1479928084_36822153_589475485_#8more",
+   "site_id": "2929",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 112.0,
+   "notes": [
+    "group 7: no R link from Flinders St WB",
+    "5 unphased car links run as filter with their approach [17, 18, 19, 21, 22]"
+   ]
+  },
+  {
+   "tls": "cluster_1492131947_296027721",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1492131963_1492131965_296027650_296027719",
+   "site_id": "4488",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1492145777_1492145829_1492145844_1492149374_#5more",
+   "site_id": "2926",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 127.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1492150938_1492150960_1492150966_1492150967_#3more",
+   "site_id": "2910",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 84.0,
+   "notes": [
+    "group 3: no T link from Lonsdale St WB",
+    "group 4: no approach edge for Car Park Access Road EB",
+    "group 6: no R link from Spencer St SB",
+    "group 8: no approach edge for Car Park Access Road EB",
+    "2 unphased car links run as filter with their approach [3, 5]"
+   ]
+  },
+  {
+   "tls": "cluster_1525908946_1525909002_1833110301_1985557938_#7more",
+   "site_id": "4561",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 91.0,
+   "notes": [
+    "resolved vehicle groups in no phase of the sequence: ['6']",
+    "4 unphased car links run as filter with their approach [0, 3, 4, 14]"
+   ]
+  },
+  {
+   "tls": "cluster_1525908986_266739054_576876287",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1588112477_243434000",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1691676459_1691676471_30220444_34157905_#3more",
+   "site_id": "4405",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1691676467_2615820738_774545099_775933327",
+   "site_id": "4508",
+   "tier": "default",
+   "reason": "mid-block crossing site on an intersection light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_170219377_3419344113_6721956102",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_170219402_2189358895_3419344117",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1725216871_1725216895_1725216922_1985546059_#4more",
+   "site_id": "4403",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1833110288_589473200_591426700_591427990_#5more",
+   "site_id": "4564",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 83.5,
+   "notes": [
+    "group 3: no T link from Queen St SB"
+   ]
+  },
+  {
+   "tls": "cluster_1833110319_1985549822_1985551133_1985557960_#4more",
+   "site_id": "4404",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1833877037_1833877038_702451248_702451258_#3more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1865096363_30943327_34160610_371949823_#7more",
+   "site_id": "4400",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1883787502_2074161379_36823157_36823654_#10more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_196906311_196906529_33238452_3383835653_#4more",
+   "site_id": "4881",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1985549834_1985549836_1985551132_30943325_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1985557923_1985557927_26034669_3367904400_#6more",
+   "site_id": "2903",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 87.5,
+   "notes": [
+    "resolved vehicle groups in no phase of the sequence: ['12']",
+    "2 unphased car links run as filter with their approach [8, 11]"
+   ]
+  },
+  {
+   "tls": "cluster_1985557929_2180785601_2180785611_2180785616_#9more",
+   "site_id": "4577",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 88.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1985557931_26051952",
+   "site_id": "4587",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_1985557963_26034662",
+   "site_id": "2912",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 88.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2020813831_26034533",
+   "site_id": "4607",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2020813837_2020813891",
+   "site_id": "4590",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 70.4,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2020813849_2020813869_2020813871_2020813875_#4more",
+   "site_id": "2907",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 88.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2020813855_2020813883",
+   "site_id": "2915",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_207108370_259132664_3498500908_3498500909_#1more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2165149751_3394729660",
+   "site_id": "4563",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 59.0,
+   "notes": [
+    "phases without cars dropped: ['B']",
+    "group 3: no T link from Flinders St WB"
+   ]
+  },
+  {
+   "tls": "cluster_2172718107_30286983_3285623814_3285623815_#3more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2174950792_2174950793_2174950794_2180491134_#3more",
+   "site_id": "4585",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 103.5,
+   "notes": [
+    "5 unphased car links run as filter with their approach [0, 2, 5, 6, 9]"
+   ]
+  },
+  {
+   "tls": "cluster_2174950796_2174950801_9086085383_9086085384_#1more",
+   "site_id": "2900",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 65.0,
+   "notes": [
+    "group 1: no L link from Spencer St NB",
+    "group 2: no R link from Spencer St SB"
+   ]
+  },
+  {
+   "tls": "cluster_2174950802_3211909915_9330888060_9330888061",
+   "site_id": "2835",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 60.0,
+   "notes": [
+    "group 3: no T link from Little Collins St WB",
+    "real phases rejected: 2 car links in no phase [2, 3]"
+   ]
+  },
+  {
+   "tls": "cluster_2174950855_2174950856_2174963245_2174963248_#3more",
+   "site_id": "4602",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 99.5,
+   "notes": [
+    "group 3: no T link from Bourke St WB",
+    "2 unphased car links run as filter with their approach [2, 5]",
+    "real phases rejected: 2 car links in no phase [3, 4]"
+   ]
+  },
+  {
+   "tls": "cluster_2177124599_2177124605_2177124610_2177124611_#6more",
+   "site_id": "4599",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 72.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2177124607_2177124613_2177124623_2177124624_#4more",
+   "site_id": "4601",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 68.0,
+   "notes": [
+    "resolved vehicle groups in no phase of the sequence: ['5']",
+    "5 unphased car links run as filter with their approach [5, 6, 7, 11, 23]"
+   ]
+  },
+  {
+   "tls": "cluster_2180785571_2180785574_2180785588_2180785610_#4more",
+   "site_id": "4584",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 59.0,
+   "notes": [
+    "group 4: no R link from Collins St EB",
+    "resolved vehicle groups in no phase of the sequence: ['5']",
+    "5 unphased car links run as filter with their approach [4, 5, 6, 7, 9]"
+   ]
+  },
+  {
+   "tls": "cluster_2180785582_2180785597_2180785617_2180822307_#4more",
+   "site_id": "4581",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 72.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2181268810_2181268821_2181275339_2181275342_#4more",
+   "site_id": "2923",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 72.5,
+   "notes": [
+    "8 unphased car links run as filter with their approach [0, 3, 4, 7, 8, 11, 12, 15]"
+   ]
+  },
+  {
+   "tls": "cluster_2181268826_2181275344_2291073957_3367904409_#6more",
+   "site_id": "2919",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 90.5,
+   "notes": [
+    "4 unphased car links run as filter with their approach [0, 3, 6, 12]"
+   ]
+  },
+  {
+   "tls": "cluster_2181268832_2187770692_2383211191_2383211199_#2more",
+   "site_id": "2921",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 75.6,
+   "notes": [
+    "group 1: no approach edge for Swanston St NB",
+    "resolved vehicle groups in no phase of the sequence: ['5']",
+    "2 unphased car links run as filter with their approach [2, 4]",
+    "real phases rejected: 1 car links in no phase [3]"
+   ]
+  },
+  {
+   "tls": "cluster_2187770696_2187770700_9086096511_9086096512_#4more",
+   "site_id": "2904",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 30.0,
+   "notes": [
+    "group 1: no approach edge for Swanston St NB",
+    "group 2: no approach edge for Swanston St SB",
+    "group 3: no L link from Lonsdale St WB",
+    "group 3: no R link from Lonsdale St WB",
+    "group 4: no L link from Lonsdale St EB",
+    "group 4: no R link from Lonsdale St EB",
+    "group 10: no approach edge for Caledonian Lane NB",
+    "group 11: no approach edge for Caledonian Lane NB"
+   ]
+  },
+  {
+   "tls": "cluster_2187874243_3313134379_3313134381_3313134382_#4more",
+   "site_id": "4562",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2187983875_2187983886_2187983887_2187983890_#4more",
+   "site_id": "4594",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 67.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2187983881_2187983882_2187983885_2187983891_#4more",
+   "site_id": "4595",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 67.5,
+   "notes": [
+    "group 2: no R link from Russell St SB"
+   ]
+  },
+  {
+   "tls": "cluster_2189143648_2189143649_9146197756_9146197757_#1more",
+   "site_id": "1059",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2189145378_26034544_6430275318_6430275319_#4more",
+   "site_id": "4591",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2189145380_2189145397_2189145399_2189145404_#4more",
+   "site_id": "4600",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 72.5,
+   "notes": [
+    "8 unphased car links run as filter with their approach [0, 2, 3, 6, 7, 9, 10, 12]"
+   ]
+  },
+  {
+   "tls": "cluster_2189145381_2189145390_2189145394_2189145403_#5more",
+   "site_id": "4583",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 73.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2189145384_2189145402",
+   "site_id": "2916",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 62.0,
+   "notes": [
+    "1 unphased car links run as filter with their approach [6]"
+   ]
+  },
+  {
+   "tls": "cluster_2189145385_2189145386_2189145388_2189145408_#3more",
+   "site_id": "2924",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 95.5,
+   "notes": [
+    "6 unphased car links run as filter with their approach [0, 2, 5, 6, 8, 10]"
+   ]
+  },
+  {
+   "tls": "cluster_2189145387_2189145389_2189145391_2189145392_#4more",
+   "site_id": "2908",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 89.5,
+   "notes": [
+    "7 unphased car links run as filter with their approach [3, 5, 7, 8, 9, 11, 13]"
+   ]
+  },
+  {
+   "tls": "cluster_2189145401_26034534",
+   "site_id": "4608",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 61.0,
+   "notes": [
+    "3 unphased car links run as filter with their approach [0, 2, 4]"
+   ]
+  },
+  {
+   "tls": "cluster_2189145406_2189156618_2189156621_8955976463_#4more",
+   "site_id": "4573",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 92.0,
+   "notes": [
+    "group 3: no T link from Flinders Lane WB",
+    "group 7: no R link from William St SB",
+    "4 unphased car links run as filter with their approach [3, 4, 6, 8]",
+    "real phases rejected: 1 car links in no phase [5]"
+   ]
+  },
+  {
+   "tls": "cluster_2189398724_2189398733_2189398745_2189398750_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2189497200_2189497210_2189497226_2189497232",
+   "site_id": "4593",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 63.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2190478922_2190478924_2190478928_2190478932_#4more",
+   "site_id": "4580",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 73.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2190478926_2190478936_2190561008_2190561011",
+   "site_id": "4597",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 68.5,
+   "notes": [
+    "group 3: no approach edge for Bourke St WB",
+    "group 4: no T link from Bourke St EB",
+    "3 unphased car links run as filter with their approach [0, 3, 4]"
+   ]
+  },
+  {
+   "tls": "cluster_2190478930_2190478934",
+   "site_id": "4589",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2190483577_2190483597",
+   "site_id": "2914",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 61.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2190483578_2190483598",
+   "site_id": "4510",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 71.6,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2190483579_2190483581_2190483585_2190483589_#4more",
+   "site_id": "4511",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 72.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2190483580_2190483586",
+   "site_id": "4606",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 61.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2190483583_2190483587_2190483588_2190483590_#4more",
+   "site_id": "2922",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 75.0,
+   "notes": [
+    "group 3: no R link from La Trobe St EB"
+   ]
+  },
+  {
+   "tls": "cluster_2190483591_2190483592_2190483594_2190483600_#3more",
+   "site_id": "2906",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 73.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2200514710_2200514713",
+   "site_id": "4419",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2265417413_2265417415_2682666777_2682666779_#8more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2265495840_2265495842_2265495843_2682666743_#6more",
+   "site_id": "2400",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 96.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2265525307_2265526854_2265526874_2265526907_#6more",
+   "site_id": "2403",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2267913222_2267913261_3002563625_3002563627_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2268843869_2268843876_9422334418_9422334419_#1more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2268883691_2268883692",
+   "site_id": "4891",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 60.6,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2324975789_3419354749_3419354751_3419354763_#6more",
+   "site_id": "4444",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_233274930_30945324_8869200234",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2341546888_36821472_9950251062_9950251063_#1more",
+   "site_id": "4887",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2397232436_301545267_301545273_634784607_#4more",
+   "site_id": "4163",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_242314183_2952016081_2952016084_2952016092_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_243097030_298045618_298045619_3296128761_#2more",
+   "site_id": "4923",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_243097133_243097134_6669055287_9950383882_#2more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_245537592_4544002877_9756035314",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_247531432_247531546",
+   "site_id": "4527",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_247533244_247533245_9878403442_9878403443",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_259132674_259132676_259132677_3498500905_#3more",
+   "site_id": "4882",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 136.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_259616706_26034526_3394726298_3394726300_#4more",
+   "site_id": "2909",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 77.0,
+   "notes": [
+    "group 2: no R link from King St SB",
+    "resolved vehicle groups in no phase of the sequence: ['5', '7']",
+    "5 unphased car links run as filter with their approach [5, 6, 7, 10, 13]"
+   ]
+  },
+  {
+   "tls": "cluster_259616751_30942994_8909055559_9086085406_#2more",
+   "site_id": "4517",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 88.5,
+   "notes": [
+    "resolved vehicle groups in no phase of the sequence: ['6']",
+    "12 unphased car links run as filter with their approach [12, 13, 14, 15, 16, 17, 22, 23, 24, 25, 28, 29]"
+   ]
+  },
+  {
+   "tls": "cluster_259617268_30942794_3394779110_3394779112_#4more",
+   "site_id": "4524",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_26034528_9146197650_9146197651_9146197652_#1more",
+   "site_id": "2917",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_26034535_9146197622_9146197623_9146197624",
+   "site_id": "4609",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 65.6,
+   "notes": [
+    "group 3: no L link from Little Bourke St WB",
+    "group 3: no T link from Little Bourke St WB",
+    "group 3: no R link from Little Bourke St WB",
+    "real phases rejected: 4 car links in no phase [4, 5, 6, 7]"
+   ]
+  },
+  {
+   "tls": "cluster_26034540_9146197603_9146197604_9146197606_#2more",
+   "site_id": "4592",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 66.5,
+   "notes": [
+    "group 3: no R link from Little Collins St WB",
+    "group 4: no R link from Little Collins St EB"
+   ]
+  },
+  {
+   "tls": "cluster_26034668_277089929_317537930_3419354750_#6more",
+   "site_id": "2901",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 80.0,
+   "notes": [
+    "group 2: no T link from Spring St SB",
+    "group 3: no L link from Lonsdale St WB",
+    "group 4: no R link from Lonsdale St EB",
+    "resolved vehicle groups in no phase of the sequence: ['5']",
+    "2 unphased car links run as filter with their approach [4, 11]"
+   ]
+  },
+  {
+   "tls": "cluster_26034672_589402268",
+   "site_id": "4603",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_26051950_589402289",
+   "site_id": "4586",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_266733258_269335114_269335115_30944137_#2more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_2682666741_2682666742_36820470_36822694_#1more",
+   "site_id": "2397",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 114.0,
+   "notes": [
+    "group 3: no R link from Southern Link SW",
+    "group 5: no L link from Southern Link SW",
+    "group 6: no L link from Kings Way SE",
+    "resolved vehicle groups in no phase of the sequence: ['1', '2', '4', '9']",
+    "real phases rejected: 10 car links in no phase [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]"
+   ]
+  },
+  {
+   "tls": "cluster_277089855_3933095116",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_285773028_370709177_9085527968_9085527969_#2more",
+   "site_id": "4897",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 100.1,
+   "notes": []
+  },
+  {
+   "tls": "cluster_289597153_4996764094_4996764095_4996764096_#3more",
+   "site_id": "1744",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 40.0,
+   "notes": [
+    "5 unphased car links run as filter with their approach [0, 7, 9, 10, 11]"
+   ]
+  },
+  {
+   "tls": "cluster_289648906_3394730432_7694817352_8934978263_#5more",
+   "site_id": "4522",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_298045595_298045597_8913555767_8913555768_#2more",
+   "site_id": "4890",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 92.6,
+   "notes": []
+  },
+  {
+   "tls": "cluster_299892160_848375466",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_301544523_301544524_6731875603_6731875604_#1more",
+   "site_id": "2951",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_302161213_6206876465_9422334971",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_30287383_30943326_3933097951_3933097952_#4more",
+   "site_id": "1036",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_303464659_9085527964_9085527965_9085527966_#2more",
+   "site_id": "4885",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_306961201_3285633580_41675607_6849066508_#3more",
+   "site_id": "4434",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_30942256_332543902_332544824_332544825_#2more",
+   "site_id": "4518",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_30942258_332549397_3394781929_3394781931_#4more",
+   "site_id": "4520",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_30943324_3933082770_3933082772_3933082774_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3109028050_5473447461_9104872150_9104872151_#2more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3142873401_3885768484_452354294",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_332544858_332544859_332544866_332544912_#4more",
+   "site_id": "4521",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 123.1,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3345061635_3345061641_3345061648_4520380444_#6more",
+   "site_id": "4879",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 117.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3345061638_3345061640_364861168_364861229",
+   "site_id": "4925",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3345061646_364861092_364861230",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3345073162_3345073163_36821617_9694068732",
+   "site_id": "4489",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 57.2,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3365775181_3810637333_4453229724_4453229728_#7more",
+   "site_id": "1552",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 64.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_36819910_9146197564_9146197565_9146197566_#2more",
+   "site_id": "4574",
+   "tier": "real_phases",
+   "reason": "sheet phases and movements",
+   "cycle_max_s": 82.0,
+   "notes": [
+    "5 unphased car links run as filter with their approach [0, 9, 10, 11, 12]"
+   ]
+  },
+  {
+   "tls": "cluster_36822766_36822767",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_36823396_9085527869_9085527870_9085527871_#1more",
+   "site_id": "3541",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_36825302_36825305_3885768481_3885768482_#1more",
+   "site_id": "2886",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 111.6,
+   "notes": []
+  },
+  {
+   "tls": "cluster_36825327_36825329_4002375726",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3933082765_3933082768_3933082771_775942683_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_3933082767_3933082773_3933082775_6381191939_#5more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_550879335_550879343",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_560987186_758613567",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_589763533_6690692246",
+   "site_id": "1076",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 27.5,
+   "notes": []
+  },
+  {
+   "tls": "cluster_591274706_591276363",
+   "site_id": "4726",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_591397290_591397296_591398356_6226209814_#4more",
+   "site_id": "4895",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 69.0,
+   "notes": [
+    "intersection site on a through-only light (cross movements not simulated)"
+   ]
+  },
+  {
+   "tls": "cluster_591401042_591408092_591408190_9393412333",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_595595950_6731941331_6877591103",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_607756857_607756858",
+   "site_id": "4572",
+   "tier": "real_timings",
+   "reason": "netconvert phases, sheet timings",
+   "cycle_max_s": 73.0,
+   "notes": []
+  },
+  {
+   "tls": "cluster_634784134_634784606",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_7296210380_7296254646_7380266265_9085527862_#3more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_777697587_777700831_777701894_777703067_#4more",
+   "site_id": "4506",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_777773640_777773642_777778344_777778351_#8more",
+   "site_id": "4504",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_777773646_777773654_777778398_777778401_#8more",
+   "site_id": "4505",
+   "tier": "default",
+   "reason": "phases/timings missing or not verified",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_847528091_847529551_847530367_847530551_#4more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_8986918860_8986918886_9094376406_9094376407_#3more",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_9080841939_9399158264",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_9308089033_9308089035_9308089038",
+   "site_id": null,
+   "tier": "default",
+   "reason": "no sheet for this light",
+   "cycle_max_s": null,
+   "notes": []
+  },
+  {
+   "tls": "cluster_9756035313_9756035315_9756035316",
+   "site_id": "2935",
+   "tier": "real_timings",
+   "reason": "mid-block crossing",
+   "cycle_max_s": 118.0,
+   "notes": [
+    "group 2: no T link from Lonsdale St EB",
+    "resolved vehicle groups in no phase of the sequence: ['1']",
+    "real phases rejected: 4 car links in no phase [0, 1, 2, 3]"
+   ]
+  }
+ ]
+}

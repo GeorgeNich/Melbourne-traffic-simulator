@@ -1,0 +1,16 @@
+[project]
+name = "mtt-pipeline"
+version = "0.1.0"
+description = "Open data -> data/processed (owned by data-engineer)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "osmium>=4",
+    "shapely>=2",
+    "laspy>=2.5",
+    "pyproj>=3.6",
+    "numpy>=1.26",
+    "pyarrow>=25,<26",  # same pin as the root (libsumo 1.28 is built against Arrow 25)
+]
+
+[tool.uv]
+package = false

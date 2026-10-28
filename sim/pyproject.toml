@@ -1,0 +1,19 @@
+[project]
+name = "mtt-sim"
+version = "0.1.0"
+description = "SUMO network, demand, runs and exports (owned by sim-engineer)"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "eclipse-sumo==1.28.0",
+    "traci==1.28.0",
+    "sumolib==1.28.0",
+    "libsumo==1.28.0",
+    "pyproj>=3.6",
+    "shapely>=2",
+    "osmium>=4",
+    "pyarrow>=25,<26",  # edge_stats_*.parquet; <26: libsumo 1.28 is built against Arrow 25
+    "scipy>=1.13",  # routeSampler.py --optimize (linear programming) for the am_peak calibration
+]
+
+[tool.uv]
+package = false

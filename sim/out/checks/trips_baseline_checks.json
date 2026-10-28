@@ -1,0 +1,152 @@
+{
+ "scenario": "baseline",
+ "summary": {
+  "trips": 1459,
+  "vehicles": 1459,
+  "split_trips": 0,
+  "samples_recorded": 867453,
+  "points_written": 257809,
+  "bytes": 8841175
+ },
+ "alignment": {
+  "share_within_any_carriageway": 0.99684,
+  "share_within_own_way": 0.9832,
+  "own_way_samples": 729814,
+  "own_way_note": "samples on a normal edge (not inside a junction), measured against the OSM way their edge was built from; lower than the any-carriageway share because junction joining stretches edges away from their OSM lines near joined junctions",
+  "distance_to_own_way_m": {
+   "n": 729814,
+   "p50": 1.6,
+   "p90": 4.77,
+   "p99": 8.45,
+   "max": 48.72
+  },
+  "beyond_6m_by_road": {
+   "": 2216,
+   "Williamstown Road": 2118,
+   "City Road": 1893,
+   "Kings Way": 1285,
+   "Wurundjeri Way": 1255,
+   "Flinders Street": 909,
+   "Footscray Road": 812,
+   "Montague Street": 802,
+   "Dudley Street": 623,
+   "Alexandra Avenue": 542,
+   "Normanby Road": 396,
+   "King Street": 367,
+   "Lorimer Street": 176,
+   "West Gate Freeway": 172,
+   "CityLink": 153
+  },
+  "gate": "share_within_any_carriageway >= 0.99 (orchestrator decision); share_within_6m and share_within_own_way reported, not gated",
+  "samples": 867453,
+  "distance_m": {
+   "n": 867453,
+   "p50": 1.6,
+   "p90": 3.41,
+   "p99": 7.17,
+   "max": 13.33
+  },
+  "share_within_6m": 0.98394,
+  "target_share": 0.99,
+  "pass": true
+ },
+ "corner_cutting": {
+  "chords_checked": 226648,
+  "chord_outside_road_surface_m": {
+   "n": 226648,
+   "p50": 0.0,
+   "p90": 0.0,
+   "p99": 0.0,
+   "max": 0.71
+  },
+  "chords_over_1_5m": 0,
+  "dropped_sample_to_chord_m": {
+   "n": 120293,
+   "p50": 0.19,
+   "p90": 0.24,
+   "p99": 0.25,
+   "max": 0.25
+  },
+  "worst": {
+   "m": 0.71,
+   "trip": "rt437",
+   "t": 351.5,
+   "lanes": [
+    "484853234_0",
+    ":484853234-AddedOffRampNode_0_0"
+   ]
+  },
+  "pass": true
+ },
+ "heights": {
+  "max_step_between_file_points_m": 0.95,
+  "max_step_between_samples_m": 0.846,
+  "steps_over_1m": 0,
+  "plain_samples_vs_roads_3d_m": {
+   "n": 729808,
+   "p50": 0.0,
+   "p90": 0.0,
+   "p99": 0.0,
+   "max": 0.0
+  },
+  "plain_samples_over_0_5m": 0,
+  "smoothed_samples": 6,
+  "smoothed_vs_roads_3d_m": {
+   "n": 6,
+   "p50": 0.34,
+   "p90": 0.6,
+   "p99": 0.61,
+   "max": 0.61
+  },
+  "junction_samples_interpolated": 137639,
+  "sample_to_mapped_way_m": {
+   "n": 729814,
+   "p50": 1.6,
+   "p90": 4.77,
+   "p99": 8.45,
+   "max": 48.72
+  },
+  "pass": true
+ },
+ "buildings": {
+  "ground_points": 234054,
+  "inside_buildings": 160,
+  "on_building_passages": 0,
+  "raised_pieces_skipped": 7459,
+  "on_tunnel_ways_near_ground": 156,
+  "elsewhere": 4,
+  "elsewhere_by_road": {
+   "": 4
+  },
+  "elsewhere_places": [
+   {
+    "road": "",
+    "building": "c903326_4018",
+    "points": 2,
+    "lon": 144.943957,
+    "lat": -37.802875
+   },
+   {
+    "road": "",
+    "building": "w989034007",
+    "points": 2,
+    "lon": 144.962476,
+    "lat": -37.821216
+   }
+  ],
+  "pass": false
+ },
+ "car_free": {
+  "swanston_st_flinders_to_la_trobe": {
+   "osm_ways": 33,
+   "samples_in_corridor": 975,
+   "samples_driving_along": 0
+  },
+  "bourke_st_mall": {
+   "osm_ways": 2,
+   "samples_in_corridor": 15,
+   "samples_driving_along": 0
+  },
+  "pass": true
+ }
+}

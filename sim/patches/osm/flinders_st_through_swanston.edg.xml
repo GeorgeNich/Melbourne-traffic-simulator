@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  PATCH (OSM stage): Flinders St eastbound through Swanston St is open to cars.
+
+  OSM way 724454905 (Flinders Street, ~25 m, node 3313134384 to node 2187874243, the Swanston St
+  intersection) is tagged access=no, so the extract drops it and Flinders St eastbound (ways
+  1093113348, 724454904) dead-ends ~25 m before Swanston St.
+
+  Why the tag is stale: OSM history shows access=no was added in changeset 74457206 (2019-09-13)
+  as a temporary Metro Tunnel construction closure; the changeset comment says Flinders St
+  eastbound would be closed "for 3 yrs starting Oct 2019". The tag was never removed afterwards.
+
+  Evidence that it is open now: Vicmap Transport (CC BY 4.0) segment pfi 25076381 runs through to
+  the Swanston St node and on east: class 3 arterial, two-way, vehicular_access=1, no restriction
+  (data current to 2026-10-20). Decision: PLAN.md Decisions log, 2026-10-27 ("Flinders St eastbound
+  through Swanston St is open to cars", George).
+
+  What this adds: one edge, eastbound only, from the signal node 3313134384 to node 2187874243,
+  where Flinders St continues east (way 581717496). OSM tags the way oneway=no with 2 lanes, but a
+  westbound direction could go nowhere: at 3313134384 the only other way is the one-way eastbound
+  724454904 (Flinders St westbound has its own carriageway). So: 2 eastbound lanes, the way's
+  maxspeed (40 km/h) and its highway type. The pedestrian crossing 2383211240 and the tram
+  crossing 12517231691 are not in the car extract and are not modelled. The signal node
+  3313134384 (traffic_signals:direction=forward) is the eastbound stop line of the Flinders /
+  Swanston St intersection: stop_line_signals.nod.xml makes it a plain priority node, so the
+  intersection's own signal program controls this edge and cars stop once.
+
+  Its lanes record origId 724454904, the Flinders St eastbound way this edge extends (same name,
+  lanes and limit): the overridden way 724454905 is not in the car extract, and every edge must
+  name an extract way. The edge id names the overridden way so it can be traced
+  (sim/checks/connectivity.py lists it under overridden_by_decision).
+-->
+<edges>
+    <edge id="override_724454905" from="3313134384" to="2187874243" type="highway.secondary"
+          numLanes="2" speed="11.11" name="Flinders Street">
+        <lane index="0"><param key="origId" value="724454904"/></lane>
+        <lane index="1"><param key="origId" value="724454904"/></lane>
+    </edge>
+</edges>

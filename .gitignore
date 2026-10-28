@@ -1,0 +1,33 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# JS
+node_modules/
+.pnpm-store/
+dist/
+web/test-results/
+web/playwright-report/
+*.tsbuildinfo
+
+# Data: raw downloads are reproducible from pipeline scripts and never committed
+data/raw/*
+!data/raw/.gitkeep
+
+# SUMO intermediates (contract exports in sim/out/ ARE committed)
+sim/work/
+*.fcd.xml
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Personal Claude Code settings
+.claude/settings.local.json
+
+# Agent worktrees
+.claude/worktrees/
