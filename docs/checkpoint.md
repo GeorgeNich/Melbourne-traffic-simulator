@@ -110,6 +110,6 @@ Future work can examine lane fidelity, parking and employment-based trip-end wei
 
 ## Images and licensing
 
-The README hero is captured from this public baseline application. A compact reference gallery remains in `docs/screenshots/phase-2/final/`, together with `docs/screenshots/phase-1/hero.png`.
+The README's animated preview is captured from this public baseline application.
 
 Source code is available for viewing and evaluation under [LICENSE.md](../LICENSE.md), with all rights reserved. OpenStreetMap-derived datasets retain ODbL licensing, and other data retains its source licences and attribution as recorded in [data/SOURCES.md](../data/SOURCES.md). The code licence does not relicense the datasets. OpenStreetMap, OpenFreeMap, OpenMapTiles, and City of Melbourne credits remain visible on the map.

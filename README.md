@@ -6,7 +6,8 @@ A computer science project combining open geospatial data, SUMO traffic simulati
 
 Follow vehicles through the city, inspect bridges and stacked interchanges, reveal underground tunnel traffic, and explore simulated road speeds against a detailed urban environment.
 
-![Melbourne Traffic Simulator: the baseline replay over Southbank and the CBD](docs/screenshots/hero.png)
+<img src="docs/screenshots/cbd-to-southbank-640.gif" alt="Melbourne Traffic Simulator: animated traffic replay from the CBD to Southbank" width="100%">
+
 
 **The included demo is ready to run.** It combines real Melbourne geography with a synthetic baseline traffic scenario. Prepared city data and vehicle paths are included; the raw downloads and a running SUMO process are not required to view it.
 
